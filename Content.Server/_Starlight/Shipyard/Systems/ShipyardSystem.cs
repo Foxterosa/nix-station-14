@@ -34,6 +34,7 @@ public sealed partial class ShipyardSystem : SharedShipyardSystem
     private float _shuttleIndex;
     private const float ShuttleSpawnBuffer = 1f;
     private bool _enabled;
+    public bool PlayerPurchasesLocked { get; private set; }
 
     public override void Initialize()
     {
@@ -79,7 +80,15 @@ public sealed partial class ShipyardSystem : SharedShipyardSystem
     }
 
     private void OnRoundRestart(RoundRestartCleanupEvent ev) =>
+        ResetRound();
+
+    private void ResetRound()
+    {
+        PlayerPurchasesLocked = false;
         CleanupShipyard();
+    }
+
+    public void SetPlayerPurchasesLocked(bool locked) => PlayerPurchasesLocked = locked;
 
     private void SetShipyardEnabled(bool value)
     {

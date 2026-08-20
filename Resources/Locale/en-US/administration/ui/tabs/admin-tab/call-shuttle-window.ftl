@@ -1,1 +1,13 @@
-admin-shuttle-title = (Re)call shuttle
+admin-shuttle-title = Shuttle management
+admin-shuttle-select-title = Emergency shuttle design
+admin-shuttle-current = Current design: { $shuttle }
+admin-shuttle-select-button = Select design
+admin-shuttle-select-warning = The design can only be changed before anyone calls the emergency shuttle.
+admin-shuttle-purchase-lock = Lock player shipyard purchases
+admin-shuttle-purchase-lock-apply = Apply lock
+admin-shuttle-state-idle = Emergency shuttle is waiting at Central Command.
+admin-shuttle-state-called = Emergency shuttle called. ETA: { $seconds } seconds.
+admin-shuttle-action-success = Shuttle action completed.
+admin-shuttle-action-failed = The shuttle action was rejected or is no longer available.
+nix-admin-shuttle-selected-announcement = Central Command assigned the { $shuttle } emergency shuttle design.
+shipyard-console-purchases-locked = Central Command has temporarily suspended shipyard purchases.
