@@ -19,6 +19,30 @@ namespace Content.Client.Administration.UI.Tabs
             EndRound.OnPressed += _ => _console.ExecuteCommand("endround");
             RestartRound.OnPressed += _ => _console.ExecuteCommand("restartround");
             RestartRoundNow.OnPressed += _ => _console.ExecuteCommand("restartroundnow");
+            DelayRound.OnPressed += _ => DelayRoundStart();
+            PauseRound.OnPressed += _ =>
+            {
+                _console.ExecuteCommand("delaystart -1");
+                DelayStatusLabel.Text = Loc.GetString("administration-ui-round-tab-status-paused");
+            };
+            ResumeRound.OnPressed += _ =>
+            {
+                _console.ExecuteCommand("delaystart 0");
+                DelayStatusLabel.Text = Loc.GetString("administration-ui-round-tab-status-resumed");
+            };
+        }
+
+        private void DelayRoundStart()
+        {
+            if (!uint.TryParse(DelayMinutesLineEdit.Text, out var minutes) || minutes is 0 or > 1440)
+            {
+                DelayStatusLabel.Text = Loc.GetString("administration-ui-round-tab-delay-invalid");
+                return;
+            }
+
+            _console.ExecuteCommand($"delaystart {minutes * 60}");
+            DelayStatusLabel.Text = Loc.GetString("administration-ui-round-tab-status-delayed",
+                ("minutes", minutes));
         }
     }
 }

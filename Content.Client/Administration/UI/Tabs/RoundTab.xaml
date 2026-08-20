@@ -3,11 +3,21 @@
     xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls"
     Margin="4"
     MinSize="50 50">
-    <GridContainer
-        Columns="3">
-        <controls:ConfirmButton Name="StartRound" Text="{Loc administration-ui-round-tab-start-round}" />
-        <controls:ConfirmButton Name="EndRound" Text="{Loc administration-ui-round-tab-end-round}" />
-        <controls:ConfirmButton Name="RestartRound" Text="{Loc administration-ui-round-tab-restart-round}" />
-        <controls:ConfirmButton Name="RestartRoundNow" Text="{Loc administration-ui-round-tab-restart-round-now}" />
-    </GridContainer>
+    <BoxContainer Orientation="Vertical" SeparationOverride="8">
+        <GridContainer Columns="3">
+            <controls:ConfirmButton Name="StartRound" Text="{Loc administration-ui-round-tab-start-round}" />
+            <controls:ConfirmButton Name="EndRound" Text="{Loc administration-ui-round-tab-end-round}" />
+            <controls:ConfirmButton Name="RestartRound" Text="{Loc administration-ui-round-tab-restart-round}" />
+            <controls:ConfirmButton Name="RestartRoundNow" Text="{Loc administration-ui-round-tab-restart-round-now}" />
+        </GridContainer>
+        <Label Text="{Loc administration-ui-round-tab-delay-description}" />
+        <BoxContainer Orientation="Horizontal" SeparationOverride="5">
+            <Label Text="{Loc administration-ui-round-tab-delay-minutes}" VerticalAlignment="Center" />
+            <LineEdit Name="DelayMinutesLineEdit" Text="5" MinWidth="70" />
+            <Button Name="DelayRound" Text="{Loc administration-ui-round-tab-delay}" />
+            <Button Name="PauseRound" Text="{Loc administration-ui-round-tab-pause}" />
+            <Button Name="ResumeRound" Text="{Loc administration-ui-round-tab-resume}" />
+        </BoxContainer>
+        <Label Name="DelayStatusLabel" />
+    </BoxContainer>
 </Control>
