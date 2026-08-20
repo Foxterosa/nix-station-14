@@ -1,0 +1,23 @@
+- files:
+  - aimalf.ogg
+  - aliens.ogg
+  - animes.ogg
+  - attention.ogg
+  - commandreport.ogg
+  - granomalies.ogg
+  - intercept.ogg
+  - ionstorm.ogg
+  - meteors.ogg
+  - outbreak5.ogg
+  - outbreak7.ogg
+  - poweroff.ogg
+  - poweron.ogg
+  - radiation.ogg
+  - shuttlecalled.ogg
+  - shuttledock.ogg
+  - shuttlerecalled.ogg
+  - spanomalies.ogg
+  - welcome.ogg
+  license: CC-BY-SA-3.0
+  copyright: NovaSector and /tg/station contributors
+  source: https://github.com/NovaSector/NovaSector/tree/master/sound/ai/default
