@@ -2,7 +2,10 @@
     xmlns="https://spacestation14.io"
     xmlns:adminTab="clr-namespace:Content.Client.Administration.UI.Tabs.AdminTab"
     xmlns:adminbusTab="clr-namespace:Content.Client.Administration.UI.Tabs.AdminbusTab"
+    xmlns:audioTab="clr-namespace:Content.Client.Administration.UI.Tabs.AdminAudioTab"
+    xmlns:stationTab="clr-namespace:Content.Client.Administration.UI.Tabs.StationTab"
     xmlns:atmosTab="clr-namespace:Content.Client.Administration.UI.Tabs.AtmosTab"
+    xmlns:eventsTab="clr-namespace:Content.Client._Starlight.Administration.UI.Tabs.EventsTab"
     xmlns:tabs="clr-namespace:Content.Client.Administration.UI.Tabs"
     xmlns:playerTab="clr-namespace:Content.Client.Administration.UI.Tabs.PlayerTab"
     xmlns:objectsTab="clr-namespace:Content.Client.Administration.UI.Tabs.ObjectsTab"
@@ -10,9 +13,12 @@
     <TabContainer Name="MasterTabContainer">
         <adminTab:AdminTab />
         <adminbusTab:AdminbusTab />
+        <audioTab:AdminAudioTab />
+        <stationTab:StationTab />
         <atmosTab:AtmosTab />
         <tabs:RoundTab />
         <tabs:ServerTab />
+        <eventsTab:EventsTab /> <!-- Starlight -->
         <panic:PanicBunkerTab Name="PanicBunkerControl" Access="Public" />
         <playerTab:PlayerTab Name="PlayerTabControl" Access="Public" />
         <objectsTab:ObjectsTab Name="ObjectsTabControl" Access="Public" />

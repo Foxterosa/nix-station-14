@@ -10,6 +10,7 @@ using Robust.Shared.Audio.Systems;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Content.Shared.Station.Components; // Starlight
+using Content.Shared._Nix.StationEvents;
 using Robust.Shared.Audio; // Starlight
 
 namespace Content.Server.StationEvents.Events;
@@ -49,7 +50,11 @@ public abstract partial class StationEventSystem<T> : GameRuleSystem<T> where T 
             stationEvent.TargetStation = chosenStation;
         //Starlight end stationEvent.TargetStation = station;
 
-        Announce(stationEvent, stationEvent.StartAnnouncement, false, stationEvent.StartAnnouncementColor, stationEvent.StartAudio);
+        Announce(stationEvent,
+            stationEvent.StartAnnouncement,
+            false,
+            stationEvent.StartAnnouncementColor,
+            ResolveNixAudio(uid, stationEvent.StartAudio, false));
 
         // we don't want to send to players who aren't in game (i.e. in the lobby)
 
@@ -88,7 +93,11 @@ public abstract partial class StationEventSystem<T> : GameRuleSystem<T> where T 
 
         //Starlight begin
         // we don't want to send to players who aren't in game (i.e. in the lobby)
-        Announce(stationEvent, stationEvent.EndAnnouncement, false, stationEvent.EndAnnouncementColor, stationEvent.EndAudio);
+        Announce(stationEvent,
+            stationEvent.EndAnnouncement,
+            false,
+            stationEvent.EndAnnouncementColor,
+            ResolveNixAudio(uid, stationEvent.EndAudio, true));
         //Starlight end
     }
 
@@ -130,14 +139,16 @@ public abstract partial class StationEventSystem<T> : GameRuleSystem<T> where T 
     //Starlight begin
     public void Announce(StationEventComponent stationEvent, LocId? announcementLocId, bool dispatchSound, Color? colorOverride = null, SoundSpecifier? soundOverride = null)
     {
-        if (announcementLocId is null) return;
         if (stationEvent.GlobalAnnouncement)
         {
             var allPlayersInGame = Filter.Empty().AddWhere(GameTicker.UserHasJoinedGame);
 
-            ChatSystem.DispatchFilteredAnnouncement(allPlayersInGame,
-                Loc.GetString(announcementLocId), playSound: dispatchSound,
-                colorOverride: colorOverride);
+            if (announcementLocId is not null)
+            {
+                ChatSystem.DispatchFilteredAnnouncement(allPlayersInGame,
+                    Loc.GetString(announcementLocId), playSound: dispatchSound,
+                    colorOverride: colorOverride);
+            }
 
             if(soundOverride is not null) Audio.PlayGlobal(soundOverride, allPlayersInGame, true);
         }
@@ -151,12 +162,27 @@ public abstract partial class StationEventSystem<T> : GameRuleSystem<T> where T 
                 return stationGrid.Station == stationEvent.TargetStation;
             });
 
-            ChatSystem.DispatchFilteredAnnouncement(allPlayersOnStation,
-                Loc.GetString(announcementLocId), playSound: dispatchSound,
-                colorOverride: colorOverride);
+            if (announcementLocId is not null)
+            {
+                ChatSystem.DispatchFilteredAnnouncement(allPlayersOnStation,
+                    Loc.GetString(announcementLocId), playSound: dispatchSound,
+                    colorOverride: colorOverride);
+            }
 
             if(soundOverride is not null) Audio.PlayGlobal(soundOverride, allPlayersOnStation, true);
         }
+    }
+
+    private SoundSpecifier? ResolveNixAudio(EntityUid uid, SoundSpecifier? fallback, bool ending)
+    {
+        var id = MetaData(uid).EntityPrototype?.ID;
+        if (id == null ||
+            !PrototypeManager.TryIndex<NixStationEventAudioPrototype>(id, out var audio))
+        {
+            return fallback;
+        }
+
+        return ending ? audio.EndAudio ?? fallback : audio.StartAudio ?? fallback;
     }
     //Starlight end
 }

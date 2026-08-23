@@ -34,6 +34,20 @@ public sealed partial class DelayStartCommand : LocalizedEntityCommands
 
         if (!uint.TryParse(args[0], out var seconds) || seconds == 0)
         {
+            if (args[0] == "-1")
+            {
+                _gameTicker.PauseStart(true);
+                shell.WriteLine(Loc.GetString("cmd-delaystart-paused"));
+                return;
+            }
+
+            if (args[0] == "0")
+            {
+                _gameTicker.PauseStart(false);
+                shell.WriteLine(Loc.GetString("cmd-delaystart-unpaused"));
+                return;
+            }
+
             shell.WriteLine(Loc.GetString("cmd-delaystart-invalid-seconds", ("value", args[0])));
             return;
         }

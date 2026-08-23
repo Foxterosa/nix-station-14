@@ -43,6 +43,13 @@ public sealed partial class ShipyardConsoleSystem : SharedShipyardSystem
         if (args.Actor is not { Valid: true } player)
             return;
 
+        if (_shipyard.PlayerPurchasesLocked)
+        {
+            ConsolePopup(player, Loc.GetString("shipyard-console-purchases-locked"));
+            PlayDenySound(uid, component);
+            return;
+        }
+
         if (TryComp<AccessReaderComponent>(uid, out var accessReaderComponent) &&
             accessReaderComponent.Enabled &&
             !_access.IsAllowed(player, uid, accessReaderComponent))

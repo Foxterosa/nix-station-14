@@ -1,0 +1,41 @@
+- type: nixStationEventAudio
+  id: PowerGridCheck
+  startAudio:
+    path: /Audio/_Nix/Announcements/poweroff.ogg
+  endAudio:
+    path: /Audio/_Nix/Announcements/poweron.ogg
+
+- type: nixStationEventAudio
+  id: IonStorm
+  startAudio:
+    path: /Audio/_Nix/Announcements/ionstorm.ogg
+
+- type: nixStationEventAudio
+  id: IonStormPlus
+  startAudio:
+    path: /Audio/_Nix/Announcements/ionstorm.ogg
+
+- type: nixStationEventAudio
+  id: RandomSentience
+  startAudio:
+    path: /Audio/_Nix/Announcements/aliens.ogg
+
+- type: nixStationEventAudio
+  id: AnomalySpawn
+  startAudio:
+    path: /Audio/_Nix/Announcements/granomalies.ogg
+
+- type: nixStationEventAudio
+  id: BluespaceArtifact
+  startAudio:
+    path: /Audio/_Nix/Announcements/spanomalies.ogg
+
+- type: nixStationEventAudio
+  id: ZombieOutbreak
+  startAudio:
+    path: /Audio/_Nix/Announcements/outbreak5.ogg
+
+- type: nixStationEventAudio
+  id: RadiationStorm
+  startAudio:
+    path: /Audio/_Nix/Announcements/radiation.ogg

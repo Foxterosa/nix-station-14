@@ -17,9 +17,12 @@ public sealed partial class AdminMenuWindow : DefaultWindow
         RobustXamlLoader.Load(this);
         MasterTabContainer.SetTabTitle((int) TabIndex.Admin, Loc.GetString("admin-menu-admin-tab"));
         MasterTabContainer.SetTabTitle((int) TabIndex.Adminbus, Loc.GetString("admin-menu-adminbus-tab"));
+        MasterTabContainer.SetTabTitle((int) TabIndex.Audio, Loc.GetString("admin-menu-audio-tab"));
+        MasterTabContainer.SetTabTitle((int) TabIndex.Station, Loc.GetString("admin-menu-station-tab"));
         MasterTabContainer.SetTabTitle((int) TabIndex.Atmos, Loc.GetString("admin-menu-atmos-tab"));
         MasterTabContainer.SetTabTitle((int) TabIndex.Round, Loc.GetString("admin-menu-round-tab"));
         MasterTabContainer.SetTabTitle((int) TabIndex.Server, Loc.GetString("admin-menu-server-tab"));
+        MasterTabContainer.SetTabTitle((int) TabIndex.Events, Loc.GetString("admin-menu-events-tab"));
         MasterTabContainer.SetTabTitle((int) TabIndex.PanicBunker, Loc.GetString("admin-menu-panic-bunker-tab"));
         MasterTabContainer.SetTabTitle((int) TabIndex.Players, Loc.GetString("admin-menu-players-tab"));
         MasterTabContainer.SetTabTitle((int) TabIndex.Objects, Loc.GetString("admin-menu-objects-tab"));
@@ -44,9 +47,12 @@ public sealed partial class AdminMenuWindow : DefaultWindow
     {
         Admin = 0,
         Adminbus,
+        Audio,
+        Station,
         Atmos,
         Round,
         Server,
+        Events,
         PanicBunker,
         Players,
         Objects,
