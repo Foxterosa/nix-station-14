@@ -14,6 +14,7 @@ using Content.Server._CD.Records;
 // Cosmatic Drift Record System-end
 using Content.Shared.Administration;
 using Content.Shared.Administration.Events;
+using Content.Shared._Starlight.Administration.Events;
 using Content.Shared.CCVar;
 using Content.Shared.Forensics.Components;
 using Content.Shared.GameTicking;
@@ -430,9 +431,24 @@ public sealed partial class AdminSystem : EntitySystem
         return _gameTicker.EndGameRule(uid);
     }
 
+    private int CountUnreadableSchedulers()
+    {
+        var count = 0;
+        var query = EntityQueryEnumerator<RampingStationEventSchedulerComponent, GameRuleComponent>();
+        while (query.MoveNext(out var uid, out _, out var rule))
+        {
+            if (_gameTicker.IsGameRuleActive(uid, rule))
+                count++;
+        }
+
+        return count;
+    }
+
     private void SendStationEvents(ICommonSession session)
     {
         var available = _eventManager.AvailableEvents();
+        var occurrenceCounts = _eventManager.GetOccurrenceCounts();
+
         var runtimeStates = new Dictionary<string, EventRuntimeState>();
         var activeEvents = new List<ActiveStationEventData>();
 
@@ -503,15 +519,17 @@ public sealed partial class AdminSystem : EntitySystem
             EventsEnabled = _eventManager.EventsEnabled,
             PlayerCount = _playerManager.PlayerCount,
             RoundDurationMinutes = (float) _gameTicker.RoundDuration().TotalMinutes,
-            HasScheduler = _eventScheduler.HasActiveScheduler(out _, out _),
+            HasScheduler = _eventScheduler.HasActiveScheduler(),
+            UnreadableSchedulers = CountUnreadableSchedulers(),
             Queue = _eventScheduler.GetQueuedEvents()
-                .Select(entry => new ScheduledStationEventData
+                .Select(queued => new ScheduledStationEventData
                 {
-                    Id = entry.Id,
-                    EventId = entry.EventId,
-                    TriggerInSeconds = Math.Max((float) (entry.TriggerTime - _timing.CurTime).TotalSeconds, 0f),
-                    TotalDelaySeconds = Math.Max((float) (entry.TriggerTime - entry.QueuedAt).TotalSeconds, 0f),
-                    Automatic = entry.Automatic
+                    Id = queued.Entry.Id,
+                    EventId = queued.Entry.EventId,
+                    TriggerInSeconds = Math.Max((float) (queued.Entry.TriggerTime - _timing.CurTime).TotalSeconds, 0f),
+                    TotalDelaySeconds = Math.Max((float) (queued.Entry.TriggerTime - queued.Entry.QueuedAt).TotalSeconds, 0f),
+                    Automatic = queued.Entry.Automatic,
+                    Scheduler = queued.Scheduler
                 })
                 .ToList(),
             ActiveEvents = activeEvents
@@ -520,27 +538,34 @@ public sealed partial class AdminSystem : EntitySystem
                 .ToList(),
             Events = _eventManager.AllEvents()
                 .OrderBy(pair => pair.Key.ID)
-                .Select(pair => new StationEventData
+                .Select(pair =>
                 {
-                    Id = pair.Key.ID,
-                    Available = available.ContainsKey(pair.Key),
-                    MinimumPlayers = pair.Value.MinimumPlayers,
-                    EarliestStartMinutes = pair.Value.EarliestStart,
-                    ReoccurrenceDelayMinutes = pair.Value.ReoccurrenceDelay,
-                    Weight = pair.Value.Weight,
-                    DurationSeconds = pair.Value.Duration is { } duration
-                        ? (float) duration.TotalSeconds
-                        : -1f,
-                    MaxDurationSeconds = pair.Value.MaxDuration is { } maxDuration
-                        ? (float) maxDuration.TotalSeconds
-                        : pair.Value.Duration is { } fixedDuration
-                            ? (float) fixedDuration.TotalSeconds
+                    var runtime = runtimeStates.GetValueOrDefault(pair.Key.ID);
+                    var occurrences = occurrenceCounts.GetValueOrDefault(pair.Key.ID);
+
+                    return new StationEventData
+                    {
+                        Id = pair.Key.ID,
+                        Available = available.ContainsKey(pair.Key),
+                        MinimumPlayers = pair.Value.MinimumPlayers,
+                        EarliestStartMinutes = pair.Value.EarliestStart,
+                        ReoccurrenceDelayMinutes = pair.Value.ReoccurrenceDelay,
+                        Weight = _eventManager.GetEffectiveWeight(pair.Value, occurrences),
+                        Occurrences = occurrences,
+                        DurationSeconds = pair.Value.Duration is { } duration
+                            ? (float) duration.TotalSeconds
                             : -1f,
-                    ActiveCount = runtimeStates.TryGetValue(pair.Key.ID, out var runtime) ? runtime.ActiveCount : 0,
-                    PendingCount = runtimeStates.TryGetValue(pair.Key.ID, out runtime) ? runtime.PendingCount : 0,
-                    NextStartSeconds = runtimeStates.TryGetValue(pair.Key.ID, out runtime) ? runtime.NextStartSeconds : -1f,
-                    MinRemainingSeconds = runtimeStates.TryGetValue(pair.Key.ID, out runtime) ? runtime.MinRemainingSeconds : -1f,
-                    MaxRemainingSeconds = runtimeStates.TryGetValue(pair.Key.ID, out runtime) ? runtime.MaxRemainingSeconds : -1f
+                        MaxDurationSeconds = pair.Value.MaxDuration is { } maxDuration
+                            ? (float) maxDuration.TotalSeconds
+                            : pair.Value.Duration is { } fixedDuration
+                                ? (float) fixedDuration.TotalSeconds
+                                : -1f,
+                        ActiveCount = runtime?.ActiveCount ?? 0,
+                        PendingCount = runtime?.PendingCount ?? 0,
+                        NextStartSeconds = runtime?.NextStartSeconds ?? -1f,
+                        MinRemainingSeconds = runtime?.MinRemainingSeconds ?? -1f,
+                        MaxRemainingSeconds = runtime?.MaxRemainingSeconds ?? -1f
+                    };
                 })
                 .ToList()
         };
