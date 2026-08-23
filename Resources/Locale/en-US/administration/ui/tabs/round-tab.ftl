@@ -2,4 +2,12 @@ administration-ui-round-tab-start-round = Start Round
 administration-ui-round-tab-end-round = End Round
 administration-ui-round-tab-restart-round = Restart Round
 administration-ui-round-tab-restart-round-now = Restart NOW
-
+administration-ui-round-tab-delay-description = Delay the lobby countdown or pause it indefinitely. The lobby displays DELAYED while paused.
+administration-ui-round-tab-delay-minutes = Minutes:
+administration-ui-round-tab-delay = Add delay
+administration-ui-round-tab-pause = Pause indefinitely
+administration-ui-round-tab-resume = Resume countdown
+administration-ui-round-tab-delay-invalid = Enter between 1 and 1440 minutes.
+administration-ui-round-tab-status-paused = Round start is paused indefinitely.
+administration-ui-round-tab-status-resumed = Round countdown resumed.
+administration-ui-round-tab-status-delayed = Added { $minutes } minutes to the lobby countdown.

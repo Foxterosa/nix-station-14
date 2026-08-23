@@ -729,6 +729,36 @@ public sealed partial class EmergencyShuttleSystem : SharedEmergencyShuttleSyste
     }
 
     /// <summary>
+    /// Replaces the station's emergency shuttle while it is still waiting at CentCom.
+    /// </summary>
+    public bool ReplaceEmergencyShuttle(EntityUid stationUid, ResPath shuttlePath)
+    {
+        if (IsRoundEndRequestedOrArrived() ||
+            !TryComp<StationEmergencyShuttleComponent>(stationUid, out var stationShuttle) ||
+            !TryComp<StationCentcommComponent>(stationUid, out var centcomm))
+        {
+            return false;
+        }
+
+        var previousPath = stationShuttle.EmergencyShuttlePath;
+        if (stationShuttle.EmergencyShuttle is { } previousShuttle && Exists(previousShuttle))
+            Del(previousShuttle);
+
+        stationShuttle.EmergencyShuttle = null;
+        stationShuttle.EmergencyShuttlePath = shuttlePath;
+        AddEmergencyShuttle((stationUid, stationShuttle, centcomm));
+        if (stationShuttle.EmergencyShuttle is { } replacement && Exists(replacement))
+            return true;
+
+        stationShuttle.EmergencyShuttlePath = previousPath;
+        AddEmergencyShuttle((stationUid, stationShuttle, centcomm));
+        return false;
+    }
+
+    private bool IsRoundEndRequestedOrArrived() =>
+        EmergencyShuttleArrived || EntityManager.System<RoundEndSystem>().IsRoundEndRequested();
+
+    /// <summary>
     /// Returns whether a target is escaping on the emergency shuttle, but only if evac has arrived.
     /// </summary>
     public bool IsTargetEscaping(EntityUid target)
