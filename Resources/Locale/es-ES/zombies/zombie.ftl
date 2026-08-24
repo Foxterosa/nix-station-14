@@ -1,13 +1,13 @@
-zombie-transform = {CAPITALIZE(THE($target))} turned into a zombie!
-zombie-infection-greeting = You have become a zombie. Your goal is to seek out the living and to try to infect them.  Work together with the other zombies and remaining initial infected to overtake the station. [color=red]You CANNOT attack silicons unless they attack you first, as they are immune to being zombified![/color]
+zombie-transform = ¡{CAPITALIZE(THE($target))} se convirtió en un zombi!
+zombie-infection-greeting = Te has convertido en un zombi. Tu objetivo es buscar a los vivos e intentar infectarlos. Trabaja junto con los demás zombis y los infectados iniciales restantes para apoderarte de la estación. [color=red]¡NO PUEDES atacar a los silicios a menos que te ataquen primero, ya que son inmunes a la zombificación![/color]
 
-zombie-generic = zombie
-zombie-name-prefix = zombified {$baseName}
-zombie-role-desc =  A malevolent creature of the dead.
-zombie-role-rules = You are a [color={role-type-team-antagonist-color}][bold]{role-type-team-antagonist-name}[/bold][/color]. Search out the living and bite them in order to infect them and turn them into zombies. Work together with the other zombies and remaining initial infected to overtake the station. [color=red]You CANNOT attack silicons unless they attack you first, as they are immune to being zombified![/color]
+zombie-generic = zombi
+zombie-name-prefix = {$baseName} zombificado
+zombie-role-desc =  Una criatura malévola de entre los muertos.
+zombie-role-rules = Eres un [color={role-type-team-antagonist-color}][bold]{role-type-team-antagonist-name}[/bold][/color]. Busca a los vivos y muérdelos para infectarlos y convertirlos en zombis. Trabaja junto con los demás zombis y los infectados iniciales restantes para apoderarte de la estación. [color=red]¡NO PUEDES atacar a los silicios a menos que te ataquen primero, ya que son inmunes a la zombificación![/color]
 
-zombie-permadeath = This time, you're dead for real.
+zombie-permadeath = Esta vez, estás muerto de verdad.
 
-zombification-resistance-coefficient-value = - [color=violet]Infection[/color] chance reduced by [color=lightblue]{$value}%[/color].
+zombification-resistance-coefficient-value = - Probabilidad de [color=violet]infección[/color] reducida en [color=lightblue]{$value}%[/color].
 
-zombie-roleban-ghosted = You have been ghosted because you are banned from playing the Zombie role.
+zombie-roleban-ghosted = Has pasado a fantasma porque tienes prohibido jugar el rol de Zombie.

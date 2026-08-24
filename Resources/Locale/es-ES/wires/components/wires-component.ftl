@@ -1,18 +1,18 @@
-wires-component-ui-on-receive-message-no-hands = You have no hands.
-wires-component-ui-on-receive-message-cannot-reach = You can't reach there!
-wires-component-ui-on-receive-message-need-wirecutters = You need to hold a wirecutter in your hand!
-wires-component-ui-on-receive-message-need-multitool = You need to hold a multitool in your hand!
-wires-component-ui-on-receive-message-cannot-pulse-cut-wire = You can't pulse a wire that's been cut!
-wires-component-ui-on-receive-message-cannot-cut-cut-wire = You can't cut a wire that's been cut!
-wires-component-ui-on-receive-message-cannot-mend-uncut-wire = You can't mend a wire that's been mended!
+wires-component-ui-on-receive-message-no-hands = No tienes manos.
+wires-component-ui-on-receive-message-cannot-reach = ¡No puedes llegar hasta ahí!
+wires-component-ui-on-receive-message-need-wirecutters = ¡Necesitas tener unos cortacables en la mano!
+wires-component-ui-on-receive-message-need-multitool = ¡Necesitas tener un multitool en la mano!
+wires-component-ui-on-receive-message-cannot-pulse-cut-wire = ¡No puedes pulsar un cable que ha sido cortado!
+wires-component-ui-on-receive-message-cannot-cut-cut-wire = ¡No puedes cortar un cable que ya fue cortado!
+wires-component-ui-on-receive-message-cannot-mend-uncut-wire = ¡No puedes reparar un cable que ya fue reparado!
 
 ## UI
 
-wires-menu-name-label = Wires
+wires-menu-name-label = Cables
 wires-menu-dead-beef-text = DEAD-BEEF
 wires-menu-help-popup =
-    Click on the gold contacts with a multitool in hand to pulse their wire.
-    Click on the wires with a pair of wirecutters in hand to cut/mend them.
+    Haz clic en los contactos dorados con un multitool en la mano para pulsar su cable.
+    Haz clic en los cables con unos cortacables en la mano para cortarlos o repararlos.
 
-    The lights at the top show the state of the machine, messing with wires will probably do stuff to them.
-    Wire layouts are different each round, but consistent between machines of the same type.
+    Las luces de arriba muestran el estado de la máquina; trastear con los cables probablemente les haga cosas.
+    La distribución de los cables cambia en cada ronda, pero es consistente entre máquinas del mismo tipo.

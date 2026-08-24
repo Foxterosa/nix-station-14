@@ -1,8 +1,8 @@
-ventriloquist-puppet-insert-hand = You insert your hand into the puppet.
-ventriloquist-puppet-remove-hand = You remove your hand from the puppet.
+ventriloquist-puppet-insert-hand = Metes tu mano en el muñeco.
+ventriloquist-puppet-remove-hand = Sacas tu mano del muñeco.
 
-ventriloquist-puppet-cant-speak = You cannot speak without a helping hand.
-ventriloquist-puppet-inserted-hand = You have a helping hand.
-ventriloquist-puppet-removed-hand = you have lost your helping hand.
-ventriloquist-puppet-role-name = A Dummy
-ventriloquist-puppet-role-description = Become a dummy, dummy!
+ventriloquist-puppet-cant-speak = No puedes hablar sin una mano amiga.
+ventriloquist-puppet-inserted-hand = Tienes una mano amiga.
+ventriloquist-puppet-removed-hand = Has perdido tu mano amiga.
+ventriloquist-puppet-role-name = Un muñeco
+ventriloquist-puppet-role-description = Conviértete en un muñeco, muñeco.

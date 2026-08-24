@@ -2,5 +2,5 @@
 
 ## Petting silicons
 
-petting-success-cargo-cyborg = You pet {THE($target)} on {POSS-ADJ($target)} hardworking metal head.
-petting-failure-cargo-cyborg = You reach out to pet {THE($target)}, but {SUBJECT($target)} {CONJUGATE-BE($target)} busy hauling cargo!
+petting-success-cargo-cyborg = Acaricias la trabajadora cabeza metálica de {THE($target)}.
+petting-failure-cargo-cyborg = Intentas acariciar {THE($target)}, pero está ocupado transportando Cargo.

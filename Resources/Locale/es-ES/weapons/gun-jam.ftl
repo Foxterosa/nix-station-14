@@ -1,6 +1,6 @@
 ## Gun jam system
 ## Popups shown when a gun jams or is cleared.
 
-gun-jam-jammed = The gun jams!
-gun-jam-blocked = The gun is jammed! Rack the slide to clear it.
-gun-jam-cleared = The jam is cleared.
+gun-jam-jammed = ¡El arma se encasquilla!
+gun-jam-blocked = ¡El arma está encasquillada! Amartilla la corredera para despejarla.
+gun-jam-cleared = El encasquillamiento se despejó.

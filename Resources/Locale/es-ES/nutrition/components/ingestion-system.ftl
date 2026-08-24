@@ -4,10 +4,10 @@
 # System
 
 ## When trying to ingest without the required utensil... but you gotta hold it
-ingestion-you-need-to-hold-utensil = Necesitas tener {INDEFINITE($utensil)} {$utensil} en la mano para comer eso.
+ingestion-you-need-to-hold-utensil = Necesitas tener {$utensil} en la mano para comer eso.
 
 ingestion-try-use-is-empty = ¡{CAPITALIZE(THE($entity))} está vacío!
-ingestion-try-use-wrong-utensil = No puedes {$verb} {THE($food)} con {INDEFINITE($utensil)} {$utensil}.
+ingestion-try-use-wrong-utensil = No puedes {$verb} {THE($food)} con {$utensil}.
 
 ingestion-remove-mask = Primero debes quitarte {$entity}.
 

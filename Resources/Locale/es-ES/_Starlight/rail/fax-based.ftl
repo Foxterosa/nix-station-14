@@ -1,43 +1,43 @@
 rr-criminal = Criminal
-rr-criminal-desc = That was a mistake, at any moment I could be reported and the hunt would begin.
+rr-criminal-desc = Eso fue un error; en cualquier momento podrían denunciarme y empezaría la cacería.
 
-rr-criminal-message = Well-wisher: We have just intercepted a fax, you’ve been declared wanted. Nevertheless, your recent malicious act against NT has greatly impressed us. We’ll send you a gift by mail, it should arrive in about 20 minutes.
-rr-criminal-wrapped-message = [bold]Well-wisher[/bold]: We have just intercepted a fax, you’ve been declared wanted. Nevertheless, your recent malicious act against NT has greatly impressed us. We’ll send you a gift by mail, it should arrive in about 20 minutes.
+rr-criminal-message = Benefactor: Acabamos de interceptar un fax, te han declarado en búsqueda y captura. Aun así, tu reciente acto malicioso contra NT nos ha impresionado mucho. Te enviaremos un regalo por correo; debería llegar en unos 20 minutos.
+rr-criminal-wrapped-message = [bold]Benefactor[/bold]: Acabamos de interceptar un fax, te han declarado en búsqueda y captura. Aun así, tu reciente acto malicioso contra NT nos ha impresionado mucho. Te enviaremos un regalo por correo; debería llegar en unos 20 minutos.
 
-rr-criminal-letter-name = ORDER, dangerous criminal {$subject} is wanted
+rr-criminal-letter-name = ORDEN: se busca al peligroso criminal {$subject}
 rr-criminal-1-letter-content =
-                 [head=3]NT Information Security Department[/head]
+                 [head=3]Departamento de Seguridad de la Información de NT[/head]
     ─────────────────────────────────────────
-                      [center][color=#006666][italic][bold]Order for Immediate Interception[/bold][/italic][/color][/center]
+                      [center][color=#006666][italic][bold]Orden de interceptación inmediata[/bold][/italic][/color][/center]
     ─────────────────────────────────────────
-    A dangerous criminal named '{$subject}' has infiltrated your station.
+    Un peligroso criminal llamado '{$subject}' se ha infiltrado en su estación.
 
-    {CAPITALIZE(SUBJECT($subject))} {CONJUGATE-BE($subject)} charged with multiple counts of █████████████, as well as ██████████████. There is also clear evidence pointing to crimes of a ██████████████ nature against █████████████. {CAPITALIZE(SUBJECT($subject))} may be armed.
+    Se le imputan múltiples cargos por █████████████, además de ██████████████. También existen pruebas claras que apuntan a delitos de naturaleza ██████████████ contra █████████████. Podría estar armado.
 
-    In accordance with Directive 25, Section B of the Code of Information Crimes, you are ordered to deliver {OBJECT($subject)} to Central Command, dead or alive.
+    De acuerdo con la Directiva 25, Sección B del Código de Delitos de la Información, se le ordena entregar a {$subject} al Comando Central, vivo o muerto.
 
-    {$subject} [italic]must[/italic] be:
-    - [bold]Handcuffed[/bold] (even if {SUBJECT($subject)} {CONJUGATE-BE($subject)} compliant)
-    - [bold]Searched[/bold]
-    - [bold]Interrogated[/bold]
+    {$subject} [italic]debe[/italic] ser:
+    - [bold]Esposado[/bold] (aunque coopere)
+    - [bold]Registrado[/bold]
+    - [bold]Interrogado[/bold]
 
-    Failure to comply with this order may result in charges of incompetence and dismissal.
+    El incumplimiento de esta orden puede derivar en cargos por incompetencia y destitución.
     ─────────────────────────────────────────
-   ⠀                                    [italic]Place for stamps[/italic]
+   ⠀                                    [italic]Lugar para sellos[/italic]
 
-rr-criminal-failed-name = Decision regarding the criminal {$subject}
+rr-criminal-failed-name = Resolución sobre el criminal {$subject}
 rr-criminal-failed-content =
-                         [head=3]Authorized Inspector on the Case[/head]
+                         [head=3]Inspector autorizado del caso[/head]
     ─────────────────────────────────────────
-                                      [center][color=#006666][italic][bold]Mitigation Decision[/bold][/italic][/color][/center]
+                                      [center][color=#006666][italic][bold]Resolución atenuante[/bold][/italic][/color][/center]
     ─────────────────────────────────────────
-    Regarding the case of the criminal {$subject}. We have just intercepted a recruitment letter indicating that the crimes committed were not of direct intent.
+    Respecto al caso del criminal {$subject}, acabamos de interceptar una carta de reclutamiento que indica que los delitos cometidos no fueron de intención directa.
 
-    In this regard, the crime is no longer classified as informational extremism, but as fatal negligence.
+    En vista de ello, el crimen deja de clasificarse como extremismo informacional y pasa a considerarse negligencia fatal.
 
-    You should [bold]interrogate[/bold] the criminal, and if {SUBJECT($subject)} admits {POSS-ADJ($subject)} guilt, [bold]parole[/bold] {OBJECT($subject)} and allow {OBJECT($subject)} to work it off in lower positions, with damages assessed from one and a half to ten million credits.
+    Deben [bold]interrogar[/bold] al criminal y, si admite {POSS-ADJ($subject)} culpabilidad, deberá quedar en libertad condicional y se le permitirá compensarlo trabajando en puestos inferiores, con daños evaluados entre un millón y medio y diez millones de créditos.
     ─────────────────────────────────────────
-   ⠀                                    [italic]Place for stamps[/italic]
+   ⠀                                    [italic]Lugar para sellos[/italic]
 
 rr-nt-isd = NT ISD
 rr-cc = CentComm

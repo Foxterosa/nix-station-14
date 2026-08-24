@@ -1,383 +1,383 @@
 # Reports
 
 doc-text-printer-report-morgue =
-                             [head=3]NT-CC Consortium Services[/head]
+                             [head=3]Servicios del Consorcio NT-CC[/head]
 
-                  [center][color=#1f75bb][italic][bold]   OFFICIAL CENTCOMM DOCUMENTATION[/bold][/italic][/color][/center]
+                  [center][color=#1f75bb][italic][bold]   DOCUMENTACIÓN OFICIAL DE CENTCOMM[/bold][/italic][/color][/center]
     ────────────────────────────────────────
-    ⠀                              [bold]MORGUE DNR REPORT[/bold]
+    ⠀                              [bold]INFORME DE DNR DE MORGUE[/bold]
     ────────────────────────────────────────
-     Date and Time: [datetime]
-    Document Compiler: [signature]
+     Fecha y hora: [datetime]
+    Redactor del documento: [signature]
 
-    Name: [form]
+    Nombre: [form]
 
-    Job/Occupation: [form]
+    Cargo/Ocupación: [form]
 
-    Approximate time of death/DNR approval: [form]
+    Hora aproximada de la muerte/aprobación del DNR: [form]
 
-    Reason for DNR status: [form]
+    Motivo del estado DNR: [form]
 
     ────────────────────────────────────────
-   ⠀                      [italic]Place for Stamps and/or Signatures[/italic]
+   ⠀                      [italic]Lugar para sellos y/o firmas[/italic]
 
 
 doc-text-printer-report-station =
-                             [head=3]NT-CC Consortium Services[/head]
+                             [head=3]Servicios del Consorcio NT-CC[/head]
 
-                  [center][color=#1f75bb][italic][bold]   OFFICIAL CENTCOMM DOCUMENTATION[/bold][/italic][/color][/center]
+                  [center][color=#1f75bb][italic][bold]   DOCUMENTACIÓN OFICIAL DE CENTCOMM[/bold][/italic][/color][/center]
     ────────────────────────────────────────
-   ⠀⠀                            [bold]SITUATION REPORT[/bold]
+   ⠀⠀                            [bold]INFORME DE SITUACIÓN[/bold]
     ────────────────────────────────────────
-     Date and Time: [datetime]
-    Document Compiler: [signature]
+     Fecha y hora: [datetime]
+    Redactor del documento: [signature]
 
-    Purpose: [form]
+    Propósito: [form]
 
-    Threat Level Code: [form]
+    Código de nivel de amenaza: [form]
 
-    Reason for establishing the code: [form]
+    Motivo para establecer el código: [form]
 
-    Active threats: [form]
+    Amenazas activas: [form]
 
-    Crew casualties: [form]
+    Bajas de la tripulación: [form]
 
-    Current situation: [form]
+    Situación actual: [form]
 
     ────────────────────────────────────────
-   ⠀                      [italic]Place for Stamps and/or Signatures[/italic]
+   ⠀                      [italic]Lugar para sellos y/o firmas[/italic]
 
 
 doc-text-printer-report-on-elimination-of-violations =
-                             [head=3]NT-CC Consortium Services[/head]
+                             [head=3]Servicios del Consorcio NT-CC[/head]
 
-                  [center][color=#1f75bb][italic][bold]   OFFICIAL CENTCOMM DOCUMENTATION[/bold][/italic][/color][/center]
+                  [center][color=#1f75bb][italic][bold]   DOCUMENTACIÓN OFICIAL DE CENTCOMM[/bold][/italic][/color][/center]
     ────────────────────────────────────────
-   ⠀⠀            [bold]ISSUE RESOLUTION REPORT[/bold]
+   ⠀⠀            [bold]INFORME DE RESOLUCIÓN DE PROBLEMAS[/bold]
     ────────────────────────────────────────
-     Date and Time: [datetime]
-    Document Compiler: [signature]
+     Fecha y hora: [datetime]
+    Redactor del documento: [signature]
 
-    Issue(s) identified by: [form]
-    Employee position: [form]
+    Problema(s) identificado(s) por: [form]
+    Cargo del empleado: [form]
 
-    Presented issue(s): [form]
+    Problema(s) presentado(s): [form]
 
-    Measures taken to resolve issue(s): [form]
+    Medidas tomadas para resolver el/los problema(s): [form]
 
     ────────────────────────────────────────
-   ⠀                      [italic]Place for Stamps and/or Signatures[/italic]
+   ⠀                      [italic]Lugar para sellos y/o firmas[/italic]
 
 
 doc-text-printer-report-department =
-                             [head=3]NT-CC Consortium Services[/head]
+                             [head=3]Servicios del Consorcio NT-CC[/head]
 
-                  [center][color=#1f75bb][italic][bold]   OFFICIAL CENTCOMM DOCUMENTATION[/bold][/italic][/color][/center]
+                  [center][color=#1f75bb][italic][bold]   DOCUMENTACIÓN OFICIAL DE CENTCOMM[/bold][/italic][/color][/center]
     ────────────────────────────────────────
-   ⠀⠀                           [bold]DEPARTMENTAL REVIEW[/bold]
+   ⠀⠀                           [bold]REVISIÓN DEPARTAMENTAL[/bold]
     ────────────────────────────────────────
-     Date and Time: [datetime]
-    Document Compiler: [signature]
+     Fecha y hora: [datetime]
+    Redactor del documento: [signature]
 
-    Number of employees in the department: [form]
+    Número de empleados en el departamento: [form]
 
-    Number of trainees: [form]
+    Número de aprendices: [form]
 
-    Inactive employees in the department:
-    ⠀• (Name, position, reason)
+    Empleados inactivos en el departamento:
+    ⠀• (Nombre, cargo, motivo)
     ⠀• [form]
      • [form]
 
-    Degree of target readiness: [form]
+    Grado de preparación objetivo: [form]
 
-    General condition of the department: [form]
+    Estado general del departamento: [form]
 
     ─────────────────────────────────────────
-   ⠀                      [italic]Place for Stamps and/or Signatures[/italic]
+   ⠀                      [italic]Lugar para sellos y/o firmas[/italic]
 
 
 doc-text-printer-report-employee-performance =
-                             [head=3]NT-CC Consortium Services[/head]
+                             [head=3]Servicios del Consorcio NT-CC[/head]
 
-                  [center][color=#1f75bb][italic][bold]   OFFICIAL CENTCOMM DOCUMENTATION[/bold][/italic][/color][/center]
+                  [center][color=#1f75bb][italic][bold]   DOCUMENTACIÓN OFICIAL DE CENTCOMM[/bold][/italic][/color][/center]
     ─────────────────────────────────────────
-   ⠀⠀                 [bold]WORK REPORT[/bold]
+   ⠀⠀                 [bold]INFORME DE TRABAJO[/bold]
     ─────────────────────────────────────────
-     Date and Time: [datetime]
-    Document Compiler: [signature]
+     Fecha y hora: [datetime]
+    Redactor del documento: [signature]
 
-    I, [signature], have completed the following work: [form]
+    Yo, [signature], he completado el siguiente trabajo: [form]
 
-    I hereby request that the result be accepted by the Head of the [form] Department.
+    Por la presente solicito que el resultado sea aceptado por el jefe del Departamento de [form].
 
     ─────────────────────────────────────────
-   ⠀                      [italic]Place for Stamps and/or Signatures[/italic]
+   ⠀                      [italic]Lugar para sellos y/o firmas[/italic]
 
 
 doc-text-printer-report-on-the-chapters-meeting =
-                             [head=3]NT-CC Consortium Services[/head]
+                             [head=3]Servicios del Consorcio NT-CC[/head]
 
-                  [center][color=#1f75bb][italic][bold]   OFFICIAL CENTCOMM DOCUMENTATION[/bold][/italic][/color][/center]
+                  [center][color=#1f75bb][italic][bold]   DOCUMENTACIÓN OFICIAL DE CENTCOMM[/bold][/italic][/color][/center]
     ─────────────────────────────────────────
-   ⠀⠀                     [bold]VOTE RECORD[/bold]
+   ⠀⠀                     [bold]ACTA DE VOTACIÓN[/bold]
     ─────────────────────────────────────────
-     Date and Time: [datetime]
-    Document Compiler: [signature]
+     Fecha y hora: [datetime]
+    Redactor del documento: [signature]
 
-    The question put to the committee: [form]
+    La cuestión sometida al comité: [form]
 
-    Additional context: [form]
+    Contexto adicional: [form]
 
-    Number of votes [italic]in favor[/italic]: [form]
-    Those voting [italic]in favor[/italic]:
+    Número de votos [italic]a favor[/italic]: [form]
+    Quienes votaron [italic]a favor[/italic]:
     • [signature]
     • [signature]
     • [signature]
     • [signature]
     • [signature]
     • [signature]
-    Number of votes [italic]against[/italic]: [form]
-    Those voting [italic]against[/italic]:
+    Número de votos [italic]en contra[/italic]: [form]
+    Quienes votaron [italic]en contra[/italic]:
     • [signature]
     • [signature]
     • [signature]
     • [signature]
     • [signature]
     • [signature]
-    Number of [italic]abstentions[/italic] from voting: [form]
-    Those voting to [italic]abstain[italic]:
+    Número de [italic]abstenciones[/italic] en la votación: [form]
+    Quienes votaron por [italic]abstenerse[italic]:
     • [signature]
     • [signature]
     • [signature]
     • [signature]
     • [signature]
     • [signature]
-    Resolution of the meeting: [form]
+    Resolución de la reunión: [form]
 
     ────────────────────────────────────────
-   ⠀                      [italic]Place for Stamps and/or Signatures[/italic]
+   ⠀                      [italic]Lugar para sellos y/o firmas[/italic]
 
 
 doc-text-printer-internal-affairs-agents-report =
-                             [head=3]NT-CC Consortium Services[/head]
+                             [head=3]Servicios del Consorcio NT-CC[/head]
 
-                  [center][color=#1f75bb][italic][bold]   OFFICIAL CENTCOMM DOCUMENTATION[/bold][/italic][/color][/center]
+                  [center][color=#1f75bb][italic][bold]   DOCUMENTACIÓN OFICIAL DE CENTCOMM[/bold][/italic][/color][/center]
     ─────────────────────────────────────────
-   ⠀⠀               [bold]AUDIT REPORT[/bold]
+   ⠀⠀               [bold]INFORME DE AUDITORÍA[/bold]
     ─────────────────────────────────────────
-     Date and Time: [datetime]
-    Document Compiler: [signature]
+     Fecha y hora: [datetime]
+    Redactor del documento: [signature]
 
-    I, [signature], during the course of an internal audit requested by [form] for the reason of [form], found the following irregularities: [form]
+    Yo, [signature], durante el transcurso de una auditoría interna solicitada por [form] por el motivo de [form], encontré las siguientes irregularidades: [form]
 
-    I also wish to report the following: [form]
+    También deseo informar lo siguiente: [form]
 
     ────────────────────────────────────────
-   ⠀                      [italic]Place for Stamps and/or Signatures[/italic]
+   ⠀                      [italic]Lugar para sellos y/o firmas[/italic]
 
 
 doc-text-printer-condition-report =
-                             [head=3]NT-CC Consortium Services[/head]
+                             [head=3]Servicios del Consorcio NT-CC[/head]
 
-                  [center][color=#1f75bb][italic][bold]   OFFICIAL CENTCOMM DOCUMENTATION[/bold][/italic][/color][/center]
+                  [center][color=#1f75bb][italic][bold]   DOCUMENTACIÓN OFICIAL DE CENTCOMM[/bold][/italic][/color][/center]
     ────────────────────────────────────────
-   ⠀⠀                           [bold]MAINTENANCE REPORT[/bold]
+   ⠀⠀                           [bold]INFORME DE MANTENIMIENTO[/bold]
     ─────────────────────────────────────────
-     Date and Time: [datetime]
-    Document Compiler: [signature]
+     Fecha y hora: [datetime]
+    Redactor del documento: [signature]
 
-    Irregularities were identified in the station's [form].
+    Se identificaron irregularidades en [form] de la estación.
 
-    The problems were caused by: [form]
+    Los problemas fueron causados por: [form]
 
-    Damage to the station: [form]
+    Daños a la estación: [form]
 
-    Repairs performed: [form]
+    Reparaciones realizadas: [form]
 
     ────────────────────────────────────────
-   ⠀                      [italic]Place for Stamps and/or Signatures[/italic]
+   ⠀                      [italic]Lugar para sellos y/o firmas[/italic]
 
 
 doc-text-printer-object-investigation-report =
-                             [head=3]NT-CC Consortium Services[/head]
+                             [head=3]Servicios del Consorcio NT-CC[/head]
 
-                  [center][color=#1f75bb][italic][bold]   OFFICIAL CENTCOMM DOCUMENTATION[/bold][/italic][/color][/center]
+                  [center][color=#1f75bb][italic][bold]   DOCUMENTACIÓN OFICIAL DE CENTCOMM[/bold][/italic][/color][/center]
     ────────────────────────────────────────
-   ⠀⠀          [bold]UNKNOWN OBJECT INVESTIGATION REPORT[/bold]
+   ⠀⠀          [bold]INFORME DE INVESTIGACIÓN DE OBJETO DESCONOCIDO[/bold]
     ────────────────────────────────────────
-     Date and Time: [datetime]
-    Document Compiler: [signature]
+     Fecha y hora: [datetime]
+    Redactor del documento: [signature]
 
-    A device or artifact of unfamiliar function or provenance has been collected and analyzed.
+    Se ha recogido y analizado un dispositivo o artefacto de función o procedencia desconocida.
 
-    Retrieved by: [form]
+    Recuperado por: [form]
 
-    Examined by: [signature]
+    Examinado por: [signature]
 
-    External description: [form]
+    Descripción externa: [form]
 
-    Identified properties: [form]
+    Propiedades identificadas: [form]
 
     ────────────────────────────────────────
-   ⠀                      [italic]Place for Stamps and/or Signatures[/italic]
+   ⠀                      [italic]Lugar para sellos y/o firmas[/italic]
 
 
 doc-text-printer-experiment-report =
-                             [head=3]NT-CC Consortium Services[/head]
+                             [head=3]Servicios del Consorcio NT-CC[/head]
 
-                  [center][color=#1f75bb][italic][bold]   OFFICIAL CENTCOMM DOCUMENTATION[/bold][/italic][/color][/center]
+                  [center][color=#1f75bb][italic][bold]   DOCUMENTACIÓN OFICIAL DE CENTCOMM[/bold][/italic][/color][/center]
     ────────────────────────────────────────
-   ⠀⠀                              [bold]EXPERIMENT REPORT[/bold]
+   ⠀⠀                              [bold]INFORME DE EXPERIMENTO[/bold]
     ────────────────────────────────────────
-     Date and Time: [datetime]
-    Document Compiler: [signature]
+     Fecha y hora: [datetime]
+    Redactor del documento: [signature]
 
-    External description of the object of the experiment: [form]
+    Descripción externa del objeto del experimento: [form]
 
-    Experimenter(s): [signature]
+    Experimentador(es): [signature]
 
-    Experiment № [form]
-    Description of experiment: [form]
+    Experimento n.º [form]
+    Descripción del experimento: [form]
 
-    Expected result: [form]
+    Resultado esperado: [form]
 
-    Equipment used: [form]
+    Equipo utilizado: [form]
 
-    Actual result: [form]
+    Resultado real: [form]
 
     ────────────────────────────────────────
-   ⠀                      [italic]Place for Stamps and/or Signatures[/italic]
+   ⠀                      [italic]Lugar para sellos y/o firmas[/italic]
 
 
 doc-text-printer-disposal-report =
-                             [head=3]NT-CC Consortium Services[/head]
+                             [head=3]Servicios del Consorcio NT-CC[/head]
 
-                  [center][color=#1f75bb][italic][bold]   OFFICIAL CENTCOMM DOCUMENTATION[/bold][/italic][/color][/center]
+                  [center][color=#1f75bb][italic][bold]   DOCUMENTACIÓN OFICIAL DE CENTCOMM[/bold][/italic][/color][/center]
     ─────────────────────────────────────────
-   ⠀⠀                                [bold]DISPOSAL REPORT[/bold]
+   ⠀⠀                                [bold]INFORME DE ELIMINACIÓN[/bold]
     ─────────────────────────────────────────
-     Date and Time: [datetime]
-    Document Compiler: [signature]
+     Fecha y hora: [datetime]
+    Redactor del documento: [signature]
 
-    The objects at [form] have been disposed of. During the disposal process, the following valuable items and/or materials were sent to the departments indicated below.
+    Los objetos en [form] han sido eliminados. Durante el proceso de eliminación, los siguientes objetos y/o materiales valiosos fueron enviados a los departamentos indicados abajo.
 
-    List of items/materials found:
+    Lista de objetos/materiales encontrados:
 
-    • [form] - Given to [form] Department
-    • [form] - Given to [form] Department
-    • [form] - Given to [form] Department
-    • [form] - Given to [form] Department
-    • [form] - Given to [form] Department
+    • [form] - Entregado al Departamento de [form]
+    • [form] - Entregado al Departamento de [form]
+    • [form] - Entregado al Departamento de [form]
+    • [form] - Entregado al Departamento de [form]
+    • [form] - Entregado al Departamento de [form]
     ─────────────────────────────────────────
-   ⠀                      [italic]Place for Stamps and/or Signatures[/italic]
+   ⠀                      [italic]Lugar para sellos y/o firmas[/italic]
 
 
 doc-text-printer-arrest-report =
-                             [head=3]NT-CC Consortium Services[/head]
+                             [head=3]Servicios del Consorcio NT-CC[/head]
 
-                  [center][color=#1f75bb][italic][bold]   OFFICIAL CENTCOMM DOCUMENTATION[/bold][/italic][/color][/center]
+                  [center][color=#1f75bb][italic][bold]   DOCUMENTACIÓN OFICIAL DE CENTCOMM[/bold][/italic][/color][/center]
     ────────────────────────────────────────
-   ⠀⠀                            [bold]SECURITY ARREST REPORT[/bold]
+   ⠀⠀                            [bold]INFORME DE ARRESTO DE SEGURIDAD[/bold]
     ────────────────────────────────────────
-     Date and Time: [datetime]
-    Document Compiler: [signature]
+     Fecha y hora: [datetime]
+    Redactor del documento: [signature]
 
-    Arrestee: [form]
+    Arrestado: [form]
 
-    Arrest reason or complaining witnesses: [form]
+    Motivo del arresto o testigos denunciantes: [form]
 
-    Estimated time of arrest: [form]
+    Hora estimada del arresto: [form]
 
-    Arresting officer: [form]
+    Oficial arrestante: [form]
 
-    The arrestee was: [check] detained; [check] paroled; [check] released
+    El arrestado fue: [check] detenido; [check] puesto en libertad condicional; [check] liberado
 
-    Charges filed, if any: [form]
+    Cargos presentados, si los hubiera: [form]
 
-    Duration of detention, if applicable: [form]
+    Duración de la detención, si corresponde: [form]
 
-    Additional remarks: [form]
+    Observaciones adicionales: [form]
 
     ─────────────────────────────────────────
-   ⠀                      [italic]Place for Stamps and/or Signatures[/italic]
+   ⠀                      [italic]Lugar para sellos y/o firmas[/italic]
 
 
 # Statements
 
 doc-text-printer-statement-appointment-interim-chapter =
-                             [head=3]NT-CC Consortium Services[/head]
+                             [head=3]Servicios del Consorcio NT-CC[/head]
 
-                  [center][color=#1f75bb][italic][bold]   OFFICIAL CENTCOMM DOCUMENTATION[/bold][/italic][/color][/center]
+                  [center][color=#1f75bb][italic][bold]   DOCUMENTACIÓN OFICIAL DE CENTCOMM[/bold][/italic][/color][/center]
     ────────────────────────────────────────
-   ⠀⠀          [bold]INTERIM COMMAND APPOINTMENT[/bold]
+   ⠀⠀          [bold]NOMBRAMIENTO INTERINO DE MANDO[/bold]
     ────────────────────────────────────────
-     Date and Time: [datetime]
-    Document Compiler: [signature]
+     Fecha y hora: [datetime]
+    Redactor del documento: [signature]
 
-    I, [signature], request approval of my appointment to the position of Acting [form]. Upon assuming the position, I agree to follow Standard Operating Procedures and, until the arrival of a replacement from Central Command, shall ensure the order and management of my Department, and the safety of the equipment and tools of my office, including those tools and pieces of equipment that are irreplaceable or essential to the Department's work, or whose misuse might have serious consequences for station safety or security.
+    Yo, [signature], solicito la aprobación de mi nombramiento al cargo de [form] en funciones. Al asumir el cargo, acepto seguir los Procedimientos Operativos Estándar y, hasta la llegada de un reemplazo del Comando Central, garantizaré el orden y la gestión de mi departamento, así como la seguridad del equipo y las herramientas de mi despacho, incluidas aquellas herramientas y piezas de equipo que sean irremplazables o esenciales para el trabajo del departamento, o cuyo uso indebido pueda tener consecuencias graves para la seguridad o la protección de la estación.
 
-    Upon arrival of the [form] from Central Command, I shall surrender the privileges and equipment afforded to me in the course of these duties, including access rights.
+    A la llegada del/de la [form] desde el Comando Central, entregaré los privilegios y el equipo que me fueron otorgados en el ejercicio de estas funciones, incluidos los accesos.
 
     ────────────────────────────────────────
-   ⠀                      [italic]Place for Stamps and/or Signatures[/italic]
+   ⠀                      [italic]Lugar para sellos y/o firmas[/italic]
 
 
 doc-text-printer-employment-statement =
-                             [head=3]NT-CC Consortium Services[/head]
+                             [head=3]Servicios del Consorcio NT-CC[/head]
 
-                  [center][color=#1f75bb][italic][bold]   OFFICIAL CENTCOMM DOCUMENTATION[/bold][/italic][/color][/center]
+                  [center][color=#1f75bb][italic][bold]   DOCUMENTACIÓN OFICIAL DE CENTCOMM[/bold][/italic][/color][/center]
     ────────────────────────────────────────
-   ⠀⠀                           [bold]EMPLOYMENT CONTRACT[/bold]
+   ⠀⠀                           [bold]CONTRATO DE EMPLEO[/bold]
     ────────────────────────────────────────
-     Date and Time: [datetime]
-    Document Compiler: [signature]
+     Fecha y hora: [datetime]
+    Redactor del documento: [signature]
 
-    I, [signature], formally request to be appointed as an employee of the following department, in the position indicated below, for the remainder of the shift, or until resignation.
+    Yo, [signature], solicito formalmente ser nombrado empleado del siguiente departamento, en el cargo indicado abajo, por el resto del turno o hasta mi renuncia.
 
-    Name of department: [form]
+    Nombre del departamento: [form]
 
-    Name of position: [form]
+    Nombre del cargo: [form]
 
-   ⠀[check] I assert that I am qualified to hold the position which I am seeking, and acknowledge that my contract will be terminated if this is found not to be the case.
+   ⠀[check] Declaro que estoy cualificado para ocupar el cargo que solicito y reconozco que mi contrato será rescindido si se descubre que no es así.
 
-   ⠀[check] I will surrender any current department work gear and equipment upon transfer.
+   ⠀[check] Entregaré cualquier equipo y pertenencias de trabajo de mi departamento actual al efectuar el traslado.
 
-   ⠀[check] I agree to follow all applicable Standard Operating Procedures, and accept that my contract may be terminated if I fail to uphold them.
+   ⠀[check] Acepto seguir todos los Procedimientos Operativos Estándar aplicables y entiendo que mi contrato puede ser rescindido si no los cumplo.
     ────────────────────────────────────────
-   ⠀                      [italic]Place for Stamps and/or Signatures[/italic]
+   ⠀                      [italic]Lugar para sellos y/o firmas[/italic]
 
 
 doc-text-printer-resignation-statement =
-                             [head=3]NT-CC Consortium Services[/head]
+                             [head=3]Servicios del Consorcio NT-CC[/head]
 
-                  [center][color=#1f75bb][italic][bold]   OFFICIAL CENTCOMM DOCUMENTATION[/bold][/italic][/color][/center]
+                  [center][color=#1f75bb][italic][bold]   DOCUMENTACIÓN OFICIAL DE CENTCOMM[/bold][/italic][/color][/center]
     ────────────────────────────────────────
-   ⠀⠀                          [bold]NOTICE OF RESIGNATION[/bold]
+   ⠀⠀                          [bold]AVISO DE RENUNCIA[/bold]
     ────────────────────────────────────────
-     Date and Time: [datetime]
-    Document Compiler: [signature]
+     Fecha y hora: [datetime]
+    Redactor del documento: [signature]
 
-    I, [signature], hereby resign my position because of [form].
+    Yo, [signature], renuncio por la presente a mi cargo debido a [form].
 
-   ⠀[check] I accept to pay the penalty established by the terms of termination of my contract at the end of the shift.
+   ⠀[check] Acepto pagar la penalización establecida por las condiciones de rescisión de mi contrato al final del turno.
 
-   ⠀[check] I will surrender my departmental work gear and equipment.
+   ⠀[check] Entregaré mi equipo y pertenencias de trabajo departamentales.
 
     ────────────────────────────────────────
-   ⠀                      [italic]Place for Stamps and/or Signatures[/italic]
+   ⠀                      [italic]Lugar para sellos y/o firmas[/italic]
 
 
 doc-text-printer-access-request-statement =
-                             [head=3]NT-CC Consortium Services[/head]
+                             [head=3]Servicios del Consorcio NT-CC[/head]
 
-                  [center][color=#1f75bb][italic][bold]   OFFICIAL CENTCOMM DOCUMENTATION[/bold][/italic][/color][/center]
+                  [center][color=#1f75bb][italic][bold]   DOCUMENTACIÓN OFICIAL DE CENTCOMM[/bold][/italic][/color][/center]
     ────────────────────────────────────────
-   ⠀⠀                       [bold]ACCESS REQUEST[/bold]
+   ⠀⠀                       [bold]SOLICITUD DE ACCESO[/bold]
     ────────────────────────────────────────
-     Date and Time: [datetime]
-    Document Compiler: [signature]
+     Fecha y hora: [datetime]
+    Redactor del documento: [signature]
 
-    I, [signature], request the following access be added to my ID card:
+    Yo, [signature], solicito que se añadan los siguientes accesos a mi tarjeta ID:
     • [form]
     • [form]
     • [form]
@@ -385,31 +385,31 @@ doc-text-printer-access-request-statement =
     • [form]
     • [form]
 
-    Reason for gaining elevated access: [form]
+    Motivo para obtener acceso elevado: [form]
 
     ────────────────────────────────────────
-   ⠀                      [italic]Place for Stamps and/or Signatures[/italic]
+   ⠀                      [italic]Lugar para sellos y/o firmas[/italic]
 
 
 doc-text-printer-equipment-request-statement =
-                             [head=3]NT-CC Consortium Services[/head]
+                             [head=3]Servicios del Consorcio NT-CC[/head]
 
-                  [center][color=#1f75bb][italic][bold]   OFFICIAL CENTCOMM DOCUMENTATION[/bold][/italic][/color][/center]
+                  [center][color=#1f75bb][italic][bold]   DOCUMENTACIÓN OFICIAL DE CENTCOMM[/bold][/italic][/color][/center]
     ────────────────────────────────────────
-   ⠀⠀                    [bold]EQUIPMENT REQUEST[/bold]
+   ⠀⠀                    [bold]SOLICITUD DE EQUIPO[/bold]
     ────────────────────────────────────────
-     Date and Time: [datetime]
-    Document Compiler: [signature]
+     Fecha y hora: [datetime]
+    Redactor del documento: [signature]
 
-    I, [signature], request the following equipment be issued to me:
+    Yo, [signature], solicito que se me entregue el siguiente equipo:
 
     • [form]
     • [form]
 
-    Reason: [form]
+    Motivo: [form]
 
     ────────────────────────────────────────
-   ⠀                      [italic]Place for Stamps and/or Signatures[/italic]
+   ⠀                      [italic]Lugar para sellos y/o firmas[/italic]
 
 
 
@@ -417,329 +417,329 @@ doc-text-printer-equipment-request-statement =
 # InquiriesAndAppeals
 
 doc-text-printer-invocation =
-                             [head=3]NT-CC Consortium Services[/head]
+                             [head=3]Servicios del Consorcio NT-CC[/head]
 
-                  [center][color=#1f75bb][italic][bold]   OFFICIAL CENTCOMM DOCUMENTATION[/bold][/italic][/color][/center]
+                  [center][color=#1f75bb][italic][bold]   DOCUMENTACIÓN OFICIAL DE CENTCOMM[/bold][/italic][/color][/center]
     ────────────────────────────────────────
-   ⠀⠀                         [bold]NOTICE OF SUMMONS[/bold]
+   ⠀⠀                         [bold]NOTIFICACIÓN DE CITACIÓN[/bold]
     ────────────────────────────────────────
-     Date and Time: [datetime]
-    Document Compiler: [signature]
+     Fecha y hora: [datetime]
+    Redactor del documento: [signature]
 
-   ⠀[form] is hereby asked by [signature] to appear at [form], without delay.
+   ⠀Por la presente se solicita a [form], por parte de [signature], que se presente en [form] sin demora.
 
-    Reason: [form]
+    Motivo: [form]
 
-   ⠀[italic]This is an official notice. Penalties may apply for failure to appear.[/italic]
+   ⠀[italic]Esta es una notificación oficial. Pueden aplicarse sanciones por no comparecer.[/italic]
 
     ────────────────────────────────────────
-   ⠀                      [italic]Place for Stamps and/or Signatures[/italic]
+   ⠀                      [italic]Lugar para sellos y/o firmas[/italic]
 
 
 
 doc-text-printer-evacuation-shuttle-request =
-                             [head=3]NT-CC Consortium Services[/head]
+                             [head=3]Servicios del Consorcio NT-CC[/head]
 
-                  [center][color=#1f75bb][italic][bold]   OFFICIAL CENTCOMM DOCUMENTATION[/bold][/italic][/color][/center]
+                  [center][color=#1f75bb][italic][bold]   DOCUMENTACIÓN OFICIAL DE CENTCOMM[/bold][/italic][/color][/center]
     ────────────────────────────────────────
-   ⠀⠀                    [bold]EVACUATION SHUTTLE REQUEST[/bold]
+   ⠀⠀                    [bold]SOLICITUD DE TRANSBORDADOR DE EVACUACIÓN[/bold]
     ────────────────────────────────────────
-     Date and Time: [datetime]
-    Document Compiler: [signature]
+     Fecha y hora: [datetime]
+    Redactor del documento: [signature]
 
-    To Central Command,
+    Al Comando Central,
 
-    I, [signature], write to request that you dispatch an evacuation shuttle to the station, without delay, and authorize evacuation of the station via said shuttle.
+    Yo, [signature], escribo para solicitar que envíen un transbordador de evacuación a la estación, sin demora, y autoricen la evacuación de la estación mediante dicho transbordador.
 
-    Reason for evacuation request: [form]
+    Motivo de la solicitud de evacuación: [form]
 
     ────────────────────────────────────────
-   ⠀                      [italic]Place for Stamps and/or Signatures[/italic]
+   ⠀                      [italic]Lugar para sellos y/o firmas[/italic]
 
 
 
 doc-text-printer-shuttle-registration-request =
-                             [head=3]NT-CC Consortium Services[/head]
+                             [head=3]Servicios del Consorcio NT-CC[/head]
 
-                  [center][color=#1f75bb][italic][bold]   OFFICIAL CENTCOMM DOCUMENTATION[/bold][/italic][/color][/center]
+                  [center][color=#1f75bb][italic][bold]   DOCUMENTACIÓN OFICIAL DE CENTCOMM[/bold][/italic][/color][/center]
     ────────────────────────────────────────
-   ⠀⠀                  [bold]SHUTTLE REGISTRATION FORM[/bold]
+   ⠀⠀                  [bold]FORMULARIO DE REGISTRO DE TRANSBORDADOR[/bold]
     ────────────────────────────────────────
-     Date and Time: [datetime]
-    Document Compiler: [signature]
+     Fecha y hora: [datetime]
+    Redactor del documento: [signature]
 
-    I hereby request that the following shuttle be registered in the NanoTrasen system for identification.
+    Solicito por la presente que el siguiente transbordador sea registrado en el sistema de NanoTrasen para su identificación.
 
-    Shuttle size: [form]
+    Tamaño del transbordador: [form]
 
-    Shuttle class: [form]
+    Clase del transbordador: [form]
 
-    Construction responsible: [form]
+    Responsable de la construcción: [form]
 
-    Requested name: [form]
+    Nombre solicitado: [form]
 
     ────────────────────────────────────────
-   ⠀                      [italic]Place for Stamps and/or Signatures[/italic]
+   ⠀                      [italic]Lugar para sellos y/o firmas[/italic]
 
 
 
 doc-text-printer-request-call-centcomm-members =
-                             [head=3]NT-CC Consortium Services[/head]
+                             [head=3]Servicios del Consorcio NT-CC[/head]
 
-                  [center][color=#1f75bb][italic][bold]   OFFICIAL CENTCOMM DOCUMENTATION[/bold][/italic][/color][/center]
+                  [center][color=#1f75bb][italic][bold]   DOCUMENTACIÓN OFICIAL DE CENTCOMM[/bold][/italic][/color][/center]
     ────────────────────────────────────────
-   ⠀⠀              [bold]REQUEST TO CALL CENTCOMM MEMBERS[/bold]
+   ⠀⠀              [bold]SOLICITUD DE LLAMADA CON MIEMBROS DE CENTCOMM[/bold]
     ────────────────────────────────────────
-     Date and Time: [datetime]
-    Document Compiler: [signature]
+     Fecha y hora: [datetime]
+    Redactor del documento: [signature]
 
-    I, [signature], request to be considered for a call with CentComm administrative officers.
+    Yo, [signature], solicito ser considerado para una llamada con oficiales administrativos de CentComm.
 
-    Reason for the call: [form]
+    Motivo de la llamada: [form]
 
     ────────────────────────────────────────
-   ⠀                      [italic]Place for Stamps and/or Signatures[/italic]
+   ⠀                      [italic]Lugar para sellos y/o firmas[/italic]
 
 
 
 doc-text-printer-request-establish-threat-level =
-                             [head=3]NT-CC Consortium Services[/head]
+                             [head=3]Servicios del Consorcio NT-CC[/head]
 
-                  [center][color=#1f75bb][italic][bold]   OFFICIAL CENTCOMM DOCUMENTATION[/bold][/italic][/color][/center]
+                  [center][color=#1f75bb][italic][bold]   DOCUMENTACIÓN OFICIAL DE CENTCOMM[/bold][/italic][/color][/center]
     ────────────────────────────────────────
-   ⠀⠀             [bold]REQUEST TO ESTABLISH THREAT LEVEL[/bold]
+   ⠀⠀             [bold]SOLICITUD PARA ESTABLECER NIVEL DE AMENAZA[/bold]
     ────────────────────────────────────────
-     Date and Time: [datetime]
-    Document Compiler: [signature]
+     Fecha y hora: [datetime]
+    Redactor del documento: [signature]
 
-    I, [signature], request that follow threat level be established: [form]
+    Yo, [signature], solicito que se establezca el siguiente nivel de amenaza: [form]
 
-    Reason for request: [form]
+    Motivo de la solicitud: [form]
 
     ────────────────────────────────────────
-   ⠀                      [italic]Place for Stamps and/or Signatures[/italic]
+   ⠀                      [italic]Lugar para sellos y/o firmas[/italic]
 
 
 
 doc-text-printer-request-change-salary =
-                             [head=3]NT-CC Consortium Services[/head]
+                             [head=3]Servicios del Consorcio NT-CC[/head]
 
-                  [center][color=#1f75bb][italic][bold]   OFFICIAL CENTCOMM DOCUMENTATION[/bold][/italic][/color][/center]
+                  [center][color=#1f75bb][italic][bold]   DOCUMENTACIÓN OFICIAL DE CENTCOMM[/bold][/italic][/color][/center]
     ────────────────────────────────────────
-   ⠀⠀                         [bold]SALARY CHANGE REQUEST[/bold]
+   ⠀⠀                         [bold]SOLICITUD DE CAMBIO SALARIAL[/bold]
     ────────────────────────────────────────
-     Date and Time: [datetime]
-    Document Compiler: [signature]
+     Fecha y hora: [datetime]
+    Redactor del documento: [signature]
 
-    I, [signature], hereby a salary increase/decrease of [form] (amount or percentage).
+    Yo, [signature], solicito por la presente un aumento/reducción salarial de [form] (importe o porcentaje).
 
-    Employee receiving salary change: [form]
+    Empleado que recibirá el cambio salarial: [form]
 
-    Employee's job title: [form]
+    Cargo del empleado: [form]
 
-    Reason for salary change: [form]
+    Motivo del cambio salarial: [form]
 
     ────────────────────────────────────────
-   ⠀                      [italic]Place for Stamps and/or Signatures[/italic]
+   ⠀                      [italic]Lugar para sellos y/o firmas[/italic]
 
 
 
 doc-text-printer-request-for-non-listed-employment =
-                             [head=3]NT-CC Consortium Services[/head]
+                             [head=3]Servicios del Consorcio NT-CC[/head]
 
-                  [center][color=#1f75bb][italic][bold]   OFFICIAL CENTCOMM DOCUMENTATION[/bold][/italic][/color][/center]
+                  [center][color=#1f75bb][italic][bold]   DOCUMENTACIÓN OFICIAL DE CENTCOMM[/bold][/italic][/color][/center]
     ────────────────────────────────────────
-   ⠀⠀             [bold]NON-LISTED EMPLOYMENT CONTRACT[/bold]
+   ⠀⠀             [bold]CONTRATO DE EMPLEO NO LISTADO[/bold]
     ────────────────────────────────────────
-     Date and Time: [datetime]
-    Document Compiler: [signature]
+     Fecha y hora: [datetime]
+    Redactor del documento: [signature]
 
-    Name of applicant: [signature]
+    Nombre del solicitante: [signature]
 
-    New job title: [form]
+    Nuevo cargo: [form]
 
-    New supervisor: [form]
+    Nuevo supervisor: [form]
 
-    Applicable duties under SOP: [form]
+    Deberes aplicables según los SOP: [form]
 
-    Access provided to the employee: [form]
+    Acceso otorgado al empleado: [form]
 
-    Reason for employment: [form]
+    Motivo del empleo: [form]
 
     ────────────────────────────────────────
-   ⠀                      [italic]Place for Stamps and/or Signatures[/italic]
+   ⠀                      [italic]Lugar para sellos y/o firmas[/italic]
 
 
 
 doc-text-printer-request-for-promotion =
-                             [head=3]NT-CC Consortium Services[/head]
+                             [head=3]Servicios del Consorcio NT-CC[/head]
 
-                  [center][color=#1f75bb][italic][bold]   OFFICIAL CENTCOMM DOCUMENTATION[/bold][/italic][/color][/center]
+                  [center][color=#1f75bb][italic][bold]   DOCUMENTACIÓN OFICIAL DE CENTCOMM[/bold][/italic][/color][/center]
     ────────────────────────────────────────
-   ⠀⠀                         [bold]REQUEST FOR PROMOTION[/bold]
+   ⠀⠀                         [bold]SOLICITUD DE ASCENSO[/bold]
     ────────────────────────────────────────
-     Date and Time: [datetime]
-    Document Compiler: [signature]
+     Fecha y hora: [datetime]
+    Redactor del documento: [signature]
 
-    I, [signature], assert that the following employee has obtained the necessary qualifications and experience to be promoted.
+    Yo, [signature], declaro que el siguiente empleado ha obtenido las cualificaciones y la experiencia necesarias para ser ascendido.
 
-    Employee to be promoted: [form]
+    Empleado a ascender: [form]
 
-    Requested position: [form]
+    Cargo solicitado: [form]
 
-    Supervisor(s): [form]
+    Supervisor(es): [form]
 
-    Reason for promotion: [form]
+    Motivo del ascenso: [form]
 
     ────────────────────────────────────────
-   ⠀                      [italic]Place for Stamps and/or Signatures[/italic]
+   ⠀                      [italic]Lugar para sellos y/o firmas[/italic]
 
 
 
 doc-text-printer-request-documents =
-                             [head=3]NT-CC Consortium Services[/head]
+                             [head=3]Servicios del Consorcio NT-CC[/head]
 
-                  [center][color=#1f75bb][italic][bold]   OFFICIAL CENTCOMM DOCUMENTATION[/bold][/italic][/color][/center]
+                  [center][color=#1f75bb][italic][bold]   DOCUMENTACIÓN OFICIAL DE CENTCOMM[/bold][/italic][/color][/center]
     ──────────────────────────────────────────
-   ⠀⠀                  [bold]REQUEST FOR RELEASE OF DOCUMENTS[/bold]
+   ⠀⠀                  [bold]SOLICITUD DE ENTREGA DE DOCUMENTOS[/bold]
     ──────────────────────────────────────────
-     Date and Time: [datetime]
-    Document Compiler: [signature]
+     Fecha y hora: [datetime]
+    Redactor del documento: [signature]
 
-    I, [signature], request a copy of the following document(s), in order to verify compliance with Standard Operating Procedures and/or Corporate Law.
+    Yo, [signature], solicito una copia de los siguientes documento(s) para verificar el cumplimiento de los Procedimientos Operativos Estándar y/o la Ley Corporativa.
 
-    Documents sought:
+    Documentos solicitados:
 
    ⠀ • [form]
    ⠀ • [form]
    ⠀ • [form]
 
     ────────────────────────────────────────
-   ⠀                      [italic]Place for Stamps and/or Signatures[/italic]
+   ⠀                      [italic]Lugar para sellos y/o firmas[/italic]
 
 
 
 doc-text-printer-request-euthanasia =
-                             [head=3]NT-CC Consortium Services[/head]
+                             [head=3]Servicios del Consorcio NT-CC[/head]
 
-                  [center][color=#1f75bb][italic][bold]   OFFICIAL CENTCOMM DOCUMENTATION[/bold][/italic][/color][/center]
+                  [center][color=#1f75bb][italic][bold]   DOCUMENTACIÓN OFICIAL DE CENTCOMM[/bold][/italic][/color][/center]
     ────────────────────────────────────────
-   ⠀⠀                        [bold]PETITION FOR EUTHANASIA[/bold]
+   ⠀⠀                        [bold]PETICIÓN DE EUTANASIA[/bold]
     ────────────────────────────────────────
-     Date and Time: [datetime]
-    Document Compiler: [signature]
+     Fecha y hora: [datetime]
+    Redactor del documento: [signature]
 
-    I, [signature], hereby request to be euthanized.
+    Yo, [signature], solicito por la presente ser eutanasiado.
 
-    My desire for this is as follows: [form].
+    Mi voluntad al respecto es la siguiente: [form].
 
-   ⠀[check] I am aware that this decision is irreversible and will affect compensation given to my next of kin.
+   ⠀[check] Soy consciente de que esta decisión es irreversible y afectará a la compensación otorgada a mis familiares más cercanos.
 
-   ⠀[check] I am of sound mind, as determined by a member of the Medical Department.
+   ⠀[check] Estoy en pleno uso de mis facultades mentales, según lo determinado por un miembro del Departamento Médico.
 
-   ⠀    Inspecting Doctor: [signature]
-   ⠀     Date and Time: [datetime]
+   ⠀    Médico inspector: [signature]
+   ⠀     Fecha y hora: [datetime]
 
-   ⠀[check] I have no claims against the Medical Department in their adherence to euthanasia protocols.
+   ⠀[check] No tengo reclamaciones contra el Departamento Médico por su adhesión a los protocolos de eutanasia.
 
-    At the end of the procedure, I ask that my body be [form], if possible.
+    Al final del procedimiento, solicito que mi cuerpo sea [form], si es posible.
 
     ────────────────────────────────────────
-   ⠀                      [italic]Place for Stamps and/or Signatures[/italic]
+   ⠀                      [italic]Lugar para sellos y/o firmas[/italic]
 
 
 
 doc-text-printer-request-construction-work =
-                             [head=3]NT-CC Consortium Services[/head]
+                             [head=3]Servicios del Consorcio NT-CC[/head]
 
-                  [center][color=#1f75bb][italic][bold]   OFFICIAL CENTCOMM DOCUMENTATION[/bold][/italic][/color][/center]
+                  [center][color=#1f75bb][italic][bold]   DOCUMENTACIÓN OFICIAL DE CENTCOMM[/bold][/italic][/color][/center]
     ────────────────────────────────────────
-   ⠀⠀                     [bold]CONSTRUCTION REQUEST[/bold]
+   ⠀⠀                     [bold]SOLICITUD DE CONSTRUCCIÓN[/bold]
     ────────────────────────────────────────
-     Date and Time: [datetime]
-    Document Compiler: [signature]
+     Fecha y hora: [datetime]
+    Redactor del documento: [signature]
 
-    I, [signature] formally request construction work at: [form]
+    Yo, [signature], solicito formalmente trabajos de construcción en: [form]
 
-    Reason for request: [form]
+    Motivo de la solicitud: [form]
 
-    List of construction work: [form]
+    Lista de trabajos de construcción: [form]
 
     ────────────────────────────────────────
-   ⠀                      [italic]Place for Stamps and/or Signatures[/italic]
+   ⠀                      [italic]Lugar para sellos y/o firmas[/italic]
 
 
 
 doc-text-printer-request-modernization =
-                             [head=3]NT-CC Consortium Services[/head]
+                             [head=3]Servicios del Consorcio NT-CC[/head]
 
-                  [center][color=#1f75bb][italic][bold]   OFFICIAL CENTCOMM DOCUMENTATION[/bold][/italic][/color][/center]
+                  [center][color=#1f75bb][italic][bold]   DOCUMENTACIÓN OFICIAL DE CENTCOMM[/bold][/italic][/color][/center]
     ────────────────────────────────────────
-   ⠀⠀                         [bold]MODERNIZATION REQUEST[/bold]
+   ⠀⠀                         [bold]SOLICITUD DE MODERNIZACIÓN[/bold]
     ────────────────────────────────────────
-     Date and Time: [datetime]
-    Document Compiler: [signature]
+     Fecha y hora: [datetime]
+    Redactor del documento: [signature]
 
-    I, [signature], request to upgrade the instrumentation in the following department: [form]
+    Yo, [signature], solicito mejorar la instrumentación del siguiente departamento: [form]
 
-    Reason for request: [form]
+    Motivo de la solicitud: [form]
 
-    List of upgrades:
+    Lista de mejoras:
     • [form]
     • [form]
     ────────────────────────────────────────
-   ⠀                      [italic]Place for Stamps and/or Signatures[/italic]
+   ⠀                      [italic]Lugar para sellos y/o firmas[/italic]
 
 
 
 doc-text-printer-request-ert =
-                             [head=3]NT-CC Consortium Services[/head]
+                             [head=3]Servicios del Consorcio NT-CC[/head]
 
-                  [center][color=#1f75bb][italic][bold]   OFFICIAL CENTCOMM DOCUMENTATION[/bold][/italic][/color][/center]
+                  [center][color=#1f75bb][italic][bold]   DOCUMENTACIÓN OFICIAL DE CENTCOMM[/bold][/italic][/color][/center]
     ────────────────────────────────────────
-   ⠀⠀           [bold]EMERGENCY RESPONSE TEAM REQUEST[/bold]
+   ⠀⠀           [bold]SOLICITUD DE EQUIPO DE RESPUESTA DE EMERGENCIA[/bold]
     ────────────────────────────────────────
-     Date and Time: [datetime]
-    Document Compiler: [signature]
+     Fecha y hora: [datetime]
+    Redactor del documento: [signature]
 
-    I, [signature], request an ERT team to be sent to the station to assist with an ongoing problem that exceeds the station's current resources to resolve.
+    Yo, [signature], solicito que se envíe un equipo ERT a la estación para ayudar con un problema en curso que excede los recursos actuales de la estación para resolverlo.
 
-    Threat(s) to the station:
+    Amenaza(s) a la estación:
     ⠀• [form]
      • [form]
 
-    Type of ERT requested: [form]
-    (Security / Engineering / Janitorial / Medical / ...)
+    Tipo de ERT solicitada: [form]
+    (Seguridad / Ingeniería / Limpieza / Médica / ...)
 
-    Fatalities (approximate number): [form]
-    Other casualties (approximate number): [form]
+    Fallecidos (número aproximado): [form]
+    Otras bajas (número aproximado): [form]
 
-   ⠀ [italic]Abuse of this form may lead to immediate dismissal of the person(s) involved in this request.[/italic]
+   ⠀ [italic]El abuso de este formulario puede conllevar el despido inmediato de la(s) persona(s) implicada(s) en esta solicitud.[/italic]
     ────────────────────────────────────────
-   ⠀                      [italic]Place for Stamps and/or Signatures[/italic]
+   ⠀                      [italic]Lugar para sellos y/o firmas[/italic]
 
 
 
 doc-text-printer-product-order =
-                             [head=3]NT-CC Consortium Services[/head]
+                             [head=3]Servicios del Consorcio NT-CC[/head]
 
-                  [center][color=#1f75bb][italic][bold]   OFFICIAL CENTCOMM DOCUMENTATION[/bold][/italic][/color][/center]
+                  [center][color=#1f75bb][italic][bold]   DOCUMENTACIÓN OFICIAL DE CENTCOMM[/bold][/italic][/color][/center]
     ────────────────────────────────────────
-   ⠀⠀                                 [bold]PRODUCT ORDER[/bold]
+   ⠀⠀                                 [bold]PEDIDO DE PRODUCTOS[/bold]
     ────────────────────────────────────────
-     Date and Time: [datetime]
-    Document Compiler: [signature]
+     Fecha y hora: [datetime]
+    Redactor del documento: [signature]
 
-    Request to produce products by the following department: [form]
+    Solicitud de producción de productos por el siguiente departamento: [form]
 
-    List of products required:
+    Lista de productos requeridos:
     • [form]
     • [form]
 
-    Reason for order: [form]
+    Motivo del pedido: [form]
 
     ────────────────────────────────────────
-   ⠀                      [italic]Place for Stamps and/or Signatures[/italic]
+   ⠀                      [italic]Lugar para sellos y/o firmas[/italic]
 
 
 
@@ -747,49 +747,49 @@ doc-text-printer-product-order =
 # Complaints
 
 doc-text-printer-complaint-violation-labor-rules =
-                             [head=3]NT-CC Consortium Services[/head]
+                             [head=3]Servicios del Consorcio NT-CC[/head]
 
-                  [center][color=#1f75bb][italic][bold]   OFFICIAL CENTCOMM DOCUMENTATION[/bold][/italic][/color][/center]
+                  [center][color=#1f75bb][italic][bold]   DOCUMENTACIÓN OFICIAL DE CENTCOMM[/bold][/italic][/color][/center]
     ────────────────────────────────────────
-    ⠀⠀[bold]DEPARTMENTAL COMPLAINT[/bold]
+    ⠀⠀[bold]QUEJA DEPARTAMENTAL[/bold]
     ────────────────────────────────────────
-     Date and Time: [datetime]
-    Document Compiler: [signature]
+     Fecha y hora: [datetime]
+    Redactor del documento: [signature]
 
-    I, [signature], believe that major misconduct, constituting either breach of SOP or Corporate Law, has occurred, or is ongoing, as described below.
+    Yo, [signature], creo que se ha producido, o continúa produciéndose, una falta grave que constituye una infracción de los SOP o de la Ley Corporativa, tal como se describe a continuación.
 
-    Department(s) involved: [form]
+    Departamento(s) involucrado(s): [form]
 
-    Violations committed:
+    Infracciones cometidas:
 
    ⠀• [form]
    ⠀• [form]
    ⠀• [form]
 
-    I request an internal review of the department(s) in question.
+    Solicito una revisión interna del/de los departamento(s) en cuestión.
 
     ────────────────────────────────────────
-   ⠀                      [italic]Place for Stamps and/or Signatures[/italic]
+   ⠀                      [italic]Lugar para sellos y/o firmas[/italic]
 
 
 
 doc-text-printer-offense-complaint =
-                             [head=3]NT-CC Consortium Services[/head]
+                             [head=3]Servicios del Consorcio NT-CC[/head]
 
-                  [center][color=#1f75bb][italic][bold]   OFFICIAL CENTCOMM DOCUMENTATION[/bold][/italic][/color][/center]
+                  [center][color=#1f75bb][italic][bold]   DOCUMENTACIÓN OFICIAL DE CENTCOMM[/bold][/italic][/color][/center]
     ────────────────────────────────────────
-   ⠀⠀                             [bold]CRIMINAL COMPLAINT[/bold]
+   ⠀⠀                             [bold]DENUNCIA PENAL[/bold]
     ────────────────────────────────────────
-     Date and Time: [datetime]
-    Document Compiler: [signature]
+     Fecha y hora: [datetime]
+    Redactor del documento: [signature]
 
-    I, [signature], believe that the following person has violated Corporate Law.
+    Yo, [signature], creo que la siguiente persona ha infringido la Ley Corporativa.
 
-    Name of violator: [form]
+    Nombre del infractor: [form]
 
-    Description of misconduct: [form]
+    Descripción de la infracción: [form]
 
-    Criminal charges:
+    Cargos penales:
 
    ⠀• [form]
    ⠀• [form]
@@ -797,7 +797,7 @@ doc-text-printer-offense-complaint =
    ⠀• [form]
 
     ────────────────────────────────────────
-   ⠀                      [italic]Place for Stamps and/or Signatures[/italic]
+   ⠀                      [italic]Lugar para sellos y/o firmas[/italic]
 
 
 
@@ -805,420 +805,420 @@ doc-text-printer-offense-complaint =
 # Permissions
 
 doc-text-printer-permission-equipment =
-                             [head=3]NT-CC Consortium Services[/head]
+                             [head=3]Servicios del Consorcio NT-CC[/head]
 
-                  [center][color=#1f75bb][italic][bold]   OFFICIAL CENTCOMM DOCUMENTATION[/bold][/italic][/color][/center]
+                  [center][color=#1f75bb][italic][bold]   DOCUMENTACIÓN OFICIAL DE CENTCOMM[/bold][/italic][/color][/center]
     ────────────────────────────────────────
-   ⠀⠀                           [bold]EQUIPMENT PERMIT[/bold]
+   ⠀⠀                           [bold]PERMISO DE EQUIPO[/bold]
     ────────────────────────────────────────
-     Date and Time: [datetime]
-    Document Compiler: [signature]
+     Fecha y hora: [datetime]
+    Redactor del documento: [signature]
 
-    I, [signature], authorize the use of departmental work equipment of the following department: [form]
+    Yo, [signature], autorizo el uso del equipo de trabajo departamental del siguiente departamento: [form]
 
-    Equipment to be subject to authorization: [form]
+    Equipo sujeto a autorización: [form]
 
-    Authorized person: [form]
+    Persona autorizada: [form]
 
-    Position of authorized person: [form]
+    Cargo de la persona autorizada: [form]
 
-    Reason for seeking permit: [form]
+    Motivo para solicitar el permiso: [form]
 
-    Terms of use: [form]
+    Condiciones de uso: [form]
 
     ────────────────────────────────────────
-   ⠀                      [italic]Place for Stamps and/or Signatures[/italic]
+   ⠀                      [italic]Lugar para sellos y/o firmas[/italic]
 
 
 
 doc-text-printer-search-permission =
-                             [head=3]NT-CC Consortium Services[/head]
+                             [head=3]Servicios del Consorcio NT-CC[/head]
 
-                  [center][color=#1f75bb][italic][bold]   OFFICIAL CENTCOMM DOCUMENTATION[/bold][/italic][/color][/center]
+                  [center][color=#1f75bb][italic][bold]   DOCUMENTACIÓN OFICIAL DE CENTCOMM[/bold][/italic][/color][/center]
     ────────────────────────────────────────
-   ⠀⠀                             [bold]SEARCH WARRANT[/bold]
+   ⠀⠀                             [bold]ORDEN DE REGISTRO[/bold]
     ────────────────────────────────────────
-     Date and Time: [datetime]
-    Document Compiler: [signature]
+     Fecha y hora: [datetime]
+    Redactor del documento: [signature]
 
-    I, [signature], authorize the search of the following person and/or location
+    Yo, [signature], autorizo el registro de la siguiente persona y/o ubicación
 
-    The affidavit below, sworn and subscribed before me, [signature], has established probable cause for this search warrant, which the Security Department is ordered to execute as follows:
+    La declaración jurada que figura a continuación, prestada y suscrita ante mí, [signature], ha establecido causa probable para esta orden de registro, que se ordena al Departamento de Seguridad ejecutar de la siguiente manera:
 
-    Name of searched person: [form]
+    Nombre de la persona registrada: [form]
 
-    Position of searched person: [form]
+    Cargo de la persona registrada: [form]
 
-    Reason for search: [form]
+    Motivo del registro: [form]
 
-    Scope of property to be confiscated:
+    Alcance de los bienes a confiscar:
 
-   ⠀[check] Contraband
-   ⠀[check] Items believed to have been involved in a crime
-   ⠀[check] Misappropriated equipment
-   ⠀[check] Other, specify: [form]
+   ⠀[check] Contrabando
+   ⠀[check] Objetos que se cree que estuvieron implicados en un delito
+   ⠀[check] Equipamiento apropiado indebidamente
+   ⠀[check] Otro, especifique: [form]
 
-    Disposition of property: All property seized pursuant to this search warrant shall be remanded into the custody of the Warden's office, pending further orders by Command.
+    Destino de los bienes: Todos los bienes incautados en virtud de esta orden de registro quedarán bajo custodia de la oficina del alcaide, a la espera de nuevas órdenes del Mando.
 
     ────────────────────────────────────────
-   ⠀                      [italic]Place for Stamps and/or Signatures[/italic]
+   ⠀                      [italic]Lugar para sellos y/o firmas[/italic]
 
 
 
 doc-text-printer-permission-to-carry-weapons =
-                             [head=3]NT-CC Consortium Services[/head]
+                             [head=3]Servicios del Consorcio NT-CC[/head]
 
-                  [center][color=#1f75bb][italic][bold]   OFFICIAL CENTCOMM DOCUMENTATION[/bold][/italic][/color][/center]
+                  [center][color=#1f75bb][italic][bold]   DOCUMENTACIÓN OFICIAL DE CENTCOMM[/bold][/italic][/color][/center]
     ────────────────────────────────────────
-   ⠀⠀                             [bold]WEAPON PERMIT[/bold]
+   ⠀⠀                             [bold]PERMISO DE ARMA[/bold]
     ────────────────────────────────────────
-     Date and Time: [datetime]
-    Document Compiler: [signature]
+     Fecha y hora: [datetime]
+    Redactor del documento: [signature]
 
-    I, [signature], authorize the carrying of the following weapon by the named person, as long as it is used for its intended purpose. In the event of a violation, the authorization will be revoked and the weapon will be confiscated by Security.
+    Yo, [signature], autorizo el porte del siguiente arma por parte de la persona nombrada, siempre que se utilice para el propósito previsto. En caso de infracción, la autorización será revocada y el arma será confiscada por Seguridad.
 
-    Named of authorized person: [form]
+    Nombre de la persona autorizada: [form]
 
-    Position of authorized person: [form]
+    Cargo de la persona autorizada: [form]
 
-    The weapon and, if applicable, the type of ammunition for it: [form]
+    El arma y, si corresponde, el tipo de munición para ella: [form]
 
-    The method of obtaining the weapon and, if applicable, the ammunition for it: [form]
+    El método de obtención del arma y, si corresponde, de la munición para ella: [form]
 
-    Reason for authorization: [form]
+    Motivo de la autorización: [form]
 
     ────────────────────────────────────────
-   ⠀                      [italic]Place for Stamps and/or Signatures[/italic]
+   ⠀                      [italic]Lugar para sellos y/o firmas[/italic]
 
 
 
 doc-text-printer-permission-dispose-body =
-                             [head=3]NT-CC Consortium Services[/head]
+                             [head=3]Servicios del Consorcio NT-CC[/head]
 
-                  [center][color=#1f75bb][italic][bold]   OFFICIAL CENTCOMM DOCUMENTATION[/bold][/italic][/color][/center]
+                  [center][color=#1f75bb][italic][bold]   DOCUMENTACIÓN OFICIAL DE CENTCOMM[/bold][/italic][/color][/center]
     ────────────────────────────────────────
-   ⠀⠀                 [bold]BODY DISPOSAL AUTHORIZATION[/bold]
+   ⠀⠀                 [bold]AUTORIZACIÓN DE ELIMINACIÓN DE CUERPO[/bold]
     ────────────────────────────────────────
-     Date and Time: [datetime]
-    Document Compiler: [signature]
+     Fecha y hora: [datetime]
+    Redactor del documento: [signature]
 
-    I, [signature], authorize the disposal of the body of the following person or animal: [form]
+    Yo, [signature], autorizo la eliminación del cuerpo de la siguiente persona o animal: [form]
 
-    Former position (if applicable): [form]
+    Cargo anterior (si corresponde): [form]
 
-    Reason for disposal: [form]
+    Motivo de la eliminación: [form]
 
-    Method of disposal: [form]
+    Método de eliminación: [form]
 
     ────────────────────────────────────────
-   ⠀                      [italic]Place for Stamps and/or Signatures[/italic]
+   ⠀                      [italic]Lugar para sellos y/o firmas[/italic]
 
 
 
 doc-text-printer-construction-permit =
-                             [head=3]NT-CC Consortium Services[/head]
+                             [head=3]Servicios del Consorcio NT-CC[/head]
 
-                  [center][color=#1f75bb][italic][bold]   OFFICIAL CENTCOMM DOCUMENTATION[/bold][/italic][/color][/center]
+                  [center][color=#1f75bb][italic][bold]   DOCUMENTACIÓN OFICIAL DE CENTCOMM[/bold][/italic][/color][/center]
     ────────────────────────────────────────
-   ⠀⠀                           [bold]CONSTRUCTION PERMIT[/bold]
+   ⠀⠀                           [bold]PERMISO DE CONSTRUCCIÓN[/bold]
     ────────────────────────────────────────
-     Date and Time: [datetime]
-    Document Compiler: [signature]
+     Fecha y hora: [datetime]
+    Redactor del documento: [signature]
 
-    I, [signature], authorize the redevelopment of the following part of the station: [form]
+    Yo, [signature], autorizo la remodelación de la siguiente parte de la estación: [form]
 
-    Reason for redevelopment: [form]
+    Motivo de la remodelación: [form]
 
-    Agreed scope of redevelopment: [form]
+    Alcance acordado de la remodelación: [form]
 
     ────────────────────────────────────────
-   ⠀                      [italic]Place for Stamps and/or Signatures[/italic]
+   ⠀                      [italic]Lugar para sellos y/o firmas[/italic]
 
 
 
 
 doc-text-printer-surgery-consent-permit =
-                             [head=3]NT-CC Consortium Services[/head]
+                             [head=3]Servicios del Consorcio NT-CC[/head]
 
-                  [center][color=#1f75bb][italic][bold]   OFFICIAL CENTCOMM DOCUMENTATION[/bold][/italic][/color][/center]
+                  [center][color=#1f75bb][italic][bold]   DOCUMENTACIÓN OFICIAL DE CENTCOMM[/bold][/italic][/color][/center]
     ────────────────────────────────────────
-   ⠀⠀                           [bold]SURGERY CONSENT FORM[/bold]
+   ⠀⠀                           [bold]FORMULARIO DE CONSENTIMIENTO QUIRÚRGICO[/bold]
     ────────────────────────────────────────
-     Date and Time: [datetime]
-    Document Compiler: [signature]
+     Fecha y hora: [datetime]
+    Redactor del documento: [signature]
 
-    In sound mind I, [signature], authorize the following surgery or surgeries to be performed upon me.
+    Estando en pleno uso de mis facultades mentales, yo, [signature], autorizo que se me practique la siguiente cirugía o cirugías.
 
-    Authorized surgeon: [signature]
+    Cirujano autorizado: [signature]
 
-    Reason for surgery: [form]
+    Motivo de la cirugía: [form]
 
-    Surgical modification(s) to be performed:
+    Modificación(es) quirúrgica(s) a realizar:
 
     • [form]
     • [form]
     • [form]
 
-   ⠀[check] I fully understand the risks associated with the operation(s) to which I have given my consent.
+   ⠀[check] Comprendo plenamente los riesgos asociados con la(s) operación(es) para la(s) que he dado mi consentimiento.
 
-   ⠀[check] I authorize the Medical Department to dispose of any tissues or organs removed from my body as they see fit, including possibly donating such tissues or organs to other patients.
+   ⠀[check] Autorizo al Departamento Médico a disponer de cualquier tejido u órgano extraído de mi cuerpo como considere oportuno, incluida la posible donación de dichos tejidos u órganos a otros pacientes.
 
-   ⠀[check] I consent to the operation proceeding without the use of anesthetics.
+   ⠀[check] Consiento que la operación proceda sin el uso de anestesia.
 
-   ⠀ [italic]This form is not legal unless it has been signed by the patient and stamped by the station's Chief Medical Officer or one of the Chief Medical Officer's superiors. It is not required for life-saving surgeries. For punitive and non-elective surgeries, such as those ordered by Security, please file a Medical Intervention Order.[/italic]
+   ⠀ [italic]Este formulario no es legal a menos que haya sido firmado por el paciente y sellado por el Jefe Médico de la estación o por uno de sus superiores. No es necesario para cirugías que salven la vida. Para cirugías punitivas y no electivas, como las ordenadas por Seguridad, presente una Orden de Intervención Médica.[/italic]
 
     ────────────────────────────────────────
-   ⠀                      [italic]Place for Stamps and/or Signatures[/italic]
+   ⠀                      [italic]Lugar para sellos y/o firmas[/italic]
 
 
 doc-text-printer-art-permit =
-                             [head=3]NT-CC Consortium Services[/head]
+                             [head=3]Servicios del Consorcio NT-CC[/head]
 
-                  [center][color=#1f75bb][italic][bold]   OFFICIAL CENTCOMM DOCUMENTATION[/bold][/italic][/color][/center]
+                  [center][color=#1f75bb][italic][bold]   DOCUMENTACIÓN OFICIAL DE CENTCOMM[/bold][/italic][/color][/center]
     ────────────────────────────────────────
-   ⠀⠀                           [bold]ART PERMIT[/bold]
+   ⠀⠀                           [bold]PERMISO DE ARTE[/bold]
     ────────────────────────────────────────
-    Date And Time:[color=#0000ff] [form] [/color]
-    Document Compiler:[color=#0000ff] [form] [/color]
+    Fecha y hora:[color=#0000ff] [form] [/color]
+    Redactor del documento:[color=#0000ff] [form] [/color]
 
-    I, [bolditalic][color=#0000ff] [signature] [/color][/bolditalic], hereby approve the creation of the following work of art in the location given below.
+    Yo, [bolditalic][color=#0000ff] [signature] [/color][/bolditalic], apruebo por la presente la creación de la siguiente obra de arte en la ubicación indicada abajo.
 
-    Subject of the artpiece:[color=#0000ff] [form] [/color]
-    Location of the artpiece:[color=#0000ff] [form] [/color] [italic][color=#a9a9a9]
+    Tema de la obra de arte:[color=#0000ff] [form] [/color]
+    Ubicación de la obra de arte:[color=#0000ff] [form] [/color] [italic][color=#a9a9a9]
 
-    Art permits require a stamp from the Head of Personnel, the NanoTrasen Representative, or the Captain. If an artwork is located inside of a department or at its lobby the stamp of the relevant head of staff is required as well.
+    Los permisos de arte requieren un sello del Jefe de Personal, del Representante de NanoTrasen o del Capitán. Si una obra de arte se encuentra dentro de un departamento o en su vestíbulo, también se requiere el sello del jefe de personal correspondiente.
 
-    Any artwork that requires significant modification to the station's structure may also require the stamp of the Chief Engineer.[/color][/italic]
+    Cualquier obra de arte que requiera una modificación significativa de la estructura de la estación también puede requerir el sello del Jefe de Ingeniería.[/color][/italic]
 
     ────────────────────────────────────────
-   ⠀                      [italic]Place for Stamps and/or Signatures[/italic]
+   ⠀                      [italic]Lugar para sellos y/o firmas[/italic]
 
 
 # OrdersAndInstructions
 
 doc-text-printer-dismissal-order =
-                             [head=3]NT-CC Consortium Services[/head]
+                             [head=3]Servicios del Consorcio NT-CC[/head]
 
-                  [center][color=#1f75bb][italic][bold]   OFFICIAL CENTCOMM DOCUMENTATION[/bold][/italic][/color][/center]
+                  [center][color=#1f75bb][italic][bold]   DOCUMENTACIÓN OFICIAL DE CENTCOMM[/bold][/italic][/color][/center]
     ────────────────────────────────────────
-   ⠀⠀                               [bold]DISMISSAL ORDER[/bold]
+   ⠀⠀                               [bold]ORDEN DE DESPIDO[/bold]
     ────────────────────────────────────────
-     Date and Time: [datetime]
-    Document Compiler: [signature]
+     Fecha y hora: [datetime]
+    Redactor del documento: [signature]
 
-    I, [signature], order that the following employee be removed from their current position.
+    Yo, [signature], ordeno que el siguiente empleado sea removido de su cargo actual.
 
-    Employee name: [form]
+    Nombre del empleado: [form]
 
-   ⠀Employee position: [form]
+   ⠀Cargo del empleado: [form]
 
-    Reason for dismissal: [form]
+    Motivo del despido: [form]
 
     ────────────────────────────────────────
-   ⠀                      [italic]Place for Stamps and/or Signatures[/italic]
+   ⠀                      [italic]Lugar para sellos y/o firmas[/italic]
 
 
 
 doc-text-printer-access-revocation-order =
-                             [head=3]NT-CC Consortium Services[/head]
+                             [head=3]Servicios del Consorcio NT-CC[/head]
 
-                  [center][color=#1f75bb][italic][bold]   OFFICIAL CENTCOMM DOCUMENTATION[/bold][/italic][/color][/center]
+                  [center][color=#1f75bb][italic][bold]   DOCUMENTACIÓN OFICIAL DE CENTCOMM[/bold][/italic][/color][/center]
     ────────────────────────────────────────
-   ⠀⠀                       [bold]ACCESS REVOCATION ORDER[/bold]
+   ⠀⠀                       [bold]ORDEN DE REVOCACIÓN DE ACCESO[/bold]
     ────────────────────────────────────────
-     Date and Time: [datetime]
-    Document Compiler: [signature]
+     Fecha y hora: [datetime]
+    Redactor del documento: [signature]
 
-    I, [signature], hereby order that certain access rights be removed from the ID card of an employee, as specified below.
+    Yo, [signature], ordeno por la presente que se retiren ciertos derechos de acceso de la tarjeta ID de un empleado, tal como se especifica a continuación.
 
-    Employee: [form]
+    Empleado: [form]
 
-   ⠀Position: [form]
+   ⠀Cargo: [form]
 
-    Access rights to be removed: [form]
+    Derechos de acceso a retirar: [form]
 
-    Further remarks: [form]
+    Observaciones adicionales: [form]
 
     ────────────────────────────────────────
-   ⠀                      [italic]Place for Stamps and/or Signatures[/italic]
+   ⠀                      [italic]Lugar para sellos y/o firmas[/italic]
 
 
 
 doc-text-printer-incentive-order =
-                             [head=3]NT-CC Consortium Services[/head]
+                             [head=3]Servicios del Consorcio NT-CC[/head]
 
-                  [center][color=#1f75bb][italic][bold]   OFFICIAL CENTCOMM DOCUMENTATION[/bold][/italic][/color][/center]
+                  [center][color=#1f75bb][italic][bold]   DOCUMENTACIÓN OFICIAL DE CENTCOMM[/bold][/italic][/color][/center]
     ────────────────────────────────────────
-   ⠀⠀                       [bold]RECOGNITION OF MERIT[/bold]
+   ⠀⠀                       [bold]RECONOCIMIENTO AL MÉRITO[/bold]
     ────────────────────────────────────────
-     Date and Time: [datetime]
+     Fecha y hora: [datetime]
 
-    Dear [form],
+    Estimado/a [form],
 
-    In the course of your duties to the station, you have proven yourself to be an exemplar to the crew through your record of distinguished conduct. It is therefore my pleasure to grant you the following special commendation.
+    En el transcurso de tus deberes para con la estación, has demostrado ser un ejemplo para la tripulación mediante tu historial de conducta distinguida. Por ello, me complace concederte el siguiente reconocimiento especial.
 
-    Services Performed: [form]
+    Servicios prestados: [form]
 
-    Medal or Citation: [form]
+    Medalla o mención: [form]
 
-    May your devotion to the station continue to light the way for your fellow crewmembers.
+    Que tu dedicación a la estación siga iluminando el camino para tus compañeros de tripulación.
 
-    Sincerely,
+    Atentamente,
 
    ⠀[signature]
 
 
     ────────────────────────────────────────
-   ⠀                      [italic]Place for Stamps and/or Signatures[/italic]
+   ⠀                      [italic]Lugar para sellos y/o firmas[/italic]
 
 
 
 doc-text-printer-prisoner-parole-order =
-                             [head=3]NT-CC Consortium Services[/head]
+                             [head=3]Servicios del Consorcio NT-CC[/head]
 
-                  [center][color=#1f75bb][italic][bold]   OFFICIAL CENTCOMM DOCUMENTATION[/bold][/italic][/color][/center]
+                  [center][color=#1f75bb][italic][bold]   DOCUMENTACIÓN OFICIAL DE CENTCOMM[/bold][/italic][/color][/center]
     ────────────────────────────────────────
-   ⠀⠀                         [bold]ORDER OF MANDATORY PAROLE[/bold]
+   ⠀⠀                         [bold]ORDEN DE LIBERTAD CONDICIONAL OBLIGATORIA[/bold]
     ────────────────────────────────────────
-     Date and Time: [datetime]
-    Document Compiler: [signature]
+     Fecha y hora: [datetime]
+    Redactor del documento: [signature]
 
-    Parolee: [form]
+    Persona en libertad condicional: [form]
 
-    Parole ordered by: [form]
+    Libertad condicional ordenada por: [form]
 
-    Upon granting of parole, the Parolee shall enter into a position in the Service Department.
+    Una vez concedida la libertad condicional, la persona en libertad condicional asumirá un cargo en el Departamento de Servicio.
 
-    Failure to perform the duties of this position may result in re-imprisonment.
+    El incumplimiento de los deberes de este cargo puede resultar en un nuevo encarcelamiento.
 
-    Position: [form]
+    Cargo: [form]
 
-    Additional terms of parole: [form]
+    Condiciones adicionales de la libertad condicional: [form]
 
     ────────────────────────────────────────
-   ⠀                      [italic]Place for Stamps and/or Signatures[/italic]
+   ⠀                      [italic]Lugar para sellos y/o firmas[/italic]
 
 
 
 doc-text-printer-order-recognizing-reasonableness-creature =
-                             [head=3]NT-CC Consortium Services[/head]
+                             [head=3]Servicios del Consorcio NT-CC[/head]
 
-                  [center][color=#1f75bb][italic][bold]   OFFICIAL CENTCOMM DOCUMENTATION[/bold][/italic][/color][/center]
+                  [center][color=#1f75bb][italic][bold]   DOCUMENTACIÓN OFICIAL DE CENTCOMM[/bold][/italic][/color][/center]
     ────────────────────────────────────────
-                                ⠀[bold]DECLARATION OF SENTIENCE[/bold]
+                                ⠀[bold]DECLARACIÓN DE SINTIENCIA[/bold]
     ────────────────────────────────────────
-     Date and Time: [datetime]
-    Document Compiler: [signature]
+     Fecha y hora: [datetime]
+    Redactor del documento: [signature]
 
-    I, [signature], in the course of testing the entity described below, have detected signs of intelligence and rationality. It has exhibited an ability to think and learn, and a capacity to comprehend morality.
+    Yo, [signature], durante las pruebas realizadas a la entidad descrita abajo, he detectado signos de inteligencia y racionalidad. Ha mostrado capacidad para pensar y aprender, así como para comprender la moralidad.
 
-    Based on the principles of equality of rights of all reasonable beings established by the OPRA, I hereby move to declare it as sentient.
+    Basándome en los principios de igualdad de derechos de todos los seres racionales establecidos por la OPRA, propongo por la presente declararla sintiente.
 
-    Appearance of the being: [form]
+    Apariencia del ser: [form]
 
-    The established full name of the creature: [form]
+    Nombre completo establecido de la criatura: [form]
 
-    The creature is henceforth to be accepted as an Assistant.
+    A partir de este momento, la criatura será aceptada como Asistente.
 
     ────────────────────────────────────────
-   ⠀                      [italic]Place for Stamps and/or Signatures[/italic]
+   ⠀                      [italic]Lugar para sellos y/o firmas[/italic]
 
 
 
 doc-text-printer-medical-intervention-order =
-                             [head=3]NT-CC Consortium Services[/head]
+                             [head=3]Servicios del Consorcio NT-CC[/head]
 
-                  [center][color=#1f75bb][italic][bold]   OFFICIAL CENTCOMM DOCUMENTATION[/bold][/italic][/color][/center]
+                  [center][color=#1f75bb][italic][bold]   DOCUMENTACIÓN OFICIAL DE CENTCOMM[/bold][/italic][/color][/center]
     ────────────────────────────────────────
-   ⠀⠀                [bold]MEDICAL INTERVENTION ORDER[/bold]
+   ⠀⠀                [bold]ORDEN DE INTERVENCIÓN MÉDICA[/bold]
     ────────────────────────────────────────
-     Date and Time: [datetime]
-    Document Compiler: [signature]
+     Fecha y hora: [datetime]
+    Redactor del documento: [signature]
 
-    Pursuant to Corporate Law, the Qualified Medical Officer named herein orders that the following medical intervention be carried out promptly and without delay.
+    De conformidad con la Ley Corporativa, el Oficial Médico Cualificado aquí nombrado ordena que la siguiente intervención médica se lleve a cabo de forma inmediata y sin demora.
 
-    Patient: [form]
+    Paciente: [form]
 
-    Procedure(s) to be performed: [form]
+    Procedimiento(s) a realizar: [form]
 
-    Circumstances: [form]
+    Circunstancias: [form]
 
-   ⠀I hereby affirm that, in my professional opinion as a licensed medical practioner, the ordered intervention is medically or legally necessary.
+   ⠀Afirmo por la presente que, en mi opinión profesional como profesional médico autorizado, la intervención ordenada es médica o legalmente necesaria.
 
-    Qualified Medical Officer: [signature]
+    Oficial Médico Cualificado: [signature]
 
     ────────────────────────────────────────
-   ⠀                      [italic]Place for Stamps and/or Signatures[/italic]
+   ⠀                      [italic]Lugar para sellos y/o firmas[/italic]
 
 
 
 doc-text-printer-execution-dnr-order =
-                             [head=3]NT-CC Consortium Services[/head]
+                             [head=3]Servicios del Consorcio NT-CC[/head]
 
-                  [center][color=#1f75bb][italic][bold]   OFFICIAL CENTCOMM DOCUMENTATION[/bold][/italic][/color][/center]
+                  [center][color=#1f75bb][italic][bold]   DOCUMENTACIÓN OFICIAL DE CENTCOMM[/bold][/italic][/color][/center]
     ────────────────────────────────────────
-   ⠀⠀             [bold]EXECUTION AND DO-NOT-REVIVE ORDER[/bold]
+   ⠀⠀             [bold]ORDEN DE EJECUCIÓN Y NO REANIMACIÓN[/bold]
     ────────────────────────────────────────
-     Date and Time: [datetime]
-    Document Compiler: [signature]
+     Fecha y hora: [datetime]
+    Redactor del documento: [signature]
 
-    Name of Prisoner:  [form]
-    Former position of Prisoner: [form]
+    Nombre del prisionero:  [form]
+    Cargo anterior del prisionero: [form]
 
-    Crimes committed:
+    Delitos cometidos:
     ⠀• [form]
 
-    Reason for the execution and DNR:
+    Motivo de la ejecución y del DNR:
     ⠀• [form]
 
-    Authority ordering the Execution (Name + Position): [signature]
+    Autoridad que ordena la ejecución (Nombre + Cargo): [signature]
 
-   ⠀ [italic]This order can only be issued by the (Acting) Captain of the[/italic]
-   ⠀ [italic]station. If a Magistrate is present, they can overrule the Captain[/italic]
-   ⠀ [italic]on the decision, and their stamp is required.[/italic]
-   ⠀ [italic]The prisoner is to remain securely restrained until the execution.[/italic]
-   ⠀ [italic]The execution method may be chosen by the prisoner, to the[/italic]
-   ⠀ [italic]extent permissible under law, and must be as humane as possible.[/italic]
+   ⠀ [italic]Esta orden solo puede ser emitida por el Capitán (en funciones) de la[/italic]
+   ⠀ [italic]estación. Si hay un Magistrado presente, puede anular la decisión del Capitán[/italic]
+   ⠀ [italic]y se requiere su sello.[/italic]
+   ⠀ [italic]El prisionero deberá permanecer debidamente inmovilizado hasta la ejecución.[/italic]
+   ⠀ [italic]El método de ejecución puede ser elegido por el prisionero, en la medida[/italic]
+   ⠀ [italic]en que lo permita la ley, y debe ser lo más humano posible.[/italic]
     ────────────────────────────────────────
-   ⠀                      [italic]Place for Stamps and/or Signatures[/italic]
+   ⠀                      [italic]Lugar para sellos y/o firmas[/italic]
 
 # Communications
 
 doc-text-printer-centcomm-communication =
-                             [head=3]NT-CC Consortium Services[/head]
+                             [head=3]Servicios del Consorcio NT-CC[/head]
 
-                  [center][color=#1f75bb][italic][bold]   OFFICIAL CENTCOMM DOCUMENTATION[/bold][/italic][/color][/center]
+                  [center][color=#1f75bb][italic][bold]   DOCUMENTACIÓN OFICIAL DE CENTCOMM[/bold][/italic][/color][/center]
     ────────────────────────────────────────
-   ⠀⠀                    [bold]CENTCOMM COMMUNICATION[/bold]
+   ⠀⠀                    [bold]COMUNICACIÓN CON CENTCOMM[/bold]
     ────────────────────────────────────────
-     Date and Time: [datetime]
-    Document Compiler: [signature]
+     Fecha y hora: [datetime]
+    Redactor del documento: [signature]
 
-    Greetings CentComm,
+    Saludos, CentComm:
 
    ⠀[form]
 
-    Sincerely,
+    Atentamente,
        - [signature]
     ────────────────────────────────────────
-   ⠀                      [italic]Place for Stamps and/or Signatures[/italic]
+   ⠀                      [italic]Lugar para sellos y/o firmas[/italic]
 
 
 doc-text-printer-salvagelead-report =
-                              [head=3]NT-CC Consortium Services[/head]
+                              [head=3]Servicios del Consorcio NT-CC[/head]
 
-                   [center][color=#1f75bb][italic][bold]   OFFICIAL CENTCOMM DOCUMENTATION[/bold][/italic][/color][/center]
+                   [center][color=#1f75bb][italic][bold]   DOCUMENTACIÓN OFICIAL DE CENTCOMM[/bold][/italic][/color][/center]
     ────────────────────────────────────────
-    ⠀⠀                   [bold]SALVAGE LEAD REPORT[/bold]
+    ⠀⠀                   [bold]INFORME DEL JEFE DE SALVAMENTO[/bold]
     ────────────────────────────────────────
-     Date and Time: [datetime]
-    Document Compiler: [signature]
+     Fecha y hora: [datetime]
+    Redactor del documento: [signature]
 
-    Expeditionary Threat: [form]
+    Amenaza expedicionaria: [form]
 
-    Observations: [form]
+    Observaciones: [form]
 
-    The following contraband was collected during the course of the Expedition:
+    Durante la expedición se recogió el siguiente contrabando:
 
      • [form]
      • [form]
@@ -1226,50 +1226,50 @@ doc-text-printer-salvagelead-report =
      • [form]
      • [form]
 
-    It is understood that all contraband must be turned over to the Security Department upon arrival at the station.
+    Se entiende que todo el contrabando debe ser entregado al Departamento de Seguridad al llegar a la estación.
 
-    Team status and overall readiness: [form]
+    Estado del equipo y preparación general: [form]
 
-    Further notes: [form]
+    Notas adicionales: [form]
 
      ────────────────────────────────────────
-   ⠀                      [italic]Place for Stamps and/or Signatures[/italic]
+   ⠀                      [italic]Lugar para sellos y/o firmas[/italic]
 
 doc-text-printer-enemy-of-corporation-designation =
-                             [head=3]NT-CC Consortium Services[/head]
+                             [head=3]Servicios del Consorcio NT-CC[/head]
 
-                   [center][color=#1f75bb][italic][bold]   OFFICIAL CENTCOMM DOCUMENTATION[/bold][/italic][/color][/center]
+                   [center][color=#1f75bb][italic][bold]   DOCUMENTACIÓN OFICIAL DE CENTCOMM[/bold][/italic][/color][/center]
     ────────────────────────────────────────
-    ⠀⠀             [bold]ENEMY OF CORPORATION DESIGNATION FORM[/bold]
+    ⠀⠀             [bold]FORMULARIO DE DESIGNACIÓN COMO ENEMIGO DE LA CORPORACIÓN[/bold]
     ────────────────────────────────────────
-    Date and Time: [datetime]
-    Document Compiler: [signature]
+    Fecha y hora: [datetime]
+    Redactor del documento: [signature]
 
-    Name of Enemy Combatant:  [form]
-    Organization of Origin: [form]
+    Nombre del combatiente enemigo:  [form]
+    Organización de origen: [form]
 
-    Individual is charged with the following (minimum of two) extreme, or above, crimes:
+    Se acusa al individuo de los siguientes delitos extremos, o superiores, (mínimo dos):
     ⠀• [form]
     ⠀• [form]
 
-    Additionally, the individual has tied themselves to the enemy organization with the following contraband or crime.
-    This contraband or crime must not be the same as the two extreme crimes mentioned above.
+    Además, el individuo se ha vinculado a la organización enemiga mediante el siguiente contrabando o delito.
+    Este contrabando o delito no debe ser el mismo que los dos delitos extremos mencionados arriba.
     ⠀• [form]
 
-    Alternatively, individual has confessed their allegiance, whether verbally or in writing.
-    This was witnessed by at least two mindshielded crewmembers, whose signatures are below.
+    Alternativamente, el individuo ha confesado su lealtad, ya sea verbalmente o por escrito.
+    Esto fue presenciado por al menos dos tripulantes con mindshield, cuyas firmas figuran abajo.
     ⠀• [signature]
     ⠀• [signature]
 
-    Authority ordering the Designation (Name + Position): [signature]
+    Autoridad que ordena la designación (Nombre + Cargo): [signature]
 
-   ⠀ [italic]This order can only be issued either the (Acting) Head of Security,[/italic]
-   ⠀ [italic]Captain, or Magistrate. It must be approved by at least 2[/italic]
-   ⠀ [italic]of these individuals, and they must provide their stamps.[/italic]
-   ⠀ [italic]The prisoner is to remain under watch in captivity until evacuation.[/italic]
-   ⠀ [italic]When completed, form must be faxed to CentComm with all haste.[/italic]
-   ⠀ [italic]If CentComm, or any of the above mentioned officials,[/italic]
-   ⠀ [italic]deny this motion, the prisoner must be reinstated as crew[/italic]
-   ⠀ [italic]and tried normally as per Corporate Law.[/italic]
+   ⠀ [italic]Esta orden solo puede ser emitida por el Jefe de Seguridad (en funciones),[/italic]
+   ⠀ [italic]el Capitán o el Magistrado. Debe ser aprobada por al menos 2[/italic]
+   ⠀ [italic]de estas personas, y deberán proporcionar sus sellos.[/italic]
+   ⠀ [italic]El prisionero debe permanecer vigilado en cautiverio hasta la evacuación.[/italic]
+   ⠀ [italic]Una vez completado, el formulario debe enviarse por fax a CentComm con toda premura.[/italic]
+   ⠀ [italic]Si CentComm, o cualquiera de los funcionarios mencionados arriba,[/italic]
+   ⠀ [italic]niega esta moción, el prisionero debe ser restituido como tripulación[/italic]
+   ⠀ [italic]y juzgado con normalidad conforme a la Ley Corporativa.[/italic]
     ────────────────────────────────────────
-   ⠀                      [italic]Place for Stamps and/or Signatures[/italic]
+   ⠀                      [italic]Lugar para sellos y/o firmas[/italic]

@@ -71,7 +71,7 @@ entity-condition-guidebook-organ-type =
     el órgano que metaboliza { $shouldhave ->
                                 [true] es
                                 *[false] no es
-                           } {INDEFINITE($name)} órgano de tipo {$name}
+                           } de tipo {$name}
 
 entity-condition-guidebook-has-tag =
     el objetivo { $invert ->

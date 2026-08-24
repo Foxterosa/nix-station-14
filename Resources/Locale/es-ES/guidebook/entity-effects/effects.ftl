@@ -21,7 +21,7 @@ entity-effect-guidebook-spawn-entity =
         [1] Crea
         *[other] crear
     } { $amount ->
-        [1] {INDEFINITE($entname)}
+        [1] {$entname}
         *[other] {$amount} {$entname}
     }
 

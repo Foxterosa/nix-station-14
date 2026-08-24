@@ -61,7 +61,7 @@ trait-french-name = Acento francés
 trait-french-desc = Tu acento parece tener cierto «je ne sais quoi».
 
 trait-spanish-name = Acento español
-trait-spanish-desc = Hola señor, donde esta la biblioteca.
+trait-spanish-desc = Hola señor, dónde está la biblioteca.
 
 trait-painnumbness-name = Insensible al dolor
 trait-painnumbness-desc = Careces de toda sensación de dolor, así que no te das cuenta de lo herido que puedes estar.

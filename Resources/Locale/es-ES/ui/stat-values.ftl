@@ -1,1 +1,1 @@
-stat-values-ui-title = Melee stats
+stat-values-ui-title = Estadísticas cuerpo a cuerpo

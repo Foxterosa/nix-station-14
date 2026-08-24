@@ -3,7 +3,7 @@ lock-comp-on-examined-is-unlocked = {$entityName} parece estar [color=darkgreen]
 lock-comp-do-lock-success = Bloqueas {$entityName}.
 lock-comp-do-unlock-success = Desbloqueas {$entityName}.
 lock-comp-has-user-access-fail = Acceso denegado.
-lock-comp-generic-fail = {CAPITALIZE(SUBJECT($target))} {CONJUGATE-BE($target)} bloqueado.
+lock-comp-generic-fail = Parece estar bloqueado.
 
 ## ToggleLockVerb
 

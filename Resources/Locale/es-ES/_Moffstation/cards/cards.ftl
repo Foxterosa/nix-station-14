@@ -4,7 +4,7 @@ dynamic-playing-card-error-description = If you can see this, something has gone
 dynamic-playing-card-error-reverse = dynamic card
 
 # Card
-playing-card-examine = This is {INDEFINITE($target)} [color=lightgray]{$target}[/color].
+playing-card-examine = Es [color=lightgray]{$target}[/color].
 
 playing-card-card-card-pickup-verb-text = Pick up into hand
 playing-card-card-stack-pickup-verb-text = Pick up
@@ -14,7 +14,7 @@ playing-card-card-hand-put-down-verb-text = Place into
 playing-card-flip-verb-text = Flip
 
 # Deck
-playing-card-deck-examine = The top card is {INDEFINITE($card)} [color=lightgray]{$card}[/color].
+playing-card-deck-examine = La carta superior es [color=lightgray]{$card}[/color].
 
 playing-card-deck-card-pickup-verb-text = Draw into hand
 playing-card-deck-stack-pickup-verb-text = Draw

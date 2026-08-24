@@ -1,6 +1,6 @@
 ### Loc for the various UI-related verbs
-ui-verb-toggle-open = Toggle UI
-ui-vote-secret-map = Secret
-verb-instrument-openui = Play Music
+ui-verb-toggle-open = Alternar interfaz
+ui-vote-secret-map = Secreto
+verb-instrument-openui = Reproducir música
 
-ui-needs-anchor = Anchor it first!
+ui-needs-anchor = ¡Primero hay que anclarlo!

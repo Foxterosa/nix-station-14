@@ -1,216 +1,216 @@
-crafting-menu-name-FDB = forged double-barrel shotgun
-crafting-menu-text-FDB = The cousin of the improvised shotgun, this one is made from better quality parts and an additional barrel! Takes time and welding supplies to make, however.
+crafting-menu-name-FDB = escopeta de doble cañón forjada
+crafting-menu-text-FDB = La prima de la escopeta improvisada; esta está hecha con piezas de mejor calidad y un cañón adicional. Sin embargo, requiere tiempo y suministros de soldadura para fabricarla.
 
-crafting-menu-name-MP = makeshift pistol
-crafting-menu-text-MP = A hastily built pistol, looks horrible and is liable to explode in your face.
+crafting-menu-name-MP = pistola rudimentaria
+crafting-menu-text-MP = Una pistola construida a las apuradas; se ve horrible y puede explotarte en la cara.
 
-crafting-menu-name-IP = improvised pistol
-crafting-menu-text-IP = The next best thing in improvised pistols, comes with an internal magazine of five rounds.
+crafting-menu-name-IP = pistola improvisada
+crafting-menu-text-IP = Lo mejor que sigue a una pistola rudimentaria, viene con un cargador interno de cinco balas.
 
-crafting-menu-name-FP = forged pistol
-crafting-menu-text-FP = A reliable, high quality firearm. Takes six-round clipazines, and needs welding supplies to make.
+crafting-menu-name-FP = pistola forjada
+crafting-menu-text-FP = Un arma de fuego fiable y de alta calidad. Usa clipazines de seis balas y necesita suministros de soldadura para fabricarse.
 
-crafting-menu-name-IPB = improvised pistol bullet
-crafting-menu-text-IPB = Better than nothing. Low-quality propellant means it won't hit as hard as a normal bullet.
+crafting-menu-name-IPB = bala de pistola improvisada
+crafting-menu-text-IPB = Mejor que nada. El propelente de baja calidad hace que no pegue tan fuerte como una bala normal.
 
-crafting-menu-name-IPM = improvised pistol magazine
-crafting-menu-text-IPM = A compact 6-round clipazine.
+crafting-menu-name-IPM = cargador de pistola improvisado
+crafting-menu-text-IPM = Un clipazine compacto de 6 balas.
 
-crafting-menu-name-MR = makeshift revolver
-crafting-menu-text-MR = Hastily built revolver that has a good chance of backfiring into your face.
+crafting-menu-name-MR = revólver rudimentario
+crafting-menu-text-MR = Revólver construido a las apuradas que tiene buenas probabilidades de explotarte en la cara.
 
-crafting-menu-name-IR = improvised revolver
-crafting-menu-text-IR = An odd double-barrel revolver with no cylinder. The unique construction lowers the chance of a backfire, but does not eliminate it.
+crafting-menu-name-IR = revólver improvisado
+crafting-menu-text-IR = Un extraño revólver de doble cañón sin cilindro. Su construcción única reduce las probabilidades de reventar, pero no las elimina.
 
-crafting-menu-name-FR = forged revolver
-crafting-menu-text-FR = The best Tider Engineering can provide. Has 4 shots and will NOT blow up in your face, but needs welding supplies to make.
+crafting-menu-name-FR = revólver forjado
+crafting-menu-text-FR = Lo mejor que Tider Engineering puede ofrecer. Tiene 4 disparos y NO te explotará en la cara, pero necesita suministros de soldadura para fabricarse.
 
-crafting-menu-name-IMB = improvised magnum bullet
-crafting-menu-text-IMB = Better than nothing. Stuffed to the brim with phosphorus but still won't hit as hard.
+crafting-menu-name-IMB = bala magnum improvisada
+crafting-menu-text-IMB = Mejor que nada. Repleta de fósforo, pero aun así no pega tan fuerte.
 
-crafting-menu-name-IMS = improvised magnum speedloader
-crafting-menu-text-IMS = A simple speedloader capable of holding 4 shots.
+crafting-menu-name-IMS = cargador rápido magnum improvisado
+crafting-menu-text-IMS = Un cargador rápido simple con capacidad para 4 disparos.
 
-crafting-menu-name-MB = modular barrel
-crafting-menu-text-MB = For all your guncrafting needs!
+crafting-menu-name-MB = cañón modular
+crafting-menu-text-MB = Para todas tus necesidades de fabricación de armas.
 
-crafting-menu-name-MSH = makeshift shotgun
-crafting-menu-text-MSH = A robust hand-cannon that'll snap your wrist right off if you're not careful
+crafting-menu-name-MSH = escopeta rudimentaria
+crafting-menu-text-MSH = Un robusto cañón de mano que te partirá la muñeca si no tienes cuidado.
 
-crafting-menu-name-MS = makeshift smg
-crafting-menu-text-MS = It can't hit the broad side of a barn.
+crafting-menu-name-MS = smg rudimentaria
+crafting-menu-text-MS = No le pega ni al costado de un granero.
 
-crafting-menu-name-IS = improvised smg
-crafting-menu-text-IS = It CAN hit the broad side of a barn, but not a person.
+crafting-menu-name-IS = smg improvisada
+crafting-menu-text-IS = SÍ le pega al costado de un granero, pero no a una persona.
 
-crafting-menu-name-FS = forged smg
-crafting-menu-text-FS = Finally, an SMG that can hit a person! Needs to be welded together, so make sure you have welding supplies!
+crafting-menu-name-FS = smg forjada
+crafting-menu-text-FS = Por fin, una SMG que puede darle a una persona. Necesita ser soldada, así que asegúrate de tener suministros de soldadura.
 
-crafting-menu-name-ISM = improvised smg magazine
-crafting-menu-text-ISM = The fact this thing works at all is nothing short of a miracle
+crafting-menu-name-ISM = cargador de smg improvisado
+crafting-menu-text-ISM = El hecho de que esta cosa funcione ya es un auténtico milagro.
 
-crafting-menu-name-MRR = makeshift repeater rifle
-crafting-menu-text-MRR = Too big to fit in your pocket, but small enough to fit in your bag. An odd weapon indeed.
+crafting-menu-name-MRR = rifle de repetición rudimentario
+crafting-menu-text-MRR = Demasiado grande para caber en tu bolsillo, pero lo bastante pequeño para caber en tu bolso. Un arma extraña, sin duda.
 
-crafting-menu-name-IRR = improvised repeater rifle
-crafting-menu-text-IRR = The weird in-between cousin, too big to be stored comfortably, but also not that inaccurate.
+crafting-menu-name-IRR = rifle de repetición improvisado
+crafting-menu-text-IRR = El raro primo intermedio: demasiado grande para guardarlo cómodamente, pero tampoco tan impreciso.
 
-crafting-menu-name-FRR = forged repeater rifle
-crafting-menu-text-FRR = The peak of tider engineering. But does need welding supplies to finish.
+crafting-menu-name-FRR = rifle de repetición forjado
+crafting-menu-text-FRR = La cumbre de la ingeniería tider. Pero sí necesita suministros de soldadura para terminarlo.
 
-crafting-menu-name-IRB = improvised rifle bullet
-crafting-menu-text-IRB = Better than nothing. Fairly full with phosphorus but still won't hit as hard.
+crafting-menu-name-IRB = bala de rifle improvisada
+crafting-menu-text-IRB = Mejor que nada. Bastante cargada de fósforo, pero aun así no golpea tan fuerte.
 
-crafting-menu-name-IMGB = improvised ammo box
-crafting-menu-text-IMGB = Organization is not the strong suit of any tider. Can hold all kinds of bullets.
+crafting-menu-name-IMGB = caja de munición improvisada
+crafting-menu-text-IMGB = La organización no es el fuerte de ningún tider. Puede guardar todo tipo de balas.
 
-crafting-menu-name-IMGP = improvised ammo box (.35 auto)
-crafting-menu-text-IMGP = Organization is not the strong suit of any tider. Holds 40 improvised .35 auto rounds.
+crafting-menu-name-IMGP = caja de munición improvisada (.35 auto)
+crafting-menu-text-IMGP = La organización no es el fuerte de ningún tider. Guarda 40 proyectiles improvisados de .35 auto.
 
-crafting-menu-name-IMGR = improvised ammo box (.30 rifle)
-crafting-menu-text-IMGR = Organization is not the strong suit of any tider. Holds 40 improvised .30 rifle rounds.
+crafting-menu-name-IMGR = caja de munición improvisada (.30 rifle)
+crafting-menu-text-IMGR = La organización no es el fuerte de ningún tider. Guarda 40 proyectiles improvisados de .30 rifle.
 
-crafting-menu-name-IMGM = improvised ammo box (.45 magnum)
-crafting-menu-text-IMGM = Organization is not the strong suit of any tider. Holds 40 improvised .45 magnum rounds.
+crafting-menu-name-IMGM = caja de munición improvisada (.45 magnum)
+crafting-menu-text-IMGM = La organización no es el fuerte de ningún tider. Guarda 40 proyectiles improvisados de .45 magnum.
 
-crafting-menu-name-IMGS = improvised ammo box (12 gauge)
-crafting-menu-text-IMGS = Organization is not the strong suit of any tider. Holds 40 improvised 12 gauge shells.
+crafting-menu-name-IMGS = caja de munición improvisada (calibre 12)
+crafting-menu-text-IMGS = La organización no es el fuerte de ningún tider. Guarda 40 cartuchos improvisados de calibre 12.
 
-crafting-menu-name-phosphorus = crushed phosphorus
-crafting-menu-text-phosphorus = Crushing the tips off of matches yields this bright red, exceedingly volatile compound.
+crafting-menu-name-phosphorus = fósforo triturado
+crafting-menu-text-phosphorus = Triturar las puntas de los fósforos produce este compuesto rojo brillante y extremadamente volátil.
 
-crafting-menu-name-MC = makeshift crowbar
-crafting-menu-text-MC = You must be REALLY desperate..
+crafting-menu-name-MC = palanca rudimentaria
+crafting-menu-text-MC = Debes de estar REALMENTE desesperado...
 
-crafting-menu-name-IC = improvised crowbar
-crafting-menu-text-IC = Not the best, not the worst. Needs welding supplies to finish.
+crafting-menu-name-IC = palanca improvisada
+crafting-menu-text-IC = No es la mejor, ni la peor. Necesita suministros de soldadura para terminarse.
 
-crafting-menu-name-ISC = improvised screwdriver
+crafting-menu-name-ISC = destornillador improvisado
 
-crafting-menu-name-IW = improvised wirecutter
+crafting-menu-name-IW = cortaalambres improvisado
 
-crafting-menu-name-IWR = improvised wrench
+crafting-menu-name-IWR = llave inglesa improvisada
 
-crafting-menu-name-IM = improvised multitool
-crafting-menu-text-IM = The best you're gonna get. Needs welding supplies to finish.
+crafting-menu-name-IM = multiherramienta improvisada
+crafting-menu-text-IM = Es lo mejor que vas a conseguir. Necesita suministros de soldadura para terminarse.
 
-crafting-menu-name-EW = emergency welder
+crafting-menu-name-EW = soldador de emergencia
 
-crafting-menu-name-IO = improvised omnitool
-crafting-menu-text-IO = The fact that this abomination of tiderkind actually works is nothing short of a miracle.
+crafting-menu-name-IO = omniherramienta improvisada
+crafting-menu-text-IO = El hecho de que esta abominación de la raza tider funcione ya es poco menos que un milagro.
 
-crafting-menu-name-FO = forged omnitool
-crafting-menu-text-FO = The better, but more psychopathic omnitool.
+crafting-menu-name-FO = omniherramienta forjada
+crafting-menu-text-FO = La omniherramienta mejor, pero más psicópata.
 
-crafting-menu-name-WH = wooden hilt
-crafting-menu-text-WH = Needed in the construction of basic bladed weapons.
+crafting-menu-name-WH = empuñadura de madera
+crafting-menu-text-WH = Necesaria para la construcción de armas blancas básicas.
 
-crafting-menu-name-PH = plasteel hilt
-crafting-menu-text-PH = Needed in the construction of advanced bladed weapons.
+crafting-menu-name-PH = empuñadura de plastiacero
+crafting-menu-text-PH = Necesaria para la construcción de armas blancas avanzadas.
 
-crafting-menu-name-SB = steel blade
-crafting-menu-text-SB = Needed in the construction of basic bladed weapons.
+crafting-menu-name-SB = hoja de acero
+crafting-menu-text-SB = Necesaria para la construcción de armas blancas básicas.
 
-crafting-menu-name-PB = plasteel blade
-crafting-menu-text-PB = Needed in the construction of advanced bladed weapons.
+crafting-menu-name-PB = hoja de plastiacero
+crafting-menu-text-PB = Necesaria para la construcción de armas blancas avanzadas.
 
-crafting-menu-name-MSW = makeshift sword
-crafting-menu-text-MSW = Big and scary, but not that dangerous.
+crafting-menu-name-MSW = espada rudimentaria
+crafting-menu-text-MSW = Grande y aterradora, pero no tan peligrosa.
 
-crafting-menu-name-ISW = improvised sword
-crafting-menu-text-ISW = The budget option for aspiring maints knights.
+crafting-menu-name-ISW = espada improvisada
+crafting-menu-text-ISW = La opción económica para los aspirantes a caballeros de mantenimiento.
 
-crafting-menu-name-FSW = forged sword
-crafting-menu-text-FSW = Now THAT'S a weapon! Best paired with equally shiny armor, needs welding.
+crafting-menu-name-FSW = espada forjada
+crafting-menu-text-FSW = Ahora SÍ que es un arma. Combina mejor con una armadura igual de reluciente; necesita soldadura.
 
-crafting-menu-name-DSW = dawnbreaker
-crafting-menu-text-DSW = Burn away the unholdy heretics with this weapon of justice!
+crafting-menu-name-DSW = rompealba
+crafting-menu-text-DSW = Quema a los herejes impíos con esta arma de justicia.
 
-crafting-menu-name-TSW = tidebreaker
-crafting-menu-text-TSW = Crush those who oppose you!
+crafting-menu-name-TSW = rompemareas
+crafting-menu-text-TSW = Aplasta a quienes se te opongan.
 
-crafting-menu-name-ISH = improvised shield
-crafting-menu-text-ISH = Keep a solid sheet of metal between you and your enemies. Needs welding supplies to finish.
+crafting-menu-name-ISH = escudo improvisado
+crafting-menu-text-ISH = Mantén una sólida lámina de metal entre tus enemigos y tú. Necesita suministros de soldadura para terminarse.
 
-crafting-menu-name-FSH = forged buckler shield
-crafting-menu-text-FSH = Lightweight plasteel shield forged by the best tidersmiths, does a good job of keeping you alive. Needs welding supplies to finish.
+crafting-menu-name-FSH = broquel forjado
+crafting-menu-text-FSH = Escudo ligero de plastiacero forjado por los mejores tidersmiths; hace un gran trabajo manteniéndote con vida. Necesita suministros de soldadura para terminarse.
 
-crafting-menu-name-FSHT = forged tower shield
-crafting-menu-text-FSHT = Heavily armored plasteel shield, the extra plating and size making it more durable but heavier to hold. Needs welding supplies to finish.
+crafting-menu-name-FSHT = escudo de torre forjado
+crafting-menu-text-FSHT = Escudo de plastiacero fuertemente blindado; el tamaño y el recubrimiento extra lo hacen más duradero, pero también más pesado de sostener. Necesita suministros de soldadura para terminarse.
 
-crafting-menu-name-PSH = paladin shield
-crafting-menu-text-PSH = Sturdy yet light in your hands, perfectly weighted. Shaped into perfection for sword fights, among other Paladins. Needs welding supplies to finish.
+crafting-menu-name-PSH = escudo de paladín
+crafting-menu-text-PSH = Robusto y aun así ligero en tus manos, perfectamente equilibrado. Moldeado a la perfección para duelos con espada, entre otras cosas de paladines. Necesita suministros de soldadura para terminarse.
 
-crafting-menu-name-PSHG = paladin greatshield
-crafting-menu-text-PSHG = Become the wall you want to be. Exeedingly heavy to the point of needing a makeshift harness to simply hold. Needs welding supplies to finish.
+crafting-menu-name-PSHG = gran escudo de paladín
+crafting-menu-text-PSHG = Conviértete en el muro que quieres ser. Excesivamente pesado hasta el punto de necesitar un arnés rudimentario solo para sostenerlo. Necesita suministros de soldadura para terminarse.
 
-crafting-menu-name-MVT = makeshift vest
-crafting-menu-text-MVT = Arguably nothing is better than this. Scrap metal cobbled together with LV cables to TRY and protect you.
+crafting-menu-name-MVT = chaleco rudimentario
+crafting-menu-text-MVT = Se podría decir que nada sigue siendo mejor que esto. Chatarra unida con cables de baja tensión para INTENTAR protegerte.
 
-crafting-menu-name-IVT = improvised vest
-crafting-menu-text-IVT = Actually better than nothing, but still a bit on the heavy side, good at keeping you from getting stabbed.
+crafting-menu-name-IVT = chaleco improvisado
+crafting-menu-text-IVT = De verdad es mejor que nada, aunque sigue siendo algo pesado; sirve bien para evitar que te apuñalen.
 
-crafting-menu-name-FVT = forged vest
-crafting-menu-text-FVT = A high quality armor vest based upon old earth mongolian designs, it is very effective at what it does.
+crafting-menu-name-FVT = chaleco forjado
+crafting-menu-text-FVT = Un chaleco blindado de alta calidad basado en diseños mongoles de la vieja Tierra; es muy eficaz en lo que hace.
 
-crafting-menu-name-PVT = paladin suit
-crafting-menu-text-PVT = The best a tidersmith can make! Don this suit of armor and deal swift justice to evildoers! Or.. do the evil yourself, I won't judge.
+crafting-menu-name-PVT = armadura de paladín
+crafting-menu-text-PVT = Lo mejor que puede hacer un tidersmith. Ponte esta armadura y reparte justicia veloz a los malhechores. O... haz el mal tú mismo, no te juzgaré.
 
-crafting-menu-name-MVTH = makeshift helmet
-crafting-menu-text-MVTH = Nothing is, somehow, still better than this. Provides minimal protection, MIGHT save your head from a bullet.
+crafting-menu-name-MVTH = casco rudimentario
+crafting-menu-text-MVTH = De algún modo, nada sigue siendo mejor que esto. Proporciona protección mínima; PODRÍA salvarte la cabeza de una bala.
 
-crafting-menu-name-IVTH = improvised helmet
-crafting-menu-text-IVTH = Better than nothing, by a slim margin.
+crafting-menu-name-IVTH = casco improvisado
+crafting-menu-text-IVTH = Mejor que nada, por un margen muy pequeño.
 
-crafting-menu-name-FVTH = forged helmet
-crafting-menu-text-FVTH = Almost the best a tidersmith can offer, it'll reliably stop a bullet and protect your head from being smashed in.
+crafting-menu-name-FVTH = casco forjado
+crafting-menu-text-FVTH = Casi lo mejor que puede ofrecer un tidersmith: detendrá una bala con fiabilidad y protegerá tu cabeza de acabar destrozada.
 
-crafting-menu-name-PVTH = paladin helmet
-crafting-menu-text-PVTH = The best a tidersmith can offer, no holy crusade is fit to go on without a matching helmet!
+crafting-menu-name-PVTH = casco de paladín
+crafting-menu-text-PVTH = Lo mejor que puede ofrecer un tidersmith; ninguna cruzada sagrada está completa sin un casco a juego.
 
-crafting-menu-name-ETX = emergency toolbox
+crafting-menu-name-ETX = caja de herramientas de emergencia
 
-crafting-menu-name-MUL = multitool
+crafting-menu-name-MUL = multiherramienta
 
-crafting-menu-name-WRE = wrench
+crafting-menu-name-WRE = llave inglesa
 
-crafting-menu-name-WIR = wirecutter
+crafting-menu-name-WIR = cortaalambres
 
-crafting-menu-name-SCR = screwdriver
+crafting-menu-name-SCR = destornillador
 
-crafting-menu-name-CRO = crowbar
+crafting-menu-name-CRO = palanca
 
-crafting-menu-name-EXOXY = extended-capacity emergency oxygen tank
+crafting-menu-name-EXOXY = tanque de oxígeno de emergencia de gran capacidad
 
-crafting-menu-name-CGREN = green crayon
+crafting-menu-name-CGREN = crayón verde
 
-crafting-menu-name-CYELO = yellow crayon
+crafting-menu-name-CYELO = crayón amarillo
 
-crafting-menu-name-IRS = improvised .30/.45 speed loader
-crafting-menu-text-IRS = Little more than a spring-loaded tube that can hold bullets.
+crafting-menu-name-IRS = cargador rápido improvisado .30/.45
+crafting-menu-text-IRS = Poco más que un tubo con resorte capaz de sostener balas.
 
-crafting-menu-name-RIPRL = left ripperdoc arm
-crafting-menu-text-RIPRL = A poorly made replica of a coveted "Reaper" arm, cobbled together from scrap found lying around in maintenance.
+crafting-menu-name-RIPRL = brazo izquierdo de ripperdoc
+crafting-menu-text-RIPRL = Una réplica mal hecha de un codiciado brazo "Reaper", ensamblada con chatarra encontrada por mantenimiento.
 
-crafting-menu-name-RIPRR = right ripperdoc arm
-crafting-menu-text-RIPRR = A poorly made replica of a coveted "Reaper" arm, cobbled together from scrap found lying around in maintenance.
+crafting-menu-name-RIPRR = brazo derecho de ripperdoc
+crafting-menu-text-RIPRR = Una réplica mal hecha de un codiciado brazo "Reaper", ensamblada con chatarra encontrada por mantenimiento.
 
-crafting-menu-name-BNGE = bottle of bone gel
+crafting-menu-name-BNGE = botella de gel óseo
 
-crafting-menu-name-ASSFP = assorted forge parts
-crafting-menu-text-ASSFP = A small pile of components for making a forge for an anvil, contains an igniter and valves.
+crafting-menu-name-ASSFP = piezas variadas de forja
+crafting-menu-text-ASSFP = Un pequeño montón de componentes para hacer una forja para yunque; contiene un encendedor y válvulas.
 
-crafting-menu-name-SINF = insulated fabric
-crafting-menu-text-SINF = A bolt of smooth insulated fabric, not much use in it's current form.
+crafting-menu-name-SINF = tela aislante
+crafting-menu-text-SINF = Un rollo de tela aislante suave, de poca utilidad en su forma actual.
 
-crafting-menu-name-FLINS = fingerless insulated gloves
-crafting-menu-text-FLINS = Insulated gloves resistant to shocks, or at least they used to.
+crafting-menu-name-FLINS = guantes aislantes sin dedos
+crafting-menu-text-FLINS = Guantes aislantes resistentes a las descargas, o al menos antes lo eran.
 
-crafting-menu-name-TINS = insulated gloves
-crafting-menu-text-TINS = These gloves will protect the wearer from electric shocks.
+crafting-menu-name-TINS = guantes aislantes
+crafting-menu-text-TINS = Estos guantes protegerán al portador de las descargas eléctricas.
 
-construction-graph-tag-cheapinsulfabric = cheap insulated fabric
+construction-graph-tag-cheapinsulfabric = tela aislante barata
 
-construction-graph-tag-plasteelfilament = plasteel filament
+construction-graph-tag-plasteelfilament = filamento de plastiacero
 
-construction-graph-tag-insulthread = insulated thread
+construction-graph-tag-insulthread = hilo aislante

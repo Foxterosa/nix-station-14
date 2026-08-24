@@ -1,10 +1,10 @@
 ui-vote-type-restart = Reiniciar ronda
 ui-vote-type-gamemode = Siguiente modo de juego
 ui-vote-type-map = Siguiente mapa
-ui-vote-type-votekick = Votekick
+ui-vote-type-votekick = Expulsión por votación
 
 # Votekick reasons
-ui-vote-votekick-type-raiding = Raid
+ui-vote-votekick-type-raiding = Raideo
 ui-vote-votekick-type-cheating = Trampas
 ui-vote-votekick-type-spamming = Spam
 
@@ -26,7 +26,7 @@ ui-vote-type-not-available = Este tipo de votación está deshabilitado
 # Vote option only available for specific users.
 ui-vote-trusted-users-notice =
   Esta opción de votación solo está disponible para jugadores con suficiente tiempo de juego o que estén en la whitelist.
-  Además, debés haber sido fantasma durante { $timeReq } segundos.
+  Además, debes haber sido fantasma durante { $timeReq } segundos.
 
 # Warning to not abuse a specific vote option.
 ui-vote-abuse-warning =

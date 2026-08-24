@@ -1,18 +1,18 @@
-﻿### Verbs
-artifact-verb-make-always-active = Make artifact always active
-artifact-verb-activate = Activate artifact
+### Verbs
+artifact-verb-make-always-active = Hacer que el artefacto esté siempre activo
+artifact-verb-activate = Activar artefacto
 
 ### Unlocking
-artifact-unlock-state-begin = It begins to shift in strange ways...
-artifact-unlock-state-end-success = It slows down, visibly changed.
-artifact-unlock-state-end-failure = It slows down before uneventfully stopping.
+artifact-unlock-state-begin = Empieza a cambiar de formas extrañas...
+artifact-unlock-state-end-success = Se ralentiza, visiblemente cambiado.
+artifact-unlock-state-end-failure = Se ralentiza antes de detenerse sin más.
 
 ### Activation
-artifact-activation-fail = Nothing happens...
-artifact-activation-artifexium = The liquid seeps into the pores of the artifact...
+artifact-activation-fail = No pasa nada...
+artifact-activation-artifexium = El líquido se filtra en los poros del artefacto...
 
 ### Misc.
-artifact-examine-trigger-desc = [color=gray][italic]Am I on your mind?[/italic][/color]
+artifact-examine-trigger-desc = [color=gray][italic]¿Estoy en tu mente?[/italic][/color]
 
 artifact-node-class-1 = [color=#ff2bb1]Hylic[/color]
 artifact-node-class-2 = [color=#ff8b2b]Psychic[/color]

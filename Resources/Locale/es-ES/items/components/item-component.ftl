@@ -6,7 +6,7 @@ pick-up-verb-get-data-text = Agarrar
 
 pick-up-verb-get-data-text-inventory = Poner en la mano
 
-item-component-on-examine-size = Este es {INDEFINITE($size)} objeto [bold]{$size}[/bold].
+item-component-on-examine-size = Es un objeto [bold]{$size}[/bold].
 
 item-component-size-Tiny = diminuto
 item-component-size-Small = pequeño

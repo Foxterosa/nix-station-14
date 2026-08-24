@@ -8,8 +8,8 @@ strippable-component-cannot-unequip-message = ¡{CAPITALIZE(THE($owner))} no pue
 strippable-component-cannot-drop-message = ¡{CAPITALIZE(THE($owner))} no puede soltar eso!
 strippable-component-alert-owner = ¡{CAPITALIZE(THE($user))} te está quitando tu {$item}!
 strippable-component-alert-owner-hidden = ¡Sientes que alguien hurga en tu {$slot}!
-strippable-component-alert-owner-insert = ¡{CAPITALIZE(THE($user))} te está poniendo {INDEFINITE($item)} {$item} encima!
-strippable-component-alert-owner-insert-hand = ¡{CAPITALIZE(THE($user))} te está poniendo {INDEFINITE($item)} {$item} en la mano!
+strippable-component-alert-owner-insert = ¡{CAPITALIZE(THE($user))} te está poniendo {$item} encima!
+strippable-component-alert-owner-insert-hand = ¡{CAPITALIZE(THE($user))} te está poniendo {$item} en la mano!
 
 # generic warning for when a user interacts with your equipped items.
 strippable-component-alert-owner-interact = ¡{CAPITALIZE(THE($user))} está manoseando tu {$item}!

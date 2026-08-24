@@ -28,7 +28,7 @@ railroading-chat-delivery-wrapped-message-6 = [bold]Surprise! The postman has br
 railroading-chat-delivery-message-7 = Lucky you! A parcel just dropped into your hands.
 railroading-chat-delivery-wrapped-message-7 = [bold]Lucky you! A parcel just dropped into your hands[/bold].
 
-rail-consume-task = Eat {INDEFINITE($Target)} {$Target}
+rail-consume-task = Comer {$Target}
 
 rail-open-delivery-task = Open {$Amount} pieces of mail.
 
@@ -52,7 +52,7 @@ rr-stew-desc = Space makes a lot of ordinary things feel exotic. Just try not to
 
 # Metabolize
 
-rail-metabolize-task = Metabolize {INDEFINITE($Target)} {$Target}
+rail-metabolize-task = Metabolizar {$Target}
 
 rr-smoke = Smokeables
 rr-smoking-desc = I can always quit, I’m not addicted.

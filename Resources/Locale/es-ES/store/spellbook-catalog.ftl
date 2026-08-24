@@ -1,90 +1,90 @@
-# Spells
-spellbook-fireball-name = Fireball
-spellbook-fireball-desc = Get most crew exploding with rage when they see this fireball heading toward them! Upgradeable.
+# Hechizos
+spellbook-fireball-name = Bola de fuego
+spellbook-fireball-desc = ¡Haz que gran parte de la tripulación explote de rabia cuando vea esta bola de fuego viniendo hacia ellos! Mejorable.
 
-spellbook-blink-name = Blink
-spellbook-blink-desc = Don't blink or you'll miss yourself teleporting away.
+spellbook-blink-name = Parpadeo
+spellbook-blink-desc = No parpadees o te perderás teletransportándote.
 
-spellbook-voidapplause-name = Void Applause
-spellbook-voidapplause-desc = Swap places with the target, doesn't it make you want to do the boogie?
+spellbook-voidapplause-name = Aplauso del vacío
+spellbook-voidapplause-desc = Intercambia lugares con el objetivo, ¿no te dan ganas de bailar?
 
-spellbook-knock-name = Knock
-spellbook-knock-desc = Opens all airlocks, crates and lockers nearby.
+spellbook-knock-name = Golpe
+spellbook-knock-desc = Abre todas las compuertas, cajas y casilleros cercanos.
 
-spellbook-force-wall-name = Force Wall
-spellbook-force-wall-desc = Make three walls of pure force that you can pass through, but others can't.
+spellbook-force-wall-name = Muro de fuerza
+spellbook-force-wall-desc = Crea tres muros de fuerza pura a través de los cuales tú puedes pasar, pero los demás no.
 
-spellbook-repulse-name = Repulse
-spellbook-repulse-desc = Tell people to GITTAH`WEIGH and push 'em away from you.
+spellbook-repulse-name = Repulsión
+spellbook-repulse-desc = Diles a los demás que SE APARTEN y empújalos lejos de ti.
 
-spellbook-smoke-name = Smoke
-spellbook-smoke-desc = Summons a cloud of smoke, it's pretty obvious.
+spellbook-smoke-name = Humo
+spellbook-smoke-desc = Invoca una nube de humo, es bastante obvio.
 
-spellbook-polymorph-spider-name = Spider Polymorph
-spellbook-polymorph-spider-desc = Transforms you into a spider, man!
+spellbook-polymorph-spider-name = Polimorfia arácnida
+spellbook-polymorph-spider-desc = ¡Te transforma en una araña, hombre!
 
-spellbook-polymorph-rod-name = Rod Polymorph
-spellbook-polymorph-rod-desc = Change into an Immovable Rod with limited movement.
+spellbook-polymorph-rod-name = Polimorfia de barra
+spellbook-polymorph-rod-desc = Te convierte en una barra inamovible con movimiento limitado.
 
-spellbook-charge-name = Charge
-spellbook-charge-desc = Adds a charge back to your wand!
+spellbook-charge-name = Carga
+spellbook-charge-desc = ¡Devuelve una carga a tu varita!
 
-spellbook-ethereal-jaunt-name = Ethereal Jaunt
-spellbook-ethereal-jaunt-description = Slip into the ethereal plane to slip away from your enemies!
+spellbook-ethereal-jaunt-name = Salto etéreo
+spellbook-ethereal-jaunt-description = ¡Deslízate hacia el plano etéreo para escapar de tus enemigos!
 
-spellbook-mind-swap-name = Mind Swap
-spellbook-mind-swap-description = Exchange bodies with another person!
+spellbook-mind-swap-name = Intercambio mental
+spellbook-mind-swap-description = ¡Intercambia cuerpos con otra persona!
 
-spellbook-animate-name = Animate
-spellbook-animate-description = Bring an inanimate object to life!
+spellbook-animate-name = Animar
+spellbook-animate-description = ¡Dale vida a un objeto inanimado!
 
-spellbook-smite-name = Smite
+spellbook-smite-name = Castigo
 # starlight edit
-spellbook-smite-desc = Don't like them? SHOCK them into death! Requires Wizard Robe & Hat.
+spellbook-smite-desc = ¿No te agradan? ¡ELECTROCÚTALOS hasta la muerte! Requiere túnica y sombrero de mago.
 
-spellbook-cluwne-name = Cluwne's Curse
-spellbook-cluwne-desc = For when you really hate someone and Smite isn't enough. Requires Wizard Robe & Hat.
+spellbook-cluwne-name = Maldición de Cluwne
+spellbook-cluwne-desc = Para cuando de verdad odias a alguien y Castigo no es suficiente. Requiere túnica y sombrero de mago.
 
-spellbook-slip-name = Slippery Slope
-spellbook-slip-desc = Learn the ancient ways of the Janitor and curse your target to be slippery.
+spellbook-slip-name = Pendiente resbaladiza
+spellbook-slip-desc = Aprende los antiguos caminos del conserje y maldice a tu objetivo para que sea resbaladizo.
 
-spellbook-item-recall-name = Item Recall
-spellbook-item-recall-description = Mark a held item and summon it back at any time with just a snap of your fingers!
+spellbook-item-recall-name = Recuperación de objeto
+spellbook-item-recall-description = ¡Marca un objeto que tengas en la mano y recupéralo en cualquier momento con solo chasquear los dedos!
 
-# Equipment
+# Equipo
 
-spellbook-wand-polymorph-door-name = Wand of Entrance
-spellbook-wand-polymorph-door-description = For when you need a get-away route.
+spellbook-wand-polymorph-door-name = Varita de entrada
+spellbook-wand-polymorph-door-description = Para cuando necesitas una ruta de escape.
 
-spellbook-wand-polymorph-carp-name = Wand of Carp Polymorph
-spellbook-wand-polymorph-carp-description = For when you need a carp filet quick and the clown is looking juicy.
+spellbook-wand-polymorph-carp-name = Varita de polimorfia de carpa
+spellbook-wand-polymorph-carp-description = Para cuando necesitas un filete de carpa rápido y el payaso se ve jugoso.
 
-spellbook-wand-locker-name = Wand of the Locker
-spellbook-wand-locker-description = Shoot cursed lockers at your enemies and lock em away!
+spellbook-wand-locker-name = Varita del casillero
+spellbook-wand-locker-description = ¡Dispara casilleros malditos a tus enemigos y déjalos encerrados!
 
 spellbook-hammer-mjollnir-name = Mjollnir
-spellbook-hammer-mjollnir-description = Wield the power of THUNDER in your hands. Send foes flying with a mighty swing or by throwing it right at em!
+spellbook-hammer-mjollnir-description = Empuña el poder del TRUENO en tus manos. ¡Haz volar a tus enemigos con un poderoso golpe o lanzándoselo directamente!
 
-spellbook-hammer-singularity-name = Singularity Hammer
-spellbook-hammer-singularity-description = Ever wonder what it'd be like to be the singularity? Swing this hammer to draw in your surroundings, even works if you miss!
+spellbook-hammer-singularity-name = Martillo de singularidad
+spellbook-hammer-singularity-description = ¿Alguna vez te preguntaste cómo sería ser la singularidad? Balancea este martillo para atraer lo que te rodea, ¡incluso funciona si fallas!
 
-spellbook-staff-animation-name = Staff of Animation
-spellbook-staff-animation-description = Bring inanimate objects to life!
+spellbook-staff-animation-name = Báculo de animación
+spellbook-staff-animation-description = ¡Dale vida a objetos inanimados!
 
-# Events
+# Eventos
 
-spellbook-event-summon-ghosts-name = Summon Ghosts
-spellbook-event-summon-ghosts-description = Who ya gonna call?
+spellbook-event-summon-ghosts-name = Invocar fantasmas
+spellbook-event-summon-ghosts-description = ¿A quién vas a llamar?
 
-spellbook-event-summon-guns-name = Summon Guns
-spellbook-event-summon-guns-description = AK47s for everyone! Places a random gun in front of everybody. Disables refunds when bought!
+spellbook-event-summon-guns-name = Invocar armas
+spellbook-event-summon-guns-description = ¡AK47 para todos! Coloca un arma aleatoria frente a cada persona. ¡Desactiva los reembolsos al comprarlo!
 
-spellbook-event-summon-magic-name = Summon Magic
-spellbook-event-summon-magic-description = Places a random magical item in front of everybody. Nothing could go wrong! Disables refunds when bought!
+spellbook-event-summon-magic-name = Invocar magia
+spellbook-event-summon-magic-description = Coloca un objeto mágico aleatorio frente a cada persona. ¡Nada podría salir mal! ¡Desactiva los reembolsos al comprarlo!
 
-# Upgrades
-spellbook-upgrade-fireball-name = Upgrade Fireball
-spellbook-upgrade-fireball-description = Upgrades Fireball to a maximum of level 3!
+# Mejoras
+spellbook-upgrade-fireball-name = Mejorar Bola de fuego
+spellbook-upgrade-fireball-description = ¡Mejora Bola de fuego hasta un máximo de nivel 3!
 
-spellbook-upgrade-jaunt-name = Upgrade Ethereal Jaunt
-spellbook-upgrade-jaunt-description = Upgrades Jaunt to a maximum of level 3!
+spellbook-upgrade-jaunt-name = Mejorar Salto etéreo
+spellbook-upgrade-jaunt-description = ¡Mejora Salto etéreo hasta un máximo de nivel 3!

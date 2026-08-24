@@ -1,7 +1,7 @@
 # System
 station-ai-fixer-console-is-locked = La consola está bloqueada.
 station-ai-fixer-console-station-ai-holder-required = Solo se pueden insertar unidades de almacenamiento de IA en la consola.
-station-ai-fixer-console-examination-station-ai-holder-present = Hay {INDEFINITE($holder)} [color=cyan]{$holder}[/color] insertado en la consola.
+station-ai-fixer-console-examination-station-ai-holder-present = Hay [color=cyan]{$holder}[/color] insertado en la consola.
 station-ai-fixer-console-examination-station-ai-holder-absent = Hay una ranura libre para una [color=cyan]unidad de almacenamiento de IA[/color].
 station-ai-fixer-console-repair-finished = Reparación completa. Intentando reiniciar la IA...
 station-ai-fixer-console-repair-successful = Reparación completa. IA reiniciada con éxito.
