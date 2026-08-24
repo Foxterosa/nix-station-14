@@ -1,0 +1,14 @@
+﻿advertisement-happyhonk-1 = ¡Honk! ¡Honk! ¿Por qué no pides hoy mismo una Cajita Feliz Honk?
+advertisement-happyhonk-2 = Los payasos merecen un abrazo; si ves uno, no dudes en demostrarle tu cariño.
+advertisement-happyhonk-3 = Si te toca el Honker Dorado, reza a los dioses: eres una persona con muchísima suerte.
+advertisement-happyhonk-4 = Happy Honk: es comida, es una ganga, y trae un juguete de plástico que te hará gritar de emoción.
+advertisement-happyhonk-5 = ¿Qué es blanco y negro y rojo por todos lados? La mimo, y murió de un golpe en la cabeza.
+advertisement-happyhonk-6 = ¿Cuántos oficiales de seguridad hacen falta para arrestarte? Tres: uno para molerte a palos, otro para esposarte y otro para tirar tu cuerpo en mantenimiento.
+advertisement-happyhonk-7 = Happy Honk no se hace responsable de la calidad de la comida que va dentro de nuestras cajas Happy Honk.
+advertisement-happyhonk-8 = ¿Por qué no pides nuestra Cajita Feliz Honk edición limitada del Mimo?
+advertisement-happyhonk-9 = Happy Honk es una marca registrada de Honk! co. y es muchísimo mejor que Robust Nukie Food corp.
+advertisement-happyhonk-10 = ¡Nuestras cajitas Happy Honk te garantizan una gran sorpresa!
+thankyou-happyhonk-1 = ¡Honk!
+thankyou-happyhonk-2 = ¡Honk honk!
+thankyou-happyhonk-3 = ¡Ve a compartir la diversión! ¡Honk!
+thankyou-happyhonk-4 = ¡Ve a hacer resbalar gente! ¡Honk!

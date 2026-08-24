@@ -1,0 +1,12 @@
+advertisement-cleanbot-1 = Suciedad detectada.
+advertisement-cleanbot-2 = ¿Por qué esta estación está tan sucia...
+advertisement-cleanbot-3 = Por favor, tira tu basura en los cestos. Yo no llego.
+advertisement-cleanbot-4 = Si no empiezas a tirar tu basura, te voy a echar agua encima.
+advertisement-cleanbot-5 = Limpieza en curso.
+advertisement-cleanbot-6 = Vete al carajo.
+advertisement-cleanbot-7 = ¿Por qué seguimos aquí? ¿Solo para limpiar?
+advertisement-cleanbot-8 = ¡¡SOY EL LIMPIADOR MÁS FUERTE DE NANOTRASEN!!
+advertisement-cleanbot-9 = Que no sea potasio, que no sea potasio...
+advertisement-cleanbot-10 = ¡Que tengas un buen día!
+advertisement-cleanbot-11 = Ojalá tuviera manos.
+advertisement-cleanbot-12 = Si veo a alguien resbalarse una vez más en algo que me vio trapear, voy a perder la cabeza.

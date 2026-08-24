@@ -1,0 +1,1 @@
+station-event-greytide-virus-start-announcement = Virus D00r.L4gg1ng detectado en las subrutinas de cifrado de cierre seguro de la estación. Nivel de gravedad de { $severity }. Se recomienda la intervención de la IA de la estación.

@@ -1,0 +1,17 @@
+advertisement-medibot-1 = ¿Qué clase de enfermería es esta? Están cayendo todos como moscas.
+advertisement-medibot-2 = Lo sabía, debí haber sido cirujano plástico.
+advertisement-medibot-3 = Siempre hay una trampa, y yo soy el mejor que hay.
+advertisement-medibot-4 = Una manzana al día me mantiene lejos.
+advertisement-medibot-5 = ¡Yo soy diferente!
+advertisement-medibot-6 = Vete al carajo.
+advertisement-medibot-7 = ¿Por qué seguimos aquí? ¿Solo para sufrir?
+advertisement-medibot-8 = Yo... nunca perdí un paciente. Hoy, quiero decir.
+advertisement-medibot-9 = Lexorina adentro.
+advertisement-medibot-10 = ¡Que tengas un buen día!
+advertisement-medibot-11 = ¡Ojalá no tengas que volver!
+advertisement-medibot-12 = Recuerda cepillarte los dientes.
+advertisement-medibot-13 = Ojalá tuviera manos.
+advertisement-medibot-14 = ¡Estoy aquí para ayudar!
+advertisement-medibot-15 = ¡Pídele una paleta al doctor!
+advertisement-medibot-16 = ¡Que te mejores pronto!
+advertisement-medibot-17 = ¡Una manzana al día mantiene al doctor en la lejanía!

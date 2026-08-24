@@ -1,0 +1,14 @@
+admin-solutions-window-title = Editor de soluciones - {$targetName}
+admin-solutions-window-solution-label = Solución objetivo:
+admin-solutions-window-solution-button = Solución
+admin-solutions-window-solution-button-tooltip = Abre la instancia de Solution del lado del servidor en ViewVariables. Útil para depurar problemas de predicción.
+admin-solutions-window-vv-button = VV
+admin-solutions-window-vv-button-tooltip = Abre la entidad de solución correspondiente en ViewVariables.
+admin-solutions-window-add-new-button = Agregar reactivo nuevo
+admin-solutions-window-volume-label = Volumen {$currentVolume}/{$maxVolume}u
+admin-solutions-window-capacity-label = Capacidad (u):
+admin-solutions-window-specific-heat-label = Calor específico: {$specificHeat} J/(K*u)
+admin-solutions-window-heat-capacity-label = Capacidad calorífica: {$heatCapacity} J/K
+admin-solutions-window-temperature-label = Temperatura (K):
+admin-solutions-window-thermal-energy-label = Energía térmica (J):
+admin-solutions-window-thermals = Térmicas
