@@ -2,7 +2,7 @@
 # Mostly help + error messages.
 
 list-verbs-command-description = Lista todos los verbos que un jugador puede usar sobre una entidad determinada.
-list-verbs-command-help = listverbs <playerUid | "self"> <targetUid>
+list-verbs-command-help = listverbs <uidJugador | "self"> <uidObjetivo>
 
 list-verbs-command-invalid-args = listverbs toma 2 argumentos.
 

@@ -4,11 +4,11 @@ random-sentience-event-data-2 = nuestros sofisticados modelos probabilísticos
 random-sentience-event-data-3 = nuestra omnipotencia
 random-sentience-event-data-4 = el tráfico de comunicaciones en su estación
 random-sentience-event-data-5 = emisiones de energía que detectamos
-random-sentience-event-data-6 = [REDACTED]
+random-sentience-event-data-6 = [CENSURADO]
 
 ## Phrases used to describe the level of intelligence, though it doesn't actually affect anything.
 random-sentience-event-strength-1 = humana
-random-sentience-event-strength-2 = primate
+random-sentience-event-strength-2 = simiesco
 random-sentience-event-strength-3 = moderada
 random-sentience-event-strength-4 = de seguridad
 random-sentience-event-strength-5 = de mando
@@ -32,7 +32,7 @@ station-event-random-sentience-role-description = Eres un { $name } sapiente, tr
 # Flavors
 station-event-random-sentience-flavor-mechanical = mecánico
 station-event-random-sentience-flavor-organic = orgánico
-station-event-random-sentience-flavor-primate = primate
-station-event-random-sentience-flavor-kobold = kobold
+station-event-random-sentience-flavor-primate = simiesco
+station-event-random-sentience-flavor-kobold = koboldo
 station-event-random-sentience-flavor-inanimate = inanimado
 station-event-random-sentience-flavor-corgi = corgi

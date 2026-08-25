@@ -35,7 +35,7 @@ rr-criminal-failed-content =
 
     En vista de ello, el crimen deja de clasificarse como extremismo informacional y pasa a considerarse negligencia fatal.
 
-    Deben [bold]interrogar[/bold] al criminal y, si admite {POSS-ADJ($subject)} culpabilidad, deberá quedar en libertad condicional y se le permitirá compensarlo trabajando en puestos inferiores, con daños evaluados entre un millón y medio y diez millones de créditos.
+    Deben [bold]interrogar[/bold] al criminal y, si admite {POSS-ADJ($subject)} culpabilidad, [bold]dejarlo en libertad condicional[/bold] y permitirle compensarlo trabajando en puestos inferiores, con daños evaluados entre un millón y medio y diez millones de créditos.
     ─────────────────────────────────────────
    ⠀                                    [italic]Lugar para sellos[/italic]
 

@@ -1,0 +1,26 @@
+ent-AsteroidDebrisLarge = asteroid debris large
+ent-AsteroidDebrisLarger = asteroid debris larger
+ent-AsteroidDebrisMedium = asteroid debris medium
+ent-AsteroidDebrisSmall = asteroid debris small
+ent-AsteroidSalvageHuge = salvage asteroid huge
+ent-AsteroidSalvageLarge = salvage asteroid large
+ent-AsteroidSalvageMedium = salvage asteroid medium
+ent-AsteroidSalvageSmall = salvage asteroid small
+ent-BaseAsteroidDebris = asteroid debris
+ent-BaseMeatDebris = carne debris
+ent-BaseScrapDebris = scrap debris
+ent-BaseTrashDebris = trash debris
+ent-MeatDebrisLarge = carne debris large
+ent-MeatDebrisMedium = carne debris medium
+ent-MeatDebrisSmall = carne debris small
+ent-QuantityDespawnScent = scent despawn category
+ent-ScrapDebrisLarge = scrap debris large
+ent-ScrapDebrisMedium = scrap debris medium
+ent-ScrapDebrisSmall = scrap debris small
+ent-TrashDebrisLarge = trash debris large
+ent-TrashDebrisMedium = trash debris medium
+ent-TrashDebrisSmall = trash debris small
+ent-WorldChunk = world chunk
+    .desc = It's rude to stare.
+It's also a bit odd you're looking at the abstract representation of the grid of reality.
+        It's also a bit odd you're looking at the abstract representation of the grid of reality.

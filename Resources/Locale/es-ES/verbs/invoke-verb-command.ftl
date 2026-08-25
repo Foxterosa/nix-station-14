@@ -2,7 +2,7 @@
 # Mostly help + error messages.
 
 invoke-verb-command-description = Invoca un verbo con el nombre indicado sobre una entidad, usando la entidad del jugador
-invoke-verb-command-help = invokeverb <playerUid | "self"> <targetUid> <verbName | "interaction" | "activation" | "alternative">
+invoke-verb-command-help = invokeverb <uidJugador | "self"> <uidObjetivo> <nombreVerbo | "interaction" | "activation" | "alternative">
 
 invoke-verb-command-invalid-args = invokeverb toma 2 argumentos.
 

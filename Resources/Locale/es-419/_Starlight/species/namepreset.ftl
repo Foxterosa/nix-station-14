@@ -1,1 +1,0 @@
-namepreset-prefixsuffix = {$prefix}{$suffix}
