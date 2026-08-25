@@ -338,6 +338,58 @@ public sealed partial class HealthAnalyzerSystem : EntitySystem
         }
         // Starlight end
 
+        var diagnosedConditions = new List<(string TraitName, string TraitDesc, string ColorHex)>();
+        if (HasComp<Content.Shared._Nix.Traits.BrainTumor.BrainTumorComponent>(entity))
+            diagnosedConditions.Add((Loc.GetString("condition-brain-tumor"), Loc.GetString("condition-brain-tumor-desc"), "#e74c3c"));
+        if (HasComp<Content.Shared._Nix.Traits.BloodDeficiency.BloodDeficiencyComponent>(entity))
+            diagnosedConditions.Add((Loc.GetString("condition-blood-deficiency"), Loc.GetString("condition-blood-deficiency-desc"), "#e67e22"));
+        if (HasComp<Content.Shared._Nix.Traits.BadBack.BadBackComponent>(entity))
+            diagnosedConditions.Add((Loc.GetString("condition-bad-back"), Loc.GetString("condition-bad-back-desc"), "#f1c40f"));
+        if (HasComp<Content.Shared._Nix.Traits.GlassJaw.GlassJawComponent>(entity))
+            diagnosedConditions.Add((Loc.GetString("condition-glass-jaw"), Loc.GetString("condition-glass-jaw-desc"), "#f39c12"));
+        if (HasComp<Content.Shared._Nix.Traits.Frail.FrailComponent>(entity))
+            diagnosedConditions.Add((Loc.GetString("condition-frail"), Loc.GetString("condition-frail-desc"), "#f39c12"));
+        if (HasComp<Content.Shared._Nix.Traits.Claustrophobia.ClaustrophobiaComponent>(entity))
+            diagnosedConditions.Add((Loc.GetString("condition-claustrophobia"), Loc.GetString("condition-claustrophobia-desc"), "#9b59b6"));
+        if (HasComp<Content.Shared._Nix.Traits.SocialAnxiety.SocialAnxietyComponent>(entity))
+            diagnosedConditions.Add((Loc.GetString("condition-social-anxiety"), Loc.GetString("condition-social-anxiety-desc"), "#3498db"));
+        if (HasComp<Content.Shared._Nix.Traits.HeavySleeper.HeavySleeperComponent>(entity))
+            diagnosedConditions.Add((Loc.GetString("condition-heavy-sleeper"), Loc.GetString("condition-heavy-sleeper-desc"), "#1abc9c"));
+        if (HasComp<Content.Shared._Nix.Traits.Hallucinations.RealityDissociationComponent>(entity))
+            diagnosedConditions.Add((Loc.GetString("condition-reality-dissociation"), Loc.GetString("condition-reality-dissociation-desc"), "#e74c3c"));
+        if (HasComp<Content.Shared._Nix.Traits.BadTouch.BadTouchComponent>(entity))
+            diagnosedConditions.Add((Loc.GetString("condition-bad-touch"), Loc.GetString("condition-bad-touch-desc"), "#e67e22"));
+        if (HasComp<Content.Shared._Nix.Traits.Nyctophobia.NyctophobiaComponent>(entity))
+            diagnosedConditions.Add((Loc.GetString("condition-nyctophobia"), Loc.GetString("condition-nyctophobia-desc"), "#34495e"));
+        if (HasComp<Content.Shared._Nix.Traits.Smoker.SmokerComponent>(entity))
+            diagnosedConditions.Add((Loc.GetString("condition-smoker"), Loc.GetString("condition-smoker-desc"), "#7f8c8d"));
+        if (HasComp<Content.Shared._Nix.Traits.Illiterate.IlliterateComponent>(entity))
+            diagnosedConditions.Add((Loc.GetString("condition-illiterate"), Loc.GetString("condition-illiterate-desc"), "#95a5a6"));
+        if (HasComp<Content.Shared._Nix.Traits.Depression.DepressionComponent>(entity))
+            diagnosedConditions.Add((Loc.GetString("condition-depression"), Loc.GetString("condition-depression-desc"), "#7f8c8d"));
+        if (HasComp<Content.Shared._Nix.Traits.FamilyHeirloom.FamilyHeirloomComponent>(entity))
+            diagnosedConditions.Add((Loc.GetString("condition-family-heirloom"), Loc.GetString("condition-family-heirloom-desc"), "#d35400"));
+        if (HasComp<Content.Shared._Nix.Traits.Cursed.CursedComponent>(entity))
+            diagnosedConditions.Add((Loc.GetString("condition-cursed"), Loc.GetString("condition-cursed-desc"), "#8e44ad"));
+        if (HasComp<Content.Shared._Nix.Traits.PoorAim.PoorAimComponent>(entity))
+            diagnosedConditions.Add((Loc.GetString("condition-poor-aim"), Loc.GetString("condition-poor-aim-desc"), "#e67e22"));
+        if (HasComp<Content.Shared._Nix.Traits.SoftSpoken.SoftSpokenComponent>(entity))
+            diagnosedConditions.Add((Loc.GetString("condition-soft-spoken"), Loc.GetString("condition-soft-spoken-desc"), "#3498db"));
+        if (HasComp<Content.Shared._Nix.Traits.BigHands.BigHandsComponent>(entity))
+            diagnosedConditions.Add((Loc.GetString("condition-big-hands"), Loc.GetString("condition-big-hands-desc"), "#e67e22"));
+        if (HasComp<Content.Shared._Nix.Traits.Pushover.PushoverComponent>(entity))
+            diagnosedConditions.Add((Loc.GetString("condition-pushover"), Loc.GetString("condition-pushover-desc"), "#f39c12"));
+        if (HasComp<Content.Shared.CombatMode.Pacification.PacifiedComponent>(entity))
+            diagnosedConditions.Add((Loc.GetString("condition-pacifist"), Loc.GetString("condition-pacifist-desc"), "#2ecc71"));
+        if (HasComp<Content.Shared.Traits.Assorted.PermanentBlindnessComponent>(entity))
+            diagnosedConditions.Add((Loc.GetString("condition-blindness"), Loc.GetString("condition-blindness-desc"), "#e74c3c"));
+        if (HasComp<Content.Shared.Traits.Assorted.NarcolepsyComponent>(entity))
+            diagnosedConditions.Add((Loc.GetString("condition-narcolepsy"), Loc.GetString("condition-narcolepsy-desc"), "#9b59b6"));
+        if (HasComp<Content.Shared.Traits.Assorted.ParacusiaComponent>(entity))
+            diagnosedConditions.Add((Loc.GetString("condition-paracusia"), Loc.GetString("condition-paracusia-desc"), "#8e44ad"));
+        if (HasComp<Content.Shared.Speech.Muting.MutedComponent>(entity))
+            diagnosedConditions.Add((Loc.GetString("condition-muted", ("fallback", "Mutismo")), "Incapacidad total para la fonación vocal.", "#95a5a6"));
+
         return new HealthAnalyzerUiState(
             GetNetEntity(entity),
             bodyTemperature,
@@ -346,7 +398,8 @@ public sealed partial class HealthAnalyzerSystem : EntitySystem
             null,
             bleeding,
             unrevivable,
-            metabolizingReagents // Starlight - add metabolizing chemicals to ui message
+            metabolizingReagents, // Starlight - add metabolizing chemicals to ui message
+            diagnosedConditions
         );
     }
 

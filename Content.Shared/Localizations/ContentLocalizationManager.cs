@@ -46,6 +46,9 @@ namespace Content.Shared.Localizations
             EnsureCultureLoaded(cultureEn);
             _loc.AddFunction(cultureEn, "MAKEPLURAL", FormatMakePlural);
             _loc.AddFunction(cultureEn, "MANY", FormatMany);
+
+            _loc.SetDefaultCulture();
+            _loc.SetFallbackCluture(baseCulture);
         }
 
         private void EnsureCultureLoaded(CultureInfo culture)

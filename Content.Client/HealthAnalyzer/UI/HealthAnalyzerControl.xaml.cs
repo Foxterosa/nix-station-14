@@ -115,7 +115,8 @@ public sealed partial class HealthAnalyzerControl : BoxContainer
 
         // Alerts
 
-        var showAlerts = state.Unrevivable == true || state.Bleeding == true;
+        var hasConditions = state.DiagnosedConditions != null && state.DiagnosedConditions.Count > 0;
+        var showAlerts = state.Unrevivable == true || state.Bleeding == true || hasConditions;
 
         AlertsDivider.Visible = showAlerts;
         AlertsContainer.Visible = showAlerts;
@@ -138,6 +139,20 @@ public sealed partial class HealthAnalyzerControl : BoxContainer
                 Margin = new Thickness(0, 4),
                 MaxWidth = 300
             });
+
+        if (hasConditions)
+        {
+            foreach (var (condName, desc, color) in state.DiagnosedConditions!)
+            {
+                var label = new RichTextLabel
+                {
+                    Margin = new Thickness(0, 2),
+                    MaxWidth = 300
+                };
+                label.SetMessage(FormattedMessage.FromMarkupOrThrow($"[color={color}][bold]{FormattedMessage.EscapeText(condName)}[/bold]: {FormattedMessage.EscapeText(desc)}[/color]"));
+                AlertsContainer.AddChild(label);
+            }
+        }
 
         // Damage Groups
         /* Starlight begin - old damage group sorting by highest damage

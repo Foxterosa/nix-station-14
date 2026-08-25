@@ -162,8 +162,8 @@ public sealed partial class TTSSystem : EntitySystem
                 _ => TTSEffect.None
             };
 
-            await GenerateAndStream(TTSType.IG, voice, text, filter, effect, null, uid,
-                volume: args.IsWhisper ? WhisperVoiceVolumeModifier : 1f);
+            var volume = args.IsWhisper ? WhisperVoiceVolumeModifier : (HasComp<Content.Shared._Nix.Traits.SoftSpoken.SoftSpokenComponent>(uid) ? 0.45f : 1f);
+            await GenerateAndStream(TTSType.IG, voice, text, filter, effect, null, uid, volume: volume);
         }
         catch (TaskCanceledException ex)
         {
@@ -189,6 +189,9 @@ public sealed partial class TTSSystem : EntitySystem
             filter = Filter.Empty()
                .AddInRange(mapCoords, SharedChatSystem.WhisperClearRange);
         }
+
+        if (args.Channel != null)
+            filter.RemoveWhere(x => x.AttachedEntity == uid);
 
         return filter.RemovePlayers(_ignoredRecipients)
                .RemoveWhere(x => x.AttachedEntity.HasValue
@@ -245,7 +248,7 @@ public sealed partial class TTSSystem : EntitySystem
         return text;
     }
 
-    [GeneratedRegex(@"[^a-zA-Z0-9,.\-?!' ]")]
+    [GeneratedRegex(@"[^a-zA-Z0-9,.\-?!' áéíóúÁÉÍÓÚñÑüÜ¡¿]")]
     private static partial Regex CharFilter();
 
     [GeneratedRegex(@"[\u2018\u2019]")]
