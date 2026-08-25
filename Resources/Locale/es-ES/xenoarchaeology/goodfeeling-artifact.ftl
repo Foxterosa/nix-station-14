@@ -1,0 +1,21 @@
+goodfeeling-artifact-1 = Te sientes bien.
+goodfeeling-artifact-2 = Todo parece ir bien.
+goodfeeling-artifact-3 = Tienes un buen presentimiento sobre esto.
+goodfeeling-artifact-4 = Tus instintos te dicen que todo va a mejorar.
+goodfeeling-artifact-5 = Hay una buena sensación en el aire.
+goodfeeling-artifact-6 = Algo huele... bien.
+goodfeeling-artifact-7 = Sientes cosquilleo en las puntas de los dedos.
+goodfeeling-artifact-8 = Tienes un buen presentimiento sobre esto.
+goodfeeling-artifact-9 = Te sientes feliz.
+goodfeeling-artifact-10 = Contienes las ganas de sonreír.
+goodfeeling-artifact-11 = Sientes un escalofrío en el cuero cabelludo.
+goodfeeling-artifact-12 = Todos los colores parecen un poco más vibrantes.
+goodfeeling-artifact-13 = Todo parece un poco más ligero.
+goodfeeling-artifact-14 = Los problemas del mundo parecen desvanecerse.
+
+goodfeeling-artifact-drastic-1 = ¡Quieres abrazar a todo el mundo que conoces!
+goodfeeling-artifact-drastic-2 = ¡Todo está saliendo tan bien!
+goodfeeling-artifact-drastic-3 = Te sientes eufórico.
+goodfeeling-artifact-drastic-4 = Te sientes exaltado.
+goodfeeling-artifact-drastic-5 = Te sientes tan feliz de repente que casi quieres bailar y cantar.
+goodfeeling-artifact-drastic-6 = Sientes que el mundo está de tu lado.

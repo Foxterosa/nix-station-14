@@ -1,0 +1,16 @@
+color-red = rojo
+color-yellow = amarillo
+color-brown = marron
+color-green = verde
+color-cyan = cian
+color-blue = azul
+color-white = blanco
+color-black = negro
+color-orange = naranja
+color-gold = dorado
+color-gray = gris
+color-grey = gris
+color-navy = azul marino
+color-purple = purpura
+color-pink = rosa
+color-fuchsia = fucsia

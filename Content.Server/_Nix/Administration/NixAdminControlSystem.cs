@@ -27,6 +27,7 @@ using Robust.Server.Upload;
 using Robust.Shared.Asynchronous;
 using Robust.Shared.Audio;
 using Robust.Shared.ContentPack;
+using Robust.Shared.Map.Components;
 using Robust.Shared.Network;
 using Robust.Shared.Player;
 using Robust.Shared.Timing;
@@ -320,13 +321,23 @@ public sealed partial class NixAdminControlSystem : EntitySystem
     private int RechargeStationSmes()
     {
         var affected = 0;
-        var query = EntityQueryEnumerator<PowerMonitoringDeviceComponent, BatteryComponent, TransformComponent>();
-        while (query.MoveNext(out var uid, out var monitor, out var battery, out var transform))
+        var query = EntityQueryEnumerator<BatteryComponent, TransformComponent>();
+        while (query.MoveNext(out var uid, out var battery, out var transform))
         {
-            if (monitor.Group != PowerMonitoringConsoleGroup.SMES || !IsStationGrid(transform.GridUid))
+            if (!IsStationGrid(transform.GridUid))
+                continue;
+
+            // Only recharge large station batteries (SMES, Substations, RTGs, power generators)
+            if (HasComp<ApcComponent>(uid))
                 continue;
 
             _battery.SetCharge((uid, battery), battery.MaxCharge);
+
+            if (TryComp<PowerNetworkBatteryComponent>(uid, out var netBattery))
+            {
+                netBattery.Enabled = true;
+            }
+
             affected++;
         }
 
@@ -348,17 +359,20 @@ public sealed partial class NixAdminControlSystem : EntitySystem
             affected++;
         }
 
+        // Also ensure all substations and SMES on the grid have full charge so APCs don't immediately deplete
+        RechargeStationSmes();
+
         return affected;
     }
 
     private bool IsStationGrid(EntityUid? grid)
     {
-        return grid is { } gridUid && TryComp<StationMemberComponent>(gridUid, out _);
+        return grid is { } gridUid && (TryComp<StationMemberComponent>(gridUid, out _) || TryComp<MapGridComponent>(gridUid, out _));
     }
 
     private void OnAlertRequest(NixAdminAlertRequestEvent ev, EntitySessionEventArgs args)
     {
-        if (!_admin.HasAdminFlag(args.SenderSession, AdminFlags.Fun))
+        if (!_admin.IsAdmin(args.SenderSession))
             return;
 
         SendAlertSnapshot(args.SenderSession);
@@ -366,7 +380,7 @@ public sealed partial class NixAdminControlSystem : EntitySystem
 
     private void OnSetAlert(NixAdminSetAlertEvent ev, EntitySessionEventArgs args)
     {
-        if (!_admin.HasAdminFlag(args.SenderSession, AdminFlags.Fun) ||
+        if (!_admin.IsAdmin(args.SenderSession) ||
             !TryResolveAdminStation(args.SenderSession, out var station) ||
             !TryComp<AlertLevelComponent>(station, out var alert) ||
             alert.AlertLevels == null ||

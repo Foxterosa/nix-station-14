@@ -106,12 +106,13 @@ public sealed partial class StationTab : Control
             ("id", _station.CurrentLevel.ToUpperInvariant()));
 
         _alerts = _station.Levels.OrderBy(level => AlertSortIndex(level.Id)).ToList();
-        foreach (var alert in _alerts)
+        for (var i = 0; i < _alerts.Count; i++)
         {
+            var alert = _alerts[i];
             var category = OperationalAlerts.Contains(alert.Id)
                 ? Loc.GetString("administration-ui-station-tab-category-operational")
                 : Loc.GetString("administration-ui-station-tab-category-special");
-            AlertOption.AddItem($"[{category}] {LocalizedAlertName(alert.Id)} ({alert.Id.ToUpperInvariant()})");
+            AlertOption.AddItem($"[{category}] {LocalizedAlertName(alert.Id)} ({alert.Id.ToUpperInvariant()})", i);
         }
     }
 

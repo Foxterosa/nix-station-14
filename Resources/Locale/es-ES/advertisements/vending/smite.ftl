@@ -1,0 +1,12 @@
+﻿advertisement-smite-1 = ¡SMITE! ¡Banea tu sed!
+advertisement-smite-2 = ¡Una explosión arcana de limón y lima!
+advertisement-smite-3 = ¡Más de un millón de bebidas vendidas!
+advertisement-smite-4 = ¡SMITE! Tira 2d8 de SABOR.
+advertisement-smite-5 = ¡SMITE! ¡A terminar ese papeleo!
+advertisement-smite-6 = ¡El conserje te la tiene jurada!
+advertisement-smite-7 = ¡SMITE! No te va a dejar borracho.
+advertisement-smite-8 = ¡Es hora de limón y lima!
+thankyou-smite-1 = ¡Smite es lo correcto!
+thankyou-smite-2 = ¡DEFINITIVAMENTE querías limón y lima!
+thankyou-smite-3 = La oficina no sabrá qué la golpeó.
+thankyou-smite-4 = Destierra tu sed.

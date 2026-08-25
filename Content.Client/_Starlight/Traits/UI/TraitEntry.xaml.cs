@@ -40,10 +40,26 @@ public sealed partial class TraitEntry : PanelContainer
         TraitNameLabel.Text = Loc.GetString(trait.Name);
         TraitDescriptionLabel.SetMessage(Loc.GetString(trait.Description));
 
-        // Format cost display
-        var costPrefix = trait.Cost > 0 ? "+" : "";
-        var costColor = trait.Cost > 0 ? "#ff6b6b" : trait.Cost < 0 ? "#6bff6b" : "#888888";
-        TraitCostLabel.Text = $"{costPrefix}{trait.Cost}";
+        // Format cost display: negative cost means it gives points (+ in green), positive cost means it spends points (- in red)
+        string costText;
+        string costColor;
+        if (trait.Cost < 0)
+        {
+            costText = $"+{-trait.Cost}";
+            costColor = "#6bff6b";
+        }
+        else if (trait.Cost > 0)
+        {
+            costText = $"-{trait.Cost}";
+            costColor = "#ff6b6b";
+        }
+        else
+        {
+            costText = "0";
+            costColor = "#888888";
+        }
+
+        TraitCostLabel.Text = costText;
         TraitCostLabel.ModulateSelfOverride = Color.FromHex(costColor);
 
         TraitCheckbox.OnToggled += OnCheckboxToggled;

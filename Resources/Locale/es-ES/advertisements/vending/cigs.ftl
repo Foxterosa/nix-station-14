@@ -1,0 +1,15 @@
+﻿advertisement-cigs-1 = Los cigarros espaciales saben bien, como debe saber un cigarrillo.
+advertisement-cigs-2 = Antes la caja de herramientas que cambiar de marca.
+advertisement-cigs-3 = ¡Fuma!
+advertisement-cigs-4 = No creas en los informes: ¡fuma hoy!
+advertisement-cigs-5 = ¡Probablemente no te haga mal!
+advertisement-cigs-6 = ¡No les creas a los científicos!
+advertisement-cigs-7 = ¡Te hace bien!
+advertisement-cigs-8 = ¡No lo dejes, compra más!
+advertisement-cigs-9 = El paraíso de la nicotina.
+advertisement-cigs-10 = Los mejores cigarrillos desde 2150.
+advertisement-cigs-11 = Cigarrillos premiados.
+advertisement-cigs-12 = ¡Aquí para bajarle un poco la tensión al trabajo!
+thankyou-cigs-1 = ¡Ya los tienes, ahora fúmatelos!
+thankyou-cigs-2 = ¡Probablemente no te arrepientas!
+thankyou-cigs-3 = ¡Te vas a volver adicto en un abrir y cerrar de ojos!

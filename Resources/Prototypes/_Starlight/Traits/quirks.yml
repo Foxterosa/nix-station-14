@@ -3,7 +3,7 @@
   name: trait-unclonable-name
   description: trait-unclonable-desc
   category: Quirks
-  cost: 0
+  cost: -8
   effects:
     - !type:AddCompsEffect
       components:
@@ -14,7 +14,7 @@
   name: trait-pacifist-name
   description: trait-pacifist-desc
   category: Quirks
-  cost: 0
+  cost: -8
   effects:
     - !type:AddCompsEffect
       components:
@@ -25,7 +25,7 @@
   name: trait-lightweight-name
   description: trait-lightweight-desc
   category: Quirks
-  cost: 0
+  cost: -2
   effects:
     - !type:AddCompsEffect
       components:
@@ -42,7 +42,7 @@
   name: trait-snoring-name
   description: trait-snoring-desc
   category: Quirks
-  cost: 0
+  cost: -1
   effects:
     - !type:AddCompsEffect
       components:
@@ -60,7 +60,7 @@
   name: trait-clumsy-name
   description: trait-clumsy-desc
   category: Quirks
-  cost: 0
+  cost: -8
   effects:
     - !type:AddCompsEffect
       components:

@@ -1,0 +1,26 @@
+advertisement-block-game-1 = ¡Legalmente distinto!
+advertisement-block-game-2 = ¿Qué diablos es un T-spin?
+advertisement-block-game-3 = ¡Estos bloques no se van a despejar solos!
+advertisement-block-game-4 = ¡Bip bup! ¡Bwuuuup!
+advertisement-block-game-5 = ¡Juguemos un juego!
+advertisement-block-game-6 = ¡6 colores enteros de jugabilidad!
+advertisement-block-game-7 = ¡Acción de 8 bits a pura adrenalina!
+advertisement-block-game-8 = ¡Bloques, bloques, bloques!
+advertisement-block-game-9 = ¿Crees que TÚ puedes quedarte con el récord?
+advertisement-block-game-10 = ¡El Block Game de NanoTrasen SÍ es lo que TetrisNO!
+advertisement-block-game-11 = ¡Ahora con procesamiento a reacción!
+advertisement-block-game-12 = ¡Nuestros abogados están a la espera!
+advertisement-block-game-13 = ¡Aleluya, están lloviendo bloques!
+
+thankyou-block-game-1 = ¡Vuelve a jugar pronto!
+thankyou-block-game-2 = ¡Bien jugado!
+thankyou-block-game-3 = ¿Una partida más?
+thankyou-block-game-4 = ¿Ya te vas tan pronto?
+thankyou-block-game-5 = Los bloques te van a extrañar.
+thankyou-block-game-6 = ¡Gracias por jugar!
+thankyou-block-game-7 = ¡Vuelve pronto!
+thankyou-block-game-8 = ¡Bip bwuuup!
+thankyou-block-game-9 = ¡Siempre hay tiempo para otra partida!
+thankyou-block-game-10 = ¡No te rindas ahora!
+thankyou-block-game-11 = ¡Siempre hay más bloques!
+thankyou-block-game-12 = ¡Los bloques esperan tu regreso!

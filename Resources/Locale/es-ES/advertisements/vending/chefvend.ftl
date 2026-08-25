@@ -1,0 +1,13 @@
+﻿advertisement-chefvend-1 = ¡Al menos el sesenta por ciento de nuestros huevos sin romper, garantizado!
+advertisement-chefvend-2 = Arroz, arroz, nena.
+advertisement-chefvend-3 = ¡Ponle un poco de mantequilla!
+advertisement-chefvend-4 = ¿Vales tu peso en sal? Nosotros sí.
+advertisement-chefvend-5 = Mmm, carne.
+advertisement-chefvend-6 = Aprovecha el poder de la harina.
+advertisement-chefvend-7 = Muéstrales a tus clientes quién es el mejor chef del lugar con nuestra premiada salsa BBQ, famosa en toda la galaxia.
+advertisement-chefvend-8 = Me encantan unos buenos huevos crudos.
+advertisement-chefvend-9 = ¡Disfruta unos buenos huevos crudos!
+thankyou-chefvend-1 = ¡Hora de cocinar!
+thankyou-chefvend-2 = ¡Gracias por confiar en nuestros ingredientes de calidad!
+thankyou-chefvend-3 = ¡Eso debería darles lo que se les antoja!
+thankyou-chefvend-4 = ¡Anda a hacer esas hamburguesas!

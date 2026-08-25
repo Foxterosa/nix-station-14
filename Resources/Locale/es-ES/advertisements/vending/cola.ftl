@@ -1,0 +1,12 @@
+﻿advertisement-cola-1 = ¡Refrescante!
+advertisement-cola-2 = ¡Espero que tengas sed!
+advertisement-cola-3 = ¡Más de 1 millón de bebidas vendidas!
+advertisement-cola-4 = ¿Con sed? ¿Por qué no una cola?
+advertisement-cola-5 = ¡Por favor, toma algo!
+advertisement-cola-6 = ¡Hasta el fondo!
+advertisement-cola-7 = ¡Las mejores bebidas de la galaxia!
+advertisement-cola-8 = ¡Muchísimo mejor que Dr. Gibb!
+thankyou-cola-1 = ¡Abre esa lata y disfruta!
+thankyou-cola-2 = ¡Pum! ¡Toma esa, sed!
+thankyou-cola-3 = ¡Espero que te guste el sabor!
+thankyou-cola-4 = ¡Disfruta tu bebida llena de azúcar!

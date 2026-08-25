@@ -1,0 +1,9 @@
+﻿advertisement-nutrimax-1 = ¡Nos gustan las plantas!
+advertisement-nutrimax-2 = ¿No quieres un poco?
+advertisement-nutrimax-3 = La mejor mano para las plantas.
+advertisement-nutrimax-4 = Nos gustan las plantas grandes.
+advertisement-nutrimax-5 = Tierra suavecita...
+advertisement-nutrimax-6 = ¡Ahora con baldes incluidos!
+advertisement-nutrimax-7 = ¡Mientras más grande la planta, mejor!
+thankyou-nutrimax-1 = ¡A sembrar!
+thankyou-nutrimax-2 = ¡Ve a ensuciarte con tierra!

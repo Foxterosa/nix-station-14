@@ -6,6 +6,8 @@ using Content.Shared.Hands.EntitySystems;
 using Content.Shared.Preferences;
 using Content.Shared.Roles;
 using Content.Shared._Starlight.CCVar;
+using Content.Shared.Inventory;
+using Content.Shared.Storage.EntitySystems;
 using Content.Shared.Whitelist;
 using Robust.Shared.Configuration;
 using Robust.Shared.Player;
@@ -23,6 +25,8 @@ public sealed partial class TraitSystem : EntitySystem
     [Dependency] private ILogManager _log = default!;
     [Dependency] private IPrototypeManager _prototype = default!;
     [Dependency] private SharedHandsSystem _hands = default!;
+    [Dependency] private InventorySystem _inventory = default!;
+    [Dependency] private SharedStorageSystem _storage = default!;
     [Dependency] private EntityWhitelistSystem _whitelistSystem = default!;
 
     private int _maxTraitCount;
@@ -232,20 +236,41 @@ public sealed partial class TraitSystem : EntitySystem
     }
 
     /// <summary>
-    /// Handles the SpawnItemInHandEffect since it requires server-side systems.
+    /// Handles spawning trait items. Prioritizes inserting into player's backpack or pockets before falling back to hands or feet.
     /// </summary>
     private void ApplySpawnItemEffect(EntityUid player, SpawnItemInHandEffect effect, TransformComponent transform)
     {
-        if (!TryComp<HandsComponent>(player, out var hands))
-        {
-            Log.Warning("Cannot spawn trait item: player has no hands component");
-            return;
-        }
-
         var coords = transform.Coordinates;
         var item = Spawn(effect.Item, coords);
 
-        if (!_hands.TryPickup(player, item, checkActionBlocker: false, handsComp: hands))
-            Log.Debug($"Could not pick up trait item {effect.Item}, leaving at feet");
+        // 1. Try to insert into player's back slot (backpack / duffelbag / satchel)
+        if (_inventory.TryGetSlotEntity(player, "back", out var backEntity) &&
+            _storage.CanInsert(backEntity.Value, item, out _))
+        {
+            if (_storage.Insert(backEntity.Value, item, out _))
+                return;
+        }
+
+        // 2. Try to insert into belt, suit storage, or pockets
+        var storageSlots = new[] { "belt", "suitstorage", "pocket1", "pocket2" };
+        foreach (var slot in storageSlots)
+        {
+            if (_inventory.TryGetSlotEntity(player, slot, out var slotEntity) &&
+                _storage.CanInsert(slotEntity.Value, item, out _))
+            {
+                if (_storage.Insert(slotEntity.Value, item, out _))
+                    return;
+            }
+        }
+
+        // 3. Try to pickup in hands
+        if (TryComp<HandsComponent>(player, out var hands) &&
+            _hands.TryPickup(player, item, checkActionBlocker: false, handsComp: hands))
+        {
+            return;
+        }
+
+        // 4. Leave at feet
+        Log.Debug($"Could not store trait item {effect.Item} in bag or hands, leaving at feet");
     }
 }

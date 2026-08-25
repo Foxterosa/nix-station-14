@@ -1,0 +1,148 @@
+- type: entity
+  id: BasePhantomEntity
+  abstract: true
+  components:
+  - type: Transform
+  - type: PhantomHallucination
+    lifetime: 2.5
+    lungeSpeed: 4.5
+    despawnSound:
+      path: /Audio/Magic/steam_whoosh.ogg
+
+- type: entity
+  id: PhantomMobXeno
+  parent: BasePhantomEntity
+  name: phantom burrower
+  description: A terrifying nightmare crawling from the darkness.
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Mobs/Aliens/Xenos/burrower.rsi
+    layers:
+    - state: running
+      color: "#ff3333dd"
+
+- type: entity
+  id: PhantomMobCarp
+  parent: BasePhantomEntity
+  name: phantom space carp
+  description: A ghostly carnivorous space carp swimming through empty air.
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Mobs/Aliens/Carps/space.rsi
+    layers:
+    - state: alive
+      color: "#bb33ffdd"
+
+- type: entity
+  id: PhantomMobShadow
+  parent: BasePhantomEntity
+  name: creeping shadow
+  description: A dark shadowy figure stalking your every step.
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Mobs/Ghosts/revenant.rsi
+    layers:
+    - state: active
+      color: "#220033ee"
+
+- type: entity
+  id: PhantomMobClown
+  parent: BasePhantomEntity
+  name: sinister clown spider
+  description: HONK... HONK... It stares into your soul.
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Mobs/Animals/clownspider.rsi
+    layers:
+    - state: clown
+      color: "#ff2222ee"
+
+- type: entity
+  id: PhantomMobFlesh
+  parent: BasePhantomEntity
+  name: aberrant flesh phantom
+  description: A pulsating mass of hallucinatory sinew.
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Mobs/Aliens/flesh.rsi
+    layers:
+    - state: golem
+      color: "#cc1111ee"
+
+# Phantom Items
+- type: entity
+  id: BasePhantomItem
+  abstract: true
+  components:
+  - type: Transform
+  - type: PhantomHallucination
+    lifetime: 7.0
+    isItem: true
+    disappearRange: 1.4
+    despawnSound:
+      path: /Audio/Magic/disintegrate.ogg
+
+- type: entity
+  id: PhantomItemRevolver
+  parent: BasePhantomItem
+  name: phantom revolver
+  description: A shiny revolver on the floor... or is it?
+  components:
+  - type: Sprite
+    drawdepth: Items
+    sprite: Objects/Weapons/Guns/Revolvers/deckard.rsi
+    layers:
+    - state: base
+
+- type: entity
+  id: PhantomItemBlade
+  parent: BasePhantomItem
+  name: phantom energy blade
+  description: A glowing weapon resting on the floor.
+  components:
+  - type: Sprite
+    drawdepth: Items
+    sprite: Objects/Weapons/Melee/e_sword.rsi
+    layers:
+    - state: e_sword
+
+- type: entity
+  id: PhantomItemSyringe
+  parent: BasePhantomItem
+  name: phantom syringe
+  description: A discarded syringe on the ground.
+  components:
+  - type: Sprite
+    drawdepth: Items
+    sprite: Objects/Specific/Chemistry/syringe.rsi
+    layers:
+    - state: syringe_base0
+
+- type: entity
+  id: PhantomItemBriefcase
+  parent: BasePhantomItem
+  name: phantom briefcase
+  description: A suspicious briefcase resting unattended.
+  components:
+  - type: Sprite
+    drawdepth: Items
+    sprite: Objects/Storage/Briefcases/briefcase_brown.rsi
+    layers:
+    - state: icon
+
+- type: entity
+  id: PhantomItemToolbox
+  parent: BasePhantomItem
+  name: phantom syndicate toolbox
+  description: An illegal red toolbox abandoned on the deck.
+  components:
+  - type: Sprite
+    drawdepth: Items
+    sprite: Objects/Tools/Toolboxes/toolbox_syn.rsi
+    layers:
+    - state: icon

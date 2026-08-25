@@ -1,0 +1,23 @@
+﻿advertisement-boozeomat-1 = Espero que nadie me pida una maldita taza de té...
+advertisement-boozeomat-2 = El alcohol es amigo de la humanidad. ¿Abandonarías a un amigo?
+advertisement-boozeomat-3 = ¡Encantado de servirte!
+advertisement-boozeomat-4 = ¿Nadie tiene sed en esta estación?
+advertisement-boozeomat-5 = ¡Hasta el fondo!
+advertisement-boozeomat-6 = ¡El alcohol te hace bien!
+advertisement-boozeomat-7 = El alcohol es el mejor amigo de la humanidad.
+advertisement-boozeomat-8 = ¿Se te antoja una cerveza bien fría?
+advertisement-boozeomat-9 = ¡Nada te cura como el alcohol!
+advertisement-boozeomat-10 = ¡Toma un sorbo!
+advertisement-boozeomat-11 = ¡Toma un trago!
+advertisement-boozeomat-12 = ¡Toma una cerveza!
+advertisement-boozeomat-13 = ¡La cerveza te hace bien!
+advertisement-boozeomat-14 = ¡Solo el mejor alcohol!
+advertisement-boozeomat-15 = ¡El alcohol de mejor calidad desde 2053!
+advertisement-boozeomat-16 = ¡Vino premiado!
+advertisement-boozeomat-17 = ¡Alcohol al máximo!
+advertisement-boozeomat-18 = Al hombre le encanta la cerveza.
+advertisement-boozeomat-19 = ¡Un brindis por el progreso!
+thankyou-boozeomat-1 = ¡Bebe con responsabilidad!
+thankyou-boozeomat-2 = ¡Bebe sin responsabilidad!
+thankyou-boozeomat-3 = ¡Disfruta tu trago!
+
