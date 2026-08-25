@@ -1,4 +1,4 @@
-﻿<Control
+<Control
     xmlns="https://spacestation14.io"
     xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls"
     Margin="4"
@@ -10,6 +10,19 @@
             <controls:ConfirmButton Name="RestartRound" Text="{Loc administration-ui-round-tab-restart-round}" />
             <controls:ConfirmButton Name="RestartRoundNow" Text="{Loc administration-ui-round-tab-restart-round-now}" />
         </GridContainer>
+
+        <PanelContainer StyleClasses="PanelDark" Margin="0 4 0 0">
+            <BoxContainer Orientation="Vertical" SeparationOverride="6" Margin="8">
+                <Label Text="{Loc administration-ui-round-tab-gamemode-title}" FontColorOverride="#f1c40f" />
+                <BoxContainer Orientation="Horizontal" SeparationOverride="6">
+                    <Label Text="{Loc administration-ui-round-tab-select-mode}" VerticalAlignment="Center" />
+                    <OptionButton Name="GamePresetOption" HorizontalExpand="True" />
+                    <Button Name="SetGamePresetButton" Text="{Loc administration-ui-round-tab-set-mode}" />
+                </BoxContainer>
+                <Label Name="GamePresetStatusLabel" />
+            </BoxContainer>
+        </PanelContainer>
+
         <Label Text="{Loc administration-ui-round-tab-delay-description}" />
         <BoxContainer Orientation="Horizontal" SeparationOverride="5">
             <Label Text="{Loc administration-ui-round-tab-delay-minutes}" VerticalAlignment="Center" />

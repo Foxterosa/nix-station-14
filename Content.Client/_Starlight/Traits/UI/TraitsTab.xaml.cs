@@ -88,7 +88,7 @@ public sealed partial class TraitsTab : BoxContainer
 
         var traitsByCategory = _prototype.EnumeratePrototypes<TraitPrototype>()
             .GroupBy(t => t.Category)
-            .ToDictionary(g => g.Key, g => g.OrderBy(t => Loc.GetString(t.Name)).ToList());
+            .ToDictionary(g => g.Key, g => g.OrderBy(t => t.Cost).ThenBy(t => Loc.GetString(t.Name)).ToList());
 
         foreach (var category in categories)
         {
@@ -166,6 +166,14 @@ public sealed partial class TraitsTab : BoxContainer
         }
         else
         {
+            // If removing this trait (e.g. unchecking a negative trait that was granting points)
+            // would put the player in a points deficit (points spent > max allowed), prevent it!
+            if (_currentPointsSpent - trait.Cost > _maxGlobalPoints)
+            {
+                RevertTraitToggle(traitId);
+                return;
+            }
+
             _selectedTraits.Remove(traitId);
             _currentTraitCount--;
             _currentPointsSpent -= trait.Cost;

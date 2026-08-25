@@ -1,0 +1,18 @@
+- type: entity
+  name: caja de instrumentos musicales
+  description: Una caja sellada enviada para músicos aficionados. Úsala para elegir y desempaquetar tu instrumento musical preferido.
+  parent: BaseItem
+  id: MusicianChoiceBox
+  components:
+  - type: Sprite
+    sprite: Objects/Storage/boxes.rsi
+    state: box
+  - type: Item
+    sprite: Objects/Storage/boxes.rsi
+    state: box
+    size: Small
+  - type: MusicianChoiceBox
+  - type: UserInterface
+    interfaces:
+      enum.MusicianChoiceBoxUiKey.Key:
+        type: MusicianChoiceBoxBoundUserInterface

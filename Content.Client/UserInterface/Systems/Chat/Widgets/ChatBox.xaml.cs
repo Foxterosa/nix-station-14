@@ -65,6 +65,11 @@ public partial class ChatBox : UIWidget
         _controller.SendMessage(this, SelectedChannel);
     }
 
+    private string? _lastRawMessage;
+    private Color _lastColor;
+    private ChatChannel? _lastChannel;
+    private int _lastRepeatCount = 1;
+
     private void OnMessageAdded(ChatMessage msg)
     {
         _sawmill.Debug($"{msg.Channel}: {msg.Message}");
@@ -80,7 +85,24 @@ public partial class ChatBox : UIWidget
 
         var color = msg.MessageColorOverride ?? msg.Channel.TextColor();
 
-        AddLine(msg.WrappedMessage, color);
+        if (Contents.EntryCount > 0 &&
+            _lastRawMessage != null &&
+            _lastRawMessage == msg.WrappedMessage &&
+            _lastChannel == msg.Channel &&
+            _lastColor == color)
+        {
+            _lastRepeatCount++;
+            Contents.RemoveEntry(^1);
+            AddLine($"{msg.WrappedMessage} [bold][color=#ffd700](x{_lastRepeatCount})[/color][/bold]", color);
+        }
+        else
+        {
+            _lastRawMessage = msg.WrappedMessage;
+            _lastColor = color;
+            _lastChannel = msg.Channel;
+            _lastRepeatCount = 1;
+            AddLine(msg.WrappedMessage, color);
+        }
     }
 
     private void OnHighlightsUpdated(string highlights)
@@ -106,6 +128,9 @@ public partial class ChatBox : UIWidget
     public void Repopulate()
     {
         Contents.Clear();
+        _lastRawMessage = null;
+        _lastRepeatCount = 1;
+        _lastChannel = null;
 
         foreach (var child in Contents.Children.ToArray())
         {
@@ -124,6 +149,9 @@ public partial class ChatBox : UIWidget
     private void OnChannelFilter(ChatChannel channel, bool active)
     {
         Contents.Clear();
+        _lastRawMessage = null;
+        _lastRepeatCount = 1;
+        _lastChannel = null;
 
         foreach (var child in Contents.Children.ToArray())
         {

@@ -1,0 +1,433 @@
+- type: trait
+  id: RealityDissociation
+  name: trait-reality-dissociation-name
+  description: trait-reality-dissociation-desc
+  category: Quirks
+  cost: -8
+  effects:
+    - !type:AddCompsEffect
+      components:
+        - type: RealityDissociation
+
+- type: trait
+  id: GlassJaw
+  name: trait-glass-jaw-name
+  description: trait-glass-jaw-desc
+  category: Quirks
+  cost: -4
+  effects:
+    - !type:AddCompsEffect
+      components:
+        - type: GlassJaw
+
+
+- type: trait
+  id: PoorAim
+  name: trait-poor-aim-name
+  description: trait-poor-aim-desc
+  category: Quirks
+  cost: -4
+  effects:
+    - !type:AddCompsEffect
+      components:
+        - type: PoorAim
+
+- type: trait
+  id: BadBack
+  name: trait-bad-back-name
+  description: trait-bad-back-desc
+  category: Quirks
+  cost: -8
+  effects:
+    - !type:AddCompsEffect
+      components:
+        - type: BadBack
+
+- type: trait
+  id: BrainTumor
+  name: trait-brain-tumor-name
+  description: trait-brain-tumor-desc
+  category: Quirks
+  cost: -12
+  effects:
+    - !type:AddCompsEffect
+      components:
+        - type: BrainTumor
+    - !type:SpawnItemInHandEffect
+      item: PillCanisterMannitol
+
+- type: trait
+  id: BloodDeficiency
+  name: trait-blood-deficiency-name
+  description: trait-blood-deficiency-desc
+  category: Quirks
+  cost: -8
+  effects:
+    - !type:AddCompsEffect
+      components:
+        - type: BloodDeficiency
+
+- type: trait
+  id: Claustrophobia
+  name: trait-claustrophobia-name
+  description: trait-claustrophobia-desc
+  category: Quirks
+  cost: -4
+  effects:
+    - !type:AddCompsEffect
+      components:
+        - type: Claustrophobia
+
+- type: trait
+  id: Pushover
+  name: trait-pushover-name
+  description: trait-pushover-desc
+  category: Quirks
+  cost: -8
+  effects:
+    - !type:AddCompsEffect
+      components:
+        - type: Pushover
+
+- type: trait
+  id: Frail
+  name: trait-frail-name
+  description: trait-frail-desc
+  category: Quirks
+  cost: -6
+  effects:
+    - !type:AddCompsEffect
+      components:
+        - type: Frail
+
+- type: trait
+  id: HeavySleeper
+  name: trait-heavy-sleeper-name
+  description: trait-heavy-sleeper-desc
+  category: Quirks
+  cost: -2
+  effects:
+    - !type:AddCompsEffect
+      components:
+        - type: HeavySleeper
+
+- type: trait
+  id: DrunkenResilience
+  name: trait-drunken-resilience-name
+  description: trait-drunken-desc
+  category: Quirks
+  cost: 3
+  effects:
+    - !type:AddCompsEffect
+      components:
+        - type: DrunkenResilience
+
+- type: trait
+  id: LightStep
+  name: trait-light-step-name
+  description: trait-light-step-desc
+  category: Quirks
+  cost: 4
+  effects:
+    - !type:AddCompsEffect
+      components:
+        - type: LightStep
+
+- type: trait
+  id: BadTouch
+  name: trait-bad-touch-name
+  description: trait-bad-touch-desc
+  category: Quirks
+  cost: -1
+  effects:
+    - !type:AddCompsEffect
+      components:
+        - type: BadTouch
+
+- type: trait
+  id: SoftSpoken
+  name: trait-soft-spoken-name
+  description: trait-soft-spoken-desc
+  category: Quirks
+  cost: -2
+  effects:
+    - !type:AddCompsEffect
+      components:
+        - type: SoftSpoken
+
+- type: trait
+  id: BigHands
+  name: trait-bighands-name
+  description: trait-bighands-desc
+  category: Quirks
+  cost: -6
+  effects:
+    - !type:AddCompsEffect
+      components:
+        - type: BigHands
+
+
+- type: trait
+  id: SelfAware
+  name: trait-self-aware-name
+  description: trait-self-aware-desc
+  category: Quirks
+  cost: 8
+  effects:
+    - !type:AddCompsEffect
+      components:
+        - type: SelfAware
+
+- type: trait
+  id: Nyctophobia
+  name: trait-nyctophobia-name
+  description: trait-nyctophobia-desc
+  category: Quirks
+  cost: -3
+  effects:
+    - !type:AddCompsEffect
+      components:
+        - type: Nyctophobia
+
+- type: trait
+  id: Cursed
+  name: trait-cursed-name
+  description: trait-cursed-desc
+  category: Quirks
+  cost: -8
+  effects:
+    - !type:AddCompsEffect
+      components:
+        - type: Cursed
+
+- type: trait
+  id: Smoker
+  name: trait-smoker-name
+  description: trait-smoker-desc
+  category: Quirks
+  cost: -4
+  effects:
+    - !type:AddCompsEffect
+      components:
+        - type: Smoker
+    - !type:SpawnItemInHandEffect
+      item: CigPackGreen
+    - !type:SpawnItemInHandEffect
+      item: Lighter
+
+- type: trait
+  id: Illiterate
+  name: trait-illiterate-name
+  description: trait-illiterate-desc
+  category: Quirks
+  cost: -8
+  effects:
+    - !type:AddCompsEffect
+      components:
+        - type: Illiterate
+
+- type: trait
+  id: Freerunning
+  name: trait-freerunning-name
+  description: trait-freerunning-desc
+  category: Quirks
+  cost: 8
+  effects:
+    - !type:AddCompsEffect
+      components:
+        - type: Freerunning
+
+- type: trait
+  id: ThrowingArm
+  name: trait-throwing-arm-name
+  description: trait-throwing-arm-desc
+  category: Quirks
+  cost: 7
+  effects:
+    - !type:AddCompsEffect
+      components:
+        - type: ThrowingArm
+
+- type: trait
+  id: Skittish
+  name: trait-skittish-name
+  description: trait-skittish-desc
+  category: Quirks
+  cost: 8
+  effects:
+    - !type:AddCompsEffect
+      components:
+        - type: Skittish
+
+- type: trait
+  id: Spiritual
+  name: trait-spiritual-name
+  description: trait-spiritual-desc
+  category: Quirks
+  cost: 2
+  effects:
+    - !type:AddCompsEffect
+      components:
+        - type: Spiritual
+
+- type: trait
+  id: Depression
+  name: trait-depression-name
+  description: trait-depression-desc
+  category: Quirks
+  cost: -3
+  effects:
+    - !type:AddCompsEffect
+      components:
+        - type: Depression
+
+- type: trait
+  id: FamilyHeirloom
+  name: trait-family-heirloom-name
+  description: trait-family-heirloom-desc
+  category: Quirks
+  cost: -2
+  effects:
+    - !type:AddCompsEffect
+      components:
+        - type: FamilyHeirloom
+
+- type: trait
+  id: Musician
+  name: trait-musician-name
+  description: trait-musician-desc
+  category: Quirks
+  cost: 2
+  effects:
+    - !type:SpawnItemInHandEffect
+      item: MusicianChoiceBox
+
+# - type: trait
+#   id: Photographer
+#   name: trait-photographer-name
+#   description: trait-photographer-desc
+#   category: Quirks
+#   cost: 0
+#   effects:
+#     - !type:SpawnItemInHandEffect
+#       item: SurveillanceWirelessCameraHandheld
+
+- type: trait
+  id: Colorist
+  name: trait-colorist-name
+  description: trait-colorist-desc
+  category: Quirks
+  cost: 0
+  effects:
+    - !type:SpawnItemInHandEffect
+      item: CrayonBox
+
+- type: trait
+  id: Bald
+  name: trait-bald-name
+  description: trait-bald-desc
+  category: Quirks
+  cost: 0
+  effects:
+    - !type:AddCompsEffect
+      components:
+        - type: Bald
+    - !type:SpawnItemInHandEffect
+      item: ClothingHeadHatFedoraBrown
+
+- type: trait
+  id: LightDrinker
+  name: trait-light-drinker-name
+  description: trait-light-drinker-desc
+  category: Quirks
+  cost: -2
+  effects:
+    - !type:AddCompsEffect
+      components:
+        - type: LightweightDrunk
+          boozeStrengthMultiplier: 2.0
+
+- type: trait
+  id: Voracious
+  name: trait-voracious-name
+  description: trait-voracious-desc
+  category: Quirks
+  cost: 2
+  effects:
+    - !type:AddCompsEffect
+      components:
+        - type: Voracious
+
+- type: trait
+  id: Vegetarian
+  name: trait-vegetarian-name
+  description: trait-vegetarian-desc
+  category: Quirks
+  cost: 0
+  conflicts:
+    - Carnivore
+    - NoTaste
+  effects:
+    - !type:AddCompsEffect
+      components:
+        - type: Vegetarian
+
+- type: trait
+  id: NoTaste
+  name: trait-no-taste-name
+  description: trait-no-taste-desc
+  category: Quirks
+  cost: 0
+  conflicts:
+    - Vegetarian
+    - Carnivore
+    - PineappleLiker
+    - PineappleHater
+  effects:
+    - !type:AddCompsEffect
+      components:
+        - type: UnableToTaste
+
+- type: trait
+  id: PineappleLiker
+  name: trait-pineapple-liker-name
+  description: trait-pineapple-liker-desc
+  category: Quirks
+  cost: 0
+  conflicts:
+    - PineappleHater
+    - NoTaste
+  effects:
+    - !type:AddCompsEffect
+      components:
+        - type: PineappleLiker
+
+- type: trait
+  id: PineappleHater
+  name: trait-pineapple-hater-name
+  description: trait-pineapple-hater-desc
+  category: Quirks
+  cost: 0
+  conflicts:
+    - PineappleLiker
+    - NoTaste
+  effects:
+    - !type:AddCompsEffect
+      components:
+        - type: PineappleHater
+
+- type: trait
+  id: Carnivore
+  name: trait-carnivore-name
+  description: trait-carnivore-desc
+  category: Quirks
+  cost: 0
+  conflicts:
+    - Vegetarian
+    - NoTaste
+  effects:
+    - !type:AddCompsEffect
+      components:
+        - type: Carnivore
+
+
