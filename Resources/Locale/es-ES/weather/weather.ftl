@@ -2,9 +2,9 @@ cmd-weatherremove-desc = Elimina un clima específico del mapa.
 cmd-weatherset-desc = Elimina todos los climas excepto el especificado. Si el clima especificado no existe en el mapa, lo agrega.
 cmd-weatheradd-desc = Agrega un clima específico al mapa.
 
-cmd-weatherremove-help = weatherremove <mapId> <prototype>
-cmd-weatherset-help = weatherset <mapId> <prototype / null>
-cmd-weatheradd-help = weatheradd <mapId> <prototype / null>
+cmd-weatherremove-help = weatherremove <idMapa> <prototipo>
+cmd-weatherset-help = weatherset <idMapa> <prototipo / null>
+cmd-weatheradd-help = weatheradd <idMapa> <prototipo / null>
 
 cmd-weather-error-no-arguments = ¡No hay suficientes argumentos!
 cmd-weather-error-unknown-proto = ¡Prototipo de clima desconocido!

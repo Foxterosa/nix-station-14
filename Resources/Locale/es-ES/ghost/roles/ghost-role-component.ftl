@@ -298,14 +298,14 @@ ghost-role-information-command-name = Comandante
 ghost-role-information-command-description = Eres un miembro del Comando, pero parece que te encuentras en una situación extraña...
 
 ghost-role-information-lost-challenge-commander-name = Comandante de Permiso
-ghost-role-information-lost-challenge-commander-description = Eres un miembro del Comando de otra nave estelar al que le dieron permiso en tierra junto con uno de tus técnicos de carga.
+ghost-role-information-lost-challenge-commander-description = Eres un miembro del Comando de otra nave estelar al que le dieron permiso en tierra junto con uno de tus técnicos de Cargo.
 ghost-role-information-lost-challenge-commander-rules = No eres hostil a la estación; haz lo que haga falta para asegurar tu propia supervivencia.
                                      No recuerdas nada de tu vida anterior, ni nada de lo que aprendiste como fantasma.
                                      Sí puedes recordar conocimientos generales del juego, como cocinar, usar objetos, etc.
                                      Bajo ningún concepto puedes recordar, por ejemplo, el nombre, la apariencia, etc. de tu personaje anterior. Absolutamente [color=red]NO[/color].
 
 ghost-role-information-lost-challenge-cargo-technican-name = Chofer de Carga
-ghost-role-information-lost-challenge-cargo-technican-description = Eres un técnico de carga al que le dieron permiso en tierra junto con uno de tus oficiales al mando.
+ghost-role-information-lost-challenge-cargo-technican-description = Eres un técnico de Cargo al que le dieron permiso en tierra junto con uno de tus oficiales al mando.
 ghost-role-information-lost-challenge-cargo-technican-rules = No eres hostil a la estación; haz lo que haga falta para asegurar tu propia supervivencia.
                                      No recuerdas nada de tu vida anterior, ni nada de lo que aprendiste como fantasma.
                                      Sí puedes recordar conocimientos generales del juego, como cocinar, usar objetos, etc.

@@ -1,4 +1,4 @@
-﻿spacevillain-menu-title = Space Villain
+spacevillain-menu-title = Villano Espacial
 spacevillain-menu-label-player = Jugador
 spacevillain-menu-button-attack = ATACAR
 spacevillain-menu-button-heal = CURAR

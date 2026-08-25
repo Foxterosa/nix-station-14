@@ -1,6 +1,6 @@
 cmd-biome_clear-desc = Limpia por completo un bioma
-cmd-biome_clear-help = biome_clear <biomecomponent>
+cmd-biome_clear-help = biome_clear <componenteBioma>
 cmd-biome_addlayer-desc = Añade otra capa de bioma
 cmd-biome_addlayer-help = biome_addlayer <mapid> <biometemplate> [desplazamiento de semilla]
 cmd-biome_addmarkerlayer-desc = Añade otra capa de marcadores de bioma
-cmd-biome_addmarkerlayer-help = biome_addmarkerlayer <mapid> <biomemarkerlayer>
+cmd-biome_addmarkerlayer-help = biome_addmarkerlayer <idMapa> <capaMarcadoresBioma>

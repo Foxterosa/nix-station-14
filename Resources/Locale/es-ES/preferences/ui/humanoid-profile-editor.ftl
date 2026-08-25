@@ -41,7 +41,7 @@ humanoid-profile-editor-preference-spawn-priority-cryosleep = CrioSueño
 
 humanoid-profile-editor-jobs-amount-in-department-tooltip = Trabajos en el departamento {$departmentName}
 humanoid-profile-editor-department-jobs-label = Trabajos de {$departmentName}
-humanoid-profile-editor-antags-tab = Antags
+humanoid-profile-editor-antags-tab = Antagonistas
 humanoid-profile-editor-antag-preference-yes-button = Si
 humanoid-profile-editor-antag-preference-no-button = No
 

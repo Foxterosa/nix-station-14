@@ -1,6 +1,6 @@
 # addobjectives
 cmd-addobjective-desc = Añade un objetivo a la mente del jugador.
-cmd-addobjective-help = addobjective <username> <objectiveID>
+cmd-addobjective-help = addobjective <usuario> <idObjetivo>
 
 cmd-addobjective-invalid-args = Se esperaban exactamente 2 argumentos.
 cmd-addobjective-player-not-found = No se pudieron encontrar los datos del jugador.

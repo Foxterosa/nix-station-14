@@ -1,0 +1,58 @@
+- type: voice
+  id: nixEsDavefx
+  voice: 3001
+  name: tts-voice-name-3001
+  sex: Male
+  silicon: false
+  copyright: "https://commonvoice.mozilla.org/es/datasets"
+  license: CC0-1.0
+  pitch: Medium
+  tags:
+  - spanish
+  - european
+  - clear
+  - serious
+
+- type: voice
+  id: nixEsSharvard
+  voice: 3002
+  name: tts-voice-name-3002
+  sex: Female
+  silicon: false
+  copyright: "https://commonvoice.mozilla.org/es/datasets"
+  license: CC0-1.0
+  pitch: Medium
+  tags:
+  - spanish
+  - clear
+  - smooth
+  - soft
+
+- type: voice
+  id: nixEsAld
+  voice: 3003
+  name: tts-voice-name-3003
+  sex: Male
+  silicon: false
+  copyright: "https://commonvoice.mozilla.org/es/datasets"
+  license: CC0-1.0
+  pitch: Low
+  tags:
+  - spanish
+  - latam
+  - serious
+  - deep
+
+- type: voice
+  id: nixEsSilicon
+  voice: 3005
+  name: tts-voice-name-3005
+  sex: Unsexed
+  silicon: true
+  copyright: "https://commonvoice.mozilla.org/es/datasets"
+  license: CC0-1.0
+  pitch: Medium
+  tags:
+  - spanish
+  - robotic
+  - serious
