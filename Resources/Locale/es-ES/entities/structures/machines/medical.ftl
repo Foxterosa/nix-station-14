@@ -1,0 +1,16 @@
+ent-BiomassReclaimer = recuperador de biomasa
+    .desc = Recupera biomasa orgánica a partir de cadáveres. Macabro pero eficiente.
+ent-CryoPod = cryo pod
+    .desc = A special machine intended to create a safe environment for the use of chemicals that react in cold environments.
+ent-CryoPodDestroyed = destroyed cryo pod
+    .desc = A cryo pod that has seen better days. It's entirely inoperable; not good for anything but scrap.
+ent-DiagnosisReportPaper = disease diagnoser report
+    .desc = A chilling medical receipt.
+ent-DiseaseDiagnoser = Disease Diagnoser Delta Extreme
+    .desc = A machine that analyzes disease samples.
+ent-MachineCentrifuge = centrífuga médica
+    .desc = Gira a gran velocidad para separar reactivos líquidos.
+ent-MachineElectrolysisUnit = unidad de electrólisis
+    .desc = Lo último en tecnología médica de síntesis por electrólisis.
+ent-Vaccinator = vacunador
+    .desc = Una máquina que analiza patógenos y crea vacunas protectoras.
