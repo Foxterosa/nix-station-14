@@ -28,34 +28,26 @@ ent-WeaponRifleAkAdmeme = ForceableFollow AKMS
     .suffix = Admeme
 ent-WeaponRifleEstoc = Estoc DMR
     .desc = A designated marksman rifle firing in 3-round bursts. The Estoc was designed as the Lecter’s long-range counterpart, equipped with an extended 20-inch barrel and telescopic sight.
-Feeds from .20 rifle magazines.
         Feeds from .20 fusil magazines.
 ent-WeaponRifleEstocWorn = Estoc DMR
     .desc = A designated marksman rifle firing in 3-round bursts. The Estoc was designed as the Lecter’s long-range counterpart, equipped with an extended 20-inch barrel and telescopic sight.
-Feeds from .20 rifle magazines.
         Feeds from .20 fusil magazines.
     .suffix = Second Hand
 ent-WeaponRifleL10 = L10 DMR
     .desc = A scoped marksman rifle for medium range engagements, built on the Lecter platform.
-Chambered in .45 magnum.
         Chambered in .45 magnum.
 ent-WeaponRifleLawbringer = Lawbringer
     .desc = A bullpup carbine of modern design, commissioned by CentComm for their security forces.
-Feeds from .30 rifle magazines.
         Feeds from .30 fusil magazines.
 ent-WeaponRifleLecter = Lecter
     .desc = Popular gas-operated combat rifle used heavily by NanoTrasen and SolGov. Operating in semi or fully automatic, its accuracy, stopping power, and reliability make it excel in all manner of environments.
-Feeds from .20 rifle magazines.
         Feeds from .20 fusil magazines.
 ent-WeaponRifleLecterRubber = Lecter
     .desc = Popular gas-operated combat rifle used heavily by NanoTrasen and SolGov. Operating in semi or fully automatic, its accuracy, stopping power, and reliability make it excel in all manner of environments.
-Feeds from .20 rifle magazines.
         Feeds from .20 fusil magazines.
     .suffix = Non-lethal
 ent-WeaponRifleLecterXL8 = XL8
     .desc = The Experimental Lecter 8
-An unreasonably expensive military grade assault rifle with integrated optic.
-Uses .20 rifle ammo.
         An unreasonably expensive military grade assault fusil with integrated optic.
         Uses .20 fusil ammo.
 ent-WeaponRifleLeikha = Leikha
