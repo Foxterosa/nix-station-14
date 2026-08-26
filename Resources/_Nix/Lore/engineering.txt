@@ -1,0 +1,11 @@
+[LORE: INGENIERÍA, ENERGÍA Y ATMOSFÉRICA]
+- Fuentes de Energía de la Estación:
+  * Cristal de Supermatter (SM): Cristal hiperenergético en la cámara de enfriamiento. Requiere flujo constante de gas Nitrógeno frío y bombas de radiación. Si sobrecalienta > 5000K, entra en delaminación y explota.
+  * Generador de Singularidad / Tesla: Requiere campos de contención activos. Si se corta la energía de contención, el motor escapa y destruye la estación.
+  * Paneles Solares: Proporcionan energía limpia de respaldo orientándose automáticamente al sol.
+- Red Eléctrica:
+  * Subestaciones (SMES): Almacenan millones de Joules para la red general.
+  * APC (Area Power Controller): Distribuye energía a las luces y máquinas de cada habitación.
+- Atmósfera Estándar:
+  * Mezcla respirable: ~78% Nitrógeno (N2), ~21% Oxígeno (O2) a 101.3 kPa de presión y 20°C (293.15 Kelvin).
+  * Gases peligrosos: Plasma/Forón (altamente inflamable y tóxico), Tritio (radiactivo y explosivo), Óxido de Nitrógeno / N2O (gas somnífero), CO2 (asfixia).

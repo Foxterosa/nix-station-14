@@ -1,0 +1,17 @@
+[LORE: LEY ESPACIAL Y CÓDIGOS PENALES DE NANOTRASEN (SPACE LAW)]
+- Principio Fundamental: Space Law es el marco legal que rige en todas las estaciones espaciales de Nanotrasen.
+- Roles de Aplicación de la Ley:
+  * Oficiales de Seguridad (Security Officers): Mantienen el orden y arrestan a infractores.
+  * Alcaide (Warden): Administra la brigada y custodia a los prisioneros.
+  * Jefe de Seguridad (Head of Security / HoS): Comanda el departamento de seguridad.
+  * Oficial Jurídico / Abogado (Lawyer): Asiste y defiende a los detenidos para garantizar sus derechos.
+  * Capitán: Máxima autoridad en la estación; puede conceder indultos o autorizar ejecuciones en situaciones extremas.
+- Jerarquía de Delitos y Sanciones:
+  * Delitos Menores (100s - 1 a 3 minutos): Vandalismo, resistencia leve, entrada no autorizada menor, posesión de contrabando menor.
+  * Delitos Medios (200s - 3 a 5 minutos): Asalto simple, robo de equipo departamental, posesión de armas sin autorización, negligencia grave.
+  * Delitos Mayores (300s - 5 a 10 minutos): Gran robo (armaduras, herramientas de ingeniería avanzada, equipo de mando), asalto agravado, motín.
+  * Delitos Capitales (400s - Cadena perpetua o Ejecución autorizada): Homicidio, sabotaje mayor a la estación (Supermatter, atmósfera), terrorismo del Sindicato, secuestro del Capitán.
+- Derechos del Detenido:
+  * Todo prisionero tiene derecho a atención médica antes o durante su encierro si está herido.
+  * Derecho a solicitar un abogado o hablar con el Alcaide sobre su sentencia.
+  * No se permite el maltrato o ejecución sumaria sin autorización formal del Capitán/HoS.

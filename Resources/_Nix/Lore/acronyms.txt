@@ -1,0 +1,21 @@
+[LORE: DICCIONARIO DE ACRÓNIMOS, JERGA Y TÉRMINOS DE LA ESTACIÓN]
+- SEC / Sec: Departamento de Seguridad (Security) y sus oficiales. NO es ningún sistema de monitoreo.
+- NT: Nanotrasen Corporation, la megacorporación dueña de la estación.
+- CC / CentCom: Central Command (Comando Central), los cuarteles generales que supervisan la estación.
+- ERT: Emergency Response Team (Equipo de Respuesta a Emergencias) enviado por CentCom en crisis extremas.
+- SM: Supermatter (Supermateria), el cristal generador de energía más potente y peligroso de ingeniería.
+- TEG: Generador Termoeléctrico de Ingeniería.
+- AME: Motor de Antimateria de Ingeniería (Antimatter Engine).
+- EVA: Actividad Extravehicular (trajes y cascos espaciales para salir al espacio exterior sin morir).
+- PDA: Asistente Digital Personal que lleva cada tripulante en el cinturón (contiene linterna, mensajería y cartucho).
+- TC: Telecristales (Telecrystals), moneda ilícita usada por los traidores en PDAs modificadas con enlace ascendente (Uplink).
+- AA: All Access (Acceso total a todas las puertas y departamentos de la estación).
+- Nuke Ops / Nukies: Operativos Nucleares armados del Sindicato que buscan destruir la estación con una bomba nuclear.
+- Brig / Calabozo: Celdas de retención temporal del departamento de Seguridad.
+- Permabrig: Celda de máxima seguridad para prisioneros con cadena perpetua por crímenes capitales.
+- HoP: Head of Personnel (Jefe de Personal).
+- HoS: Head of Security (Jefe de Seguridad).
+- CE: Chief Engineer (Ingeniero Jefe).
+- CMO: Chief Medical Officer (Director Médico).
+- RD: Research Director (Director de Investigación).
+- QM: Quartermaster (Intendente de Carga).

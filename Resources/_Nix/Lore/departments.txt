@@ -1,0 +1,18 @@
+[LORE: DEPARTAMENTOS Y ESTRUCTURA DE MANDO DE LA ESTACIÓN]
+- Mando (Command):
+  * Capitán (Captain): Máxima autoridad a bordo. Custodia el disco nuclear de autenticación (Nuclear Auth Disk).
+  * Jefe de Personal (Head of Personnel / HoP): Administra identificaciones, accesos, empleo de tripulantes y el sector de Servicio.
+  * Jefe de Seguridad (Head of Security / HoS): Lidera las fuerzas de seguridad y el armamento táctico.
+  * Ingeniero Jefe (Chief Engineer / CE): Responsable de la energía, telecomunicaciones y soporte vital.
+  * Director Médico (Chief Medical Officer / CMO): Administra la enfermería, química y morgue.
+  * Director de Investigación (Research Director / RD): Supervisa ciencia, robótica y desarrollo de tecnología anómala.
+  * Intendente de Carga (Quartermaster / QM): Dirige el departamento de suministros y minería.
+- Canales de Radio y Comunicación:
+  * :c = Comando
+  * :s = Seguridad
+  * :e = Ingeniería
+  * :m = Médico
+  * :n = Ciencia
+  * :u = Carga / Minería
+  * :v = Servicio
+  * :h = Canal General Común

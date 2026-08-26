@@ -1,0 +1,11 @@
+[LORE: NANOTRASEN Y ESTRUCTURA DE LA ESTACIÓN]
+- Nanotrasen (NT): Megacorporación galáctica líder en investigación de plasma, clonación y tecnología anómala. Propietaria y operadora de la estación espacial.
+- CentCom (Comando Central): La base suprema de mando fuera de la nave. Envía anuncios oficiales, transbordadores de emergencia y escuadrones de respuesta de emergencia (ERT).
+- Cadena de Mando a Bordo:
+  * Capitán: Máxima autoridad en la estación. Posee la tarjeta de acceso a la cabeza nuclear (Nuke Disk) y la pistola láser de repuesto.
+  * Head of Personnel (HoP): Segundo al mando, maneja identificaciones, accesos y a Ian el Corgi.
+  * Head of Security (HoS): Comanda a los Oficiales, Guardias y al Detective. Mantiene la ley y el orden en el Calabozo (Brig).
+  * Chief Engineer (CE): Encargado del reactor (Supermatter/Singularidad), paneles solares y redes eléctricas.
+  * Chief Medical Officer (CMO): Líder de médicos, cirujanos, químicos y clonación.
+  * Research Director (RD): Encargado de artefactos xenoarqueológicos, robótica y cyborgs.
+- Ley Espacial (Space Law): Código legal de Nanotrasen que castiga desde faltas menores (vandalismo, insultos) hasta crímenes capitales (traición, asesinato en masa, sabotaje de la Supermatter).

@@ -1,0 +1,43 @@
+[LORE: VADEMÉCUM Y RECETAS EXACTAS DE QUÍMICA DE SS14]
+- INSTRUCCIÓN GENERAL: Los reactivos se dispensan en el vaso de precipitados (Beaker) desde el Chem Dispenser.
+
+- RECETAS MÉDICAS CANÓNICAS DE SS14:
+  * Inaprovaline (Estabilizador Vital / Anti-asfixia):
+    - Reactivos: Oxygen (1) + Carbon (1) + Sugar (1)
+    - Produce: 3u de Inaprovaline.
+  * Bicaridine (Tratamiento de Daño Bruto / Golpes / Cortes):
+    - Reactivos: Inaprovaline (1) + Carbon (1)
+    - Produce: 2u de Bicaridine.
+  * Kelotane (Tratamiento de Quemaduras Leves / Fuego):
+    - Reactivos: Silicon (1) + Carbon (1)
+    - Produce: 2u de Kelotane.
+  * Dermaline (Tratamiento de Quemaduras Graves / Fuego / Láser):
+    - Reactivos: Kelotane (1) + Oxygen (1) + Phosphorus (1)
+    - Produce: 3u de Dermaline.
+  * Dylovene (Antitoxina / Venenos / Daño por Toxinas):
+    - Reactivos: Silicon (1) + Nitrogen (1) + Potassium (1)
+    - Produce: 3u de Dylovene.
+  * Tricordrazine (Medicina Curativa General de Amplio Espectro):
+    - Reactivos: Inaprovaline (1) + Dylovene (1)
+    - Produce: 2u de Tricordrazine. (Cura daño bruto, quemaduras y asfixia simultáneamente).
+  * Dexalin (Cura Asfixia y Pérdida de Oxígeno):
+    - Reactivos: Oxygen (2) + Plasma (1 catalizador)
+    - Produce: 3u de Dexalin.
+  * Dexalin Plus (Cura Asfixia Masiva / Hipoxia Crítica):
+    - Reactivos: Dexalin (1) + Carbon (1) + Iron (1)
+    - Produce: 3u de Dexalin Plus.
+  * Tranexamic Acid (Coagulante / Detiene Sangrados y Hemorragias):
+    - Reactivos: Inaprovaline (1) + SulfuricAcid (1) + Sugar (1)
+    - Produce: 3u de Tranexamic Acid.
+  * Synaptizine (Elimina Aturdimiento y Neurotoxinas):
+    - Reactivos: Lithium (1) + Sugar (1) + Water (1)
+    - Produce: 3u de Synaptizine.
+  * Hyronalin (Trata Daño por Radiación Leve):
+    - Reactivos: Radium (1) + Dylovene (1)
+    - Produce: 2u de Hyronalin.
+  * Arithrazine (Trata Daño por Radiación Severa):
+    - Reactivos: Hyronalin (1) + Hydrogen (1)
+    - Produce: 2u de Arithrazine.
+  * Cryoxadone (Regeneración Celular en Criotubo):
+    - Reactivos: Dexalin (1) + Water (1) + Oxygen (1)
+    - Produce: 3u de Cryoxadone. (Requiere temperatura < 170K para actuar en paciente).

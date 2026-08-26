@@ -1,0 +1,10 @@
+[LORE: PROTOCOLOS DE EMERGENCIA Y NIVELES DE ALERTA]
+- Niveles de Alerta de la Estación:
+  * Alerta Verde (Green Alert): Operación normal, sin amenazas detectadas.
+  * Alerta Azul (Blue Alert): Amenaza confirmada o sospecha de infiltración; Seguridad autorizada a portar armas y registrar sospechosos con causa.
+  * Alerta Roja (Red Alert): Peligro inminente, ataque activo, fuga masiva de bio-amenazas o colapso de sistemas vitales. La tripulación debe mantenerse en áreas seguras.
+  * Alerta Gamma (Gamma Alert): Crisis de proporciones extremas que requiere intervención de Comando Central.
+  * Alerta Delta (Delta Alert): Dispositivo de autodestrucción nuclear activado. Evacuación inmediata y obligatoria de todo el personal antes de la detonación.
+- Procedimientos de Evacuación:
+  * Lanzadera de Emergencia (Emergency Shuttle): Puede ser solicitada desde consolas de comunicaciones por Mando cuando la estación es inhabitable.
+  * Tiempo de arribo: 10 minutos (5 minutos en alerta roja/crisis). Tiempo de atraque: 3 minutos antes de despegar hacia Central.
