@@ -22,4 +22,5 @@ ent-TrashDebrisMedium = trash debris medium
 ent-TrashDebrisSmall = trash debris small
 ent-WorldChunk = world chunk
     .desc = It's rude to stare.
+It's also a bit odd you're looking at the abstract representation of the grid of reality.
         It's also a bit odd you're looking at the abstract representation of the grid of reality.
