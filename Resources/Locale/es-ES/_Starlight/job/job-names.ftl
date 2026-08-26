@@ -28,3 +28,6 @@ JobCentCommServiceWorker = CentComm Service Worker
 JobCentCommChef = CentComm Chef
 JobCentCommBartender = CentComm Bartender
 JobCentCommJanitor = CentComm Janitor
+
+# Claves agregadas desde en-US, pendientes de traduccion
+JobK9 = Security K9

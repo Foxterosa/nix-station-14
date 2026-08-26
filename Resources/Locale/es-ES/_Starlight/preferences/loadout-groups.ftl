@@ -146,3 +146,9 @@ loadout-group-NanotrasenCareerTrainer-eyewear = NanoTrasen Career Trainer eyewea
 
 # Security
 loadout-group-warden-neck = Warden neck
+
+# Claves agregadas desde en-US, pendientes de traduccion
+loadout-group-k9-eyes = K9 eyewear
+loadout-group-k9-outerclothing = K9 armor
+loadout-group-k9-suitstorage = K9 oxygen tank
+loadout-group-k9-variant = K9 coat

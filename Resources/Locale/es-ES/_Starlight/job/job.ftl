@@ -58,3 +58,6 @@ role-type-tsf-aligned-color = #22a7ff
 job-rules-tsf-aligned = You are {role-type-tsf-aligned-name}.
                               You are to serve the interests of the Trans-Solar Federation.
                               Remember, you do NOT serve the crew.
+
+# Claves agregadas desde en-US, pendientes de traduccion
+job-name-k9 = Security K9

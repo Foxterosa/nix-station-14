@@ -89,3 +89,7 @@ signal-port-description-logic-enable = Solo carga la señal de entrada en la cel
 
 signal-port-name-logic-random-input = Señal de entrada
 signal-port-description-logic-random-input = Recibe cualquier señal para generar una salida aleatoria.
+
+# Claves agregadas desde en-US, pendientes de traduccion
+signal-port-description-timer = Starts the timer countdown of the device.
+signal-port-name-timer = Timer

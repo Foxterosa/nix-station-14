@@ -109,7 +109,6 @@ ent-ComputerMedicalRecords = medical records computer
     .desc = This can be used to check medical records.
 ent-ComputerNukieDelivery = syndicate delivery computer
     .desc = A computer that can bluespace in certain equipment for Nuclear Operations. 
-The circuitboard is integrated into the frame and can't be recovered if deconstructed.
         The circuitboard is integrated into the frame and can't be recovered if deconstructed.
 ent-ComputerPalletConsole = cargo sale computer
     .desc = Used to sell goods loaded onto cargo pallets.
