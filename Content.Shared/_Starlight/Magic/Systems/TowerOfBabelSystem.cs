@@ -39,18 +39,18 @@ public sealed partial class TowerOfBabelSystem : EntitySystem
         if (comp.Speaks.Count > comp.Understands.Count)
         {
             _random.Shuffle(allLangs);
-            comp.Speaks = [.. allLangs.Take(comp.Speaks.Count)];
+            comp.Speaks = allLangs.Take(comp.Speaks.Count).ToList();
             var spoken = comp.Speaks.ToList();
             _random.Shuffle(spoken);
-            comp.Understands = [.. spoken.Take(comp.Understands.Count())];
+            comp.Understands = spoken.Take(comp.Understands.Count()).ToList();
         }
         else
         {
             _random.Shuffle(allLangs);
-            comp.Understands = [.. allLangs.Take(comp.Understands.Count)];
+            comp.Understands = allLangs.Take(comp.Understands.Count).ToList();
             var understood = comp.Understands.ToList();
             _random.Shuffle(understood);
-            comp.Speaks = [.. understood.Take(comp.Speaks.Count())];
+            comp.Speaks = understood.Take(comp.Speaks.Count()).ToList();
         }
 
         if (

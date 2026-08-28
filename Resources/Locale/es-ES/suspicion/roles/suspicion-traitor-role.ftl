@@ -5,8 +5,9 @@ suspicion-role-greeting = ¡Eres un {$roleName}!
 suspicion-objective = Objetivo: {$objectiveText}
 
 # Shown when greeted with the Suspicion role
-suspicion-partners-in-crime = {$partnersCount ->
-    [zero] Estás por tu cuenta. ¡Buena suerte!
-    [one] Tu cómplice es {$partnerNames}.
-    *[other] Tus cómplices son {$partnerNames}.
+suspicion-partners-in-crime =
+    { $partnersCount ->
+        [zero] Estás solo. ¡Suerte!
+        [one] Tu aliado: { $partnerNames }.
+       *[other] Tus aliados: { $partnerNames }.
     }

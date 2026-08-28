@@ -1,7 +1,7 @@
 reagent-name-absinthe = absenta
 reagent-desc-absinthe = Un licor con sabor a anís derivado de plantas.
 
-reagent-name-ale = ale
+reagent-name-ale = Cerveza
 reagent-desc-ale = Una bebida alcohólica oscura hecha con cebada malteada y levadura.
 
 reagent-name-beer = cerveza
@@ -70,7 +70,7 @@ reagent-desc-allies-cocktail = Una bebida hecha con tus aliados, no tan dulce co
 reagent-name-aloe = aloe
 reagent-desc-aloe = Muy, muy, muy bueno.
 
-reagent-name-amasec = amasec
+reagent-name-amasec = Amasek
 reagent-desc-amasec = ¡La bebida oficial del Club de Tiro!
 
 reagent-name-andalusia = Andalucía
@@ -85,25 +85,25 @@ reagent-desc-atomic-bomb = La proliferación nuclear nunca supo tan bien.
 reagent-name-b52 = B-52
 reagent-desc-b52 = Café, crema irlandesa y coñac. Te va a bombardear.
 
-reagent-name-blue-hawaiian = Blue Hawaiian
+reagent-name-blue-hawaiian = Hawái azul
 reagent-desc-blue-hawaiian = ¡Aloha! ¿Eso significa hola o adiós?
 
 reagent-name-bahama-mama = Bahama Mama
 reagent-desc-bahama-mama = Cóctel tropical.
 
-reagent-name-banana-honk = Banana Honk
+reagent-name-banana-honk = Banana Horn
 reagent-desc-banana-honk = Una bebida del Cielo de los Payasos.
 
 reagent-name-barefoot = descalzo
 reagent-desc-barefoot = Un batido de casis, hecho con crema, jugo de frutas y vermut.
 
-reagent-name-beepsky-smash = Beepsky smash
+reagent-name-beepsky-smash = El disparo de Bipsky
 reagent-desc-beepsky-smash = Niégate a tomar esto y prepárate para LA LEY.
 
 reagent-name-black-russian = Ruso Negro
 reagent-desc-black-russian = Para los intolerantes a la lactosa. Igual de elegante que un Ruso Blanco.
 
-reagent-name-bloody-mary = Bloody Mary
+reagent-name-bloody-mary = María Sangrienta
 reagent-desc-bloody-mary = Una mezcla extraña pero placentera de vodka, tomate y jugo de lima.
 
 reagent-name-booger = moco
@@ -154,13 +154,13 @@ reagent-desc-erika-surprise = La sorpresa es que es verde.
 reagent-name-gargle-blaster = Gargarizador Pangaláctico
 reagent-desc-gargle-blaster = ¡Guau, esta cosa se ve volátil!
 
-reagent-name-gin-fizz = gin fizz
+reagent-name-gin-fizz = Ginebra efervescente
 reagent-desc-gin-fizz = Refrescantemente cítrico, deliciosamente seco.
 
 reagent-name-gin-tonic = gin tonic
 reagent-desc-gin-tonic = Un clásico de todos los tiempos, un cóctel suave.
 
-reagent-name-gildlager = Gildlager
+reagent-name-gildlager = Hildlager
 reagent-desc-gildlager = Schnapps de canela de 50 grados, hecho para adolescentes alcohólicas en vacaciones de primavera.
 
 reagent-name-grog = grog
@@ -206,8 +206,7 @@ reagent-desc-manhattan = La bebida encubierta favorita del Detective. Nunca pudo
 reagent-name-manhattan-project = Proyecto Manhattan
 reagent-desc-manhattan-project = La bebida favorita de un científico, ideal para pensar formas de volar la nave.
 
-reagent-name-manly-dorf = Manly Dorf
-# Starlight: localize Dwarf name
+reagent-name-manly-dorf = Enano Valiente
 reagent-desc-manly-dorf = Cerveza y ale, reunidas en una mezcla deliciosa. Pensada únicamente para dawi recios.
 
 reagent-name-margarita = margarita
@@ -270,7 +269,7 @@ reagent-desc-singulo = ¡Una bebida del espacio azul!
 reagent-name-snow-white = Blancanieves
 reagent-desc-snow-white = Un refresco frío.
 
-reagent-name-sui-dream = sui dream
+reagent-name-sui-dream = Son Sue
 reagent-desc-sui-dream = 'Compuesto por: soda blanca, Curaçao azul y licor de melón.'
 
 reagent-name-syndicate-bomb = bomba del Sindicato
@@ -291,7 +290,7 @@ reagent-desc-vampiro = Popular en México y Transilvania. Aunque no es precisame
 reagent-name-vodka-martini = vodka martini
 reagent-desc-vodka-martini = Vodka en vez de ginebra. No es exactamente como lo tomaba 007, pero igual es delicioso.
 
-reagent-name-vodka-tonic = vodka tonic
+reagent-name-vodka-tonic = Vodka-Tonic
 reagent-desc-vodka-tonic = Para cuando un gin tonic no es lo bastante ruso.
 
 reagent-name-whiskey-cola = whisky cola
@@ -306,13 +305,13 @@ reagent-desc-white-gilgamesh = Una mezcla repugnante de leche y cerveza. Te hace
 reagent-name-white-russian = Ruso Blanco
 reagent-desc-white-russian = Esa es, como, solo tu opinión, viejo...
 
-reagent-name-vodka-red-bool = vodka red bool
+reagent-name-vodka-red-bool = Vodka-Bolean rojo
 reagent-desc-vodka-red-bool = Porque el paro cardíaco y la falla hepática van de la mano.
 
 reagent-name-xeno-basher = Aplasta Xenos
 reagent-desc-xeno-basher = La bebida perfecta antes de una expedición.
 
-reagent-name-irish-bool = Irish bool
+reagent-name-irish-bool = Booleano irlandés
 reagent-desc-irish-bool = Como un bool en un bazar.
 
 reagent-name-budget-insuls = insuls económicos

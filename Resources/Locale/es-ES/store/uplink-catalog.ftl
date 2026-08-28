@@ -43,7 +43,7 @@ uplink-c20r-desc = La vieja confiable: el clásico subfusil C-20r.
 uplink-bulldog-name = Bulldog
 uplink-bulldog-desc = Puro músculo: contiene la popular escopeta Bulldog.
 
-uplink-estoc-name = Estoc DMR
+uplink-estoc-name = Estoc
 uplink-estoc-desc = Un rifle de tirador designado, equipado con una óptica de rango medio para el combate a mayor distancia.
 
 uplink-grenade-launcher-name = China-Lake

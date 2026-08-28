@@ -47,7 +47,7 @@ flavor-base-spaceshroom = misterioso
 flavor-base-clean = limpio
 flavor-base-alkaline = alcalino
 flavor-base-holy = sagrado
-flavor-base-horrible = horrible
+flavor-base-horrible = Terrible
 # lmao
 flavor-base-terrible = terrible
 flavor-base-mindful = consciente

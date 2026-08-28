@@ -7,30 +7,27 @@ salvage-asteroid-name = Asteroide
 salvage-magnet-window-title = Imán de salvamento
 salvage-expedition-window-progression = Progresión
 
-salvage-magnet-resources = {$resource ->
-    [OreIron] Hierro
-    [OreCoal] Carbón
-    [OreQuartz] Cuarzo
-    [OreSalt] Sal
-    [OreGold] Oro
-    [OreDiamond] Diamante
-    [OreSilver] Plata
-    [OrePlasma] Plasma
-    [OreUranium] Uranio
-    [OreArtifactFragment] Fragmentos de artefacto
-    [OreBananium] Bananium
-    *[other] {$resource}
-}
-
-salvage-magnet-resources-count = {$count ->
-    [1] (Pobre)
-    [2] (Moderada)
-    [3] (Moderada)
-    [4] (Rica)
-    [5] (Rica)
-    *[other] (Extraordinaria)
-}
-
+salvage-magnet-resources =
+    { $resource ->
+        [OreIron] Hierro
+        [OreCoal] Carbón
+        [OreQuartz] Cuarzo
+        [OreGold] Oro
+        [OreDiamond] Diamantes
+        [OreSilver] Plata
+        [OrePlasma] plasma
+        [OreUranium] Uranio
+       *[other] { $resource }
+    }
+salvage-magnet-resources-count =
+    { $count ->
+        [1] (Pequeño)
+        [2] (Medio)
+        [3] (Medio)
+        [4] (Mucho)
+        [5] (Mucho)
+       *[other] (Abundancia)
+    }
 # Debris
 salvage-magnet-debris-ChunkDebris = Escombros espaciales
 

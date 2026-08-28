@@ -6,10 +6,9 @@ borg-call-for-help-message = SECURITY ALERT: {$borg} is requesting backup at {$p
 
 ## Borg type information
 
-borg-type-security-name = Security
-borg-type-security-desc = Assist the security team in maintaining order on the station, apprehending criminals, and responding to threats.
-borg-type-security-transponder = security cyborg
-
+borg-type-security-name = Seguridad
+borg-type-security-desc = Proteger a la tripulación y la propiedad del complejo patrullando los pasillos y respondiendo a emergencias. Equipado con sistemas avanzados de detección de amenazas y equipos de protección.
+borg-type-security-transponder = Guardia Ciborg
 borg-type-SyndicateAssault-name = Syndicate Assault
 borg-type-SyndicateAssault-desc = A heavily armed combat cyborg designed for frontline engagements and assault operations.
 borg-type-SyndicateAssault-transponder = syndicate assault cyborg

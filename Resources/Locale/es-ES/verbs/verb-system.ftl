@@ -8,7 +8,7 @@ verb-self-target-pronoun = A ti mismo
 
 # verb categories & common verbs. These appear across multiple systems, so they may as well go here.
 
-verb-categories-admin = Admin
+verb-categories-admin = Administración
 verb-categories-debug = Depuración
 verb-categories-examine = Examinar
 verb-categories-eject = Expulsar
@@ -22,7 +22,7 @@ verb-categories-transfer = Establecer cantidad de transferencia
 verb-categories-split = Separar
 verb-categories-instrument-style = Estilo de instrumento
 verb-categories-channel-select = Canales
-verb-categories-set-sensor = Sensor
+verb-categories-set-sensor = Sensores
 verb-categories-timer = Establecer retraso
 verb-categories-lever = Palanca
 verb-categories-select-type = Seleccionar tipo

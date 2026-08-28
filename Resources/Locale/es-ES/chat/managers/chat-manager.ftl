@@ -18,29 +18,24 @@ chat-manager-no-radio-key = ¡No se especificó ninguna clave de radio!
 chat-manager-no-such-channel = ¡No existe ningún canal con la clave '{$key}'!
 chat-manager-whisper-headset-on-message = ¡No puedes susurrar por la radio!
 
-chat-manager-server-wrap-message = [bold]{$message}[/bold]
+chat-manager-server-wrap-message = [bold]{ $message }[/bold]
 chat-manager-sender-announcement = Comando Central
 
 # THE() is not used here because the entity and its name can technically be disconnected if a nameOverride is passed...
-chat-manager-entity-me-wrap-message = [italic]{ PROPER($entity) ->
-    *[false] El {$entityName} {$message}[/italic]
-     [true] {CAPITALIZE($entityName)} {$message}[/italic]
-    }
-
-chat-manager-entity-looc-wrap-message = LOOC: [bold]{$entityName}:[/bold] {$message}
+chat-manager-entity-me-wrap-message = [italic]{ $entityName } { $message }[/italic]
+chat-manager-entity-looc-wrap-message = LOOC: [bold]{ $entityName }:[/bold] { $message }
 chat-manager-send-ooc-patron-wrap-message = OOC: [bold][color={$patronColor}]{$playerName}[/color]:[/bold] {$message}
 
-chat-manager-send-dead-chat-wrap-message = {$deadChannelName}: [bold][BubbleHeader]{$playerName}[/BubbleHeader]:[/bold] [BubbleContent]{$message}[/BubbleContent]
-chat-manager-send-admin-dead-chat-wrap-message = {$adminChannelName}: [bold]([BubbleHeader]{$userName}[/BubbleHeader]):[/bold] [BubbleContent]{$message}[/BubbleContent]
-chat-manager-send-admin-chat-wrap-message = {$adminChannelName}: [bold]{$playerName}:[/bold] {$message}
-chat-manager-send-admin-announcement-wrap-message = [bold]{$adminChannelName}: {$message}[/bold]
-
-chat-manager-send-hook-ooc-wrap-message = OOC: [bold](D){$senderName}:[/bold] {$message}
+chat-manager-send-dead-chat-wrap-message = { $deadChannelName }: [bold][BubbleHeader]{ $playerName }[/BubbleHeader]:[/bold] [BubbleContent]{ $message }[/BubbleContent]
+# Sunrise-Sponsor-Start
+chat-manager-send-admin-dead-chat-wrap-message = { $adminChannelName }: [bold]([BubbleHeader]{ $userName }[/BubbleHeader]):[/bold] [BubbleContent]{ $message }[/BubbleContent]
+chat-manager-send-admin-chat-wrap-message = { $adminChannelName }: [bold]{ $playerName }:[/bold] { $message }
+chat-manager-send-admin-announcement-wrap-message = [bold]{ $adminChannelName }: { $message }[/bold]
+chat-manager-send-hook-ooc-wrap-message = OOC: [bold](D){ $senderName }:[/bold] { $message }
 chat-manager-send-hook-admin-wrap-message = ADMIN: [bold](D){$senderName}:[/bold] {$message}
 
 chat-manager-dead-channel-name = MUERTOS
-chat-manager-admin-channel-name = ADMIN
-
+chat-manager-admin-channel-name = administrador
 chat-manager-rate-limited = ¡Estás enviando mensajes demasiado rápido!
 chat-manager-rate-limit-admin-announcement = Advertencia de límite de mensajes: { $player }
 
@@ -76,7 +71,7 @@ chat-speech-verb-winged-1 = aletea
 chat-speech-verb-winged-2 = bate las alas
 chat-speech-verb-winged-3 = zumba
 
-chat-speech-verb-name-slime = Slime
+chat-speech-verb-name-slime = Slimmolud
 chat-speech-verb-slime-1 = chapotea
 chat-speech-verb-slime-2 = borbotea
 chat-speech-verb-slime-3 = rezuma
@@ -130,8 +125,7 @@ chat-speech-verb-name-monkey = Mono
 chat-speech-verb-monkey-1 = chimpea
 chat-speech-verb-monkey-2 = chilla
 
-chat-speech-verb-name-cluwne = Cluwne
-
+chat-speech-verb-name-cluwne = Kluven
 chat-speech-verb-name-parrot = Loro
 chat-speech-verb-parrot-1 = grazna
 chat-speech-verb-parrot-2 = trina

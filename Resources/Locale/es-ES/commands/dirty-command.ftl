@@ -1,2 +1,2 @@
-﻿cmd-dirty-desc = Marks all components on an entity as dirty. If not specified, dirties everything.
-cmd-dirty-help = Usage: dirty [entityUid]
+cmd-dirty-desc = Marca como modificados todos los componentes de una entidad. Si no se especifica una entidad, los marca en todas.
+cmd-dirty-help = Uso: dirty [EntityUid]

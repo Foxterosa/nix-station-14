@@ -99,7 +99,7 @@ public sealed partial class TTSSystem : EntitySystem
             var channel = new ProtoId<RadioChannelPrototype>(args.Channel.ID);
             var languageradio = args.Channel == args.Language.Speech.RadioChannel;
             var type = languageradio ? TTSType.Mind : TTSType.Radio;
-            var effect = languageradio ? TTSEffect.Underwater : TTSEffect.Radio;
+            var effect = languageradio ? TTSEffect.Underwater : TTSEffect.Walkie;
 
             await GenerateAndStream(type, voice, text, filter, effect, chime, null, channel);
         }
@@ -115,8 +115,7 @@ public sealed partial class TTSSystem : EntitySystem
 
     private async void OnAnnouncementSpoke(AnnouncementSpokeEvent args)
     {
-        if (!_isEnabled
-            || args.Message.Text.Length > MaxChars * 2)
+        if (!_isEnabled)
             return;
 
         await Task.Yield();
@@ -219,10 +218,10 @@ public sealed partial class TTSSystem : EntitySystem
             Chime = chime,
             VolumeModifier = volume,
             SourceUid = SourceUid.HasValue ? GetNetEntity(SourceUid.Value) : null,
-        }, filter, false);
+        }, filter, true);
 
         await foreach (var chunk in _client.GenerateTTS(text, voice, effect))
-            RaiseNetworkEvent(new TTSChunkEvent { Id = id, Data = chunk }, filter, false);
+            RaiseNetworkEvent(new TTSChunkEvent { Id = id, Data = chunk }, filter, true);
     }
 
     private async void OnClientOptionTTS(ClientOptionTTSEvent ev, EntitySessionEventArgs args)

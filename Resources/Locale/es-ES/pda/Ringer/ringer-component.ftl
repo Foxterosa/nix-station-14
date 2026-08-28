@@ -11,4 +11,4 @@ comp-ringer-ui-test-ringtone-button = Probar
 
 comp-ringer-ui-set-ringtone-button = Establecer
 
-comp-ringer-ui = [color=yellow]♪{$RingtoneOne}-{$RingtoneTwo}-{$RingtoneThree}-{$RingtoneFour}[/color]
+comp-ringer-ui = [color=yellow]♪{ $RingtoneOne }-{ $RingtoneTwo }-{ $RingtoneThree }-{ $RingtoneFour }[/color]

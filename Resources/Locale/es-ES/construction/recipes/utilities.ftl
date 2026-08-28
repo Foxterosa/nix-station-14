@@ -1,5 +1,5 @@
-construction-recipe-gas-pipe-half = gas pipe half
-construction-recipe-gas-pipe-bend = gas pipe bend
-construction-recipe-gas-pipe-t-junction = gas pipe T-junction
-construction-recipe-gas-pipe-fourway = gas pipe fourway
-construction-recipe-heat-exchanger-bend = radiator bend
+construction-recipe-gas-pipe-half = Media tubería de gas
+construction-recipe-gas-pipe-bend = Curvatura de tuberías de gas
+construction-recipe-gas-pipe-t-junction = Adaptador T para gasoducto
+construction-recipe-gas-pipe-fourway = Adaptador de cuatro vías para gasoducto
+construction-recipe-heat-exchanger-bend = Curva del radiador

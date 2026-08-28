@@ -7,12 +7,10 @@ guidebook-microwave-cook-time =
        *[other] [bold]{$time}[/bold] segundos
     }
 
-guidebook-microwave-reagent-color-display = [color={$color}]■[/color]
-guidebook-microwave-reagent-name-display = [bold]{$reagent}[/bold]
-guidebook-microwave-reagent-quantity-display = × {$amount}u
-
-guidebook-microwave-solid-name-display = [bold]{$ingredient}[/bold]
-guidebook-microwave-solid-quantity-display = × {$amount}
-
+guidebook-microwave-reagent-color-display = [color={ $color }]■[/color]
+guidebook-microwave-reagent-name-display = [bold]{ $reagent }[/bold]
+guidebook-microwave-reagent-quantity-display = × { $amount } unidades
+guidebook-microwave-solid-name-display = [bold]{ $ingredient }[/bold]
+guidebook-microwave-solid-quantity-display = × { $amount }
 guidebook-microwave-device-type-header = Tipo de aparato
 guidebook-microwave-device-type = Aparato necesario para cocinar: {$type}

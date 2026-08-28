@@ -1,5 +1,5 @@
-cmd-quickinspect-desc = Sets a component name to be opened for a hovered entity via the "Inspect Server/Client Component" keybind.
-cmd-quickinspect-help = Usage: {$command} <component name>
-cmd-quickinspect-success = Component set to: {$component}.
-    Press {$serverKeybind} to open a VV window for the server.
-    Press {$clientKeybind} to open a VV window for the client.
+cmd-quickinspect-desc = Establece el nombre del componente que se abrirá para una entidad señalada mediante la combinación de teclas «Inspeccionar componente del servidor/cliente».
+cmd-quickinspect-help = Uso: {$command} <component name>
+cmd-quickinspect-success = Componente establecido en: {$component}.
+    Presiona {$serverKeybind} para abrir una ventana VV del servidor.
+    Presiona {$clientKeybind} para abrir una ventana VV del cliente.

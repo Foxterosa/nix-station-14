@@ -1,11 +1,12 @@
 ### UI
 
 # Shown when a stack is examined in details range
-comp-stack-examine-detail-count = {$count ->
-    [one] Hay [color={$markupCountColor}]{$count}[/color] unidad
-    *[other] Hay [color={$markupCountColor}]{$count}[/color] unidades
-} en la pila.
-
+comp-stack-examine-detail-count =
+    En la pila [color={ $markupCountColor }]{ $count }[/color] { $count ->
+        [one] Punto
+        [few] Tema
+       *[other] Elementos
+    }.
 # Stack status control
 comp-stack-status = Cantidad: [color=white]{$count}[/color]
 

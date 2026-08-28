@@ -1,16 +1,12 @@
 ## UI
 door-remote-toggle-eletrify-text = Toggle overcharge
-door-remote-open-close-text = Opens and Closes Doors
-door-remote-toggle-bolt-text = Toggles Bolts
-door-remote-emergency-access-text = Toggles Emergency Access
-door-remote-invalid-text = Invalid
-door-remote-mode-label = Mode: [color=white]{$modeString}[/color]
-
-## Entity
-
-door-remote-switch-state-open-close = You switch the remote to open and close doors
-door-remote-switch-state-toggle-bolts = You switch the remote to toggle bolts
-door-remote-switch-state-toggle-emergency-access = You switch the remote to toggle emergency access
-door-remote-no-power = The door is not powered
-door-remote-denied = Access denied
-
+door-remote-open-close-text = Apertura y cierre de puertas
+door-remote-toggle-bolt-text = Cerrojos de conmutación
+door-remote-emergency-access-text = Acceso de emergencia conmutado
+door-remote-invalid-text = Error
+door-remote-mode-label = Modo: [color=white]{ $modeString }[/color]
+door-remote-switch-state-open-close = Configuras el mando a distancia para abrir y cerrar las puertas
+door-remote-switch-state-toggle-bolts = Configuras el mando para cambiar de cerrojo
+door-remote-switch-state-toggle-emergency-access = Configuras el mando para cambiar el acceso de emergencia
+door-remote-no-power = La puerta está desenergizada
+door-remote-denied = Acceso denegado

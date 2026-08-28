@@ -8,7 +8,7 @@ id-card-access-level-emergency-shuttle-repeal = Revocar todo del transbordador d
 id-card-access-level-head-of-security = Jefe de Seguridad
 id-card-access-level-security = Seguridad
 id-card-access-level-armory = Armeria
-id-card-access-level-brig = Brig
+id-card-access-level-brig = Brigada
 id-card-access-level-detective = Detective
 id-card-access-level-genpop-enter = Entrar a GenPop
 id-card-access-level-genpop-leave = Salir de GenPop
@@ -26,10 +26,10 @@ id-card-access-level-chemistry = Quimica
 id-card-access-level-paramedic = Paramedico
 
 id-card-access-level-quartermaster = Intendente
-id-card-access-level-cargo = Cargo
+id-card-access-level-cargo = Suministro
 id-card-access-level-salvage = Salvamento
 
-id-card-access-level-bar = Bar
+id-card-access-level-bar = Barra
 id-card-access-level-kitchen = Cocina
 id-card-access-level-hydroponics = Hidroponia
 id-card-access-level-service = Servicio

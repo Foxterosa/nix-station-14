@@ -21,7 +21,7 @@ namespace Content.Server.Database.Migrations.Postgres
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "10.0.0")
+                .HasAnnotation("ProductVersion", "10.0.6")
                 .HasAnnotation("Relational:MaxIdentifierLength", 63);
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
@@ -796,6 +796,144 @@ namespace Content.Server.Database.Migrations.Postgres
                         .HasFilter("priority = 3");
 
                     b.ToTable("job_priority_entry", (string)null);
+                });
+
+            modelBuilder.Entity("Content.Server.Database.NixWebAchievement", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint")
+                        .HasColumnName("id");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<long>("Id"));
+
+                    b.Property<string>("AchievementId")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("achievement_id");
+
+                    b.Property<string>("AppearanceSnapshotJson")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("appearance_snapshot_json");
+
+                    b.Property<DateTimeOffset>("AwardedAt")
+                        .HasColumnType("timestamp with time zone")
+                        .HasColumnName("awarded_at");
+
+                    b.Property<string>("CharacterNameSnapshot")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("character_name_snapshot");
+
+                    b.Property<int>("CharacterProfileId")
+                        .HasColumnType("integer")
+                        .HasColumnName("character_profile_id");
+
+                    b.Property<int>("RoundId")
+                        .HasColumnType("integer")
+                        .HasColumnName("round_id");
+
+                    b.Property<Guid>("SourceUserId")
+                        .HasColumnType("uuid")
+                        .HasColumnName("source_user_id");
+
+                    b.HasKey("Id")
+                        .HasName("PK_nix_web_achievement");
+
+                    b.HasIndex("CharacterProfileId", "AwardedAt")
+                        .HasDatabaseName("IX_nix_web_achievement_character_profile_id_awarded_at");
+
+                    b.HasIndex("SourceUserId", "AchievementId")
+                        .IsUnique()
+                        .HasDatabaseName("IX_nix_web_achievement_source_user_id_achievement_id");
+
+                    b.ToTable("nix_web_achievement", (string)null);
+                });
+
+            modelBuilder.Entity("Content.Server.Database.NixWebCharacter", b =>
+                {
+                    b.Property<int>("ProfileId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasColumnName("profile_id");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("ProfileId"));
+
+                    b.Property<string>("AppearanceJson")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("appearance_json");
+
+                    b.Property<string>("CharacterName")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("character_name");
+
+                    b.Property<DateTimeOffset>("FirstSeenAt")
+                        .HasColumnType("timestamp with time zone")
+                        .HasColumnName("first_seen_at");
+
+                    b.Property<DateTimeOffset>("LastSeenAt")
+                        .HasColumnType("timestamp with time zone")
+                        .HasColumnName("last_seen_at");
+
+                    b.Property<Guid>("OwnerUserId")
+                        .HasColumnType("uuid")
+                        .HasColumnName("owner_user_id");
+
+                    b.Property<string>("Species")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("species");
+
+                    b.HasKey("ProfileId")
+                        .HasName("PK_nix_web_character");
+
+                    b.ToTable("nix_web_character", (string)null);
+                });
+
+            modelBuilder.Entity("Content.Server.Database.NixWebStatistic", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint")
+                        .HasColumnName("id");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<long>("Id"));
+
+                    b.Property<int>("Amount")
+                        .HasColumnType("integer")
+                        .HasColumnName("amount");
+
+                    b.Property<int>("CharacterProfileId")
+                        .HasColumnType("integer")
+                        .HasColumnName("character_profile_id");
+
+                    b.Property<string>("Metadata")
+                        .HasColumnType("text")
+                        .HasColumnName("metadata");
+
+                    b.Property<string>("MetricId")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("metric_id");
+
+                    b.Property<DateTimeOffset>("OccurredAt")
+                        .HasColumnType("timestamp with time zone")
+                        .HasColumnName("occurred_at");
+
+                    b.Property<int>("RoundId")
+                        .HasColumnType("integer")
+                        .HasColumnName("round_id");
+
+                    b.HasKey("Id")
+                        .HasName("PK_nix_web_statistic");
+
+                    b.HasIndex("CharacterProfileId", "MetricId", "OccurredAt")
+                        .HasDatabaseName("IX_nix_web_statistic_character_profile_id_metric_id_occurred_at");
+
+                    b.ToTable("nix_web_statistic", (string)null);
                 });
 
             modelBuilder.Entity("Content.Server.Database.PlayTime", b =>

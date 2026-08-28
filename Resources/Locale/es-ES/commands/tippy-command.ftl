@@ -1,12 +1,11 @@
-cmd-tippy-desc = Broadcast a message as Tippy the clown.
-cmd-tippy-help = tippy <user | all> <message> [entity prototype | null] [speak time] [slide time] [waddle interval]
+cmd-tippy-desc = Entrega un mensaje en nombre de Tippy el Payaso.
+cmd-tippy-help = Uso: tippy <usuario | todos> <message> [prototipo de entidad] [tiempo de habla] [tiempo de deslizamiento] [intervalo de arrastre]
 cmd-tippy-auto-1 = <user | all>
-cmd-tippy-auto-2 = message
-cmd-tippy-auto-3 = entity prototype
-cmd-tippy-auto-4 = speak time, in seconds
-cmd-tippy-auto-5 = slide time, in seconds
-cmd-tippy-auto-6 = waddle interval, in seconds
-cmd-tippy-error-no-user = User not found.
-cmd-tippy-error-no-prototype = Prototype not found: {$proto}
-
-cmd-tip-desc = Spawn a random game tip.
+cmd-tippy-auto-2 = Texto
+cmd-tippy-auto-3 = Prototipo de la entidad
+cmd-tippy-auto-4 = Hora del mensaje, en segundos
+cmd-tippy-auto-5 = Tiempo de animación, en segundos
+cmd-tippy-auto-6 = Intervalo de salto, en segundos
+cmd-tippy-error-no-user = Usuario no encontrado.
+cmd-tippy-error-no-prototype = No se encontró ningún prototipo: { $proto }
+cmd-tip-desc = Aparición aleatoria de consejos de partida.

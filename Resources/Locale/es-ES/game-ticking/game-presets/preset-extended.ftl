@@ -1,2 +1,2 @@
-extended-title = Extended
-extended-description = A calm experience. Admin intervention required.
+extended-title = Extendido
+extended-description = Una ronda tranquila, pensada para rol prolongado. Puede requerir intervención administrativa.

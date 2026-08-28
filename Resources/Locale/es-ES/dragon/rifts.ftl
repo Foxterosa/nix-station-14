@@ -1,10 +1,10 @@
 # Starlight edit: append station location to rift location
 carp-rift-warning = A rift is causing an unnaturally large energy flux at {$station} {$location}. Stop it at all costs!
-carp-rift-duplicate = Cannot have 2 charging rifts at the same time!
-carp-rift-examine = It is [color=yellow]{$percentage}%[/color] charged!
-carp-rift-max = You have reached your maximum amount of rifts
-carp-rift-anchor = Rifts require a stable surface to spawn.
-carp-rift-proximity = Too close to a nearby rift! Need to be at least {$proximity}m away.
-carp-rift-space-proximity = Too close to space! Need to be at least {$proximity}m away.
-carp-rift-weakened = You are unable to summon more rifts in your weakened state.
-carp-rift-destroyed = A rift has been destroyed! You are now weakened temporarily.
+carp-rift-duplicate = ¡No es posible tener 2 grietas cargando al mismo tiempo!
+carp-rift-examine = ¡Está cargado [color=yellow]{ $percentage }%[/color]!
+carp-rift-max = Alcanzó el número máximo de grietas
+carp-rift-anchor = Se requiere una superficie estable para que aparezca una falla.
+carp-rift-proximity = ¡Demasiado cerca de una grieta cercana! Debes estar al menos a { $proximity } metros.
+carp-rift-space-proximity = ¡Demasiado cerca del espacio! Es necesario estar al menos a { $proximity } metros.
+carp-rift-weakened = En tu estado debilitado, no puedes crear más grietas.
+carp-rift-destroyed = ¡La grieta ha sido destruida! Ahora estás temporalmente debilitado.

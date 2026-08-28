@@ -24,5 +24,5 @@ reagent-desc-ammonia = Un fertilizante efectivo, le da nutrientes a tus plantas.
 reagent-name-diethylamine = dietilamina
 reagent-desc-diethylamine = Un fertilizante muy potente, aporta nutrientes a las plantas, elimina plagas y a veces incluso puede acelerar el crecimiento.
 
-reagent-name-sedin = sedin
+reagent-name-sedin = Pelo gris
 reagent-desc-sedin = Una version modificada de la dietilamina que puede restaurar semillas en las plantas a costa de la potencia.

@@ -6,8 +6,8 @@ construction-graph-tag-clown-mask = una mascara de payaso
 construction-graph-tag-clown-recorder = flauta de payaso
 construction-graph-tag-clown-bike-horn = bocina de bicicleta
 construction-graph-tag-clowne-horn = bocina de bicicleta rota
-construction-graph-tag-happy-honk-meal = happy honk meal
-construction-graph-tag-woeful-cluwne-meal = woeful cluwne meal
+construction-graph-tag-happy-honk-meal = Honker's Happy Lunch
+construction-graph-tag-woeful-cluwne-meal = Cena de Tristeza de Kluvna
 construction-graph-tag-boxhug = una caja de abrazos
 
 # mime
@@ -55,7 +55,7 @@ construction-graph-tag-super-compact-ai-chip = un chip de IA supercompacto
 
 # other
 construction-graph-tag-light-bulb = bombilla
-construction-graph-tag-radio = radio
+construction-graph-tag-radio = Walkie-talkie
 construction-graph-tag-pipe = tuberia de gas
 construction-graph-tag-human-head = cabeza humana
 construction-graph-tag-bucket = cubo

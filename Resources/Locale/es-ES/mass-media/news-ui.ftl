@@ -27,7 +27,7 @@ news-write-no-access-popup = Sin acceso
 news-writer-text-length-exceeded = El texto supera la longitud máxima
 news-write-ui-richtext-tooltip = Los artículos admiten texto enriquecido
     Se admiten las siguientes etiquetas de texto enriquecido:
-    {"[color=Gray][bullet/]heading \[size=1-3\]"}
+    {"[color=Gray][bullet/]heading \\[size=1-3\\]"}
     {"[bullet/]bold"}
     {"[bullet/]italic"}
     {"[bullet/]bolditalic"}

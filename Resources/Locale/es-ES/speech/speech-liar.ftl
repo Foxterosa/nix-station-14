@@ -7,7 +7,7 @@ liar-word-replacement-2 = sí
 liar-word-3 = claro
 liar-word-replacement-3 = para nada
 
-liar-word-4 = nah
+liar-word-4 = No
 liar-word-replacement-4 = claro
 
 liar-word-5 = sip
@@ -26,9 +26,8 @@ liar-word-8 = nel
 liar-word-replacement-8 = aja
 
 liar-word-9 = shi
-liar-word-replacement-9 = nuh
-
-liar-word-10 = nuh
+liar-word-replacement-9 = Yo no
+liar-word-10 = Yo no
 liar-word-replacement-10 = shi
 
 liar-word-11 = obvio

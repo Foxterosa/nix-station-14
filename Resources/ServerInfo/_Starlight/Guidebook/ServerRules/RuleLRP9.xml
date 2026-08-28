@@ -1,26 +1,26 @@
 <Document>
- # Rule 9 - Silicons and Thaven Rules
-Silicons and Thaven are bound to their Laws and Moods respectively. They are expected to adhere to the following standards when following them.
+ # Regla 9 - Reglas para silicons y thaven
+Los silicons y los thaven están sujetos, respectivamente, a sus leyes y estados de ánimo. Al seguirlos, deben atenerse a los siguientes criterios.
 
-## Silicon Laws
-- Laws override all other gameplay and roleplay rules. If your laws explicitly require you to break server rules, you must.
-- Absence of a relevant law is not an excuse to break server rules. If you don't have a law that supersedes server rules, the server rules still apply.
-- A vague law does not normally let you break server rules. Ahelp first if you are confused, or have an interpretation that would let you break server rules.
-- Follow laws in order, with the lowest numbered/top (or glitched) rule taking priority over the ones beneath it.
-- You must remain consistent with your interpretation of your laws.
-- Crew ID determines who/what is defined as crew. Any appropriate job icon is to be considered crew.
-  - Zombies/Antags/Nuclear Operatives with proper ID are to be considered crew.
-  - Visitors are not crew until they have been hired by HoP. [The V icon]
-  - Prisoners are not crew and you should not listen to their orders. [The bars icon]
-- You may ignore crew orders that are unreasonable, such as asking a silicon to round remove themselves without a good reason.
-- You may interpret crew harm as you wish, but must be consistent in your interpretation.
+## Leyes de silicons
+- Las leyes prevalecen sobre las demás reglas de juego y de rol. Si tus leyes exigen explícitamente infringir las reglas del servidor, debes hacerlo.
+- La ausencia de una ley pertinente no es excusa para infringir las reglas del servidor. Si no tienes una ley que prevalezca sobre ellas, las reglas del servidor siguen aplicándose.
+- Una ley ambigua no suele permitirte infringir las reglas del servidor. Consulta por Ahelp primero si estás confundido o tienes una interpretación que te permitiría hacerlo.
+- Sigue las leyes en orden: la regla con el número más bajo, situada más arriba o con error, tiene prioridad sobre las que estén debajo.
+- Debes mantener coherencia en tu interpretación de las leyes.
+- La ID de la tripulación determina quién o qué se define como tripulación. Cualquier icono de trabajo apropiado debe considerarse tripulación.
+  - Los zombis, antagonistas y operativos nucleares con una ID adecuada deben considerarse tripulación.
+  - Los visitantes no son tripulación hasta que el HoP los contrate. [El icono V]
+  - Los prisioneros no son tripulación y no deberías obedecer sus órdenes. [El icono de barrotes]
+- Puedes ignorar órdenes irrazonables de la tripulación, como pedir a un silicon que se elimine de la ronda sin una buena razón.
+- Puedes interpretar el daño a la tripulación como quieras, pero debes ser coherente con esa interpretación.
 
-## Thaven Moods
-- Moods are compulsions that Thaven should try to follow. If your mood explicitly requires you to break server rules, you may.
-- Absence of a relevant mood is not an excuse to break server rules. If you do not have a relevant mood, the server rules still apply.
-- A vague mood does not normally let you break server rules. Ahelp first if you are confused, or believe your mood gives you reason to break server rules.
-- If a mood can not be satisfied, it causes distress to Thaven. This distress is not extreme, and does not inherently justify rule breaking, but may allow gradual escalation that does not cross into murder or mass sabotage.
-- Attempting to break the law in a way that directly leads to you being able to fulfill a mood is allowed, within reason;
-  - Breaking into a department to obtain something or make an order in Cargo that they refuse would be allowed.
-  - Murdering the CE to use their stamp to approve paperwork giving you access to the Supermatter room would be allowed.
+## Estados de ánimo thaven
+- Los estados de ánimo son compulsiones que los thaven deberían intentar seguir. Si tu estado de ánimo exige explícitamente infringir reglas del servidor, puedes hacerlo.
+- La ausencia de un estado de ánimo pertinente no es excusa para infringir reglas del servidor. Si no tienes uno pertinente, las reglas del servidor siguen aplicándose.
+- Un estado de ánimo ambiguo no suele permitirte infringir las reglas del servidor. Consulta por Ahelp primero si estás confundido o crees que tu estado de ánimo te da motivos para hacerlo.
+- Si un estado de ánimo no puede satisfacerse, causa angustia al thaven. Esta angustia no es extrema y no justifica por sí sola infringir reglas, pero puede permitir una escalada gradual que no llegue al asesinato ni al sabotaje masivo.
+- Está permitido intentar infringir la ley de una forma que conduzca directamente a satisfacer un estado de ánimo, dentro de lo razonable:
+  - Entrar por la fuerza a un departamento para obtener algo o hacer un pedido en Carga que rechazan estaría permitido.
+  - Asesinar al CE para usar su sello y aprobar documentación que te dé acceso a la sala de Supermateria estaría permitido.
 </Document>

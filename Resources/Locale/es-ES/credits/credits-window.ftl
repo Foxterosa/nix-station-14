@@ -1,16 +1,16 @@
-credits-window-title = Credits
-credits-window-patrons-tab = Patrons
-credits-window-ss14contributorslist-tab = Credits
-credits-window-licenses-tab = Open Source Licenses
+credits-window-title = Autores
+credits-window-patrons-tab = Cartuchos
+credits-window-ss14contributorslist-tab = Autores
+credits-window-licenses-tab = Licencias de código abierto
 credits-window-attributions-tab = Attributions
-credits-window-become-patron-button = Become a Patron
-credits-window-contributor-encouragement-label = Want to get on this list?
-credits-window-contribute-button = Contribute!
-credits-window-contributors-section-title = Space Station 14 Contributors
-credits-window-codebases-section-title = Space Station 13 Codebases
-credits-window-original-remake-team-section-title = Original Space Station 13 Remake Team
+credits-window-become-patron-button = Conviértete en patrocinador
+credits-window-contributor-encouragement-label = ¿Quieres entrar en esta lista?
+credits-window-contribute-button = ¡Haz tu parte!
+credits-window-contributors-section-title = Colaboradores de Space Station 14
+credits-window-codebases-section-title = Código de estación espacial 13
+credits-window-original-remake-team-section-title = Equipo original de remake de Space Station 13
 credits-window-immortals-title = In Memoriam
-credits-window-special-thanks-section-title = Special Thanks
+credits-window-special-thanks-section-title = Un agradecimiento especial
 credits-window-previous-page-button = Previous Page
 credits-window-next-page-button = Next Page
 

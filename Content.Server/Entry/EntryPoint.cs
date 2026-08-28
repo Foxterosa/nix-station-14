@@ -39,6 +39,7 @@ using Content.Shared.Kitchen;
 using Content.Shared.Localizations;
 using Robust.Server;
 using Robust.Server.ServerStatus;
+using Robust.Shared;
 using Robust.Shared.Configuration;
 using Robust.Shared.ContentPack;
 using Robust.Shared.Prototypes;
@@ -127,6 +128,7 @@ namespace Content.Server.Entry
             var aczProvider = new ContentMagicAczProvider(Dependencies);
             _host.SetMagicAczProvider(aczProvider);
 
+            _cfg.OverrideDefault(CVars.LocCultureName, "es-ES");
             _factory.DoAutoRegistrations();
             _factory.IgnoreMissingComponents("Visuals");
             _factory.RegisterIgnore(IgnoredComponents.List);

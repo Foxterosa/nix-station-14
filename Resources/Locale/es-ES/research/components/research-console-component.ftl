@@ -12,10 +12,9 @@ research-console-tier-discipline-info = Nivel {$tier}, [color={$color}]{$discipl
 research-console-tier-info-small = : Nivel {$tier}
 research-console-cost = Costo: [color=orchid]{$amount}[/color]
 research-console-unlocks-list-start = Desbloquea:
-research-console-unlocks-list-entry = - [color=yellow]{$name}[/color]
-research-console-unlocks-list-entry-generic = - [color=green]{$text}[/color]
+research-console-unlocks-list-entry = - [color=yellow]{ $name }[/color]
+research-console-unlocks-list-entry-generic = - [color=green]{ $text }[/color]
 research-console-prereqs-list-start = Requiere:
-research-console-prereqs-list-entry = - [color=orchid]{$text}[/color]
-
+research-console-prereqs-list-entry = - [color=orchid]{ $text }[/color]
 research-console-no-access-popup = ¡Sin acceso!
 research-console-unlock-technology-radio-broadcast = Desbloqueó [bold]{$technology}[/bold] por [bold]{$amount}[/bold] de investigacion, aprobado por [bold]{$approver}[/bold].

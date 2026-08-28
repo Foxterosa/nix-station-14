@@ -1,6 +1,6 @@
 job-description-assistantmanager = Manage your fellow Assistants, give them small tasks or informal jobs, and cultivate their progress, so that they may work towards the station's benefit.
 job-description-blueshield = Your primary job is to protect the heads. Remember, you are not a security officer.
-job-description-boxer = Fight your way to the top! Challenge the head of personnel and get brigged when you win.
+job-description-boxer = ¡Lucha para llegar a la cima! Desafía al jefe de estado mayor y seré arrestado cuando ganes. Esta posición está disponible en las estaciones Core, Origin y Avrite.
 job-description-decimus = You are a Decimus Operative. Enact Code Epsilon. Recovery of NanoTrasen Personnel may or may not be an objective, seek directives from your superiors.
 job-description-dutyofficer = Guard Genpop, process prisoners, fight with the non-compliant. Your job is to make sure that people who were caught, stay caught, and to act as an extension of the warden.
 job-description-iaa = You are a servant of the people, defend, condemn the citizens of your station!
@@ -16,7 +16,7 @@ job-description-performer = Learn the basics of clowning, miming, and musicking.
 job-description-roboticist = A scientist whose purpose is to repair and create mechanoids, cyborgs, and other mechanical creations.
 job-description-salvagelead = Lead your salvage team and keep them safe. Remember, you are the Quartermaster's eyes and ears off station.
 job-description-surgeon = Heal people, cripple enemies, and replace limbs and organs!
-job-description-zookeeper = Put on a joyful display of cute animals and space carps for all the crew to see.
+job-description-zookeeper = Haz un espectáculo divertido con animales adorables y carpas espaciales para que todos los miembros de la tripulación lo admiren. Esta posición está disponible en las estaciones Gemini y Avrite.
 job-description-nct = Your job is to try to assist as many crew members as possible regardless of department. You are NOT permitted to give command staff advice on any command SOP questions or aid in legal advice.
 job-description-stirstir = A disreputable monkey who should not be trusted. A real cell stuffer.
 job-description-prisoner = You are a corporate owned prisoner serving out a sentence in a hard labor colony.

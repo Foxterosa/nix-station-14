@@ -109,6 +109,7 @@ namespace Content.Client.Entry
             Dependencies.BuildGraph();
             Dependencies.InjectDependencies(this);
 
+            _configManager.OverrideDefault(CVars.LocCultureName, "es-ES");
             _contentLoc.Initialize();
             _componentFactory.DoAutoRegistrations();
             _componentFactory.IgnoreMissingComponents();

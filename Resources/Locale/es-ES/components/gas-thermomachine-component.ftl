@@ -1,11 +1,10 @@
-﻿comp-gas-thermomachine-ui-title-freezer = Freezer
-comp-gas-thermomachine-ui-title-heater = Heater
-
-comp-gas-thermomachine-ui-temperature = Temperature (K):
-comp-gas-thermomachine-ui-toggle =  Toggle
-comp-gas-thermomachine-ui-status-disabled = Off
+comp-gas-thermomachine-ui-title-freezer = Refrigerador
+comp-gas-thermomachine-ui-title-heater = Calefactor
+comp-gas-thermomachine-ui-temperature = Temperatura (K):
+comp-gas-thermomachine-ui-toggle = Cambio
+comp-gas-thermomachine-ui-status-disabled = FUERA
 comp-gas-thermomachine-ui-status-enabled = On
 
-gas-thermo-component-upgrade-heating = maximum temperature
-gas-thermo-component-upgrade-cooling = minimum temperature
-gas-thermo-component-upgrade-heat-capacity = heat capacity
+gas-thermo-component-upgrade-heating = Temperatura máxima
+gas-thermo-component-upgrade-cooling = Temperatura mínima
+gas-thermo-component-upgrade-heat-capacity = Capacidad calorífica

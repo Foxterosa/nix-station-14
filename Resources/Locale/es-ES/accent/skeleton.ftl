@@ -1,32 +1,24 @@
-accent-skeleton-words-1 = fuck you
-accent-skeleton-words-replace-1 = I've got a BONE to pick with you
-
-accent-skeleton-words-2 = fucked
-accent-skeleton-words-replace-2 = boned
-
-accent-skeleton-words-3 = fuck
-accent-skeleton-words-3-2 = fck
-accent-skeleton-words-3-3 = shit
-accent-skeleton-words-replace-3 = RATTLE RATTLE
-
-accent-skeleton-words-4 = definitely
-accent-skeleton-words-4-2 = absolutely
-accent-skeleton-words-replace-4 = make no bones about it
-
-accent-skeleton-words-5 = afraid
-accent-skeleton-words-5-2 = scared
-accent-skeleton-words-5-3 = spooked
-accent-skeleton-words-5-4 = shocked
-accent-skeleton-words-replace-5 = rattled
-
-accent-skeleton-words-6 = killed
-accent-skeleton-words-replace-6 = skeletonized
-
-accent-skeleton-words-7 = humorous
-accent-skeleton-words-replace-7 = humerus
-
-accent-skeleton-words-8 = to be a
-accent-skeleton-words-replace-8 = tibia
-
-accent-skeleton-words-9 = under
-accent-skeleton-words-replace-9 = ulna
+accent-skeleton-words-1 = Vete a la mierda
+accent-skeleton-words-replace-1 = Tengo un BONE para ti
+accent-skeleton-words-2 = La cagó
+accent-skeleton-words-replace-2 = División
+accent-skeleton-words-3 = Maldita sea
+accent-skeleton-words-3-2 = Maldita sea
+accent-skeleton-words-3-3 = Mierda
+accent-skeleton-words-replace-3 = TOC TOC
+accent-skeleton-words-4 = Definitivamente
+accent-skeleton-words-4-2 = Absolutamente
+accent-skeleton-words-replace-4 = sin huesos
+accent-skeleton-words-5 = Estaba asustada
+accent-skeleton-words-5-2 = asustado
+accent-skeleton-words-5-3 = asustado
+accent-skeleton-words-5-4 = sorprendido
+accent-skeleton-words-replace-5 = Sorprendido
+accent-skeleton-words-6 = Muerto
+accent-skeleton-words-replace-6 = Esqueleto/a
+accent-skeleton-words-7 = Gracioso
+accent-skeleton-words-replace-7 = Braquiorradial
+accent-skeleton-words-8 = ser
+accent-skeleton-words-replace-8 = Quédate
+accent-skeleton-words-9 = falleció
+accent-skeleton-words-replace-9 = esqueletizada

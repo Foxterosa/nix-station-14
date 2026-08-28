@@ -1,4 +1,4 @@
-﻿player-tab-player-count = Jugadores: { $count }
+player-tab-player-count = Jugadores: { $count }
 player-tab-username = Usuario
 player-tab-character = Personaje
 player-tab-job = Puesto
@@ -11,6 +11,5 @@ player-tab-filter-line-edit-placeholder = Filtrar
 player-tab-is-antag-yes = SÍ
 player-tab-is-antag-no = NO
 
-player-tab-character-name-antag-symbol = {$symbol} {$name}
-
+player-tab-character-name-antag-symbol = { $symbol } { $name }
 player-tab-antag-prefix = 🗡

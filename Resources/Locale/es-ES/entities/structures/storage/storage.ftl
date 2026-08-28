@@ -57,7 +57,6 @@ ent-BaseBarrelChemRadioactiveFilledUranium = barril radiactivo
     .suffix = Uranio
 ent-BaseBigBox = caja de cartón
     .desc = ¿Eh? Es solo una caja...
-ent-BaseFilingCabinet = 
 
 
 

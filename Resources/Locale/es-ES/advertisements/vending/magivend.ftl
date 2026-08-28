@@ -1,7 +1,7 @@
 advertisement-magivend-1 = ¡Lanza hechizos como se debe con MagiVend!
 advertisement-magivend-2 = ¡Sé tu propio Houdini! ¡Usa MagiVend!
-advertisement-magivend-3 = FJKLFJSD
-advertisement-magivend-4 = AJKFLBJAKL
+advertisement-magivend-3 = AOLDAOYV
+advertisement-magivend-4 = FOLADIOFLD
 advertisement-magivend-5 = >MFW
 advertisement-magivend-6 = ¡HONK!
 advertisement-magivend-7 = EI NATH

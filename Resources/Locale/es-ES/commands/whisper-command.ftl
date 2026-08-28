@@ -1,2 +1,2 @@
-﻿cmd-whisper-desc = Send chat messages to the local channel as a whisper.
-cmd-whisper-help = Usage: whisper <text>
+cmd-whisper-desc = Envía mensajes al canal local en forma de susurro.
+cmd-whisper-help = Uso: whisper <text>

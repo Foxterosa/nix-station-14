@@ -3,8 +3,8 @@ hud-chatbox-info-talk = {$talk-key} para hablar.
 hud-chatbox-info-cycle = Haz clic aquí para hablar, {$cycle-key} para cambiar de canal.
 hud-chatbox-info-unbound = Haz clic aquí para hablar.
 
-hud-chatbox-select-name-prefixed = {$prefix} {$name}
-hud-chatbox-select-channel-Admin = Admin
+hud-chatbox-select-name-prefixed = { $prefix } { $name }
+hud-chatbox-select-channel-Admin = Administración
 hud-chatbox-select-channel-Console = Consola
 hud-chatbox-select-channel-Dead = Muertos
 hud-chatbox-select-channel-Emotes = Emotes

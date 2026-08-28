@@ -1,4 +1,4 @@
-﻿cmd-dumpreagentguidetext-desc = Dumps the guidebook text for a reagent to the console.
-cmd-dumpreagentguidetext-help = Usage: dumpreagentguidetext <reagentPrototype>
-cmd-dumpreagentguidetext-nothing-to-dump = Nothing to dump.
-cmd-dumpreagentguidetext-skipped = [skipped effect of type {$effect}]
+cmd-dumpreagentguidetext-desc = Vuelca en la consola el texto de la guía correspondiente a un reactivo.
+cmd-dumpreagentguidetext-help = Uso: dumpreagentguidetext <prototipoDeReactivo>
+cmd-dumpreagentguidetext-nothing-to-dump = No hay nada que volcar.
+cmd-dumpreagentguidetext-skipped = [se omitió el efecto de tipo {$effect}]

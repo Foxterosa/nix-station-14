@@ -1,3 +1,4 @@
+using System;
 using Robust.Shared.GameStates;
 
 namespace Content.Shared._Nix.Traits.Diet;
@@ -24,6 +25,16 @@ public sealed partial class VegetarianComponent : Component
 [RegisterComponent, NetworkedComponent]
 public sealed partial class CarnivoreComponent : Component
 {
+}
+
+/// <summary>
+/// Tracks repeated dietary violations so the reaction escalates instead of vomiting on the first bite.
+/// </summary>
+[RegisterComponent]
+public sealed partial class DietViolationComponent : Component
+{
+    public int ConsecutiveViolations;
+    public TimeSpan LastViolation;
 }
 
 /// <summary>

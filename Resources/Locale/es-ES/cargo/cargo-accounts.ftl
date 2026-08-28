@@ -1,17 +1,13 @@
-cargo-account-cargo-name = Station Supply Budget
-cargo-account-cargo-code = SUP
-
-cargo-account-engineering-name = Maintenance Savings
-cargo-account-engineering-code = ENG
-
-cargo-account-medical-name = Crew Healthcare Fund
-cargo-account-medical-code = MED
-
-cargo-account-science-name = Interstellar Development Funding
+cargo-account-cargo-name = Presupuesto de suministros de la estación
+cargo-account-cargo-code = COCHE
+cargo-account-engineering-name = Ahorro en mantenimiento
+cargo-account-engineering-code = INGE
+cargo-account-medical-name = Fundación de Salud de la Tripulación
+cargo-account-medical-code = Cariño
+cargo-account-science-name = Financiación para el desarrollo interestelar
 cargo-account-science-code = RND
 
-cargo-account-security-name = Station Defense Reserves
-cargo-account-security-code = SEC
-
-cargo-account-service-name = Collective Service Holdings
-cargo-account-service-code = SRV
+cargo-account-security-name = Reservas de Defensa de la Estación
+cargo-account-security-code = OHR
+cargo-account-service-name = Activos de Servicio Colectivo
+cargo-account-service-code = SERV

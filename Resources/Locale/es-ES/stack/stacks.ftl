@@ -1,5 +1,5 @@
 stack-steel = acero
-stack-bananium = bananium
+stack-bananium = Bananio
 stack-glass = vidrio
 stack-plasteel = plastacero
 stack-brass = latón
@@ -16,66 +16,79 @@ stack-reinforced-uranium-glass = vidrio de uranio reforzado
 stack-gunpowder = pólvora
 stack-cardboard = cartón
 
-stack-bones = {$amount ->
-    [1] hueso
-    *[other] huesos
-}
-stack-cloth = {$amount ->
-    [1] tela
-    *[other] telas
-}
-stack-lv-cable = {$amount ->
-    [1] cable de baja tensión
-    *[other] cables de baja tensión
-}
-stack-mv-cable = {$amount ->
-    [1] cable de media tensión
-    *[other] cables de media tensión
-}
-stack-hv-cable = {$amount ->
-    [1] cable de alta tensión
-    *[other] cables de alta tensión
-}
+stack-bones =
+    { $amount ->
+        [1] Bone
+       *[other] Bones
+    }
+stack-cloth =
+    { $amount ->
+        [1] Tejido
+       *[other] Tejidos
+    }
+stack-lv-cable =
+    { $amount ->
+        [1] Cable de baja tensión
+       *[other] Cables de baja tensión
+    }
+stack-mv-cable =
+    { $amount ->
+        [1] Cable de tensión media
+       *[other] Cables de media tensión
+    }
+stack-hv-cable =
+    { $amount ->
+        [1] Cable de alta tensión
+       *[other] Cables de alta tensión
+    }
 stack-explosive-cord = {$amount ->
     [1] cordón explosivo
     *[other] cordones explosivos
 }
-stack-wood-plank = {$amount ->
-    [1] tabla de madera
-    *[other] tablas de madera
-}
-stack-durathread = {$amount ->
-    [1] durathread
-    *[other] durathreads
-}
-stack-rods = {$amount ->
-    [1] varilla
-    *[other] varillas
-}
-stack-meat-sheet = {$amount ->
-    [1] lámina de carne
-    *[other] láminas de carne
-}
+stack-wood-plank =
+    { $amount ->
+        [1] Tabla de madera
+       *[other] Tablas de madera
+    }
+stack-durathread =
+    { $amount ->
+        [1] Duran
+       *[other] Duraniti
+    }
+stack-rods =
+    { $amount ->
+        [1] Vara
+       *[other] Varas
+    }
+stack-meat-sheet =
+    { $amount ->
+        [1] Hoja de carne
+       *[other] Hojas de carne
+    }
 stack-space-carp-tooth = {$amount ->
     [1] diente
     *[other] dientes
 } de carpa espacial
-stack-paper = {$amount ->
-    [1] papel
-    *[other] papeles
-}
-stack-diamond = {$amount ->
-    [1] diamante
-    *[other] diamantes
-}
-stack-silk = {$amount ->
-    [1] seda
-    *[other] sedas
-}
-stack-cotton = {$amount ->
-    [1] algodón
-    *[other] algodones
-}
+stack-paper =
+    { $amount ->
+        [1] Papel
+       *[other] Papel
+    }
+stack-diamond =
+    { $amount ->
+        [1] Diamante
+       *[other] Diamantes
+    }
+stack-silk =
+    { $amount ->
+        [1] Seda
+       *[other] Seda
+    }
+stack-cotton =
+    { $amount ->
+        [1] Algodón
+       *[other] algodón
+    }
 stack-artifact-fragment = {$amount ->
     [1] fragmento
     *[other] fragmentos

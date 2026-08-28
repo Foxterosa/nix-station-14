@@ -1,20 +1,17 @@
-﻿cmd-jobwhitelist-job-does-not-exist = Job {$job} does not exist.
-cmd-jobwhitelist-player-not-found = Player {$player} not found.
+cmd-jobwhitelist-job-does-not-exist = El puesto { $job } no existe.
+cmd-jobwhitelist-player-not-found = No { $player } encontrado jugador.
 cmd-jobwhitelist-hint-player = [player]
 cmd-jobwhitelist-hint-job = [job]
 
-cmd-jobwhitelistadd-desc = Lets a player play a whitelisted job.
-cmd-jobwhitelistadd-help = Usage: jobwhitelistadd <username> <job>
-cmd-jobwhitelistadd-already-whitelisted = {$player} is already whitelisted to play as {$jobId} .({$jobName}).
-cmd-jobwhitelistadd-added = Added {$player} to the {$jobId} ({$jobName}) whitelist.
-
-cmd-jobwhitelistget-desc = Gets all the jobs that a player has been whitelisted for.
-cmd-jobwhitelistget-help = Usage: jobwhitelistget <username>
-cmd-jobwhitelistget-whitelisted-none = Player {$player} is not whitelisted for any jobs.
-cmd-jobwhitelistget-whitelisted-for = "Player {$player} is whitelisted for:
-{$jobs}"
-
-cmd-jobwhitelistremove-desc = Removes a player's ability to play a whitelisted job.
-cmd-jobwhitelistremove-help = Usage: jobwhitelistremove <username> <job>
-cmd-jobwhitelistremove-was-not-whitelisted = {$player} was not whitelisted to play as {$jobId} ({$jobName}).
-cmd-jobwhitelistremove-removed = Removed {$player} from the whitelist for {$jobId} ({$jobName}).
+cmd-jobwhitelistadd-desc = Permite al jugador jugar posiciones de la lista blanca.
+cmd-jobwhitelistadd-help = Uso: jobwhitelistadd <username> <job>
+cmd-jobwhitelistadd-already-whitelisted = { $player } ya en la lista blanca para el puesto de { $jobId }. ({ $jobName }).
+cmd-jobwhitelistadd-added = { $player } añadido a la lista blanca { $jobId } ({ $jobName }).
+cmd-jobwhitelistget-desc = Proporciona una lista de todas las posiciones para las que el jugador está en la lista blanca.
+cmd-jobwhitelistget-help = Uso: jobwhitelistget <username>
+cmd-jobwhitelistget-whitelisted-none = El jugador { $player } no está en las listas blancas para ninguna posición.
+cmd-jobwhitelistget-whitelisted-for = El jugador { $player } incluido en la lista blanca para las siguientes posiciones: { $jobs }
+cmd-jobwhitelistremove-desc = Elimina el derecho del jugador a jugar posiciones de la lista blanca.
+cmd-jobwhitelistremove-help = Uso: jobwhitelistremove <username> <job>
+cmd-jobwhitelistremove-was-not-whitelisted = { $player } no estaba en la lista blanca del juego como { $jobId } ({ $jobName }).
+cmd-jobwhitelistremove-removed = { $player } eliminado de la lista blanca de puestos { $jobId } ({ $jobName }).

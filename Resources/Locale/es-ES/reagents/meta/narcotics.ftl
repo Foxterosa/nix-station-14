@@ -1,10 +1,10 @@
-reagent-name-desoxyephedrine = desoxyephedrine
+reagent-name-desoxyephedrine = Desoxiefedrina
 reagent-desc-desoxyephedrine = Una ephedrine mas eficaz, con desventajas mas activas. Requiere menos dosis para curar la narcolepsia.
 
-reagent-name-ephedrine = ephedrine
+reagent-name-ephedrine = Efedrina
 reagent-desc-ephedrine = Un quimico estimulante adrenal con cafeina que te hace mas rapido y mas dificil de derribar. Tambien ayuda a combatir la narcolepsia en dosis superiores a treinta, a costa de un fuerte estres nervioso.
 
-reagent-name-stimulants = hyperzine
+reagent-name-stimulants = Huperzina
 reagent-desc-stimulants = Un coctel quimico desarrollado por Donk Co. que permite a los agentes recuperarse mas rapido de aturdimientos, moverse mas deprisa y concede una pequeña curacion cuando estas mas muerto que vivo. Debido a la naturaleza compleja del quimico, es mucho mas dificil para el cuerpo purgarlo de manera natural.
 
 reagent-name-experimental-stimulants = estimulantes experimentales
@@ -19,13 +19,13 @@ reagent-desc-bananadine = Un psicodelico suave que se encuentra en pequeñas tra
 reagent-name-nicotine = nicotina
 reagent-desc-nicotine = Peligrosa y altamente adictiva, aunque eso es lo que dice la propaganda.
 
-reagent-name-impedrezene = impedrezene
+reagent-name-impedrezene = Impedryzin
 reagent-desc-impedrezene = Un narcotico que entorpece la capacidad de uno al ralentizar las funciones superiores de las celulas cerebrales.
 
 reagent-name-space-drugs = espejismo espacial
 reagent-desc-space-drugs = Un compuesto ilegal que induce diversos efectos como perdida del equilibrio y artefactos visuales.
 
-reagent-name-nocturine = nocturine
+reagent-name-nocturine = Nocturin
 reagent-desc-nocturine = Un sedante e hipnotico altamente eficaz, desarrollado por el Sindicato para operaciones de sigilo. Billete de ida a la ciudad de honk-shoo.
 
 reagent-name-mute-toxin = toxina muda

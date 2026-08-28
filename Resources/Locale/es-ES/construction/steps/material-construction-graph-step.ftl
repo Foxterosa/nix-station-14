@@ -1,1 +1,1 @@
-construction-insert-material-entity = Next, add [color=yellow]{$amount}x[/color] [color=cyan]{$materialName}[/color].
+construction-insert-material-entity = Después, añade [color=yellow]{ $amount }u[/color] [color=cyan]{ $materialName }[/color].

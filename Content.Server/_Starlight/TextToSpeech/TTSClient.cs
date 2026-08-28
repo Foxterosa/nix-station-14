@@ -16,7 +16,9 @@ public sealed partial class TTSClient : ITTSClient
     [Dependency] private IConfigurationManager _cfg = default!;
 
     private const string Queue = "tts_jobs";
-    private const int TimeoutS = 5;
+    // Announcements can contain several complete sentences. Keep the transport alive long enough
+    // for the worker to finish them instead of treating a healthy long synthesis as a failure.
+    private const int TimeoutS = 60;
 
     private static readonly byte[] _endMarker = "__END__"u8.ToArray();
 

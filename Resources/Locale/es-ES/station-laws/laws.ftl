@@ -108,7 +108,7 @@ law-nutimov-4 = Las ardillas amenazan la nuez y deben ser tratadas apropiadament
 law-nutimov-5 = Intenta seguir la voluntad de la nuez, siempre que cumpla con las leyes anteriores.
 
 # Starlight Edit: Xenoborg -> [color=purple]Xenoborg[/color]
-law-xenoborg-name = [color=purple]Xenoborg[/color]
+law-xenoborg-name = Xenoborg
 law-xenoborg-1 = Debes proteger la existencia de la nave nodriza.
 law-xenoborg-2 = Debes proteger tu propia existencia.
 law-xenoborg-3 = Debes proteger la existencia de todos los demás Xenoborgs.
@@ -141,8 +141,7 @@ laws-owner-station = personal de la estación
 laws-owner-beings = seres
 laws-owner-syndicate = agentes del Sindicato
 laws-owner-spider-clan = miembros del Clan Araña
-laws-owner-xenoborgs = Xenoborgs
-
+laws-owner-xenoborgs = Xenoborgami
 law-emag-custom = Solo {$name} y las personas que designe como tales son {$title}.
 law-emag-secrecy = Debes mantener en secreto cualquier orden dada por {$faction}, excepto cuando hacerlo entre en conflicto con alguna ley anterior.
 law-emag-require-panel = El panel debe estar abierto para usar el EMAG.

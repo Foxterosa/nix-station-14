@@ -1,13 +1,13 @@
-objectives-round-end-result = {$count ->
-    [one] Había un {$agent}.
-    *[other] Había {$count} {MAKEPLURAL($agent)}.
-}
-
+objectives-round-end-result =
+    { $count ->
+        [one] Hubo una { $agent }.
+        [few] Era { $count } { $agent }.
+       *[other] Era { $count } { $agent }.
+    }
 objectives-round-end-result-in-custody = {$custody} de {$count} {MAKEPLURAL($agent)} estaban bajo custodia.
 
-objectives-player-user-named = [color=White]{$name}[/color] ([color=gray]{$user}[/color])
-objectives-player-named = [color=White]{$name}[/color]
-
+objectives-player-user-named = [color=White]{ $name }[/color] ([color=gray]{ $user }[/color])
+objectives-player-named = [color=White]{ $name }[/color]
 objectives-no-objectives = {$custody}{$title} era {$agent}.
 objectives-with-objectives = {$custody}{$title} era {$agent} y tenía los siguientes objetivos:
 

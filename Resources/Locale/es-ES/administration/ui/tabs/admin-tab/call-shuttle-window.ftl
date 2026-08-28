@@ -9,5 +9,5 @@ admin-shuttle-state-idle = La nave de emergencia está esperando en Comando Cent
 admin-shuttle-state-called = Nave de emergencia llamada. Tiempo estimado: { $seconds } segundos.
 admin-shuttle-action-success = Se completó la acción sobre la nave.
 admin-shuttle-action-failed = La acción fue rechazada o ya no está disponible.
-nix-admin-shuttle-selected-announcement = Comando Central asignó el diseño de nave de emergencia { $shuttle }.
+nix-admin-shuttle-selected-announcement = Comando Central asignó la nave de evacuación { $shuttle }.
 shipyard-console-purchases-locked = Comando Central suspendió temporalmente las compras de naves.

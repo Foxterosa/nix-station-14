@@ -95,7 +95,7 @@ story-gen-book-character38 = ladron
 story-gen-book-character39 = mago
 
 # Starlight edit start
-story-gen-book-character40 = laspi
+story-gen-book-character40 = Slime
 story-gen-book-character41 = elfo
 story-gen-book-character42 = goblin
 story-gen-book-character43 = orco

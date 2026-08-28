@@ -1,3 +1,4 @@
+using System.Linq;
 using Content.Shared.Body.Part;
 using Content.Shared.Body.Systems;
 using Content.Shared.Buckle.Components;
@@ -89,7 +90,7 @@ public abstract partial class SharedSurgerySystem : EntitySystem
         return !ev.Cancelled;
     }
 
-    protected List<EntityUid> GetTools(EntityUid surgeon) => [.. _hands.EnumerateHeld(surgeon)];
+    protected List<EntityUid> GetTools(EntityUid surgeon) => _hands.EnumerateHeld(surgeon).ToList();
 
     public bool IsLyingDown(EntityUid entity)
     {

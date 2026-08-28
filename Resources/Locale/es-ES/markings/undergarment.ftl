@@ -1,6 +1,6 @@
 marking-UndergarmentTopTanktop = Camiseta sin mangas
 marking-UndergarmentTopTanktop-tanktop = Camiseta sin mangas
-marking-UndergarmentTopBinder = Binder
+marking-UndergarmentTopBinder = Apretado
 marking-UndergarmentTopBinder-binder = Binder
 marking-UndergarmentTopBra = Sostén clásico
 marking-UndergarmentTopBra-classic = Sostén clásico
@@ -16,7 +16,7 @@ marking-UndergarmentBottomSatin-satin = Satén
 
 marking-UndergarmentTopTanktopVox = Camiseta sin mangas
 marking-UndergarmentTopTanktopVox-tanktop_vox = Camiseta sin mangas
-marking-UndergarmentTopBinderVox = Binder
+marking-UndergarmentTopBinderVox = Apretado
 marking-UndergarmentTopBinderVox-binder_vox = Binder
 marking-UndergarmentTopBraVox = Sostén clásico
 marking-UndergarmentTopBraVox-classic_vox = Sostén clásico

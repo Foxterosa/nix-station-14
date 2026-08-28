@@ -1,2 +1,2 @@
-﻿cmd-addpolymorphaction-desc = Takes an entity and gives them a voluntary polymorph.
-cmd-addpolymorphaction-help = Usage: addpolymorphaction <id> <polymorph prototype>
+cmd-addpolymorphaction-desc = Otorga a una entidad una acción de polimorfia voluntaria.
+cmd-addpolymorphaction-help = Uso: addpolymorphaction <id> <prototipo de polimorfia>

@@ -38,7 +38,6 @@ ent-ActionXenoborgControlMonitor = Consola de control de los Xenoborg
     .desc = Ver la consola de control de los Xenoborg
 ent-AdminObserver = observador de admin
     .desc = ¡Bu!
-ent-AiHeld = 
 
 
 
@@ -70,7 +69,6 @@ ent-AiHeld =
 
 
     .desc = Componentes que se agregan o quitan de una entidad que se inserta en un núcleo de IA.
-ent-AiHeldIntellicard = 
 
 
 
@@ -102,7 +100,6 @@ ent-AiHeldIntellicard =
 
 
     .desc = Componentes que se agregan o quitan de una entidad que se inserta en una Intellicard.
-ent-AiHolder = 
 
 
 
@@ -134,7 +131,6 @@ ent-AiHolder =
 
 
     .desc = Gestiona las interacciones de IA entre holocards y núcleos de IA
-ent-AppearanceAvali = 
 
 
 
@@ -166,7 +162,6 @@ ent-AppearanceAvali =
 
 
     .desc = Un maniquí avali pensado para usarse en la creación de personaje.
-ent-AppearanceNeoAvali = 
 
 
 
@@ -198,7 +193,6 @@ ent-AppearanceNeoAvali =
 
 
     .desc = Un maniquí neo-avali pensado para usarse en la creación de personaje.
-ent-AppearanceNeoKin = 
 
 
 
@@ -230,7 +224,6 @@ ent-AppearanceNeoKin =
 
 
     .desc = Un maniquí neokin pensado para usarse en la creación de personaje.
-ent-AppearanceNeoReptilian = 
 
 
 
@@ -262,7 +255,6 @@ ent-AppearanceNeoReptilian =
 
 
     .desc = Un maniquí neo-reptil pensado para usarse en la creación de personaje.
-ent-AppearanceNeoResomi = 
 
 
 
@@ -294,7 +286,6 @@ ent-AppearanceNeoResomi =
 
 
     .desc = Un maniquí neo-resomi pensado para usarse en la creación de personaje.
-ent-AppearanceReptilian = 
 
 
 
@@ -326,7 +317,6 @@ ent-AppearanceReptilian =
 
 
     .desc = Un maniquí reptiliano pensado para usarse en la creación de personaje.
-ent-AppearanceResomi = 
 
 
 
@@ -358,7 +348,6 @@ ent-AppearanceResomi =
 
 
     .desc = Un maniquí resomi pensado para usarse en la creación de personaje.
-ent-AppearanceRodentia = 
 
 
 
@@ -390,7 +379,6 @@ ent-AppearanceRodentia =
 
 
     .desc = Un maniquí rodentia pensado para usarse en la creación de personaje.
-ent-AppearanceShadekin = 
 
 
 
@@ -482,7 +470,6 @@ ent-EngineeringVisitorSpawner = generador de visitante de ingeniería
 ent-EtherealJaunt = jaunt
     .desc = Aquí perduran trazas tenues de una figura humanoide
     .suffix = Mago
-ent-Incorporeal = 
 
 
 
@@ -533,7 +520,6 @@ ent-MobBrighteye = Urist McBrighteye
 ent-MobCorgiCerberus = Cerbero
     .desc = Este perrito no es nada tierno.
     .suffix = IA
-ent-MobCorruptHonkmotherBase = 
 
 
 
@@ -646,7 +632,6 @@ ent-MobParadox = paradoja espaciotemporal
     .desc = Una gran bola de cosas temporales, tambaleantes y enredadas.
 ent-MobParadoxTimed = paradoja espaciotemporal
     .desc = Una gran bola de cosas temporales, tambaleantes y enredadas.
-ent-MobPureHonkmotherBase = 
 
 
 
@@ -1035,7 +1020,6 @@ ent-StationAiHoloLocal = holograma de IA
 ent-SyndieSoldierSpawner = generador de soldado del Sindicato
 ent-SyndieSoldierTeamLeaderSpawner = generador de líder de equipo del Sindicato
 ent-SyndieVisitorSpawner = generador de víctima de desastre del Sindicato
-ent-TSFAiHeld = 
 
 
 

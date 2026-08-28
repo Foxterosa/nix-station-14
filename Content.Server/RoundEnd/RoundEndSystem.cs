@@ -229,7 +229,8 @@ namespace Content.Server.RoundEnd
                 null,
                 Color.Gold);
 
-            _audio.PlayGlobal("/Audio/_Nix/Announcements/shuttlecalled.ogg", Filter.Broadcast(), true);  // Nix
+            // TTS delivers the shuttle call; leave the legacy global sound disabled to avoid overlap.
+            // _audio.PlayGlobal("/Audio/_Nix/Announcements/shuttlecalled.ogg", Filter.Broadcast(), true);
 
             LastCountdownStart = _gameTiming.CurTime;
             ExpectedCountdownEnd = _gameTiming.CurTime + countdownTime;
@@ -287,7 +288,8 @@ namespace Content.Server.RoundEnd
             _chatSystem.DispatchGlobalAnnouncement(Loc.GetString("round-end-system-shuttle-recalled-announcement"),
                 Loc.GetString("round-end-system-shuttle-sender-announcement"), false, colorOverride: Color.Gold);
 
-            _audio.PlayGlobal("/Audio/_Nix/Announcements/shuttlerecalled.ogg", Filter.Broadcast(), true); // Nix
+            // TTS delivers the shuttle recall; leave the legacy global sound disabled to avoid overlap.
+            // _audio.PlayGlobal("/Audio/_Nix/Announcements/shuttlerecalled.ogg", Filter.Broadcast(), true);
 
             LastCountdownStart = null;
             ExpectedCountdownEnd = null;

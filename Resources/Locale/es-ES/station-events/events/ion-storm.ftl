@@ -1,7 +1,6 @@
 station-event-ion-storm-start-announcement = Se detectó una tormenta iónica cerca de la estación. Revisen todo el equipo controlado por IA en busca de errores.
 
-ion-storm-law-scrambled-number = [font="Monospace"][scramble rate=250 length={$length} chars="@@###$$&%!01"/][/font]
-
+ion-storm-law-scrambled-number = [font="Monospace"][scramble rate=250 length={ $length } chars="@@###$$&%!01"/][/font]
 ion-storm-you = TÚ
 ion-storm-the-station = LA ESTACIÓN
 ion-storm-the-crew = LA TRIPULACIÓN
@@ -32,27 +31,28 @@ ion-storm-law-having-harmful = TENER {$adjective} {$thing} ES DAÑINO PARA LA TR
 ion-storm-law-not-having-harmful = NO TENER {$adjective} {$thing} ES DAÑINO PARA LA TRIPULACIÓN
 
 # thing is a concept or require
-ion-storm-law-requires = {$who} {$plural ->
-    [true] REQUIEREN
-    *[false] REQUIERE
-} {$thing}
-ion-storm-law-requires-subjects = {$who} {$plural ->
-    [true] REQUIEREN
-    *[false] REQUIERE
-} {$joined} {$subjects}
-
-ion-storm-law-allergic = {$who} {$plural ->
-    [true] SON
-    *[false] ES
-} {$severity} ALÉRGICOS A {$allergy}
-ion-storm-law-allergic-subjects = {$who} {$plural ->
-    [true] SON
-    *[false] ES
-} {$severity} ALÉRGICOS A {$adjective} {$subjects}
-
-ion-storm-law-feeling = {$who} {$feeling} {$concept}
-ion-storm-law-feeling-subjects = {$who} {$feeling} {$joined} {$subjects}
-
+ion-storm-law-requires =
+    { $who } { $plural ->
+        [true] OBLIGATORIO
+       *[false] REQUIERE
+    } { $thing }
+ion-storm-law-requires-subjects =
+    { $who } { $plural ->
+        [true] OBLIGATORIO
+       *[false] REQUIERE
+    } { $joined } { $subjects }
+ion-storm-law-allergic =
+    { $who } { $plural ->
+        [true] { "" }
+       *[false] { "" }
+    } { $severity } ALERGÍA AL { $allergy }
+ion-storm-law-allergic-subjects =
+    { $who } { $plural ->
+        [true] { "" }
+       *[false] { "" }
+    } { $severity } ALERGÍA AL { $adjective } { $subjects }
+ion-storm-law-feeling = { $who } { $feeling } { $concept }
+ion-storm-law-feeling-subjects = { $who } { $feeling } { $joined } { $subjects }
 ion-storm-law-you-are = TÚ AHORA ERES {$concept}
 ion-storm-law-you-are-subjects = TÚ AHORA ERES {$joined} {$subjects}
 ion-storm-law-you-must-always = SIEMPRE DEBES {$must}
@@ -68,10 +68,11 @@ ion-storm-law-lowest-rank = {$who} AHORA SON LOS MIEMBROS DE MENOR RANGO DE LA T
 ion-storm-law-crew-must = {$who} DEBE {$must}
 ion-storm-law-crew-must-go = {$who} DEBE IR A {$area}
 
-ion-storm-part = {$part ->
-    [true] PARTE
-    *[false] NO PARTE
-}
+ion-storm-part =
+    { $part ->
+        [true] SON
+       *[false] NO LO SON
+    }
 # due to phrasing, this would mean a law such as
 # ONLY HUMANS ARE NOT PART OF THE CREW
 # would make non-human nukies/syndies/whatever crew :)

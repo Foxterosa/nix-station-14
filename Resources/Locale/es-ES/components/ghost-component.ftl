@@ -1,3 +1,8 @@
-﻿# Examine text
-comp-ghost-examine-time-minutes = Died [color=yellow]{$minutes} minutes ago.[/color]
-comp-ghost-examine-time-seconds = Died [color=yellow]{$seconds} seconds ago.[/color]
+# Examine text
+comp-ghost-examine-time-minutes = Murió [color=yellow]{ $minutes } minuto(s) ago.[/color]
+comp-ghost-examine-time-seconds =
+    Murió [color=yellow]{ $seconds } { $seconds ->
+        [one] Segundo
+        [few] Segundos
+       *[other] Segundos
+    } de vuelta. [/color]

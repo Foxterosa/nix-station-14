@@ -48,6 +48,13 @@ namespace Content.Server.Database
         Task<PlayerPreferences?> GetPlayerPreferencesAsync(NetUserId userId, CancellationToken cancel);
         #endregion
 
+        #region Nix Web Bridge
+        Task RecordNixWebAchievementAsync(NixWebCharacterIdentity identity, string achievementId, int roundId);
+        Task RecordNixWebStatisticAsync(NixWebCharacterIdentity identity, string metricId, int amount, int roundId, string? metadata = null);
+        Task<NixWebRankingPage> GetNixWebRankingAsync(int offset, int limit);
+        Task<NixWebMetricRankingPage> GetNixWebMetricRankingAsync(string metricId, int offset, int limit);
+        #endregion
+
         #region User Ids
         // Username assignment (for guest accounts, so they persist GUID)
         Task AssignUserIdAsync(string name, NetUserId userId);
@@ -502,6 +509,30 @@ namespace Content.Server.Database
         {
             DbReadOpsMetric.Inc();
             return RunDbCommand(() => _db.GetPlayerPreferencesAsync(userId, cancel));
+        }
+
+        public Task RecordNixWebAchievementAsync(NixWebCharacterIdentity identity, string achievementId, int roundId)
+        {
+            DbWriteOpsMetric.Inc();
+            return RunDbCommand(() => _db.RecordNixWebAchievementAsync(identity, achievementId, roundId));
+        }
+
+        public Task RecordNixWebStatisticAsync(NixWebCharacterIdentity identity, string metricId, int amount, int roundId, string? metadata = null)
+        {
+            DbWriteOpsMetric.Inc();
+            return RunDbCommand(() => _db.RecordNixWebStatisticAsync(identity, metricId, amount, roundId, metadata));
+        }
+
+        public Task<NixWebRankingPage> GetNixWebRankingAsync(int offset, int limit)
+        {
+            DbReadOpsMetric.Inc();
+            return RunDbCommand(() => _db.GetNixWebRankingAsync(offset, limit));
+        }
+
+        public Task<NixWebMetricRankingPage> GetNixWebMetricRankingAsync(string metricId, int offset, int limit)
+        {
+            DbReadOpsMetric.Inc();
+            return RunDbCommand(() => _db.GetNixWebMetricRankingAsync(metricId, offset, limit));
         }
 
         public Task AssignUserIdAsync(string name, NetUserId userId)

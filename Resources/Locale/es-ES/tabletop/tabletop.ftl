@@ -1,4 +1,4 @@
-﻿## TabletopGameComponent
+## TabletopGameComponent
 tabletop-verb-play-game = Jugar
 tabletop-verb-dump-pieces = Soltar piezas
 tabletop-default-board-name = Juego de mesa
@@ -10,9 +10,10 @@ tabletop-chess-board-name = Ajedrez
 tabletop-chess-flip = Voltear
 
 ## Parchís
-tabletop-parchis-board-name = Parchís
+tabletop-parchis-board-name = Brocado
 
 ## Backgammon
+
 tabletop-backgammon-board-name = Backgammon
 
 ## Checkers

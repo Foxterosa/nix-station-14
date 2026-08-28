@@ -1,57 +1,50 @@
 # named frequencies
-device-frequency-prototype-name-atmos = Atmospheric Devices
-device-frequency-prototype-name-suit-sensors = Suit Sensors
-device-frequency-prototype-name-crew-monitor = Crew Monitor
-device-frequency-prototype-name-lights = Smart Lights
-device-frequency-prototype-name-mailing-units = Mailing Units
-device-frequency-prototype-name-pdas = PDAs
+device-frequency-prototype-name-atmos = Instrumentos atmosféricos
+device-frequency-prototype-name-suit-sensors = Sensores de vestuario
+device-frequency-prototype-name-crew-monitor = Monitor de la tripulación
+device-frequency-prototype-name-lights = Iluminación inteligente
+device-frequency-prototype-name-mailing-units = Bloque postal
+device-frequency-prototype-name-pdas = PDA
 device-frequency-prototype-name-fax = Fax
-device-frequency-prototype-name-basic-device = Basic Devices
-device-frequency-prototype-name-cyborg-control = Cyborg Control
-device-frequency-prototype-name-robotics-console = Robotics Console
-device-frequency-prototype-name-turret = Sentry Turret
-device-frequency-prototype-name-turret-control = Sentry Turret Control
+device-frequency-prototype-name-basic-device = Dispositivos base
+device-frequency-prototype-name-cyborg-control = Gestión de Cyborgs
+device-frequency-prototype-name-robotics-console = Consola de Control Robótica
+device-frequency-prototype-name-turret = Torreta
+device-frequency-prototype-name-turret-control = Control de torretas
 device-frequency-prototype-name-xenoborg = Xenoborg
-device-frequency-prototype-name-mothership = Mothership
-
-## camera frequencies
-device-frequency-prototype-name-surveillance-camera-test = Subnet Test
-device-frequency-prototype-name-surveillance-camera-engineering = Engineering Cameras
-device-frequency-prototype-name-surveillance-camera-security = Security Cameras
-device-frequency-prototype-name-surveillance-camera-science = Science Cameras
-device-frequency-prototype-name-surveillance-camera-supply = Supply Cameras
-device-frequency-prototype-name-surveillance-camera-command = Command Cameras
-device-frequency-prototype-name-surveillance-camera-service = Service Cameras
-device-frequency-prototype-name-surveillance-camera-medical = Medical Cameras
-device-frequency-prototype-name-surveillance-camera-general = General Cameras
-device-frequency-prototype-name-surveillance-camera-entertainment = Entertainment Cameras
-
+device-frequency-prototype-name-mothership = Nave nodriza
 # prefixes for randomly generated device addresses
-device-address-prefix-vent = VNT-
+device-frequency-prototype-name-surveillance-camera-test = Prueba de subred
+device-frequency-prototype-name-surveillance-camera-engineering = Cámaras (ingeniería)
+device-frequency-prototype-name-surveillance-camera-security = Cámaras (seguridad)
+device-frequency-prototype-name-surveillance-camera-science = Cámaras (científicas)
+device-frequency-prototype-name-surveillance-camera-supply = Cámaras (Suministros)
+device-frequency-prototype-name-surveillance-camera-command = Cámaras (Mando)
+device-frequency-prototype-name-surveillance-camera-service = Cámaras (servicio)
+device-frequency-prototype-name-surveillance-camera-medical = Cámaras (Médicas)
+device-frequency-prototype-name-surveillance-camera-general = Cámaras (General)
+device-frequency-prototype-name-surveillance-camera-entertainment = Cámaras (entretenimiento)
+device-address-prefix-vent = Ventilación
 device-address-prefix-scrubber = SCR-
-device-address-prefix-sensor = SNS-
-# Damn bet you couldn't see this one coming.
-device-address-prefix-teg = TEG-
-device-address-prefix-heater = HTR-
-device-address-prefix-freezer = FZR-
-device-address-prefix-volume-pump = VPP-
+device-address-prefix-sensor = Sensible-
+device-address-prefix-teg = ETIQUETA-
+device-address-prefix-heater = NGR-
+device-address-prefix-freezer = OCHL-
+device-address-prefix-volume-pump = NUEVO
 device-address-prefix-smes = SMS-
 device-address-prefix-turret = TRT-
 
 # PDAs and terminals
-device-address-prefix-console = CLS-
-device-address-prefix-fire-alarm = FIR-
-device-address-prefix-air-alarm = AIR-
-
+device-address-prefix-console = Contras-
+device-address-prefix-fire-alarm = Incendio
+# Damn bet you couldn't see this one coming.
+device-address-prefix-air-alarm = El
 device-address-prefix-sensor-monitor = MON-
 
-device-address-examine-message = The device's address is {$address}.
-
-# Device net ID names
-device-net-id-private = Private
-device-net-id-wired = Wired
-device-net-id-wireless = Wireless
-device-net-id-apc = Apc
-device-net-id-atmos-devices = Atmos Devices
-device-net-id-reserved = Reserved
-
+device-address-examine-message = Dirección del dispositivo: { $address }.
+device-net-id-private = Soldado
+device-net-id-wired = Cableado
+device-net-id-wireless = Inalámbrico
+device-net-id-apc = Pintura
+device-net-id-atmos-devices = Dispositivos Atmos
+device-net-id-reserved = Reserva

@@ -1,2 +1,2 @@
-station-event-doorrunetime-start-announcement = Hostile runtime detected in door controllers. Isolation lockdown protocols are now in effect. Please remain calm.
-station-event-doorrunetime-end-announcement = Automatic system reboot complete. Have a secure day.
+station-event-doorrunetime-start-announcement = Se detectó un proceso hostil en los controladores de puertas. Los protocolos de aislamiento y bloqueo ya están en vigor. Mantenga la calma.
+station-event-doorrunetime-end-announcement = El reinicio automático de sistemas terminó. Que tenga un día seguro.

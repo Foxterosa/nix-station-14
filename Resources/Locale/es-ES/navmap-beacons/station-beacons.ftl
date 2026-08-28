@@ -1,19 +1,17 @@
-station-beacon-general = General
-
+station-beacon-general = generales
 station-beacon-command = Comando
 station-beacon-bridge = Puente
 station-beacon-vault = Bóveda
 station-beacon-gateway = Portal
 station-beacon-captain = Capitán
-station-beacon-hop = HoP
-
+station-beacon-hop = Oficina del médico de cabecera
 station-beacon-security = Seguridad
-station-beacon-brig = Brig
+station-beacon-brig = Brigada
 station-beacon-brig-med = Med. brig
 station-beacon-warden = Alcaide
-station-beacon-hos = HoS
+station-beacon-hos = Gabinete de la GDI
 station-beacon-armory = Armería
-station-beacon-perma-brig = Perma
+station-beacon-perma-brig = Permabrig
 station-beacon-detective = Detective
 station-beacon-courtroom = Tribunal
 station-beacon-law = Bufete
@@ -23,7 +21,7 @@ station-beacon-medical = Médico
 station-beacon-medbay = Enfermería
 station-beacon-chemistry = Química
 station-beacon-cryonics = Criocápsulas
-station-beacon-cmo = CMO
+station-beacon-cmo = Consulta de Gladoctor
 station-beacon-morgue = Morgue
 station-beacon-surgery = Cirugía
 station-beacon-psychology = Psicología
@@ -32,20 +30,20 @@ station-beacon-clinic = Clínica
 station-beacon-science = Ciencia
 station-beacon-research-and-development = I+D
 station-beacon-research-server = Servidor
-station-beacon-research-director = RD
+station-beacon-research-director = Gabinete HP
 station-beacon-robotics = Robótica
 station-beacon-artifact-lab = Artefactos
 station-beacon-anomaly-gen = Anomalías
 
 station-beacon-supply = Suministros
-station-beacon-cargo = Cargo
+station-beacon-cargo = Carga
 station-beacon-cargo-bay = Bahía de Cargo
-station-beacon-qm = QM
+station-beacon-qm = Ministro del Gabinete
 station-beacon-salvage = Salvamento
 
 station-beacon-engineering = Ingeniería
-station-beacon-ce = CE
-station-beacon-ame = AME
+station-beacon-ce = Gabinete SI
+station-beacon-ame = PRESA
 station-beacon-solars = Solares
 station-beacon-solars-N = Solares N
 station-beacon-solars-NE = Solares NE
@@ -55,18 +53,18 @@ station-beacon-solars-S = Solares S
 station-beacon-solars-SW = Solares SO
 station-beacon-solars-W = Solares O
 station-beacon-solars-NW = Solares NO
-station-beacon-gravgen = Grav
+station-beacon-gravgen = Generador de gravedad
 station-beacon-pa = Control PA
-station-beacon-smes = SMES
+station-beacon-smes = SIEC
 station-beacon-telecoms = Telecom
-station-beacon-atmos = Atmos
+station-beacon-atmos = Compartimento atmosférico
 station-beacon-teg = TEG
 station-beacon-tech-vault = Bóveda téc.
 station-beacon-anchor = Ancla
 
 station-beacon-service = Servicio
 station-beacon-kitchen = Cocina
-station-beacon-bar = Bar
+station-beacon-bar = Barra
 station-beacon-botany = Botánica
 station-beacon-janitor = Conserje
 
@@ -77,7 +75,7 @@ station-beacon-ai-upload = Subida IA
 station-beacon-ai-power = Energía IA
 
 station-beacon-arrivals = Llegadas
-station-beacon-evac = Evac
+station-beacon-evac = Salón de evacuación
 station-beacon-docking-arm = Brazo de acople
 station-beacon-eva-storage = Almacén EVA
 # Starlight: Chapel -> Shrine

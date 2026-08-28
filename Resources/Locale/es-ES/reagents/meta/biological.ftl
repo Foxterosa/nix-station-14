@@ -4,7 +4,7 @@ reagent-desc-blood = Espero que esto sea ketchup.
 reagent-name-insect-blood = sangre de insecto
 reagent-desc-insect-blood = Vale, esto es realmente asqueroso. Casi parece... ¿viva?
 
-reagent-name-slime = slime
+reagent-name-slime = Mucosidad
 reagent-desc-slime = Al principio pensaste que era sangre degradada, pero estabas equivocado.
 
 reagent-name-sap = savia

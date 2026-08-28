@@ -10,7 +10,7 @@ comp-solution-transfer-is-full = ¡{CAPITALIZE(THE($target))} está lleno!
 
 ## Displayed in change transfer amount verb's name
 comp-solution-transfer-verb-custom-amount = Personalizado
-comp-solution-transfer-verb-amount = {$amount}u
+comp-solution-transfer-verb-amount = { $amount } unidades
 comp-solution-transfer-verb-toggle = Cambiar a {$amount}u
 
 ## Displayed after you successfully change a solution's amount using the BUI

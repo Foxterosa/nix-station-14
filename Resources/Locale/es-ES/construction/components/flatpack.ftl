@@ -4,7 +4,7 @@ flatpack-entity-name = paquete plano de {$name}
 flatpack-entity-description = Un paquete plano usado para construir {$name}.
 
 flatpacker-item-slot-name = Ranura de placa de máquina
-flatpacker-ui-title = Flatpacker 1001
+flatpacker-ui-title = Empaquetadora 1001
 flatpacker-ui-materials-label = Materiales
 flatpacker-ui-cost-label = Coste de empaquetado
 flatpacker-ui-no-board-label = ¡No hay ninguna placa presente!

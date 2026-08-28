@@ -1,25 +1,25 @@
 ## UI
 
-cargo-console-menu-title = Cargo request console
+cargo-console-menu-title = Consola de Pedido de Carga
 cargo-console-menu-flavor-left = Order even more pizza boxes than usual!
 cargo-console-menu-flavor-right = v2.1
-cargo-console-menu-account-name-label = Account:{" "}
-cargo-console-menu-account-name-none-text = None
+cargo-console-menu-account-name-label = Nombre de la cuenta: { " " }
+cargo-console-menu-account-name-none-text = No
 cargo-console-menu-account-name-format = [bold][color={$color}]{$name}[/color][/bold] [font="Monospace"]\[{$code}\][/font]
-cargo-console-menu-shuttle-name-label = Shuttle name:{" "}
-cargo-console-menu-shuttle-name-none-text = None
-cargo-console-menu-points-label = Balance:{" "}
-cargo-console-menu-points-amount = ${$amount}
-cargo-console-menu-shuttle-status-label = Shuttle status:{" "}
-cargo-console-menu-shuttle-status-away-text = Away
-cargo-console-menu-order-capacity-label = Order capacity:{" "}
-cargo-console-menu-call-shuttle-button = Activate telepad
-cargo-console-menu-permissions-button = Permissions
-cargo-console-menu-categories-label = Categories:{" "}
-cargo-console-menu-search-bar-placeholder = Search
-cargo-console-menu-requests-label = Requests
-cargo-console-menu-orders-label = Orders
-cargo-console-menu-populate-categories-all-text = All
+cargo-console-menu-shuttle-name-label = Nombre del transbordador: { " " }
+cargo-console-menu-shuttle-name-none-text = No
+cargo-console-menu-points-label = Créditos: { " " }
+cargo-console-menu-points-amount = ${ $amount }
+cargo-console-menu-shuttle-status-label = Estado del transbordador: { " " }
+cargo-console-menu-shuttle-status-away-text = Izquierda
+cargo-console-menu-order-capacity-label = Volumen de pedido: { " " }
+cargo-console-menu-call-shuttle-button = Activar Telepad
+cargo-console-menu-permissions-button = Accesos
+cargo-console-menu-categories-label = Categorías: { " " }
+cargo-console-menu-search-bar-placeholder = Búsqueda
+cargo-console-menu-requests-label = Consultas
+cargo-console-menu-orders-label = Pedidos
+cargo-console-menu-populate-categories-all-text = Todos
 cargo-console-menu-order-row-title = {$productName} (x{$orderAmount} for {$orderPrice}$)
 cargo-console-menu-populate-orders-cargo-order-row-product-name-text = Requested by: {$orderRequester} from [color={$accountColor}]{$account}[/color]
 cargo-console-menu-order-row-product-description = Reason: {$orderReason}
@@ -39,22 +39,22 @@ cargo-console-menu-account-action-option-withdraw = Withdraw Cash
 cargo-console-menu-account-action-option-transfer = Transfer Funds to {$code}
 
 # Orders
-cargo-console-order-not-allowed = Access not allowed
-cargo-console-station-not-found = No available station
-cargo-console-invalid-product = Invalid product ID
-cargo-console-too-many = Too many approved orders
-cargo-console-snip-snip = Order trimmed to capacity
-cargo-console-insufficient-funds = Insufficient funds (require {$cost})
-cargo-console-unfulfilled = No room to fulfill order
-cargo-console-trade-station = Sent to {$destination}
-cargo-console-unlock-approved-order-broadcast = [bold]{$productName} x{$orderAmount}[/bold], which cost [bold]{$cost}[/bold], was approved by [bold]{$approver}[/bold]
+cargo-console-order-not-allowed = Acceso denegado
+cargo-console-station-not-found = No hay complejo accesible
+cargo-console-invalid-product = ID de producto inválido
+cargo-console-too-many = Demasiados pedidos aprobados
+cargo-console-snip-snip = Orden reducida a su capacidad
+cargo-console-insufficient-funds = Fondos insuficientes ({ $cost } necesario)
+cargo-console-unfulfilled = No hay lugar para cumplir el pedido
+cargo-console-trade-station = Envía a { $destination }
+cargo-console-unlock-approved-order-broadcast = [bold]An pedido de { $productName } x{ $orderAmount }[/bold] valor [bold]{ $cost }[/bold] fue aprobado [bold]{ $approver }[/bold]
 cargo-console-fund-withdraw-broadcast = [bold]{$name} withdrew {$amount} spesos from {$name1} \[{$code1}\]
 cargo-console-fund-transfer-broadcast = [bold]{$name} transferred {$amount} spesos from {$name1} \[{$code1}\] to {$name2} \[{$code2}\][/bold]
 cargo-console-fund-transfer-user-unknown = Unknown
 
 cargo-console-paper-reason-default = None
 cargo-console-paper-approver-default = Self
-cargo-console-paper-print-name = Order #{$orderNumber}
+cargo-console-paper-print-name = Orden #{ $orderNumber }
 cargo-console-paper-print-text = [head=2]Order #{$orderNumber}[/head]
     {"[bold]Item:[/bold]"} {$itemName} (x{$orderQuantity})
     {"[bold]Requested by:[/bold]"} {$requester}
@@ -65,13 +65,11 @@ cargo-console-paper-print-text = [head=2]Order #{$orderNumber}[/head]
     {"[bold]Reason:[/bold]"} {$reason}
 
 # Cargo shuttle console
-cargo-shuttle-console-menu-title = Cargo shuttle console
-cargo-shuttle-console-station-unknown = Unknown
-cargo-shuttle-console-shuttle-not-found = Not found
-cargo-shuttle-console-organics = Detected organic lifeforms on the shuttle
-cargo-no-shuttle = No cargo shuttle found!
-
-# Funding allocation console
+cargo-shuttle-console-menu-title = Consola de llamada del transbordador de carga
+cargo-shuttle-console-station-unknown = Desconocido
+cargo-shuttle-console-shuttle-not-found = No encontrado
+cargo-shuttle-console-organics = Formas de vida orgánica descubiertas en el transbordador
+cargo-no-shuttle = ¡Transbordador de carga no encontrado!
 cargo-funding-alloc-console-menu-title = Funding Allocation Console
 cargo-funding-alloc-console-label-account = [bold]Account[/bold]
 cargo-funding-alloc-console-label-code = [bold] Code [/bold]

@@ -73,15 +73,16 @@ job-name-wizard = Mago
 job-name-zombie = Zombi
 
 # Job titles
-job-title-cluwne = Cluwne
-job-title-universal = Universal
+job-title-cluwne = Kluven
+job-title-universal = Familiar
+# Role timers - Make these alphabetical or I cut you
 job-title-visitor = Visitante
 
 # Role timers - Make these alphabetical or I cut you
 JobAssistant = Asistente
 JobAtmosphericTechnician = Técnico atmosférico
 JobBartender = Cantinero
-JobBorg = Borg
+JobBorg = Cyborg
 JobBotanist = Botánico
 JobBrigmedic = Médico del brig
 JobCaptain = Capitán

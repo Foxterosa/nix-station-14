@@ -3,7 +3,7 @@
 species-name-human = Humano
 species-name-dwarf = Enano
 species-name-reptilian = Reptiliano
-species-name-slime = Laspi
+species-name-slime = Slimmolud
 species-name-diona = Diona
 species-name-arachnid = Arácnido
 species-name-moth = Persona polilla

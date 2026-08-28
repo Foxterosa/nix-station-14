@@ -1,8 +1,7 @@
 humanoid-profile-editor-customspeciename-label = Custom Species Name:
-humanoid-profile-editor-height-label = Height: {$height}cm
-humanoid-profile-editor-width-label = Weight: {$weight}kg
-humanoid-profile-editor-slider-reset = Reset
-
+humanoid-profile-editor-height-label = Altura: { $height } cm
+humanoid-profile-editor-width-label = Peso: { $weight } kg
+humanoid-profile-editor-slider-reset = Restablecer
 humanoid-profile-editor-voice-select = Select Voice
 humanoid-profile-editor-silicon-voice-select = Select Silicon Voice
 

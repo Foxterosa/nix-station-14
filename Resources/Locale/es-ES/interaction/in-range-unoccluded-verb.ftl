@@ -1,3 +1,3 @@
-in-range-unoccluded-verb-get-data-text = In Range Unoccluded
-in-range-unoccluded-verb-on-activate-not-occluded = Not occluded
-in-range-unoccluded-verb-on-activate-occluded = Occluded
+in-range-unoccluded-verb-get-data-text = No en la zona de oclusión
+in-range-unoccluded-verb-on-activate-not-occluded = No en la zona de oclusión
+in-range-unoccluded-verb-on-activate-occluded = En la zona de oclusión

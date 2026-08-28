@@ -1,3 +1,3 @@
-cmd-toggleoutline-desc = Toggles outline drawing on entities.
-cmd-toggleoutline-help = Usage: {$command}
-cmd-toggleoutline-notify = Draw outlines set to: {$cvar}
+cmd-toggleoutline-desc = Activa la visualización de caminos en las entidades.
+cmd-toggleoutline-help = Uso: { $command }
+cmd-toggleoutline-notify = La pantalla de contornos está configurada en: { $cvar }

@@ -4,9 +4,9 @@ prayer-verbs-call = Llamar
 prayer-verbs-rub = Frotar
 prayer-verbs-worship = Adorar
 prayer-chat-notify-pray = ORACION
-prayer-chat-notify-honkmother = HONKMOTHER
-prayer-chat-notify-centcom = CENTCOMM
-prayer-chat-notify-syndicate = SYNDICATE
+prayer-chat-notify-honkmother = HONCOMATER
+prayer-chat-notify-centcom = Centcom
+prayer-chat-notify-syndicate = sindicato
 prayer-chat-notify-lamp = LAMPARA
 prayer-chat-notify-monolith = MONOLITO
 

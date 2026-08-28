@@ -1,4 +1,4 @@
-apc-menu-title = APC
+apc-menu-title = Pintura
 apc-menu-breaker-label = Interruptor principal
 apc-menu-power-label = Carga
 apc-menu-external-label = Energía externa

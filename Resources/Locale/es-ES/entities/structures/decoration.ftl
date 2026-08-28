@@ -42,7 +42,6 @@ ent-BannerYellow = yellow estandarte
     .desc = Un estandarte que muestra el color amarillo brillante.
 ent-BaseCurtains = curtains
     .desc = Oculta lo que otros no deberían ver.
-ent-BaseIronsandStatue = 
 
 
 
@@ -78,7 +77,6 @@ ent-BaseRock = boulder
     .desc = pesado as a really pesado thing.
 ent-BaseShowcaseRobot = security robot showcase
     .desc = Una réplica no funcional de un antiguo robot de seguridad.
-ent-BaseTree = 
 
 
 
@@ -110,7 +108,6 @@ ent-BaseTree =
 
 
     .desc = Sí, es un árbol.
-ent-BaseTreeBirchBig = 
 
 
 
@@ -142,7 +139,6 @@ ent-BaseTreeBirchBig =
 
 
     .desc = Sí, es un árbol.
-ent-BaseTreeBirchMedium = 
 
 
 
@@ -174,7 +170,6 @@ ent-BaseTreeBirchMedium =
 
 
     .desc = Sí, es un árbol.
-ent-BaseTreeBirchSmall = 
 
 
 
@@ -206,7 +201,6 @@ ent-BaseTreeBirchSmall =
 
 
     .desc = Sí, es un árbol.
-ent-BaseTreeConifer = 
 
 
 
@@ -238,7 +232,6 @@ ent-BaseTreeConifer =
 
 
     .desc = Sí, es un árbol.
-ent-BaseTreeConiferBig = 
 
 
 
@@ -270,7 +263,6 @@ ent-BaseTreeConiferBig =
 
 
     .desc = Sí, es un árbol.
-ent-BaseTreeConiferOld = 
 
 
 
@@ -302,7 +294,6 @@ ent-BaseTreeConiferOld =
 
 
     .desc = Sí, es un árbol.
-ent-BaseTreeConiferSmall = 
 
 
 
@@ -334,7 +325,6 @@ ent-BaseTreeConiferSmall =
 
 
     .desc = Sí, es un árbol.
-ent-BaseTreeConiferSnow = 
 
 
 
@@ -366,7 +356,6 @@ ent-BaseTreeConiferSnow =
 
 
     .desc = Sí, es un árbol.
-ent-BaseTreeDead = 
 
 
 
@@ -398,7 +387,6 @@ ent-BaseTreeDead =
 
 
     .desc = Sí, es un árbol.
-ent-BaseTreeDeadSmall = 
 
 
 
@@ -430,7 +418,6 @@ ent-BaseTreeDeadSmall =
 
 
     .desc = Sí, es un árbol.
-ent-BaseTreeDry = 
 
 
 
@@ -462,7 +449,6 @@ ent-BaseTreeDry =
 
 
     .desc = Sí, es un árbol.
-ent-BaseTreeLarge = 
 
 
 
@@ -494,7 +480,6 @@ ent-BaseTreeLarge =
 
 
     .desc = Sí, es un árbol.
-ent-BaseTreeSnow = 
 
 
 
@@ -526,7 +511,6 @@ ent-BaseTreeSnow =
 
 
     .desc = Sí, es un árbol.
-ent-BaseTreeVampire = 
 
 
 

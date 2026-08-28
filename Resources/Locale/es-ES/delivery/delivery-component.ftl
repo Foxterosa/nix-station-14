@@ -1,27 +1,22 @@
-delivery-recipient-examine = This one is meant for {$recipient}, {$job}.
-delivery-already-opened-examine = It was already opened.
-delivery-earnings-examine = Delivering this will earn the station [color=yellow]{$spesos}[/color] spesos.
-delivery-recipient-no-name = Unnamed
-delivery-recipient-no-job = Unknown
-
-delivery-unlocked-self = You unlock the {$delivery} with your fingerprint.
-delivery-opened-self = You open the {$delivery}.
-delivery-unlocked-others = {CAPITALIZE($recipient)} unlocked the {$delivery} with {POSS-ADJ($possadj)} fingerprint.
-delivery-opened-others = {CAPITALIZE($recipient)} opened the {$delivery}.
-
-delivery-unlock-verb = Unlock
-delivery-open-verb = Open
-delivery-slice-verb = Slice open
-
+delivery-recipient-examine = Esto está pensado para { $recipient }, { $job }.
+delivery-already-opened-examine = Esto ya se ha descubierto.
+delivery-earnings-examine = Entregar esto traerá [color=yellow]{ $spesos }[/color] dinero al complejo.
+delivery-recipient-no-name = Sin Nombre
+delivery-recipient-no-job = Desconocido
+delivery-unlocked-self = Has desbloqueado { $delivery } con tu huella dactilar.
+delivery-opened-self = Has abierto { $delivery }.
+delivery-unlocked-others = { CAPITALIZE($recipient) } desbloqueado { $delivery } { POSS-ADJ($possadj) } huella digital.
+delivery-opened-others = { CAPITALIZE($recipient) } abrió { $delivery }.
+delivery-unlock-verb = Desbloquear
+delivery-open-verb = Abierto
+delivery-slice-verb = Abierto
 delivery-teleporter-amount-examine =
     { $amount ->
         [one] It contains [color=yellow]{$amount}[/color] delivery.
         *[other] It contains [color=yellow]{$amount}[/color] deliveries.
     }
-delivery-teleporter-empty = The {$entity} is empty.
-delivery-teleporter-empty-verb = Take mail
-
-
+delivery-teleporter-empty = { $entity } vacío.
+delivery-teleporter-empty-verb = Recoged los paquetes
 # modifiers
 delivery-priority-examine = This is a [color=orange]priority {$type}[/color]. You have [color=orange]{$time}[/color] left to deliver it to get a bonus.
 delivery-priority-delivered-examine = This is a [color=orange]priority {$type}[/color]. It got delivered on time.

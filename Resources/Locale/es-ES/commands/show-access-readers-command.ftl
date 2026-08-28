@@ -1,9 +1,9 @@
-﻿cmd-showaccessreaders-desc = Toggles showing access reader permissions on the map
+cmd-showaccessreaders-desc = Permite mostrar los derechos de lector de acceso en la tarjeta.
 cmd-showaccessreaders-help =
-    Overlay Info:
-    -Disabled | The access reader is disabled
-    +Unrestricted | The access reader has no restrictions
-    +Set [Index]: [Tag Name]| A tag in an access set (accessor needs all tags in the set to be allowed by the set)
-    +Key [StationUid]: [StationRecordKeyId] | A StationRecordKey that is allowed
-    -Tag [Tag Name] | A tag that is not allowed (takes priority over other allows)
-cmd-showaccessreaders-status = Set access reader debug overlay to {$status}.
+    Información superpuesta:
+    -Deshabilitado | El lector de acceso está desactivado.
+    +Ilimitado | El lector de acceso no tiene restricciones.
+    +Set [Índice]: [Nombre de la etiqueta] | Etiqueta en el conjunto de acceso (el permiso del conjunto requiere que el usuario tenga todas las etiquetas del conjunto).
+    +Tecla [UidStationUid]: [ClaveDeRegistroEstación] | Permitido ClaveRegistroEstación.
+    -Etiqueta [Nombre de la etiqueta] | Etiqueta que no está permitida (tiene prioridad sobre otros permisos).
+cmd-showaccessreaders-status = La superposición de depuración del lector de acceso está configurada en { $status }.

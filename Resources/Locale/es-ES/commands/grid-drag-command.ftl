@@ -1,3 +1,3 @@
-﻿cmd-griddrag-desc = Allows someone with permissions to drag grids around.
-cmd-griddrag-help = Usage: griddrag
+cmd-griddrag-desc = Permite que una persona con los permisos necesarios arrastre cuadrículas.
+cmd-griddrag-help = Uso: griddrag
 cmd-griddrag-status = Grid dragging set to {$status}.

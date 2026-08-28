@@ -11,24 +11,6 @@ namespace Content.Shared._Nix.AI.Components;
 public sealed partial class AIBrainComponent : Component
 {
     /// <summary>
-    /// Modelo LLM a utilizar en Ollama.
-    /// </summary>
-    [DataField, AutoNetworkedField]
-    public string Model = "qwen2.5:14b";
-
-    /// <summary>
-    /// Endpoint primario de Ollama (GPU local).
-    /// </summary>
-    [DataField]
-    public string Endpoint = "http://127.0.0.1:11434";
-
-    /// <summary>
-    /// Endpoint secundario de respaldo en red local (ej. Sentinel).
-    /// </summary>
-    [DataField]
-    public string FallbackEndpoint = "http://192.168.0.206:11434";
-
-    /// <summary>
     /// Nombre de la IA (responde cuando la llaman por este nombre).
     /// </summary>
     [DataField, AutoNetworkedField]
@@ -57,15 +39,6 @@ public sealed partial class AIBrainComponent : Component
     /// </summary>
     [DataField, AutoNetworkedField]
     public string MasterSpecies = "Desconocida";
-
-    /// <summary>
-    /// Directivas base de personalidad y lealtad.
-    /// </summary>
-    [DataField]
-    public string SystemPrompt =
-        "Eres un asistente de bolsillo inteligente, leal y profesional para Space Station 14. " +
-        "Respondes de forma concisa, útil y en rol absoluto dentro del universo de Nanotrasen. " +
-        "Obedeces a tu dueño, proteges sus intereses y consultas el lore espacial de Nanotrasen.";
 
     /// <summary>
     /// Rango de escucha en baldosas cuando está en el suelo o en mano.

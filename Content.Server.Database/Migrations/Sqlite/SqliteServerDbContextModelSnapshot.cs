@@ -15,7 +15,7 @@ namespace Content.Server.Database.Migrations.Sqlite
         protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
-            modelBuilder.HasAnnotation("ProductVersion", "10.0.0");
+            modelBuilder.HasAnnotation("ProductVersion", "10.0.6");
 
             modelBuilder.Entity("Content.Server.Database.Admin", b =>
                 {
@@ -753,6 +753,138 @@ namespace Content.Server.Database.Migrations.Sqlite
                         .HasFilter("priority = 3");
 
                     b.ToTable("job_priority_entry", (string)null);
+                });
+
+            modelBuilder.Entity("Content.Server.Database.NixWebAchievement", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER")
+                        .HasColumnName("id");
+
+                    b.Property<string>("AchievementId")
+                        .IsRequired()
+                        .HasColumnType("TEXT")
+                        .HasColumnName("achievement_id");
+
+                    b.Property<string>("AppearanceSnapshotJson")
+                        .IsRequired()
+                        .HasColumnType("TEXT")
+                        .HasColumnName("appearance_snapshot_json");
+
+                    b.Property<DateTimeOffset>("AwardedAt")
+                        .HasColumnType("TEXT")
+                        .HasColumnName("awarded_at");
+
+                    b.Property<string>("CharacterNameSnapshot")
+                        .IsRequired()
+                        .HasColumnType("TEXT")
+                        .HasColumnName("character_name_snapshot");
+
+                    b.Property<int>("CharacterProfileId")
+                        .HasColumnType("INTEGER")
+                        .HasColumnName("character_profile_id");
+
+                    b.Property<int>("RoundId")
+                        .HasColumnType("INTEGER")
+                        .HasColumnName("round_id");
+
+                    b.Property<Guid>("SourceUserId")
+                        .HasColumnType("TEXT")
+                        .HasColumnName("source_user_id");
+
+                    b.HasKey("Id")
+                        .HasName("PK_nix_web_achievement");
+
+                    b.HasIndex("CharacterProfileId", "AwardedAt")
+                        .HasDatabaseName("IX_nix_web_achievement_character_profile_id_awarded_at");
+
+                    b.HasIndex("SourceUserId", "AchievementId")
+                        .IsUnique()
+                        .HasDatabaseName("IX_nix_web_achievement_source_user_id_achievement_id");
+
+                    b.ToTable("nix_web_achievement", (string)null);
+                });
+
+            modelBuilder.Entity("Content.Server.Database.NixWebCharacter", b =>
+                {
+                    b.Property<int>("ProfileId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER")
+                        .HasColumnName("profile_id");
+
+                    b.Property<string>("AppearanceJson")
+                        .IsRequired()
+                        .HasColumnType("TEXT")
+                        .HasColumnName("appearance_json");
+
+                    b.Property<string>("CharacterName")
+                        .IsRequired()
+                        .HasColumnType("TEXT")
+                        .HasColumnName("character_name");
+
+                    b.Property<DateTimeOffset>("FirstSeenAt")
+                        .HasColumnType("TEXT")
+                        .HasColumnName("first_seen_at");
+
+                    b.Property<DateTimeOffset>("LastSeenAt")
+                        .HasColumnType("TEXT")
+                        .HasColumnName("last_seen_at");
+
+                    b.Property<Guid>("OwnerUserId")
+                        .HasColumnType("TEXT")
+                        .HasColumnName("owner_user_id");
+
+                    b.Property<string>("Species")
+                        .IsRequired()
+                        .HasColumnType("TEXT")
+                        .HasColumnName("species");
+
+                    b.HasKey("ProfileId")
+                        .HasName("PK_nix_web_character");
+
+                    b.ToTable("nix_web_character", (string)null);
+                });
+
+            modelBuilder.Entity("Content.Server.Database.NixWebStatistic", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER")
+                        .HasColumnName("id");
+
+                    b.Property<int>("Amount")
+                        .HasColumnType("INTEGER")
+                        .HasColumnName("amount");
+
+                    b.Property<int>("CharacterProfileId")
+                        .HasColumnType("INTEGER")
+                        .HasColumnName("character_profile_id");
+
+                    b.Property<string>("Metadata")
+                        .HasColumnType("TEXT")
+                        .HasColumnName("metadata");
+
+                    b.Property<string>("MetricId")
+                        .IsRequired()
+                        .HasColumnType("TEXT")
+                        .HasColumnName("metric_id");
+
+                    b.Property<DateTimeOffset>("OccurredAt")
+                        .HasColumnType("TEXT")
+                        .HasColumnName("occurred_at");
+
+                    b.Property<int>("RoundId")
+                        .HasColumnType("INTEGER")
+                        .HasColumnName("round_id");
+
+                    b.HasKey("Id")
+                        .HasName("PK_nix_web_statistic");
+
+                    b.HasIndex("CharacterProfileId", "MetricId", "OccurredAt")
+                        .HasDatabaseName("IX_nix_web_statistic_character_profile_id_metric_id_occurred_at");
+
+                    b.ToTable("nix_web_statistic", (string)null);
                 });
 
             modelBuilder.Entity("Content.Server.Database.PlayTime", b =>

@@ -18,7 +18,7 @@ hugbot-finish-hug-8 = Abrazo: COMPLETO.
 
 hugbot-emagged-finish-hug-1 = En realidad, vete a la mierda.
 hugbot-emagged-finish-hug-2 = Nadie te quiere.
-hugbot-emagged-finish-hug-3 = Ewww... no.
+hugbot-emagged-finish-hug-3 = Uf... no.
 hugbot-emagged-finish-hug-4 = ¡De acá en adelante solo puede empeorar!
 hugbot-emagged-finish-hug-5 = Maldito llorón.
 hugbot-emagged-finish-hug-6 = Muérete.

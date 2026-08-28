@@ -2,6 +2,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Content.Server._NullLink.Helpers;
 using Content.Server._NullLink.PlayerData;
+using Content.Server._Nix.WebBridge;
 using Content.Server.AlertLevel;
 using Content.Server.Antag;
 using Content.Server._FarHorizons.Power.Generation.FissionGenerator;
@@ -88,6 +89,7 @@ public sealed partial class AchievementSystem : EntitySystem
     [Dependency] private PowerCellSystem _powerCell = default!;
     [Dependency] private TagSystem _tag = default!;
     [Dependency] private IGameTiming _timing = default!;
+    [Dependency] private NixWebBridgeSystem _nixWebBridge = default!;
 
     private static readonly TimeSpan _achievementHydrationRetryDelay = TimeSpan.FromSeconds(3);
     private const int HauntedGhostFollowerThreshold = 20;
@@ -172,6 +174,7 @@ public sealed partial class AchievementSystem : EntitySystem
             _achievementRewards.GrantRewards(session, achievementId);
             _nullLinkPlayers.SendAchievementNotification(session.UserId, achievementId);
             _nullLinkPlayers.SendAchievementList(session.UserId);
+            _nixWebBridge.TrackAchievementUnlocked(session, achievementId);
         }
 
         return result;

@@ -14,6 +14,5 @@ paper-component-action-stamp-paper-other = {CAPITALIZE(THE($user))} sella {THE($
 paper-component-action-stamp-paper-self = Sellas {THE($target)} con {THE($stamp)}.
 
 # Indicator to show how full a paper is
-paper-ui-fill-level = {$currentLength}/{$maxLength}
-
+paper-ui-fill-level = { $currentLength }/{ $maxLength }
 paper-ui-save-button = Guardar ({$keybind})

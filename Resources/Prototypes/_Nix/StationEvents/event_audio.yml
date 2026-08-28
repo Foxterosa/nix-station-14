@@ -1,11 +1,4 @@
 - type: nixStationEventAudio
-  id: PowerGridCheck
-  startAudio:
-    path: /Audio/_Nix/Announcements/poweroff.ogg
-  endAudio:
-    path: /Audio/_Nix/Announcements/poweron.ogg
-
-- type: nixStationEventAudio
   id: IonStorm
   startAudio:
     path: /Audio/_Nix/Announcements/ionstorm.ogg
@@ -14,11 +7,6 @@
   id: IonStormPlus
   startAudio:
     path: /Audio/_Nix/Announcements/ionstorm.ogg
-
-- type: nixStationEventAudio
-  id: RandomSentience
-  startAudio:
-    path: /Audio/_Nix/Announcements/aliens.ogg
 
 - type: nixStationEventAudio
   id: AnomalySpawn
@@ -39,3 +27,17 @@
   id: RadiationStorm
   startAudio:
     path: /Audio/_Nix/Announcements/radiation.ogg
+
+# Desactivado temporalmente: el anuncio se entrega por TTS y ambas fuentes se superponian.
+# - type: nixStationEventAudio
+#   id: PowerGridCheck
+#   startAudio:
+#     path: /Audio/_Nix/Announcements/poweroff.ogg
+#   endAudio:
+#     path: /Audio/_Nix/Announcements/poweron.ogg
+
+# Desactivado temporalmente: el evento conserva su texto por TTS, sin locucion duplicada.
+# - type: nixStationEventAudio
+#   id: RandomSentience
+#   startAudio:
+#     path: /Audio/_Nix/Announcements/aliens.ogg

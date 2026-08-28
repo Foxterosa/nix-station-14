@@ -1,3 +1,3 @@
-bucket-component-bucket-is-empty-message = Bucket is empty
-bucket-component-mop-is-now-wet-message = Mop is now wet
-bucket-component-mop-is-now-dry-message = Mop is now dry
+bucket-component-bucket-is-empty-message = Cubo vacío
+bucket-component-mop-is-now-wet-message = La fregona ahora está mojada
+bucket-component-mop-is-now-dry-message = La fregona ya está seca

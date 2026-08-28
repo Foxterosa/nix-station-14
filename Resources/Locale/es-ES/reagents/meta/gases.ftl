@@ -16,5 +16,5 @@ reagent-desc-nitrogen = Un gas incoloro, inodoro y no reactivo. Altamente establ
 reagent-name-nitrous-oxide = oxido nitroso
 reagent-desc-nitrous-oxide = ¿Sabes como todo parece mas gracioso cuando estas cansado? Bueno...
 
-reagent-name-frezon = frezon
+reagent-name-frezon = Freson
 reagent-desc-frezon = Un refrigerante altamente eficaz... y alucinogeno.

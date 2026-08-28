@@ -1,4 +1,4 @@
 advertisement-robodrobe-1 = ¡Me pones en TRUE, usa defines!
-advertisement-robodrobe-2 = 0110001101101100011011110111010001101000011001010111001101101000011001010111001001100101
+advertisement-robodrobe-2 = 110100001011111011010000101101001101000010110101110100001011011011010000101101001101000010110000
 advertisement-robodrobe-3 = ¡Roba a alguien de mantenimiento y conviértelo en robot!
 advertisement-robodrobe-4 = ¡La robótica es divertida!

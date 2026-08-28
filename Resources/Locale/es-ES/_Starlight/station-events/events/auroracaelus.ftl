@@ -1,10 +1,10 @@
-station-event-auroracaelus-start-announcement = A harmless cloud of ions is approaching your station, and will exhaust their energy battering the hull.
-                                                NanoTrasen has approved a short break for all employees to relax and observe this very rare event.
-                                                During this time, starlight will be bright but gentle, shifting between quiet green and blue colors.
-                                                Any staff who would like to view these lights for themselves may proceed to the area nearest to them with viewing ports to open space.
-                                                You will have approximately two minutes before the ions begin to reach the hull.
-                                                We hope you enjoy the lights.
+station-event-auroracaelus-start-announcement = Una nube inofensiva de iones se aproxima a la estación y agotará su energía al golpear el casco.
+                                                NanoTrasen autorizó una breve pausa para que el personal pueda relajarse y observar este evento poco frecuente.
+                                                Durante este período, la luz estelar será intensa pero suave, alternando entre tonos verdes y azules tranquilos.
+                                                Quien desee observar las luces puede dirigirse al área más cercana con vistas al espacio exterior.
+                                                Tendrán aproximadamente dos minutos antes de que los iones alcancen el casco.
+                                                Esperamos que disfruten las luces.
 
-station-event-auroracaelus-end-announcement = The Aurora Caelus event is now ending. Starlight conditions have returned to normal, and the cloud has dissipated.
-                                              Please return to your workplace and continue work as normal.
-                                              Have a pleasant shift, and thank you for watching with us.
+station-event-auroracaelus-end-announcement = El evento Aurora Caelus está finalizando. Las condiciones de luz estelar volvieron a la normalidad y la nube se disipó.
+                                              Regresen a sus puestos de trabajo y continúen con sus tareas habituales.
+                                              Que tengan un buen turno y gracias por observar con nosotros.

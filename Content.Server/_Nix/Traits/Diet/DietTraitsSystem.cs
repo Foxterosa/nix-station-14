@@ -10,7 +10,7 @@ using Content.Shared.Popups;
 using Content.Shared.Tag;
 using Robust.Server.GameObjects;
 using Robust.Shared.Player;
-using Robust.Shared.Random;
+using Robust.Shared.Timing;
 using Robust.Shared.Utility;
 
 namespace Content.Server._Nix.Traits.Diet;
@@ -27,8 +27,8 @@ public sealed class DietTraitsSystem : EntitySystem
     [Dependency] private readonly SharedJitteringSystem _jitter = default!;
     [Dependency] private readonly SharedStaminaSystem _stamina = default!;
     [Dependency] private readonly VomitSystem _vomit = default!;
-    [Dependency] private readonly IRobustRandom _random = default!;
     [Dependency] private readonly TagSystem _tag = default!;
+    [Dependency] private readonly IGameTiming _timing = default!;
 
     public override void Initialize()
     {
@@ -129,21 +129,31 @@ public sealed class DietTraitsSystem : EntitySystem
 
     private void ApplyDietDisgust(EntityUid uid, string messageText, string colorHex)
     {
+        var violation = EnsureComp<DietViolationComponent>(uid);
+        if (_timing.CurTime - violation.LastViolation > TimeSpan.FromMinutes(1))
+            violation.ConsecutiveViolations = 0;
+
+        violation.LastViolation = _timing.CurTime;
+        violation.ConsecutiveViolations = Math.Min(violation.ConsecutiveViolations + 1, 4);
+
         _popup.PopupEntity(messageText, uid, uid, PopupType.MediumCaution);
-        _jitter.DoJitter(uid, TimeSpan.FromSeconds(2.0f), true, 6f, 2f);
+        _jitter.DoJitter(uid, TimeSpan.FromSeconds(1.0f + violation.ConsecutiveViolations), true, 3f + violation.ConsecutiveViolations, 1f);
 
-        // SS13 Parity: Stamina fatigue and nausea
-        _stamina.TakeStaminaDamage(uid, 12f);
+        // Each consecutive bite becomes worse. A first taste is never an instant vomit.
+        _stamina.TakeStaminaDamage(uid, 4f * violation.ConsecutiveViolations);
 
-        // Gagging & eventual vomiting
-        var roll = _random.NextFloat();
-        if (roll < 0.25f)
+        if (violation.ConsecutiveViolations == 2)
         {
-            _vomit.Vomit(uid);
+            _popup.PopupEntity(Loc.GetString("trait-diet-nausea-worsening", ("fallback", "El malestar aumenta y tu estómago se revuelve.")), uid, uid, PopupType.MediumCaution);
         }
-        else if (roll < 0.60f)
+        else if (violation.ConsecutiveViolations == 3)
         {
             _popup.PopupEntity(Loc.GetString("trait-diet-gagging", ("fallback", "¡Sufres fuertes arcadas intentando contener el vómito!")), uid, uid, PopupType.MediumCaution);
+        }
+        else if (violation.ConsecutiveViolations >= 4)
+        {
+            _vomit.Vomit(uid);
+            violation.ConsecutiveViolations = 0;
         }
 
         if (TryComp<ActorComponent>(uid, out var actor))
@@ -176,7 +186,7 @@ public sealed class DietTraitsSystem : EntitySystem
 
         foreach (var reagent in split.Contents)
         {
-            var id = reagent.Reagent.Prototype.ToLowerInvariant();
+            var id = reagent.Reagent.Prototype.ToString().ToLowerInvariant();
             if (id.Contains("meat") || id.Contains("blood") || id.Contains("fat"))
                 return true;
         }
@@ -198,7 +208,7 @@ public sealed class DietTraitsSystem : EntitySystem
 
         foreach (var reagent in split.Contents)
         {
-            var id = reagent.Reagent.Prototype.ToLowerInvariant();
+            var id = reagent.Reagent.Prototype.ToString().ToLowerInvariant();
             if (id.Contains("pineapple") || id.Contains("ananas"))
                 return true;
         }

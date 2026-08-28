@@ -1,47 +1,44 @@
 ## Traitor
 
-traitor-round-end-codewords = The codewords were: [color=White]{$codewords}[/color]
-traitor-round-end-agent-name = traitor
-
-objective-issuer-syndicate = [color=crimson]The Syndicate[/color]
-objective-issuer-unknown = Unknown
-
-# Shown at the end of a round of Traitor
-
-traitor-title = Traitor
-traitor-description = There are traitors among us...
-traitor-not-enough-ready-players = Not enough players readied up for the game! There were {$readyPlayersCount} players readied up out of {$minimumPlayers} needed. Can't start Traitor.
-traitor-no-one-ready = No players readied up! Can't start Traitor.
+traitor-round-end-codewords = Las palabras clave eran: [color=White]{ $codewords }[/color].
+traitor-round-end-agent-name = Traidor
+objective-issuer-syndicate = [color=crimson]Sindicato[/color]
+objective-issuer-unknown = Desconocido
+traitor-title = Traidores
+traitor-description = Hay traidores entre el personal...
+traitor-not-enough-ready-players = ¡No hay suficientes jugadores listos! De los { $minimumPlayers } jugadores requeridos, { $readyPlayersCount } están listos. No se puede iniciar el preajuste de Traidores.
+traitor-no-one-ready = ¡No hay jugadores listos! No se puede iniciar el preajuste de Traidores.
 
 ## TraitorDeathMatch
-traitor-death-match-title = Traitor Deathmatch
-traitor-death-match-description = Everyone's a traitor. Everyone wants each other dead.
-traitor-death-match-station-is-too-unsafe-announcement = The station is too unsafe to continue. You have one minute.
-traitor-death-match-end-round-description-first-line = The PDAs recovered afterwards...
-traitor-death-match-end-round-description-entry = {$originalName}'s PDA, with {$tcBalance} TC
+
+traitor-death-match-title = Todos contra todos: Traidores
+traitor-death-match-description = Todos son traidores y todos quieren eliminarse entre sí.
+traitor-death-match-station-is-too-unsafe-announcement = La instalación es demasiado peligrosa para continuar. Queda un minuto.
+traitor-death-match-end-round-description-first-line = El enlace ascendente fue restaurado...
+traitor-death-match-end-round-description-entry = PDA de { $originalName }, con { $tcBalance } TC
 
 ## TraitorRole
 
 # TraitorRole
 traitor-role-greeting =
-    You are an agent sent by [color = darkred]The Syndicate[/color] on behalf of {$corporation}.
-    Your objectives and codewords are listed in the character menu. Use your uplink to buy the tools you'll need for this mission.
-    Death to NanoTrasen!
+    Eres un agente de { $corporation } al servicio del [color = darkred]Sindicato[/color].
+    Tus objetivos y palabras clave aparecen en el menú del personaje.
+    Utiliza el enlace ascendente integrado en tu PDA para adquirir el equipo necesario para cumplir tu misión.
+    ¡Muerte a NanoTrasen!
 traitor-role-codewords =
-    The codewords are: [color = lightgray]
-    {$codewords}.[/color]
-    Codewords can be used in regular conversation to identify yourself discreetly to other syndicate agents.
-    Listen for them, and keep them secret.
+    Tus palabras clave son: [color = lightgray]
+    { $codewords }.[/color]
+    Puedes usarlas en conversaciones normales para identificarte discretamente ante otros agentes del Sindicato.
+    Mantente atento y no reveles su significado.
 traitor-role-uplink-code =
-    Set your ringtone to the notes [color = lightgray]{$code}[/color] to lock or unlock your uplink.
-    Remember to lock it after, or the station's crew might find it!
-traitor-role-uplink-implant =
-    Your uplink implant has been activated, access it from your hotbar.
-    The uplink is secure unless someone removes it from your body.
-
+    Configura el tono de llamada de tu PDA como [color = lightgray]{ $code }[/color] para bloquear o desbloquear el enlace ascendente.
+    No olvides volver a bloquearlo y cambiar el tono; de lo contrario, cualquier persona que encuentre tu PDA podría acceder al enlace ascendente.
 # don't need all the flavour text for character menu
+traitor-role-uplink-implant =
+    Tu implante de enlace ascendente está activo. Puedes acceder a él desde la barra rápida.
+    La conexión permanecerá segura mientras el implante siga dentro de tu cuerpo.
 traitor-role-codewords-short =
-    The codewords are:
-    {$codewords}.
-traitor-role-uplink-code-short = Your uplink code is {$code}. Set it as your PDA ringtone to access your uplink.
-traitor-role-uplink-implant-short = Your uplink was implanted. Access it from the action menu.
+    Palabras clave:
+    { $codewords }.
+traitor-role-uplink-code-short = Tu código de enlace ascendente es { $code }. Configúralo como tono de llamada de la PDA para acceder al enlace.
+traitor-role-uplink-implant-short = Tienes un enlace ascendente implantado. Accede a él desde la barra rápida.

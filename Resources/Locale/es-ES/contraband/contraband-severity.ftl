@@ -46,11 +46,9 @@ contraband-examine-text-Magical =
         [reagent] [color=#b337b3]This reagent is highly illegal magical contraband![/color]
     }
 
-contraband-examine-text-avoid-carrying-around = [color=red][italic]You probably want to avoid visibly carrying this around without a good reason.[/italic][/color]
-contraband-examine-text-in-the-clear = [color=green][italic]You should be in the clear to visibly carry this around.[/italic][/color]
-
-contraband-examinable-verb-text = Legality
-contraband-examinable-verb-message = Check legality of this item.
-
-contraband-department-plural = {$department}
+contraband-examine-text-avoid-carrying-around = [color=red][italic]Probablemente sea mejor no llevar esto a la vista sin una buena razón.[/italic][/color]
+contraband-examine-text-in-the-clear = [color=green][italic]Puedes llevar esto a la vista sin problemas.[/italic][/color]
+contraband-examinable-verb-text = Legalidad
+contraband-examinable-verb-message = Consulta la legalidad de este artículo.
+contraband-department-plural = { $department }
 contraband-job-plural = {$job}

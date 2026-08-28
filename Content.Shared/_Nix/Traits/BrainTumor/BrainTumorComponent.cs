@@ -43,8 +43,8 @@ public sealed partial class BrainTumorComponent : Component
     /// </summary>
     [DataField("suppressants")]
     [AutoNetworkedField]
-    public List<string> Suppressants =
-    [
+    public List<string> Suppressants = new()
+    {
         "Cognizine",
         "Psicodine",
         "Synaptizine",
@@ -54,7 +54,7 @@ public sealed partial class BrainTumorComponent : Component
         "Omnizine",
         "Cryoxadone",
         "Mannitol"
-    ];
+    };
 
     /// <summary>
     /// Timestamp until which symptoms and damage are suppressed by medication.

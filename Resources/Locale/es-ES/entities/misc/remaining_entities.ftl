@@ -326,7 +326,6 @@ ent-DebugItemShapeWeird = objeto de forma extraña
     .suffix = DEBUG
 ent-DehydratedSpaceCarp = carpa espacial deshidratada
     .desc = Parece una carpa de peluche, ¡pero agrégale agua y se convierte en una carpa espacial de verdad!
-ent-DeliveryModifierBomb = 
 
 
 
@@ -358,7 +357,6 @@ ent-DeliveryModifierBomb =
 
 
     .desc = Componentes que se añaden cuando una entrega sale como bomba.
-ent-DeliveryModifierFragile = 
 
 
 
@@ -390,7 +388,6 @@ ent-DeliveryModifierFragile =
 
 
     .desc = Componentes que se añaden cuando una entrega sale como frágil.
-ent-DeliveryModifierPriority = 
 
 
 
@@ -426,13 +423,13 @@ ent-DeployableBarrier = barrera desplegable
     .desc = Una barrera desplegable. Pasa tu tarjeta ID para bloquearla o desbloquearla.
 ent-DimLightBulb = bombilla tenue
     .desc = Una bombilla tenue para poblar la oscuridad de mantenimiento.
-ent-DisposalRouterFlippedR&D = enrutador de basuras
+ent-DisposalRouterFlippedRD = enrutador de basuras
     .desc = Una tubería de basuras capaz de filtrar objetos según una etiqueta. Los objetos que vienen de las salidas no se filtran y se mandan a la entrada.
     .suffix = Invertido, I+D
-ent-DisposalRouterR&D = enrutador de basuras
+ent-DisposalRouterRD = enrutador de basuras
     .desc = Una tubería de basuras capaz de filtrar objetos según una etiqueta. Los objetos que vienen de las salidas no se filtran y se mandan a la entrada.
     .suffix = I+D
-ent-DisposalTaggerR&D = etiquetadora de basuras
+ent-DisposalTaggerRD = etiquetadora de basuras
     .desc = Una tubería que etiqueta las entidades para enrutarlas.
     .suffix = I+D
 ent-DoubleStunbaton = bastón aturdidor doble
@@ -508,7 +505,6 @@ ent-ForensicPad = almohadilla forense
     .desc = Una almohadilla forense para recolectar huellas dactilares o fibras.
 ent-FreezeRayCyber = rayo congelador cibernético
     .desc = ¡Brr...! ¡Qué frío!
-ent-FtlVisualizerEntity = 
 
 
 
@@ -1176,7 +1172,7 @@ ent-MailSyndicateSpamLetterAdmin = ¡Razones para elegir al Sindicato!
     .suffix = Solo admin, sin logro
 ent-MailTrolley = carrito de correo
     .desc = Perfecto para todas tus necesidades de entrega de paquetes.
-ent-MailingUnitR&D = unidad de correo
+ent-MailingUnitRD = unidad de correo
     .desc = Una unidad neumática de entrega de correo.
     .suffix = I+D
 ent-MaterialBag = bolsa de materiales
@@ -1320,7 +1316,6 @@ ent-PortalGatewayBlue = portal bluespace
     .desc = ¡Te transporta a un destino enlazado!
 ent-PortalGatewayOrange = portal bluespace
     .desc = ¡Te transporta a un destino enlazado!
-ent-PortalGreeny = 
 
 
 

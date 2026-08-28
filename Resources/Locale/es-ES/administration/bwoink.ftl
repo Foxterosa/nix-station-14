@@ -13,11 +13,11 @@ bwoink-system-introductory-message =
     Los errores y problemas relacionados deben reportarse por Discord o GitHub.
     El mal uso de este sistema de mensajes puede derivar en medidas disciplinarias.
 
-bwoink-system-typing-indicator = {$players} {$count ->
-[one] está
-*[other] están
-} escribiendo...
-
+bwoink-system-typing-indicator =
+    { $players } { $count ->
+        [one] Grabados
+       *[other] Impresión
+    }...
 admin-ahelp-admin-only = Solo admins
 admin-ahelp-admin-only-tooltip = Si está marcado, el mensaje no será visible para el jugador,
     pero sí para los demás admins y se seguirá retransmitiendo a Discord.
@@ -32,4 +32,4 @@ bwoink-system-player-reconnecting = se reconectó.
 bwoink-system-player-banned = fue baneado por: {$banReason}
 
 bwoink-message-admin-only = (Solo admins)
-bwoink-message-silent = (S)
+bwoink-message-silent = (En voz baja)

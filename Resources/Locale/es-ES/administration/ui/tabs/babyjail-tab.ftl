@@ -1,5 +1,4 @@
-﻿admin-ui-baby-jail-window-title = Baby Jail
-
+admin-ui-baby-jail-window-title = Jardín de infancia
 admin-ui-baby-jail-enabled = Baby Jail activado
 admin-ui-baby-jail-disabled = Baby Jail desactivado
 admin-ui-baby-jail-tooltip = El Baby Jail impide que se unan jugadores cuya cuenta sea demasiado antigua o que tengan demasiado tiempo total jugado en este servidor.

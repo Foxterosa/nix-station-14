@@ -33,13 +33,13 @@ nuke-user-interface-second-status-current-code = CÓDIGO: {$code}
 nuke-user-interface-second-status-cooldown-time = ESPERE: {$time}
 
 ## Nuke labels
-nuke-label-nanotrasen = NT-{$serial}
-
-# do you even need this one? It's more funnier to say that
-# the Syndicate stole a NT nuke
-nuke-label-syndicate = SYN-{$serial}
+nuke-label-nanotrasen = SCP-{ $serial }
+# ¿Es necesaria esta etiqueta en absoluto? Es mucho más interesante señalar que
+# Ojiva nuclear de la Fundación Stole del Sindicato
+nuke-label-syndicate = SIN-{ $serial }
 
 # Codes
+
 nuke-codes-message = [color=red]¡ALTO SECRETO![/color]
 nuke-codes-list = código de {$name}: {$code}
 nuke-codes-fax-paper-name = códigos de autenticación nuclear

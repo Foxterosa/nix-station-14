@@ -1,2 +1,2 @@
-construction-smokeable-joint-rainbow = rainbow joint
-construction-smokeable-blunt-rainbow = rainbow blunt
+construction-smokeable-joint-rainbow = Marco "arcoíris"
+construction-smokeable-blunt-rainbow = banco "Rainbow" (grande)
