@@ -107,44 +107,42 @@
     MedicalDoctor:
     - !type:OverallPlaytimeRequirement
       time: 0
-    - !type:RoleTimeRequirement
-      role: JobMedicalIntern
-      time: 1h
     Chemist:
     - !type:OverallPlaytimeRequirement
       time: 0
-    - !type:RoleTimeRequirement
-      role: JobMedicalIntern
-      time: 1h
     Paramedic:
     - !type:OverallPlaytimeRequirement
       time: 0
-    - !type:RoleTimeRequirement
-      role: JobMedicalDoctor
-      time: 1h
+    Psychologist:
+    - !type:OverallPlaytimeRequirement
+      time: 0
+    Surgeon:
+    - !type:OverallPlaytimeRequirement
+      time: 0
+    Roboticist:
+    - !type:OverallPlaytimeRequirement
+      time: 0
     StationEngineer:
     - !type:OverallPlaytimeRequirement
       time: 0
-    - !type:RoleTimeRequirement
-      role: JobTechnicalAssistant
-      time: 1h
     AtmosphericTechnician:
     - !type:OverallPlaytimeRequirement
       time: 0
-    - !type:RoleTimeRequirement
-      role: JobStationEngineer
-      time: 1h
+    MiningSpecialist:
+    - !type:OverallPlaytimeRequirement
+      time: 0
+    SalvageSpecialist:
+    - !type:OverallPlaytimeRequirement
+      time: 0
+    SalvageLead:
+    - !type:OverallPlaytimeRequirement
+      time: 0
     Warden:
-    - !type:RoleTimeRequirement
-      role: JobSecurityOfficer
-      time: 20h
-    - !type:RoleTimeRequirement
-      role: JobDetective
-      time: 1h
+    - !type:OverallPlaytimeRequirement
+      time: 0
     DutyOfficer:
-    - !type:RoleTimeRequirement
-      role: JobSecurityOfficer
-      time: 5h
+    - !type:OverallPlaytimeRequirement
+      time: 0
     SecurityCadet:
     - !type:OverallPlaytimeRequirement
       time: 30h
@@ -153,20 +151,17 @@
       time: 30h #SL Edit 15h -> 30h
       inverted: true # stop playing intern if you're good at security!
     SecurityOfficer:
-    - !type:DepartmentTimeRequirement
-      department: Security
-      time: 10h
+    - !type:OverallPlaytimeRequirement
+      time: 0
     Detective:
-    - !type:RoleTimeRequirement
-      role: JobSecurityOfficer
-      time: 10h
+    - !type:OverallPlaytimeRequirement
+      time: 0
     Brigmedic:
-    - !type:RoleTimeRequirement
-      role: JobSecurityOfficer
-      time: 10h
-    - !type:DepartmentTimeRequirement
-      department: Medical
-      time: 8h
+    - !type:OverallPlaytimeRequirement
+      time: 0
+    K9:
+    - !type:OverallPlaytimeRequirement
+      time: 0
     StationAi:
     - !type:OverallPlaytimeRequirement
       time: 0
@@ -179,27 +174,12 @@
     Bartender:
     - !type:OverallPlaytimeRequirement
       time: 0
-    - !type:RoleTimeRequirement
-      role: JobServiceWorker
-      time: 20m
     Chef:
     - !type:OverallPlaytimeRequirement
       time: 0
-    - !type:RoleTimeRequirement
-      role: JobServiceWorker
-      time: 20m
     Scientist:
     - !type:OverallPlaytimeRequirement
       time: 0
-    - !type:RoleTimeRequirement
-      role: JobResearchAssistant
-      time: 1h
-    SalvageSpecialist:
-    - !type:OverallPlaytimeRequirement
-      time: 0
-    - !type:RoleTimeRequirement
-      role: JobCargoTechnician
-      time: 90m
     Botanist:
     - !type:OverallPlaytimeRequirement
       time: 0
@@ -243,9 +223,8 @@
     - !type:OverallPlaytimeRequirement
       time: 0
     Lawyer:
-    - !type:RoleTimeRequirement
-      role: JobIAA
-      time: 1h
+    - !type:OverallPlaytimeRequirement
+      time: 0
     Librarian:
     - !type:OverallPlaytimeRequirement
       time: 0
@@ -257,10 +236,10 @@
       time: 0
     ServiceWorker:
     - !type:OverallPlaytimeRequirement
-      time: 5m
+      time: 0
     Performer:
     - !type:OverallPlaytimeRequirement
-      time: 5m
+      time: 0
     Visitor:
     - !type:OverallPlaytimeRequirement
       time: 0

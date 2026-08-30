@@ -1,5 +1,5 @@
 # Window headers
-holopad-window-title = {CAPITALIZE($title)}
+holopad-window-title = { CAPITALIZE($title) }
 holopad-window-subtitle = [color=white][bold]Sistema de comunicación holográfica[/bold][/color]
 holopad-window-options = [color=darkgray][font size=10][italic]Selecciona una opción de la lista de abajo[/italic][/font][/color]
 
@@ -28,7 +28,7 @@ holopad-window-access-denied = Acceso denegado
 # Contact list
 holopad-window-select-contact-from-list = Selecciona un contacto para iniciar una holo-llamada
 holopad-window-fetching-contacts-list = No hay holopads disponibles en este momento
-holopad-window-contact-label = {CAPITALIZE($label)}
+holopad-window-contact-label = { CAPITALIZE($label) }
 holopad-window-filter-line-placeholder = Buscar un contacto
 
 # Flavor

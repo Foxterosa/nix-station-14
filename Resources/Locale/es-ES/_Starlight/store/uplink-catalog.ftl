@@ -4,8 +4,8 @@ uplink-marriage-axe-name = Marriage axe
 uplink-marriage-axe-desc = A charming subtle instrument of chaos—perfect for when diplomacy fails. Screams like a banshee, cuts like a demon, and turns people into regrettable memories. Handle with enthusiasm.
 uplink-mini-energy-crossbow-name = mini energy crossbow
 uplink-mini-energy-crossbow-desc = Fires low-damage kinetic bolts at a short range.
-uplink-minotaur-name = Minotaur bundle
-uplink-minotaur-desc = Lean and mean: Contains smooth, powerful, highly illegal Shotgun, a 5 12g buckshot drums.
+uplink-minotaur-name = AS-12 'Minotaur'
+uplink-minotaur-desc = Escopeta automática y dos tambores XL de disparo. ¡Dispara sin DOOM pero en todas direcciones!
 uplink-deagle-name = Desert Eagle
 uplink-deagle-desc = A robust magnum handgun.
 uplink-stechkin-name = Stechkin pistol
@@ -38,14 +38,17 @@ uplink-pitbull-bundle-desc = A large bullpup rifle with a low fire-rate but exce
 uplink-rifle-magazine-pitbull-name = Bullpup magazine (.45 magnum)
 uplink-rifle-magazine-pitbull-desc = Bullpup magazines with 20 cartrides. Compatible with the Pitbull.
 
-uplink-nightvision-eyes = Night Vision Cyber Eyes
-uplink-nightvision-eyes-desc = Allows you to see in the dark but makes you more vulnerable to flashes. (Warning: You will need a surgical assistant for the procedure.)
-uplink-thermalvision-eyes = Thermal Vision Cyber Eyes
-uplink-thermalvision-eyes-desc = Allows you to see in the dark and detect creatures through walls but makes you more vulnerable to flashes. (Warning: You will need a surgical assistant for the procedure.)
+uplink-nightvision-eyes = Ojos de visión nocturna cibernética
+uplink-nightvision-eyes-desc = Te permiten ver en la oscuridad, pero te hacen más vulnerable a las granadas aturdidoras. (Nota: Requiere ayuda de un cirujano.)
+
+uplink-thermalvision-eyes = Ojos cibernéticos con visión térmica
+uplink-thermalvision-eyes-desc = Te permite ver en la oscuridad y detectar criaturas a través de las paredes, pero te hace más vulnerable a las granadas aturdidoras. (Nota: Se requiere ayuda del cirujano.)
+
 uplink-olfactory-implant-name = Olfactory Implant
 uplink-olfactory-implant-desc = Grants a partial ability to perceive and track scents. (Warning: You will need a surgical assistant for the procedure.)
-uplink-mantis-blade-arms-name = Mantis Blade Arms Bundle
-uplink-mantis-blade-arms-desc = Originally used as a simple construction tool, now turned into hidden blades that can extend from your arm while still keeping its destructive prying skill. Truly a sight to behold. (Warning: You will need a surgical assistant for the procedure.)
+uplink-mantis-blade-arms-name = Juego de Hojas Mantis
+uplink-mantis-blade-arms-desc = Originalmente usada como una simple herramienta de construcción, ahora convertida en cuchillas ocultas que pueden extenderse desde la mano y aún abrir estructuras de forma destructiva. Un espectáculo realmente impresionante. (Nota: Se requiere asistencia del cirujano.)
+# Misc
 uplink-advanced-claws-name = Advanced Claws Implant
 uplink-advanced-claws-desc = A cybernetic implant for hands. Allows an agent to extend sharp plasteel claws at will, and hide them away just as quickly. (Warning: You will need a surgical assistant for the procedure.)
 uplink-forensics-implant-name = Forensics Implant

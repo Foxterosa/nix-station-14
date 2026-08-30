@@ -14,15 +14,14 @@ turret-controls-window-turret-deployed = BUSCANDO...
 turret-controls-window-turret-deploying = ACTIVANDO
 turret-controls-window-turret-firing = ATACANDO OBJETIVO
 turret-controls-window-turret-error = ERROR [404]
-turret-controls-window-turret-broken = ***INOPERABLE***
-
+turret-controls-window-turret-broken = INOPERABLE***
 # Buttons
 turret-controls-window-safe = Inactiva
 turret-controls-window-stun = Aturdir
 turret-controls-window-lethal = Letal
 turret-controls-window-ignore = Ignorar
 turret-controls-window-target = Objetivo
-turret-controls-window-access-group-label = {$prefix} {$label}
+turret-controls-window-access-group-label = { $prefix } { $label }
 turret-controls-window-all-checkbox = Todos
 
 # Flavor

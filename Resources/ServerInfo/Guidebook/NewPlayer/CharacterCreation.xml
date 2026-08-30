@@ -1,85 +1,70 @@
 <Document>
-# Important Character Creation Tips
-This is a guide for the parts of character creation that effect gameplay.
+# Consejos importantes para crear un personaje
+Esta guía explica los aspectos de la creación de personajes que afectan la jugabilidad.
 
-[textlink="For a guide on making cosmetic changes, click here." link="YourFirstCharacter"]
+[textlink="Para consultar una guía sobre cambios estéticos, haga clic aquí." link="YourFirstCharacter"]
 
-## Spawn Priority
-This affects where you spawn in upon joining the game after the round has already started.
+## Prioridad de aparición
+Esta opción determina dónde aparecerá cuando se una a una partida que ya comenzó.
 
-Choosing "Arrivals" will spawn you on a separate station where you wait for a shuttle to arrive to ship you to the main station.
+Si selecciona «Llegadas», aparecerá en una estación separada, donde deberá esperar un transbordador que lo transporte a la estación principal.
 
-Choosing "Cryosleep" will have you wake up in a cryosleep chamber already on the station.
+Si selecciona «Criosueño», despertará en una cámara de criosueño situada en la estación.
 
-Choosing "None" will either pick for you or choose the only spawn option available for the current station.
+Si selecciona «Ninguna», el juego elegirá por usted o utilizará la única opción de aparición disponible para la estación actual.
 
-This is a mostly arbitrary choice. You can safely leave this on "None" and you won't suffer any real inconveniences.
+Se trata principalmente de una preferencia personal. Puede dejarla en «Ninguna» sin sufrir inconvenientes significativos.
 
-## Jobs
-You can set your job preferences in the lobby. While these don't [color=#a4885c]guarantee[/color] your position, someone who wants the job will be [color=#a4885c]randomly[/color] selected at the start of the round.
-You are given a chance at being chosen for your high priority job first, then your medium priorities, then your low priorities.
-You also given an option to automatically be a assistant or to be sent back to the lobby if you don't get chosen for any of your preferred jobs.
+## Puestos
+Puede establecer sus preferencias de puestos en la sala de espera. Estas preferencias no [color=#a4885c]garantizan[/color] un puesto; al comenzar la ronda, se elegirá [color=#a4885c]aleatoriamente[/color] a una de las personas que lo hayan solicitado.
+Primero se intentará asignarle un puesto de prioridad alta, después uno de prioridad media y, por último, uno de prioridad baja.
+También puede elegir entre convertirse automáticamente en pasajero o regresar a la sala de espera si no obtiene ninguno de sus puestos preferidos.
 
-Some jobs are locked until you've played long enough as other entry level jobs.
+Algunos puestos permanecen bloqueados hasta que haya acumulado suficiente tiempo de juego en puestos básicos.
 
-[textlink="For more infomation about jobs, click here." link="Jobs"]
+[textlink="Para obtener más información sobre los puestos, haga clic aquí." link="Jobs"]
 
-## Job Loadouts
-You may also choose [color=#a4885c]loadouts[/color] for each job. Loadouts are the clothing items and trinkets that you spawn with upon joining the game. Some loadout items are locked behind playtime restrictions.
-This may have various effects on gameplay, as some clothing items have [color=#a4885c]armor protection[/color] or [color=#a4885c]slow down your movement speed[/color]. This applies especially to Command and Security.
+## Equipamiento inicial de los puestos
+También puede elegir un [color=#a4885c]equipamiento inicial[/color] para cada puesto. Este incluye las prendas y objetos personales con los que aparecerá al entrar en la partida. Algunos artículos requieren una cantidad mínima de tiempo de juego.
+La selección puede afectar la jugabilidad, ya que ciertas prendas proporcionan [color=#a4885c]protección de blindaje[/color] o [color=#a4885c]reducen la velocidad de movimiento[/color]. Esto es especialmente relevante para el personal de mando y de seguridad.
 
-You may also choose what bag you spawn in with.
-[color=#a4885c]Backpacks[/color] are medium sized but can carry large items easier. [color=#a4885c]Satchels[/color] have more total space than backpacks but have trouble carrying large items. [color=#a4885c]Duffel bags[/color] are large but incur a movement penalty.
+También puede elegir el tipo de bolsa con la que aparecerá.
+Las [color=#a4885c]mochilas[/color] tienen capacidad media y permiten transportar objetos grandes con mayor facilidad. Los [color=#a4885c]bolsos[/color] ofrecen más espacio total, pero dificultan el transporte de objetos grandes. Las [color=#a4885c]bolsas de lona[/color] son amplias, aunque reducen la velocidad de movimiento.
 
-## Antags
-Turning on an [color=#a4885c]antagonist[/color] toggle will put you on the list of potentional antags at the start of the round. They do not guarantee your antagonist role, don't use this as an excuse to self-antag!
-Instead, like job priorities, a handful of players are chosen randomly from eligible players. If you are a command member or security officer, you cannot be chosen for an antag role.
+## Antagonistas
+Activar una opción de [color=#a4885c]antagonista[/color] lo incluirá entre los posibles antagonistas al comenzar la ronda. Esto no garantiza que reciba ese rol y no constituye una justificación para actuar como antagonista por cuenta propia.
+Al igual que con las prioridades de puestos, se elige aleatoriamente a un número reducido de jugadores que cumplen los requisitos. Los integrantes del personal de mando y los oficiales de seguridad no pueden ser seleccionados para un rol de antagonista.
 
-[textlink="For more information about antagonists, click here." link="Antagonists"]
+[textlink="Para obtener más información sobre los antagonistas, haga clic aquí." link="Antagonists"]
 
-Joining multiple games or ghosting/disconnecting/commiting suicide upon not being chosen for an antag role is referred to as "antag-rolling" and it is against the rules.
-Plenty of people patiently wait for their turn to be antagonists, so [color=#a4885c]we kindly ask you to refrain from opting-in to an antagonist role if you aren't ready[/color].
+Entrar en varias partidas o convertirse en fantasma, desconectarse o suicidarse por no haber recibido un rol de antagonista se conoce como «antag-rolling» y está prohibido por las reglas.
+Muchas personas esperan pacientemente su turno; por ello, [color=#a4885c]le solicitamos que no se inscriba para un rol de antagonista si no está preparado para desempeñarlo[/color].
 
-## Traits
-Speech traits alter your speech, sometimes to an extreme degree.
+## Rasgos
+Los rasgos del habla modifican la forma en que se expresa el personaje, en algunos casos de manera considerable.
 
-They include:
-- No native accent (disables the accent of your selected species) <!-- 🌟Starlight🌟 -->
-- Cowboy accent (word replacement, partner)
-- Frontal lisp ("s" is replaced with "th")
-- Italian accent (Mamma-mia, word replacement)
-- Pathological liar (word replacement, changes words like "yes" to "no")
-- Pirate accent (Arrgh, word replacement)
-- Social anxiety (s-s-stutter)
-- Southern Drawl (replaces "-ing" with "-in'" and similar changes)
+Entre ellos se incluyen:
+- Sin acento (desactiva el acento de la especie seleccionada)
+- Acento vaquero (sustituye determinadas palabras)
+- Ceceo frontal (sustituye la «s» por «th»)
+- Acento italiano (sustituye determinadas palabras)
+- Mentiroso patológico (sustituye palabras; por ejemplo, cambia «sí» por «no»)
+- Acento pirata (sustituye determinadas palabras)
+- Ansiedad social (produce tartamudeo)
+- Acento sureño (sustituye «-ing» por «-in'» y aplica cambios similares)
 
-You should be comfortable with talking normally or with a minor accent such as Social anxiety or Southern drawl before taking heavy accents like Italian or Cowboy.
+Es recomendable sentirse cómodo hablando con normalidad o con un acento leve, como ansiedad social o acento sureño, antes de utilizar acentos muy marcados, como el italiano o el vaquero.
 
-There are also disabilty traits. Familiarize yourself with the game and the game's flow before taking one of these, as some may become difficult for beginners to deal with.
+También existen rasgos de discapacidad. Familiarícese con el juego y con el desarrollo habitual de una ronda antes de seleccionar alguno, ya que pueden resultar difíciles para jugadores principiantes.
 
-They include:
-- Blindness (severely limits your vision)
-- Lightweight drunk (you get drunk faster and you suffer more from the ill-effects of alcohol)
-- Muted (you cannot talk or whisper, but you can still communicate via emotes and pen and paper)
-- Narcolepsy (you randomly fall asleep at unpredictable and often inconvenient times)
-- Pacifist (you cannot hit, shoot, or throw sharp objects at people)
-- Paracusia (you sometimes hear noises that aren't real)
-- Short-sighted (somewhat limits your vision without prescription glasses)
-- Snoring (you make loud snoring sounds when asleep)
-- Unrevivable (you cannot be resuscitated when you meet your untimely demise)
-
-There are also Background traits, which allow you to select a Background from a set list. This allows you to know certain things that might otherwise be [textlink="Metashielded" link="Metashield"]. For more information, check out the Metashield page.
-
-## Flavor Text
-The Flavor Text system allows you to set text fields of information about your character that display to different players under different circumstances. Briefly, these fields are;
-- Physical Description - Anything that would by physically noticeable when looking at your character. Could include scars, limps, face and nose shape, etc.
-- Personality Description - Anything about their personality that would be noticeable looking at them. Could include how they speak, if they sway when standing still or walk like they're marching, etc.
-- Exploitable Info - This is information that is displayed to Antagonists and can be used or referenced by them to generate Roleplay with you. An example might be that your character is in debt and needs money badly, or that they served in a war and participated in an atrocity. This information is likely to be used to either blackmail your character, or as justification for why they are a target when someone rolls you as a kill target.
-- Secrets - This is information only shown to people playing your character, such as Paradox Clones and Changelings. This should include information on how they act, some of their relationships with other Crew, and anything secret that only they would know.
-
-There are also two sections for Out Of Character use, being;
-- Personal Notes - For taking notes on your own character to remember mid-roleplay. Might be things like their family's names, their home planet, and other details you don't want to forget if it comes up in Roleplay.
-- OOC Notes - Out of Character information that anyone can see, useful for noting down things like phobias and roleplay topics you do not want to be exposed to. Rarely comes up, but useful to use regardless to establish your comfort zone.
-
-
+Entre ellos se incluyen:
+- Ceguera (limita gravemente la visión)
+- Baja tolerancia al alcohol (provoca embriaguez más rápida y agrava sus efectos perjudiciales)
+- Mudez (impide hablar o susurrar, pero permite comunicarse mediante gestos, lápiz y papel)
+- Narcolepsia (provoca que el personaje se duerma en momentos impredecibles y generalmente inconvenientes)
+- Pacifismo (impide golpear, disparar o lanzar objetos afilados contra otras personas)
+- Paracusia (provoca que el personaje escuche ocasionalmente sonidos inexistentes)
+- Miopía (limita parcialmente la visión si no se utilizan lentes correctivos)
+- Ronquidos (produce sonidos fuertes al dormir)
+- Irreanimable (impide la reanimación después de la muerte)
 </Document>

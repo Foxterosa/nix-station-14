@@ -1,4 +1,4 @@
-reagent-name-astrotame = Astrotame
+reagent-name-astrotame = Astrotem
 reagent-desc-astrotame = La dulzura de mil azucares pero sin ninguna de las calorias.
 
 reagent-name-bbq-sauce = salsa BBQ
@@ -16,7 +16,7 @@ reagent-desc-horseradish-sauce = Apestosa salsa de rabano picante.
 reagent-name-hotsauce = salsa picante
 reagent-desc-hotsauce = Quema tan bien.
 
-reagent-name-ketchup = ketchup
+reagent-name-ketchup = Kétchup
 reagent-desc-ketchup = Hecho de tomates triturados y condimentado con especias.
 
 reagent-name-ketchunaise = ketchunaisa

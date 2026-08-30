@@ -19,9 +19,8 @@ loadout-group-assistantmanager-gloves = Assistant Manager gloves
 loadout-group-assistantmanager-outerclothing = Assistant Manager outer clothing
 loadout-group-assistantmanager-shoes = Assistant Manager shoes
 
-loadout-group-boxer-jumpsuit = Boxer jumpsuit
-loadout-group-boxer-gloves = Boxer gloves
-
+loadout-group-boxer-jumpsuit = { loadout-group-jumpsuit }
+loadout-group-boxer-gloves = { loadout-group-gloves }
 loadout-group-reporter-head = Reporter head
 
 loadout-group-musician-head = Musician head
@@ -114,8 +113,7 @@ loadout-group-chemist-bag = Chemist bag
 loadout-group-chemist-labeler = Chemist labeler
 loadout-group-chemist-shoes = Chemist shoes
 loadout-group-medical-glasses = Medical glasses
-loadout-group-medical-gloves = Medical gloves
-# Service
+loadout-group-medical-gloves = { loadout-group-gloves }
 loadout-group-janitor-neck = Janitor neck
 
 loadout-group-serviceworker-head = Service worker head

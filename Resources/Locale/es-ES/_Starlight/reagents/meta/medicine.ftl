@@ -7,8 +7,8 @@ reagent-desc-bonegel = A gel that uses as clue for bones to regrow. It is better
 reagent-name-chronexaline = chronexaline
 reagent-desc-chronexaline = A mixture of unstable radiation chemicals and its base component under extremely low temperatures. This appears to cure radiation poisoning in dead bodies.
 
-reagent-name-barozine-plus = barozine plus
-reagent-desc-barozine-plus = An advanced form of Barozine only found in Space Medipens. Heals less, but an overdose is less painful.
+reagent-name-barozine-plus = Barozin Plus
+reagent-desc-barozine-plus = Barosina, una versión mejorada específicamente para Medipenes. Menos tóxico.
 
 reagent-name-infernaline = infernaline
 reagent-desc-infernaline = An unstable chemical that defies logic, very effective at treating genetic damage, but capable of causing tears in the flesh in higher than minimal amounts.

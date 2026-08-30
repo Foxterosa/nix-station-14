@@ -64,11 +64,11 @@ central-command-sender = Comando Central
 
 soviet-commissariat-sender = Comisariado del Pueblo Soviético
 
-rev-headrev-count = {$initialCount ->
-    [one] Había un agente de la [color=Yellow]USSP[/color]:
-    *[other] Había {$initialCount} agentes de la USSP:
-}
-
+rev-headrev-count =
+    { $initialCount ->
+        [one] Solo hubo un líder de la revolución:
+       *[other] Hubo { $initialCount } líderes de la revolución:
+    }
 rev-headrev-name-user = [color=#5e9cff]{$name}[/color] ([color=gray]{$username}[/color]) reclutó a {$count} {$count ->
     [one] contratista
     *[other] contratistas

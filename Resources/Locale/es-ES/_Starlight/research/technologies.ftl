@@ -5,8 +5,7 @@ research-technology-chemical-storage = Advanced chemical storage
 research-technology-basic-surgery = Basic surgery
 research-technology-advanced-surgery = Advanced surgery
 
-research-technology-automenders = Automenders
-
+research-technology-autoMenders = Reparadores de Automóviles
 research-technology-basic-cyberlimbs = Basic cyberlimbs
 research-technology-budget-cyber-organs = Budget CyberOrgans
 research-technology-advanced-cyberlimbs = Advanced cyberorgans

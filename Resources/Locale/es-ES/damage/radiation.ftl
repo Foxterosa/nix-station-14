@@ -1,2 +1,2 @@
-mouth-taste-metal = You taste something metallic in your mouth!
+mouth-taste-metal = ¡Sientes un sabor metálico en la boca!
 sensor-static = Your sensors are overcome with static!

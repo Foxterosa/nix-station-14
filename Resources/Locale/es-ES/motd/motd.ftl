@@ -1,7 +1,7 @@
 cmd-motd-desc = Muestra o define el Mensaje del Día.
 cmd-motd-help = motd [ mensaje... ]
 cmd-get-motd-desc = Muestra el Mensaje del Día.
-cmd-get-motd-help = get-motd
+cmd-get-motd-help = Uso: get-motd
 cmd-set-motd-desc = Define o limpia el Mensaje del Día.
 cmd-set-motd-help = set-motd [ mensaje... ]
 cmd-set-motd-hint-head = [ mensaje... ]

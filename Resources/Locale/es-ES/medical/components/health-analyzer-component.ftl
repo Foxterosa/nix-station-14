@@ -12,9 +12,8 @@ health-analyzer-window-entity-blood-level-text = Nivel de sangre:
 health-analyzer-window-entity-status-text = Estado:
 health-analyzer-window-entity-damage-total-text = Daño total:
 
-health-analyzer-window-damage-group-text = {$damageGroup}: {$amount}
-health-analyzer-window-damage-type-text = {$damageType}: {$amount}
-
+health-analyzer-window-damage-group-text = { $damageGroup }: { $amount }
+health-analyzer-window-damage-type-text = { $damageType }: { $amount }
 health-analyzer-window-entity-unrevivable-text = [color=yellow]¡Composición corporal única detectada! ¡El paciente no puede ser reanimado por medios normales![/color]
 health-analyzer-window-entity-bleeding-text = [color=red]¡El paciente tiene heridas abiertas![/color]
 

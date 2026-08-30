@@ -2,7 +2,7 @@
 
 power-charge-window-status = Estado:
 power-charge-window-power = Energia:
-power-charge-window-eta = ETA:
+power-charge-window-eta = PD:
 power-charge-window-charge = Carga:
 
 ## UI statuses

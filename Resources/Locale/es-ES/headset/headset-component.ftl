@@ -9,7 +9,7 @@ chat-radio-message-wrap-bold = [color={$color}]{$channel} [bold]{$name}[/bold] {
 examine-headset-default-channel = Usa {$prefix} para el canal predeterminado ([color={$color}]{$channel}[/color]).
 
 chat-radio-common = Común
-chat-radio-centcom = CentComm
+chat-radio-centcom = Centcom
 chat-radio-command = Comando
 chat-radio-engineering = Ingeniería
 chat-radio-medical = Médico

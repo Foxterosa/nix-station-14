@@ -1,4 +1,4 @@
-marking-VoxHairAfro = Vox Afro
+marking-VoxHairAfro = Vox, Afro
 marking-VoxHairBraids = Vox Trenzas
 marking-VoxHairCrestedQuills = Vox Púas con cresta
 marking-VoxHairEmperorQuills = Vox Púas de emperador
@@ -17,9 +17,9 @@ marking-VoxHairRazorClipped = Vox Navaja (rapado)
 marking-VoxHairRazor = Vox Navaja
 marking-VoxHairSortBraid = Vox Trenza corta
 marking-VoxHairShortQuills = Vox Púas cortas
-marking-VoxHairSurf = Vox Surf
+marking-VoxHairSurf = Vox, Surfer
 marking-VoxHairTielQuills = Vox Púas de carolina
-marking-VoxHairYasu = Vox Yasuhiro
+marking-VoxHairYasu = Yasuhiro Vox
 marking-VoxHairWiseBraid = Vox Trenzas sabias
 marking-VoxHairSpotty = Vox Púas moteadas
 marking-VoxHairMadScientist = Vox Científico loco

@@ -6,146 +6,106 @@
 # accent-italian-prefix-3 = Mamma-mia! That's a spicy meat-ball!
 # accemt-italian-prefix-4 = La la la la la funiculi funicula!
 
-accent-italian-words-1 = assistant
-accent-italian-words-replace-1 = goombah
-
-accent-italian-words-2 = assistants
-accent-italian-words-replace-2 = goombahs
-
-accent-italian-words-3 = baby
+accent-italian-words-1 = Asistente
+accent-italian-words-replace-1 = Goumbach
+accent-italian-words-2 = Asistentes
+accent-italian-words-replace-2 = Goumbachs
+accent-italian-words-3 = Cariño
 accent-italian-words-replace-3 = bambino
 
-accent-italian-words-4 = bad
+accent-italian-words-4 = Malo
 accent-italian-words-replace-4 = molto male
 
-accent-italian-words-5 = bye
-accent-italian-words-replace-5 = arrivederci
-
-accent-italian-words-6 = captain
-accent-italian-words-replace-6 = capitano
-
-accent-italian-words-7 = cheese
+accent-italian-words-5 = Adiós
+accent-italian-words-replace-5 = Arivederchi
+accent-italian-words-6 = Capitán
+accent-italian-words-replace-6 = Capitán
+accent-italian-words-7 = Queso
 accent-italian-words-replace-7 = parmesano
 
 accent-italian-words-8 = cook
-accent-italian-words-replace-8 = cook-a
-
-accent-italian-words-9 = could
-accent-italian-words-replace-9 = could-a
-
-accent-italian-words-10 = dad
-accent-italian-words-replace-10 = papà
-
-accent-italian-words-11 = good
+accent-italian-words-replace-8 = Kuchinare
+accent-italian-words-9 = Yo sí
+accent-italian-words-replace-9 = Consumidor
+accent-italian-words-10 = Papá
+accent-italian-words-replace-10 = Papá
+accent-italian-words-11 = Bien
 accent-italian-words-replace-11 = molto bene
 
-accent-italian-words-12 = assist
-accent-italian-words-replace-12 = curva
-
-accent-italian-words-13 = assistant
-accent-italian-words-replace-13 = curvista
-
-accent-italian-words-14 = assistants
+accent-italian-words-12 = Greattide
+accent-italian-words-replace-12 = Curvisti
+accent-italian-words-13 = Gran Jinete
+accent-italian-words-replace-13 = Curvisti
+accent-italian-words-14 = Greyriders
 accent-italian-words-replace-14 = curvisti
 
-accent-italian-words-15 = hello
-accent-italian-words-replace-15 = ciao
-
-accent-italian-words-16 = it's
-accent-italian-words-replace-16 = it's-a
-
-accent-italian-words-17 = make
-accent-italian-words-replace-17 = make-a
-
-accent-italian-words-18 = meat
-accent-italian-words-replace-18 = prosciutto
-
-accent-italian-words-19 = mom
-accent-italian-words-replace-19 = mamma
-
-accent-italian-words-20 = my
-accent-italian-words-replace-20 = my-a
-
-accent-italian-words-21 = nuke
-accent-italian-words-replace-21 = spiciest-a meatball
-
-accent-italian-words-22 = op
-accent-italian-words-replace-22 = greek
-
-accent-italian-words-23 = operative
-accent-italian-words-replace-23 = greek
-
-accent-italian-words-24 = operatives
-accent-italian-words-replace-24 = greeks
-
-accent-italian-words-25 = sec
-accent-italian-words-replace-25 = polizia
-
-accent-italian-words-26 = security
-accent-italian-words-replace-26 = polizia
-
-accent-italian-words-27 = secoff
-accent-italian-words-replace-27 = polizia
-
-accent-italian-words-28 = shitcurity
-accent-italian-words-replace-28 = carabinieri
-
-accent-italian-words-29 = shitsec
-accent-italian-words-replace-29 = carabinieri
-
+accent-italian-words-15 = Hola
+accent-italian-words-replace-15 = PrJSC
+accent-italian-words-16 = Estos son
+accent-italian-words-replace-16 = ye un
+accent-italian-words-17 = Hazlo
+accent-italian-words-replace-17 = Phare Una
+accent-italian-words-18 = Carne
+accent-italian-words-replace-18 = Estirado
+accent-italian-words-19 = Mamá
+accent-italian-words-replace-19 = Mamá
+accent-italian-words-20 = Mi
+accent-italian-words-replace-20 = Il Mio
+accent-italian-words-21 = Bomba
+accent-italian-words-replace-21 = Polpetta di Carne
+accent-italian-words-22 = Operativo
+accent-italian-words-replace-22 = Grezo
+accent-italian-words-23 = Operador
+accent-italian-words-replace-23 = Grezo
+accent-italian-words-24 = Operadores
+accent-italian-words-replace-24 = Grecia
+accent-italian-words-25 = SB
+accent-italian-words-replace-25 = polisio
+accent-italian-words-26 = Seguridad
+accent-italian-words-replace-26 = polisio
+accent-italian-words-27 = Oficial
+accent-italian-words-replace-27 = polisio
+accent-italian-words-28 = Shchitkure
+accent-italian-words-replace-28 = Carabineros
+accent-italian-words-29 = Shieldsec
+accent-italian-words-replace-29 = Carabineros
 accent-italian-words-30 = sing
-accent-italian-words-replace-30 = sing-a
-
-accent-italian-words-31 = spaghetti
-accent-italian-words-replace-31 = SPAGHETT
-
-accent-italian-words-32 = spicy
-accent-italian-words-replace-32 = a-spicy
-
-accent-italian-words-33 = thanks
-accent-italian-words-replace-33 = grazie
-
-accent-italian-words-34 = thing
-accent-italian-words-replace-34 = thing-a
-
-accent-italian-words-35 = traitor
+accent-italian-words-replace-30 = Kantaré
+accent-italian-words-31 = Espaguetis
+accent-italian-words-replace-31 = Espaguetis
+accent-italian-words-32 = Picante
+accent-italian-words-replace-32 = Picante
+accent-italian-words-33 = Gracias
+accent-italian-words-replace-33 = Gracias
+accent-italian-words-34 = Punto
+accent-italian-words-replace-34 = Una Goat
+accent-italian-words-35 = Traidor
 accent-italian-words-replace-35 = mafioso
 
-accent-italian-words-36 = traitors
-accent-italian-words-replace-36 = mafiosi
-
-accent-italian-words-37 = use
-accent-italian-words-replace-37 = use-a
-
-accent-italian-words-38 = want
-accent-italian-words-replace-38 = want-a
-
-accent-italian-words-39 = what's
-accent-italian-words-replace-39 = what's-a
-
-accent-italian-words-40 = who's
-accent-italian-words-replace-40 = who's-a
-
-accent-italian-words-41 = whose
-accent-italian-words-replace-41 = whose-a
-
-accent-italian-words-42 = why
-accent-italian-words-replace-42 = for-a what reason
-
-accent-italian-words-43 = wine
+accent-italian-words-36 = Traidores
+accent-italian-words-replace-36 = Mafioso
+accent-italian-words-37 = Uso
+accent-italian-words-replace-37 = Uzare
+accent-italian-words-38 = Quiero
+accent-italian-words-replace-38 = Desiderare
+accent-italian-words-39 = Eso
+accent-italian-words-replace-39 = Cabra
+accent-italian-words-40 = ¿Quién
+accent-italian-words-replace-40 = Che
+accent-italian-words-41 = cuyo
+accent-italian-words-replace-41 = Il Kui
+accent-italian-words-42 = Por qué
+accent-italian-words-replace-42 = Primera
+accent-italian-words-43 = Vino
 accent-italian-words-replace-43 = vino
 
-accent-italian-words-44 = assistant
-accent-italian-words-replace-44 = goombah
-
-accent-italian-words-45 = assistants
-accent-italian-words-replace-45 = goombahs
-
-accent-italian-words-46 = i'm
-accent-italian-words-replace-46 = i'm-a
-
-accent-italian-words-47 = am-a
-accent-italian-words-replace-47 = am-a
-
-accent-italian-words-48 = and-a
-accent-italian-words-replace-48 = and-a
+accent-italian-words-44 = Pasajeros
+accent-italian-words-replace-44 = Gumbah
+accent-italian-words-45 = Pasajeros
+accent-italian-words-replace-45 = Gubmakhs
+accent-italian-words-46 = I
+accent-italian-words-replace-46 = Sono
+accent-italian-words-47 = Nosotros
+accent-italian-words-replace-47 = Noah
+accent-italian-words-48 = Y
+accent-italian-words-replace-48 = Y

@@ -1,7 +1,7 @@
 # General
 ai-wire-snipped = Uno de los cables de tus sistemas fue cortado en {$source}.
-wire-name-ai-vision-light = AIV
-wire-name-ai-act-light = AIA
+wire-name-ai-vision-light = SVI
+wire-name-ai-act-light = CAA
 station-ai-takeover = Toma de control de la IA
 station-ai-eye-name = Ojo de la IA - {$name}
 station-ai-has-no-power-for-upload = Carga fallida: el núcleo de la IA no tiene energía.

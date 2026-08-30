@@ -1,4 +1,4 @@
-﻿cmd-spawnentitylist-desc = Spawns a list of entities around you.
-cmd-spawnentitylist-help = Usage: spawnentitylist <entityListPrototypeId>
-cmd-spawnentitylist-failed = No {$prototype} found with id {$id},
-cmd-spawnentitylist-success = Spawned {$count} entities.
+cmd-spawnentitylist-desc = Genera una lista de entidades a tu alrededor.
+cmd-spawnentitylist-help = Uso: spawnentitylist <ID del prototipo de lista de entidades>
+cmd-spawnentitylist-failed = No se encontró {$prototype} con el ID {$id}.
+cmd-spawnentitylist-success = Se generaron {$count} entidades.

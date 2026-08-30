@@ -1,2 +1,2 @@
-cmd-credits-desc = Opens the credits window
-cmd-credits-help = Usage: {$command}
+cmd-credits-desc = Abre una ventana con los créditos
+cmd-credits-help = Uso: { $command }

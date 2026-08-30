@@ -587,6 +587,13 @@ public sealed partial class NixAdminControlSystem : EntitySystem
     {
         var slash = path.LastIndexOf('/');
         var name = slash >= 0 ? path[(slash + 1)..] : path;
-        return name.EndsWith(".yml", StringComparison.OrdinalIgnoreCase) ? name[..^4] : name;
+        if (name.EndsWith(".yml", StringComparison.OrdinalIgnoreCase))
+            name = name[..^4];
+
+        if (name.StartsWith("emergency_", StringComparison.OrdinalIgnoreCase))
+            name = name["emergency_".Length..];
+
+        return string.Concat(name.Replace('_', ' ').Select((character, index) =>
+            index == 0 || name[index - 1] == '_' ? char.ToUpperInvariant(character) : character));
     }
 }

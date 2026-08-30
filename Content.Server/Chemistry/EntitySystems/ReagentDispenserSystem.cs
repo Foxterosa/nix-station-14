@@ -1,6 +1,7 @@
 using System.Linq;
 using Content.Server.Chemistry.Components;
 using Content.Server.Chemistry.Containers.EntitySystems;
+using Content.Server._Nix.WebBridge;
 using Content.Shared.Chemistry;
 using Content.Shared.Chemistry.EntitySystems;
 using Content.Shared.Containers.ItemSlots;
@@ -46,6 +47,7 @@ namespace Content.Server.Chemistry.EntitySystems
         [Dependency] private IPrototypeManager _prototypeManager = default!;
         [Dependency] private OpenableSystem _openable = default!;
         [Dependency] private HandsSystem _handsSystem = default!;
+        [Dependency] private NixWebBridgeSystem _nixWebBridge = default!;
 
         // Starlight-start
         [Dependency] private PowerCellSystem _powercell = default!;
@@ -417,6 +419,8 @@ namespace Content.Server.Chemistry.EntitySystems
                     ClickSound(reagentDispenser);
                     return;
                 }
+
+                _nixWebBridge.TrackDrinkDispensed(message.Actor, reagentDispenser.Owner, outputContainer.Value);
 
                 // Successfully dispensed, now use the power
                 if (!_powercell.TryUseCharge(reagentDispenser.Owner, powerDrain * (float)reagentDispenser.Comp.DispenseAmount))

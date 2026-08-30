@@ -53,7 +53,8 @@ namespace Content.Shared.Preferences
 
         public int IndexOfCharacter(ICharacterProfile profile)
         {
-            return _characters.FirstOrNull(p => p.Value == profile)?.Key ?? -1;
+            return _characters.FirstOrNull(p =>
+                ReferenceEquals(p.Value, profile) || p.Value.MemberwiseEquals(profile))?.Key ?? -1;
         }
 
         public bool TryIndexOfCharacter(ICharacterProfile profile, out int index)

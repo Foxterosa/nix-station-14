@@ -1,5 +1,5 @@
-shuttle-timer-eta = ETA
-shuttle-timer-etd = ETD
+shuttle-timer-eta = PRIB
+shuttle-timer-etd = OTB
 shuttle-timer-shuttle-time = TiempoTransbordador
 shuttle-timer-source-time = TiempoOrigen
 shuttle-timer-dest-time = TiempoDestino

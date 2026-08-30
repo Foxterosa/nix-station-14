@@ -971,7 +971,6 @@ ent-SummonIceSculpture = escultura de hielo
 ent-XenobiologySlimeAdamantine = slime de xenobiología adamantino
     .desc = ADAMANTINO
     .suffix = IA
-ent-XenobiologySlimeBase = 
 
 
 

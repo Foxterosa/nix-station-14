@@ -5,7 +5,7 @@ command-description-radio-remcustom =
 command-description-container-insertentity =
     Inserts the given entity into the specified container on the piped entity.
 command-description-container-insert =
-    Inserts the piped entities into the specified container on the specified entity.
+    Puts an entity inside the piped container.
 command-description-container-create =
     Creates a new container on the piped entity.
 command-description-container-createslot =
@@ -19,7 +19,7 @@ command-description-container-dropandget =
 command-description-container-dropanddelete =
     Drops all contained entities from the specified container on the piped entity, then delete the container.
 command-description-container-get =
-    Gets the container object of the given container ID on the piped entity.
+    Gets a container on an entity via the container's ID.
 command-description-container-getentities =
     Gets all entities in the given container on the piped entity.
 command-description-container-getcontaining =

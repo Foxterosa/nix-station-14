@@ -19,6 +19,7 @@ public sealed class PlayerSpawnCompleteEvent : EntityEventArgs
     public bool Silent { get; }
     public EntityUid Station { get; }
     public HumanoidCharacterProfile Profile { get; }
+    public int ProfileSlot { get; }
 
     // Ex. If this is the 27th person to join, this will be 27.
     public int JoinOrder { get; }
@@ -30,7 +31,8 @@ public sealed class PlayerSpawnCompleteEvent : EntityEventArgs
         bool silent,
         int joinOrder,
         EntityUid station,
-        HumanoidCharacterProfile profile)
+        HumanoidCharacterProfile profile,
+        int profileSlot)
     {
         Mob = mob;
         Player = player;
@@ -39,6 +41,7 @@ public sealed class PlayerSpawnCompleteEvent : EntityEventArgs
         Silent = silent;
         Station = station;
         Profile = profile;
+        ProfileSlot = profileSlot;
         JoinOrder = joinOrder;
     }
 }

@@ -91,5 +91,5 @@ signal-port-name-logic-random-input = Señal de entrada
 signal-port-description-logic-random-input = Recibe cualquier señal para generar una salida aleatoria.
 
 # Claves agregadas desde en-US, pendientes de traduccion
-signal-port-description-timer = Starts the timer countdown of the device.
-signal-port-name-timer = Timer
+signal-port-description-timer = Inicia el informe del temporizador en el dispositivo.
+signal-port-name-timer = Temporizador

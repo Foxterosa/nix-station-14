@@ -61,7 +61,7 @@ reagent-desc-allicin = Un compuesto organosulfurado presente en las aliáceas co
 reagent-name-pax = pax
 reagent-desc-pax = Un químico psiquiátrico que impide que el paciente dañe directamente a alguien.
 
-reagent-name-honk = honk
+reagent-name-honk = Bocina
 reagent-desc-honk = Una toxina que se encuentra en el bananium. Causa bocinazos severos y hemorragias internas, y también puede hacer mutar al paciente.
 
 reagent-name-lead = plomo

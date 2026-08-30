@@ -53,7 +53,7 @@ figurines-ce-6 = Se fue la luz otra vez.
 
 figurines-atmostech-1 = Le puse plasma al distro.
 figurines-atmostech-2 = Te voy a quemar en una cámara de combustión.
-figurines-atmostech-3 = Frezon...
+figurines-atmostech-3 = La razón...
 figurines-atmostech-4 = Tritio...
 figurines-atmostech-5 = ¡Gloria a Atmosia!
 figurines-atmostech-6 = ¿Distro? Es la abreviatura de "destruir".
@@ -295,7 +295,7 @@ figurines-holoclown-6 = No son ellos los que te deben preocupar; soy yo.
 figurines-holoclown-7 = ¿Qué es tan gracioso?
 
 figurines-nukie-1 = ¡Tengo el disco!
-figurines-nukie-2 = Whiskey, Echo, Whiskey.
+figurines-nukie-2 = Whisky, Echo, Whisky.
 figurines-nukie-3 = La bomba hace bum.
 figurines-nukie-4 = ¿Cuál es el código?
 figurines-nukie-5 = ¿Comandante...? ...Eso es un globo...
@@ -379,7 +379,7 @@ figurines-mouse-5 = ¡Pip!
 figurines-mouse-6 = ¡Fwiep!
 figurines-mouse-7 = ¡Heep!
 
-figurines-slime-1 = Blyump.
+figurines-slime-1 = Buf.
 figurines-slime-2 = ¿Blimpuf?
 figurines-slime-3 = ¡Blump!
 figurines-slime-4 = ¡Plof!

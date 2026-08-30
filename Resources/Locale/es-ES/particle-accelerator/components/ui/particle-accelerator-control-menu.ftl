@@ -13,7 +13,7 @@ particle-accelerator-control-menu-status-unknown = [font="Monospace"][color=red]
 particle-accelerator-control-menu-status-operational = [font="Monospace"][color=green]Operativo[/color][/bold]
 particle-accelerator-control-menu-status-incomplete = [font="Monospace"][color=red]Incompleto[/color][/bold]
 particle-accelerator-control-menu-draw = [bold]Consumo:[/bold]
-particle-accelerator-control-menu-draw-value = [font="Monospace"]{$watts}/{$lastReceive}[/font]
+particle-accelerator-control-menu-draw-value = [font="Monospace"]{ $watts }/{ $lastReceive }[/font]
 particle-accelerator-control-menu-draw-not-available = [font="Monospace"][color=gray]N/D[/color][/font]
 particle-accelerator-control-menu-flavor-left = ¡Por favor, mantengan al payaso lejos de esta consola!
 particle-accelerator-control-menu-flavor-right = v 1.6

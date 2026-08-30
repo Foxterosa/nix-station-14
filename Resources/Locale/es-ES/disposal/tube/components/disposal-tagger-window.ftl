@@ -1,3 +1,3 @@
-disposal-tagger-window-title = Disposal Tagger
-disposal-tagger-window-tag-input-label = Tag:
-disposal-tagger-window-tag-confirm-button = Confirm
+disposal-tagger-window-title = Margen de reciclaje
+disposal-tagger-window-tag-input-label = Etiqueta:
+disposal-tagger-window-tag-confirm-button = Confirmar

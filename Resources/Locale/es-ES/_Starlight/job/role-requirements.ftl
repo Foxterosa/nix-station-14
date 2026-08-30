@@ -19,8 +19,7 @@ role-timer-role-not-too-high = You have [color=limegreen]{TOSTRING($current, "0"
 role-timer-role-too-high = You have [color=red]{TOSTRING($current, "0")}[/color] of at most [color=lightblue]{TOSTRING($required, "0")}[/color] playtime as [color={$departmentColor}]{$job}[/color]. (Are you trying to play a trainee role?)
 
 role-whitelisted = You [color=limegreen]are[/color] whitelisted to play this role.
-role-not-whitelisted = You [color=yellow]are not[/color] whitelisted to play this role.
-
+role-not-whitelisted = No estás en la lista blanca para este papel.
 role-timer-age-old-enough = Your character's age must be at least [color=limegreen]{$age}[/color] to play this role.
 role-timer-age-not-old-enough = Your character's age must be at least [color=yellow]{$age}[/color] to play this role.
 role-timer-age-young-enough = Your character's age must be at most [color=limegreen]{$age}[/color] to play this role.
@@ -36,4 +35,4 @@ role-timer-whitelisted-traits-fail = Your character [color=yellow]must[/color] h
 role-timer-blacklisted-traits-pass = Your character [color=limegreen]must not[/color] have one of the following traits: [color=limegreen]{$traits}[/color]
 role-timer-blacklisted-traits-fail = Your character [color=yellow]must not[/color] have one of the following traits: [color=yellow]{$traits}[/color]
 
-role-ban = You have been [color=red]banned[/color] from this role.
+role-ban = Este puesto está bloqueado para ti.

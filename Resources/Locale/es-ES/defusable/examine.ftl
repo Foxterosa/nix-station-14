@@ -1,8 +1,14 @@
-defusable-examine-defused = {CAPITALIZE(THE($name))} is [color=lime]defused[/color].
-defusable-examine-live = {CAPITALIZE(THE($name))} is [color=red]ticking[/color] and has [color=red]{$time}[/color] seconds remaining.
-defusable-examine-live-display-off = {CAPITALIZE(THE($name))} is [color=red]ticking[/color], and the timer appears to be off.
-defusable-examine-inactive = {CAPITALIZE(THE($name))} is [color=lime]inactive[/color], but can still be armed.
-defusable-examine-bolts = The bolts are {$down ->
-[true] [color=red]down[/color]
-*[false] [color=green]up[/color]
-}.
+defusable-examine-defused = { CAPITALIZE($name) } [color=lime]neutralized[/color].
+defusable-examine-live =
+    { CAPITALIZE($name) } está haciendo tic tac [color=red][/color] y quedan [color=red]{ $time } { $time ->
+        [one] Segundo
+        [few] Segundos
+       *[other] Segundos
+    }.
+defusable-examine-live-display-off = { CAPITALIZE($name) } [color=red]ticks[/color] y el temporizador parece estar apagado.
+defusable-examine-inactive = { CAPITALIZE($name) } [color=lime]inactive[/color], pero aún puede explotar.
+defusable-examine-bolts =
+    Bolts { $down ->
+        [true] [color=red]omitted[/color]
+       *[false] [color=green]raised[/color]
+    }.

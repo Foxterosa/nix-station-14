@@ -2,12 +2,12 @@
 units-si--y = y
 units-si--z = z
 units-si--a = a
-units-si--f = f
+units-si--f = PH
 units-si--p = p
-units-si--n = n
-units-si--u = µ
+units-si--n = T
+units-si--u = MK
 units-si--m = m
-units-si = {""}
+units-si = { "" }
 units-si-k = k
 units-si-m = M
 units-si-g = G
@@ -18,7 +18,7 @@ units-si-z = Z
 units-si-y = Y
 
 ### Long form
-units-si--y-long = yocto
+units-si--y-long = Iokto
 units-si--z-long = zepto
 units-si--a-long = atto
 units-si--f-long = femto
@@ -26,17 +26,18 @@ units-si--p-long = pico
 units-si--n-long = nano
 units-si--u-long = micro
 units-si--m-long = mili
-units-si-long = {""}
+units-si-long = { "" }
 units-si-k-long = kilo
 units-si-m-long = mega
 units-si-g-long = giga
 units-si-t-long = tera
 units-si-p-long = peta
-units-si-e-long = exa
+units-si-e-long = Ex
 units-si-z-long = zetta
-units-si-y-long = yotta
+units-si-y-long = Iotta
 
 ## Pascals (Pressure)
+
 units-u--pascal = µPa
 units-m--pascal = mPa
 units-pascal = Pa
@@ -54,19 +55,20 @@ units-g-pascal-long = Gigapascal
 ## Watts (Power)
 units-u--watt = µW
 units-m--watt = mW
-units-watt = W
+units-watt = Mar
 units-k-watt = kW
 units-m-watt = MW
 units-g-watt = GW
 
-units-u--watt-long = Microwatt
+units-u--watt-long = Microvatios
 units-m--watt-long = Miliwatt
-units-watt-long = Watt
-units-k-watt-long = Kilowatt
-units-m-watt-long = Megawatt
-units-g-watt-long = Gigawatt
+units-watt-long = Watts
+units-k-watt-long = kilovatio
+units-m-watt-long = megavatios
+units-g-watt-long = Gigavatios
 
 ## Joule (Energy)
+
 units-u--joule = µJ
 units-m--joule = mJ
 units-joule = J
@@ -76,17 +78,17 @@ units-m-joule = MJ
 units-u--joule-long = Microjoule
 units-m--joule-long = Milijoule
 units-joule-long = Joule
-units-k-joule-long = Kilojoule
-units-m-joule-long = Megajoule
+units-k-joule-long = kilojuliole
+units-m-joule-long = Megajulio
 
 ## Kelvin (Temperature)
+
 units-u--kelvin = µK
 units-m--kelvin = mK
 units-kelvin = K
 units-k-kelvin = kK
 units-m-kelvin = MK
-units-g-kelvin = GK
-
+units-g-kelvin = GC
 units-u--kelvin-long = Microkelvin
 units-m--kelvin-long = Milikelvin
 units-kelvin-long = Kelvin

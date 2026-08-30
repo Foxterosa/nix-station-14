@@ -14,9 +14,9 @@ artifact-activation-artifexium = El líquido se filtra en los poros del artefact
 ### Misc.
 artifact-examine-trigger-desc = [color=gray][italic]¿Estoy en tu mente?[/italic][/color]
 
-artifact-node-class-1 = [color=#ff2bb1]Hylic[/color]
-artifact-node-class-2 = [color=#ff8b2b]Psychic[/color]
-artifact-node-class-3 = [color=#a9ff38]Pneumatic[/color]
+artifact-node-class-1 = [color=#ff2bb1]Material[/color]
+artifact-node-class-2 = [color=#ff8b2b]Mental[/color]
+artifact-node-class-3 = [color=#a9ff38]Airy[/color]
 artifact-node-class-4 = [color=#2bfff8]Archon[/color]
-artifact-node-class-5 = [color=#7883ff]Luminary[/color]
-artifact-node-class-6 = [color=#be78ff]Demiurge[/color]
+artifact-node-class-5 = [color=#7883ff]Light[/color]
+artifact-node-class-6 = [color=#be78ff]Creation[/color]

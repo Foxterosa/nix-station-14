@@ -1,3 +1,3 @@
-station-event-psychicscreach-announcement = We just received readings that an unknown energy emission just passed through the station. Electrical systems appear to have been affected. Is anyone reading this?
-station-event-psychicscreach-nosebleed = Your nose begins to bleed...
-station-event-psychicscreach-borg = Your integrated sensors detect an anomaly. Your systems will be impacted as you begin a partial restart.
+station-event-psychicscreach-announcement = Acabamos de recibir lecturas de una emisión de energía desconocida que atravesó la estación. Los sistemas eléctricos parecen haber sido afectados. ¿Alguien recibe esta transmisión?
+station-event-psychicscreach-nosebleed = Tu nariz empieza a sangrar...
+station-event-psychicscreach-borg = Tus sensores integrados detectan una anomalía. Tus sistemas se verán afectados al iniciar un reinicio parcial.

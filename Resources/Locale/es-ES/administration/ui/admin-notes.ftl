@@ -1,9 +1,9 @@
-﻿# UI
+# UI
 admin-notes-title = Notas de {$player}
 admin-notes-new-note = Nota nueva
 admin-notes-show-more = Mostrar más
 admin-notes-for = Nota para: {$player}
-admin-notes-id = Id: {$id}
+admin-notes-id = ID: { $id }
 admin-notes-type = Tipo: {$type}
 admin-notes-severity = Gravedad: {$severity}
 admin-notes-secret = Secreta

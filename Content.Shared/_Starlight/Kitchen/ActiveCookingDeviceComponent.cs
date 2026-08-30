@@ -1,4 +1,5 @@
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom;
+using Robust.Shared.GameObjects;
 
 // ReSharper disable once CheckNamespace
 namespace Content.Shared.Kitchen;
@@ -22,4 +23,9 @@ public sealed partial class ActiveCookingDeviceComponent : Component // Starligh
 
     [ViewVariables]
     public Dictionary<FoodRecipePrototype, int> PortionedRecipes = new Dictionary<FoodRecipePrototype, int>(); // Starlight-edit
+
+    /// <summary>
+    /// Player who started this cooking cycle. This is not networked and is used only for server-side attribution.
+    /// </summary>
+    public EntityUid? CookingUser;
 }

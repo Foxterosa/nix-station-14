@@ -43,7 +43,7 @@ public sealed partial class HumanoidEMPEffect
         SlowdownAmount = a.SlowdownAmount + b.SlowdownAmount,
         WalkSpeedModifier = Math.Min(a.WalkSpeedModifier, b.WalkSpeedModifier),
         SprintSpeedModifier = Math.Min(a.SprintSpeedModifier, b.SprintSpeedModifier),
-        DropItemsFrom = [.. a.DropItemsFrom.Union(b.DropItemsFrom)],
+        DropItemsFrom = a.DropItemsFrom.Union(b.DropItemsFrom).ToList(),
         AdditionalEffects = CombineEffects(a.AdditionalEffects, b.AdditionalEffects),
         GlitchDuration = a.GlitchDuration + b.GlitchDuration
     };

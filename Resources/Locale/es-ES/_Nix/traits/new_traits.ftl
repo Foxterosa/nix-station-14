@@ -105,6 +105,6 @@ trait-carnivore-desc = Tu organismo solo tolera carne y derivados animales. Inge
 trait-carnivore-disgust = ¡Sientes una profunda repulsión al comer vegetales! ¡Tu cuerpo exige carne!
 trait-carnivore-delight = ¡El potente y exquisito sabor a carne te llena de energía y satisfacción!
 trait-diet-gagging = ¡Sufres fuertes arcadas intentando contener el vómito!
-
+trait-diet-nausea-worsening = El malestar aumenta y tu estómago se revuelve.
 
 

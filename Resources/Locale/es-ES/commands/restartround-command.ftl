@@ -1,5 +1,5 @@
-﻿cmd-restartround-desc = Ends the current round and starts the countdown for the next lobby.
-cmd-restartround-help = Usage: restartround
+cmd-restartround-desc = Finaliza la ronda actual e inicia la cuenta regresiva para la siguiente sala de espera.
+cmd-restartround-help = Uso: restartround
 
-cmd-restartroundnow-desc = Moves the server from PostRound to a new PreRoundLobby.
-cmd-restartroundnow-help = Usage: restartroundnow
+cmd-restartroundnow-desc = Mueve el servidor de PostRound a una nueva PreRoundLobby.
+cmd-restartroundnow-help = Uso: restartroundnow

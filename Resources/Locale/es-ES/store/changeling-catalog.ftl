@@ -115,7 +115,7 @@ evolutionmenu-utility-stims-desc =
     La inyección continua es venenosa.
     Cuesta 20 químicos.
 
-evolutionmenu-utility-fleshmend-name = Fleshmend
+evolutionmenu-utility-fleshmend-name = Sanación de la Carne
 evolutionmenu-utility-fleshmend-desc =
     Cúrate rápidamente todos los moretones y quemaduras.
     Cuesta 35 químicos.

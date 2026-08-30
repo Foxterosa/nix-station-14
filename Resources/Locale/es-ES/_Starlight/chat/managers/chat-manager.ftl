@@ -1,7 +1,6 @@
 
-chat-manager-sender-announcement-wrap-message = [font size=14][bold]{$sender} Announcement[/font][font size=12]
-                                                {$message}[/bold][/font]
-
+chat-manager-sender-announcement-wrap-message = [font size=14][bold]Announcement { $sender }:[/font][font size=12]
+    { $message }[/bold][/font]
 chat-manager-entity-say-wrap-message = [BubbleHeader][bold][Name]{$entityName}[/Name][/bold][/BubbleHeader] {$verb}, [font={$fontType} size={$fontSize}]"[BubbleContent][font="{$fontType}" size={$fontSize}][color={$color}]{$message}[/color][/font][/BubbleContent]"[/font]
 chat-manager-entity-say-bold-wrap-message = [BubbleHeader][bold][Name]{$entityName}[/Name][/bold][/BubbleHeader] {$verb}, [font={$fontType} size={$fontSize}]"[BubbleContent][font="{$fontType}" size={$fontSize}][bold][color={$color}]{$message}[/color][/font][/bold][/BubbleContent]"[/font]
 

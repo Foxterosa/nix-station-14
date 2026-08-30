@@ -1,3 +1,3 @@
--create-3rd-person =
--cause-3rd-person =
--satiate-3rd-person =
+-create-3rd-person = crea
+-cause-3rd-person = causa
+-satiate-3rd-person = sacia

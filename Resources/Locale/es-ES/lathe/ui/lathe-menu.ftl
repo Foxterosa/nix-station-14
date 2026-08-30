@@ -12,10 +12,10 @@ lathe-menu-recipe-count = { $count ->
 }
 lathe-menu-reagent-slot-examine = Tiene una ranura para un vaso de precipitados en el costado.
 lathe-reagent-dispense-no-container = ¡El líquido se derrama de {THE($name)} al suelo!
-lathe-menu-result-reagent-display = {$reagent} ({$amount}u)
-lathe-menu-material-display = {$material} ({$amount})
+lathe-menu-result-reagent-display = { $reagent } ({ $amount }units)
+lathe-menu-material-display = { $material } { $amount }
 lathe-menu-tooltip-display = {$amount} de {$material}
-lathe-menu-description-display = [italic]{$description}[/italic]
+lathe-menu-description-display = [italic]{ $description }[/italic]
 lathe-menu-material-amount = { $amount ->
     [1] {NATURALFIXED($amount, 2)} {$unit}
     *[other] {NATURALFIXED($amount, 2)} {$unit}

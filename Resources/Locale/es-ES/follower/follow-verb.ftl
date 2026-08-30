@@ -1,2 +1,2 @@
-﻿verb-follow-text = Follow
-verb-follow-me-text = Make follow
+verb-follow-text = Sigue
+verb-follow-me-text = Haz que te sigan

@@ -5,5 +5,5 @@ mopping-system-puddle-already-mopped = { CAPITALIZE(THE($target)) } is already m
 mopping-system-no-water = { CAPITALIZE(THE($used)) } has no water!
 mopping-system-no-hands = You have no hands!
 
-mopping-system-full = { CAPITALIZE(THE($used)) } is full!
-mopping-system-empty = { CAPITALIZE(THE($used)) } is empty!
+mopping-system-full = { CAPITALIZE($used) } está lleno!
+mopping-system-empty = { CAPITALIZE($used) } está vacío!

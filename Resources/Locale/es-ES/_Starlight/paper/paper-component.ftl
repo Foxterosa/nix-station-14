@@ -15,7 +15,5 @@ paper-form-dialog-ok = OK
 paper-form-dialog-cancel = Cancel
 paper-signature-unknown = Unknown
 
-paper-tamper-proof-modified-message = This page was written using tamper-proof ink.
-
-# Paper tools
+paper-tamper-proof-modified-message = El texto en la página estaba escrito con tinta sin adulterar.
 stamp-slot-component-slot-name-stamp = Stamp

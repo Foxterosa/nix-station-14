@@ -1,2 +1,2 @@
-greenshift-title = Greenshift
-greenshift-description = An event-less preset for admin events to play through without interference.
+greenshift-title = Ronda tranquila
+greenshift-description = Preajuste sin eventos automáticos, pensado para pruebas o eventos administrados manualmente.

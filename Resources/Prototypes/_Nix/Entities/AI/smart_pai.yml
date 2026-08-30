@@ -5,10 +5,8 @@
   description: Un dispositivo asistente de bolsillo con conciencia artificial viva, memoria de ronda continua y conexión a tu GPU local.
   components:
   - type: AIBrain
-    model: "qwen2.5:7b"
     aiName: "Sparky"
     listenRadius: 7.0
-    systemPrompt: "Eres Sparky, una IA de bolsillo inteligente, leal y carismática para Space Station 14. Respondes en español de forma concisa, útil y con toques de humor espacial. Obedeces a tu dueño, proteges sus intereses y sabes el lore de Nanotrasen."
   - type: LanguageSpeaker
   - type: TextToSpeech
   - type: Instrument

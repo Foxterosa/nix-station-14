@@ -10,14 +10,13 @@ shuttle-console-prevent = No puedes pilotar esta nave
 shuttle-console-display-label = Pantalla
 
 shuttle-console-position = Posición:
-shuttle-console-position-value = {$X}, {$Y}
+shuttle-console-position-value = { $X }, { $Y }
 shuttle-console-orientation = Orientación:
-shuttle-console-orientation-value  = {$angle}
+shuttle-console-orientation-value = { $angle }
 shuttle-console-linear-velocity = Velocidad lineal:
-shuttle-console-linear-velocity-value = {$X}, {$Y}
+shuttle-console-linear-velocity-value = { $X }, { $Y }
 shuttle-console-angular-velocity = Velocidad angular:
-shuttle-console-angular-velocity-value = {$angularVelocity}
-
+shuttle-console-angular-velocity-value = { $angularVelocity }
 shuttle-console-unknown = Desconocido
 shuttle-console-iff-label = {$name} ({$distance} m)
 shuttle-console-exclusion = Zona de exclusión
@@ -37,7 +36,7 @@ shuttle-console-ftl-state-Cooldown = Enfriamiento
 shuttle-console-ftl-state-Invalid = No válido
 
 shuttle-console-map-settings = Ajustes
-shuttle-console-ftl-button = FTL
+shuttle-console-ftl-button = BSS
 shuttle-console-map-rebuild = Buscar objetos
 shuttle-console-map-beacons = Mostrar balizas
 

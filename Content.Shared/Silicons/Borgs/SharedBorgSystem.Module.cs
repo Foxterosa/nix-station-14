@@ -78,7 +78,7 @@ public abstract partial class SharedBorgSystem
         if (list == null || list.Count == 0)
             return false;
 
-        var entries = ContentLocalizationManager.FormatList([.. list.Select(s => Loc.GetString(s))]);
+        var entries = ContentLocalizationManager.FormatList(list.Select(s => Loc.GetString(s)).ToList());
 
         formattedList = Loc.GetString(messageId, (listId, entries));
         return true;

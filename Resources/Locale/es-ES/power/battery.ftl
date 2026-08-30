@@ -1,7 +1,7 @@
 ## Strings for the battery (SMES/substation) menu
 
 battery-menu-footer-left = Peligro: alto voltaje
-battery-menu-footer-right = 7.2 REV 6
+battery-menu-footer-right = 7.2 ROAR 6
 battery-menu-out = SAL
 battery-menu-in = ENT
 battery-menu-charge-header = Circuito de carga

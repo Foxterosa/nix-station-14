@@ -72,7 +72,7 @@ ghost-role-information-angry-slimes-rules = Eres un [color={role-type-team-antag
 ghost-role-information-smile-name = Smile el Slime
 ghost-role-information-smile-description = La criatura más dulce del mundo. ¡Smile slime!
 
-ghost-role-information-punpun-name = Pun Pun
+ghost-role-information-punpun-name = Poon Poon
 ghost-role-information-punpun-description = Un honorable miembro de la sociedad de los monos, a cargo del bar y de ayudar a los cantineros en todo lo que pueda.
 
 ghost-role-information-xeno-name = Xeno
@@ -110,13 +110,13 @@ ghost-role-information-willow-description = ¡Eres una canguro llamada Willow! A
 ghost-role-information-honkbot-name = Honkbot
 ghost-role-information-honkbot-description = Un ser artificial de pura maldad.
 
-ghost-role-information-jonkbot-name = Jonkbot
+ghost-role-information-jonkbot-name = cringebot
 ghost-role-information-jonkbot-description = Un ser artificial de pura maldad.
 
-ghost-role-information-mimebot-name = Mimebot
+ghost-role-information-mimebot-name = Mimbot
 ghost-role-information-mimebot-description = Un Mimebot; actúa como un mimo, pero no como un asistente.
 
-ghost-role-information-supplybot-name = SupplyBot
+ghost-role-information-supplybot-name = Cargo Bot
 ghost-role-information-supplybot-description = Reparte mercancías por toda la estación.
 
 ghost-role-information-space-bear-name = Oso Espacial
@@ -150,7 +150,7 @@ ghost-role-information-space-dragon-summoned-carp-rules = Eres un [color={role-t
 ghost-role-information-space-dragon-dungeon-description = ¡Defiende la mazmorra de la expedición junto a tus camaradas escamosos!
 ghost-role-information-space-dragon-dungeon-rules = Eres un [color={role-type-team-antagonist-color}][bold]{role-type-team-antagonist-name}[/bold][/color] junto con todas las criaturas de la mazmorra.
 
-ghost-role-information-cluwne-name = Cluwne
+ghost-role-information-cluwne-name = Kluven
 ghost-role-information-cluwne-description = Conviértete en un lamentable cluwne; tu único objetivo en la vida es hallar un dulce alivio a tu sufrimiento (normalmente muriendo a golpes). Un cluwne no es un antagonista, pero puede defenderse. Los tripulantes pueden asesinar cluwnes libremente.
 
 ghost-role-information-skeleton-pirate-name = Esqueleto Pirata
@@ -209,14 +209,14 @@ ghost-role-information-Death-Squad-name = Operativo del Escuadrón de la Muerte
 ghost-role-information-Death-Squad-description = Uno de los mejores agentes de asuntos internos de NanoTrasen. Espera órdenes de CentComm o de un oficial.
 ghost-role-information-Death-Squad-rules = Estás obligado a obedecer las órdenes de tu superior; en la práctica eres su [color={role-type-familiar-color}][bold]{role-type-familiar-name}[/bold][/color].
 
-ghost-role-information-SyndiCat-name = SyndiCat
+ghost-role-information-SyndiCat-name = Sindicales
 ghost-role-information-SyndiCat-description = Eres la fiel mascota entrenada de los operativos nucleares, equipada con una microbomba. ¡Sirve a tu amo hasta la muerte!
 ghost-role-information-SyndiCat-rules = Eres un [color={role-type-team-antagonist-color}][bold]{role-type-team-antagonist-name}[/bold][/color] junto con el agente que te invocó.
 
-ghost-role-information-Cak-name = Cak
+ghost-role-information-Cak-name = Tribunal
 ghost-role-information-Cak-description = Eres el hijo favorito del chef. Eres un gato pastel viviente.
 
-ghost-role-information-BreadDog-name = BreadDog
+ghost-role-information-BreadDog-name = pan
 ghost-role-information-BreadDog-description = Eres el hijo favorito del chef. Eres un perro de pan viviente.
 
 ghost-role-information-space-ninja-name = Ninja Espacial

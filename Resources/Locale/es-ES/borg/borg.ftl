@@ -22,8 +22,7 @@ borg-ui-charge-label = Carga: {$charge} %
 borg-ui-no-brain = No hay cerebro presente
 borg-ui-remove-battery = Quitar
 borg-ui-modules-label = Módulos:
-borg-ui-module-counter = {$actual}/{$max}
-
+borg-ui-module-counter = { $actual }/{ $max }
 # Transponder
 borg-transponder-disabled-popup = ¡Un cerebro sale disparado de la parte superior de {$name}!
 borg-transponder-disabling-popup = ¡Tu transpondedor empieza a bloquearte el acceso al chasis!

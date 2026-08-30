@@ -65,10 +65,11 @@ barsign-prototype-name-the-birdcage = La Jaula
 barsign-prototype-description-the-birdcage = ¡Caw caw!
 
 ## Zocalo
-barsign-prototype-name-zocalo = Zocalo
-barsign-prototype-description-zocalo = Anteriormente ubicado en Spessmerica.
+barsign-prototype-name-zocalo = Sokalo
+barsign-prototype-description-zocalo = Anteriormente estaba ubicado en Cosmoamérica.
 
 ## LV426
+
 barsign-prototype-name-lv426 = LV-426
 barsign-prototype-description-lv426 = Beber con elegantes máscaras faciales es claramente más importante que ir a la enfermería.
 
@@ -93,11 +94,11 @@ barsign-prototype-name-emprah = Por el Emprah
 barsign-prototype-description-emprah = Disfrutado por igual por fanáticos, herejes y clientes con daño cerebral.
 
 ## Spacebucks
-barsign-prototype-name-spacebucks = Spacebucks
+barsign-prototype-name-spacebucks = Créditos
 barsign-prototype-description-spacebucks = No te los sacas de encima ni en el espacio, ni siquiera desde que empezamos a llamarlos "spesos".
 
 ## Maltroach
-barsign-prototype-name-maltroach = Maltroach
+barsign-prototype-name-maltroach = Maltrakan
 barsign-prototype-description-maltroach = ¡Squeak!
 
 ## Whiskey Echoes

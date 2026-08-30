@@ -10,6 +10,8 @@ using Content.Server.Speech;
 using Content.Server._Starlight.Language;
 using Content.Shared._Starlight.Clothing;
 
+using Content.Server._Nix.AI.Systems; // Nix
+
 namespace Content.Server.Radio.EntitySystems;
 
 public sealed partial class HeadsetSystem : SharedHeadsetSystem
@@ -17,6 +19,7 @@ public sealed partial class HeadsetSystem : SharedHeadsetSystem
     [Dependency] private INetManager _netMan = default!;
     [Dependency] private RadioSystem _radio = default!;
     [Dependency] private LanguageSystem _language = default!; // Starlight
+    [Dependency] private readonly ChatTranslationSystem _chatTranslation = default!; // Nix
 
     public override void Initialize()
     {
@@ -135,9 +138,32 @@ public sealed partial class HeadsetSystem : SharedHeadsetSystem
         if (TryComp(parent, out ActorComponent? actor))
         {
             var canUnderstand = _language.CanUnderstand(parent, args.Language.ID) || args.Language.Speech.RadioChannel is not null;
+            ChatMessage chosenMsg;
+
+            if (!canUnderstand)
+            {
+                chosenMsg = args.LanguageObfuscatedChatMsg;
+            }
+            else if (args.IsTranslated && args.SpanishChatMsg != null && args.EnglishChatMsg != null && args.BilingualChatMsg != null)
+            {
+                var pref = _chatTranslation.GetPlayerPreference(actor.PlayerSession);
+                chosenMsg = pref switch
+                {
+                    "es" => args.SpanishChatMsg,
+                    "en" => args.EnglishChatMsg,
+                    "bilingual" => args.BilingualChatMsg,
+                    "off" => args.OriginalChatMsg,
+                    "auto" or _ => args.SpanishChatMsg,
+                };
+            }
+            else
+            {
+                chosenMsg = args.OriginalChatMsg;
+            }
+
             var msg = new MsgChatMessage
             {
-                Message = canUnderstand ? args.OriginalChatMsg : args.LanguageObfuscatedChatMsg
+                Message = chosenMsg
             };
             _netMan.ServerSendMessage(msg, actor.PlayerSession.Channel);
         }

@@ -64,10 +64,12 @@ anomaly-generator-no-cooldown = Enfriamiento: [color=gray]Completo[/color]
 anomaly-generator-yes-fire = Estado: [color=forestgreen]Listo[/color]
 anomaly-generator-no-fire = Estado: [color=crimson]No listo[/color]
 anomaly-generator-generate = Generar anomalía
-anomaly-generator-charges = {$charges ->
-    [one] {$charges} carga
-    *[other] {$charges} cargas
-}
+anomaly-generator-charges =
+    { $charges ->
+        [one] { $charges } carga
+        [few] { $charges } carga
+       *[other] { $charges } cargos
+    }
 anomaly-generator-announcement = ¡Se ha generado una anomalía!
 
 anomaly-command-pulse = Hace pulsar una anomalía objetivo

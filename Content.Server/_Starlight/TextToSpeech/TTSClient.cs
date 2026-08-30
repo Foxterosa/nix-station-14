@@ -1,4 +1,4 @@
-﻿using System.Diagnostics;
+using System.Diagnostics;
 using System.Linq;
 using System.Text.Json;
 using System.Threading;
@@ -14,9 +14,12 @@ namespace Content.Server._Starlight.TextToSpeech;
 public sealed partial class TTSClient : ITTSClient
 {
     [Dependency] private IConfigurationManager _cfg = default!;
+    [Dependency] private Robust.Shared.Random.IRobustRandom _random = default!;
 
     private const string Queue = "tts_jobs";
-    private const int TimeoutS = 5;
+    // Announcements can contain several complete sentences. Keep the transport alive long enough
+    // for the worker to finish them instead of treating a healthy long synthesis as a failure.
+    private const int TimeoutS = 60;
 
     private static readonly byte[] _endMarker = "__END__"u8.ToArray();
 
@@ -94,46 +97,8 @@ public sealed partial class TTSClient : ITTSClient
         [EnumeratorCancellation] CancellationToken cancellationToken = default
     )
     {
-        if (await GetCache(text, voice, effect) is byte[] cached)
-        {
-            _cacheHits.Inc();
-
-            var offset = 0;
-            while (offset + 4 <= cached.Length)
-            {
-                var length = BitConverter.ToUInt32(cached, offset);
-                offset += 4;
-
-                if (offset + length > cached.Length)
-                    break;
-
-                var chunk = new byte[length];
-                Buffer.BlockCopy(cached, offset, chunk, 0, (int)length);
-                offset += (int)length;
-
-                yield return chunk;
-            }
-
-            yield return [];
-            yield break;
-        }
-
-        _cacheMisses.Inc();
         await foreach (var chunk in GenerateStreamAsync(text, voice, effect, cancellationToken))
             yield return chunk;
-    }
-
-    private async Task<byte[]?> GetCache(string text, int voice, TTSEffect effect)
-    {
-        if (_db is null)
-            return null;
-
-        var cacheKey = effect != TTSEffect.None
-            ? $"cache:2:{voice}:{(int)effect}:{text}"
-            : $"cache:2:{voice}:{text}";
-
-        var cached = await _db.StringGetAsync(cacheKey);
-        return cached.HasValue ? (byte[])cached! : null;
     }
 
     private async IAsyncEnumerable<byte[]> GenerateStreamAsync

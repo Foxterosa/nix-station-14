@@ -7,7 +7,7 @@ reagent-desc-phenol = Un anillo aromatico de carbono con un grupo hidroxilo. Un 
 reagent-name-sodium-carbonate = carbonato de sodio
 reagent-desc-sodium-carbonate = Una sal blanca, inodora y soluble en agua que genera una solucion alcalina en el agua. Tambien conocida como soda ash.
 
-reagent-name-artifexium = artifexium
+reagent-name-artifexium = artifexio
 reagent-desc-artifexium = Una mezcla lavanda de fragmentos microscopicos de artefacto y un acido fuerte. Tiene la capacidad de activar artefactos.
 
 reagent-name-artifact-glue = pegamento para artefactos

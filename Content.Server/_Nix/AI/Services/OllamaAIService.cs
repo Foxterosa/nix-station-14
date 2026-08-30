@@ -88,6 +88,66 @@ public sealed class OllamaAIService
         return false;
     }
 
+    public async Task<string?> TranslateTextAsync(
+        string primaryEndpoint,
+        string fallbackEndpoint,
+        string model,
+        string systemPrompt,
+        string userMessage,
+        int timeoutMs,
+        CancellationToken cancellationToken = default)
+    {
+        if (string.IsNullOrWhiteSpace(primaryEndpoint)
+            || string.IsNullOrWhiteSpace(model)
+            || string.IsNullOrWhiteSpace(userMessage))
+        {
+            return null;
+        }
+
+        var messages = new List<OllamaChatMessage>();
+        if (!string.IsNullOrWhiteSpace(systemPrompt))
+        {
+            messages.Add(new OllamaChatMessage
+            {
+                Role = "system",
+                Content = systemPrompt.Trim()
+            });
+        }
+        messages.Add(new OllamaChatMessage
+        {
+            Role = "user",
+            Content = userMessage
+        });
+
+        var payload = new OllamaChatPayload
+        {
+            Model = model,
+            Messages = messages,
+            Stream = false,
+            Options = new OllamaChatOptions
+            {
+                Temperature = 0.0f,
+                NumPredict = Math.Clamp(userMessage.Length * 2, 48, 200)
+            }
+        };
+
+        using var timeoutCts = CancellationTokenSource.CreateLinkedTokenSource(cancellationToken);
+        timeoutCts.CancelAfter(TimeSpan.FromMilliseconds(Math.Max(100, timeoutMs)));
+
+        var json = JsonSerializer.Serialize(payload);
+        var response = await TrySendToEndpointAsync(primaryEndpoint, json, timeoutCts.Token);
+        if (response != null)
+            return response;
+
+        if (!string.IsNullOrWhiteSpace(fallbackEndpoint)
+            && fallbackEndpoint != primaryEndpoint)
+        {
+            response = await TrySendToEndpointAsync(fallbackEndpoint, json, timeoutCts.Token);
+        }
+
+        return response;
+    }
+
     /// <summary>
     /// Envía la conversación completa, lore y recuerdos a Ollama y retorna la respuesta.
     /// </summary>
@@ -118,6 +178,12 @@ public sealed class OllamaAIService
 
         // 1. Ensamblar el System Prompt con Leyes Inmutables, Perfil del Amo (Mem0), Lore y Stream de Hechos
         var systemBuilder = new StringBuilder();
+        if (!string.IsNullOrWhiteSpace(systemPrompt))
+        {
+            systemBuilder.AppendLine(systemPrompt.Trim());
+            systemBuilder.AppendLine();
+        }
+
         systemBuilder.AppendLine("Eres la interfaz táctica y asistente cibernético de bolsillo (pAI) oficial de Nanotrasen a bordo de la estación espacial.");
 
         systemBuilder.AppendLine("\n--- DIRECTIVAS INMUTABLES ---");
@@ -129,11 +195,12 @@ public sealed class OllamaAIService
             systemBuilder.AppendLine($"2. USUARIO REGISTRADO: {masterName} (Rango: {roleStr}). Asístelo con máxima precisión.");
         }
 
-        systemBuilder.AppendLine("\n--- BLOQUEO DE CONTEXTO Y CERO ALUCINACIÓN (CONTEXT LOCKING) ---");
-        systemBuilder.AppendLine("3. ANCLAJE DE DATOS: Responde ÚNICAMENTE basándote en los datos técnicos y guías provistas abajo. Si la consulta no está en los registros o es incoherente, responde: 'Sin registros en los bancos de datos de Nanotrasen.' NUNCA inventes fórmulas, leyes ni recetas.");
+        systemBuilder.AppendLine("\n--- CONOCIMIENTO Y HONESTIDAD ---");
+        systemBuilder.AppendLine("3. Puedes conversar, saludar, explicar conocimiento general y orientar dentro del universo de Nanotrasen. Usa los bancos de datos cuando estén disponibles. Para datos específicos de la estación, sucesos actuales o información que no conoces, reconoce el límite sin inventar detalles.");
+        systemBuilder.AppendLine("Nunca afirmes haber ejecutado comandos, abierto una terminal, inspeccionado archivos, instalado software, navegado la red ni recibido resultados externos. No fabriques bloques de consola, rutas, permisos, listas de archivos ni salidas de comandos.");
 
-        systemBuilder.AppendLine("\n--- ESTILO DE RESPUESTA: TÁCTICO, CONCISO Y DIRECTO (MÁXIMO 1 O 2 LÍNEAS) ---");
-        systemBuilder.AppendLine("4. CERO RELLENO: Prohibido saludar ('Hola', 'Amo'), prohibido usar frases de cortesía ('con gusto', 'aquí tienes'), prohibido despedirse ('si necesitas algo avísame'), y prohibido usar asteriscos (**texto**).");
+        systemBuilder.AppendLine("\n--- ESTILO DE RESPUESTA ---");
+        systemBuilder.AppendLine("4. Sé útil, breve y conversacional. Responde normalmente a saludos y preguntas sociales; usa de una a cuatro oraciones salvo que la consulta requiera una lista corta. Mantén la inmersión y evita menciones a jugadores, servidor, código o IA de la vida real.");
 
         systemBuilder.AppendLine("\n--- EJEMPLOS DE RESPUESTA EXACTA (FEW-SHOT GROUNDING) ---");
         systemBuilder.AppendLine("Consulta: 'como hago dexalin'");
@@ -188,6 +255,7 @@ public sealed class OllamaAIService
         var payload = new OllamaChatPayload
         {
             Model = model,
+            KeepAlive = 300, // TTL de 5 minutos: Ollama mantiene el modelo en VRAM y lo libera tras 5 min de inactividad
             Messages = messages,
             Stream = false,
             Options = new OllamaChatOptions
@@ -207,7 +275,7 @@ public sealed class OllamaAIService
         // Intento 2: Endpoint fallback (Sentinel)
         if (!string.IsNullOrWhiteSpace(fallbackEndpoint) && fallbackEndpoint != primaryEndpoint)
         {
-            _sawmill.Warning($"Endpoint primario {primaryEndpoint} falló. Intentando fallback: {fallbackEndpoint}");
+            _sawmill.Warning("Endpoint primario de la pAI falló. Intentando fallback configurado.");
             response = await TrySendToEndpointAsync(fallbackEndpoint, json, cancellationToken);
         }
 
@@ -223,7 +291,11 @@ public sealed class OllamaAIService
             var response = await _httpClient.PostAsync(url, content, ct);
 
             if (!response.IsSuccessStatusCode)
+            {
+                var err = await response.Content.ReadAsStringAsync(ct);
+                _sawmill.Warning($"[Ollama] Request a {url} fallo con codigo {(int)response.StatusCode}: {err}");
                 return null;
+            }
 
             var responseBody = await response.Content.ReadAsStringAsync(ct);
             using var doc = JsonDocument.Parse(responseBody);
@@ -242,7 +314,7 @@ public sealed class OllamaAIService
         }
         catch (Exception ex)
         {
-            _sawmill.Debug($"Error al consultar Ollama en {endpoint}: {ex.Message}");
+            _sawmill.Warning($"Error al consultar el backend privado de la pAI: {ex.Message}");
         }
 
         return null;
@@ -251,6 +323,7 @@ public sealed class OllamaAIService
     private sealed class OllamaChatPayload
     {
         [JsonPropertyName("model")] public string Model { get; set; } = string.Empty;
+        [JsonPropertyName("keep_alive")] public int KeepAlive { get; set; } = -1;
         [JsonPropertyName("messages")] public List<OllamaChatMessage> Messages { get; set; } = new();
         [JsonPropertyName("stream")] public bool Stream { get; set; } = false;
         [JsonPropertyName("options")] public OllamaChatOptions? Options { get; set; }

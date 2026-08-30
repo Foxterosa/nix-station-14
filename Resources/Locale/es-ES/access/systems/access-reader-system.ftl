@@ -1,4 +1,4 @@
-access-reader-unknown-id = Unknown
+access-reader-unknown-id = No se conoce
 access-reader-access-label = [color=yellow]{$access}[/color]
 access-reader-examination = Access is generally restricted to personnel with {$access} access.
 access-reader-examination-functionality-restricted = {$access} access may be required to use certain functions.

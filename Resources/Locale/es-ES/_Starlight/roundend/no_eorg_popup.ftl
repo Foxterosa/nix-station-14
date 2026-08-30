@@ -1,8 +1,8 @@
-no-eorg-popup-title = Starlight
-no-eorg-popup-label = Welcome to the End of Round!
-no-eorg-popup-message = [bold]End-of-round grief (EORG)[/bold] is not allowed on Starlight. Please stay in character until the lobby screen appears to maintain an immersive environment for everyone. Thank you for respecting the community rules!
-no-eorg-popup-rule = [bold][color=#a4885c]End of round grief is not permitted and results in an instant minimum 90 minute game ban.[/color][/bold]
-no-eorg-popup-rule-text = This includes any friendly fire and use of harmful abilities at round end regardless of who started the griefing. This also includes physical modification of Central Command or the Evac Shuttle, in ways including but not limited to: metal foam grenades, explosives, RCD, deconstruction, authentication disruptor, and door hacking.
-no-eorg-popup-close-button = Sounds good!
-no-eorg-popup-close-button-wait = The close button will be enabled after {$time} seconds.
-no-eorg-popup-skip-checkbox = Don't show this again.
+no-eorg-popup-title = Nix Station
+no-eorg-popup-label = Bienvenido al final de la ronda
+no-eorg-popup-message = [bold]El grief al final de la ronda (EORG)[/bold] no está permitido. Mantente en personaje hasta que aparezca la pantalla del lobby para preservar una experiencia inmersiva para todas las personas.
+no-eorg-popup-rule = [bold][color=#a4885c]El grief al final de la ronda no está permitido y resulta en un ban de juego inmediato de, como mínimo, 90 minutos.[/color][/bold]
+no-eorg-popup-rule-text = Esto incluye fuego amigo y el uso de habilidades dañinas al final de la ronda, sin importar quién haya iniciado el grief. También incluye modificar físicamente el Comando Central o el transbordador de evacuación, por ejemplo con granadas de espuma metálica, explosivos, RCD, deconstrucción, disruptores de autenticación o hackeo de puertas.
+no-eorg-popup-close-button = Entendido
+no-eorg-popup-close-button-wait = El botón para cerrar se habilitará en {$time} segundos.
+no-eorg-popup-skip-checkbox = No volver a mostrar esto.

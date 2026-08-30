@@ -30,7 +30,7 @@ salv-job-board-name-BountySalvageOreBananium = Bananium (mineral)
 salv-job-board-name-BountyTeethSharkminnow = Tiburoncillo
 
 salv-job-board-name-BountyGoliathPlates = Goliath
-salv-job-board-name-BountyHivelordRemains = Hivelord
+salv-job-board-name-BountyHivelordRemains = Señor Colmena
 salv-job-board-name-BountySalvageDiamond = Diamante
 
 bounty-description-tooth-space-carp = Necesitamos que consigas una muestra de dientes de carpa espacial. Puedes encontrar a estos tipos en toda clase de escombros de salvamento. Solo ten cuidado con su mordida.

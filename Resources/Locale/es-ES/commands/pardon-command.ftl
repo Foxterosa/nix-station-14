@@ -1,7 +1,7 @@
-﻿cmd-pardon-desc = Pardon somebody's ban.
-cmd-pardon-help = Usage: pardon <ban id> <project name(optional)> <server name(optional)>
+cmd-pardon-desc = Indulta el baneo de alguien.
+cmd-pardon-help = Uso: pardon <ban id>
 cmd-pardon-unable-to-parse = Unable to parse {$id} as a ban id integer.
                              {$help}
-cmd-pardon-already-pardoned = This ban has already been pardoned.
-cmd-pardon-already-pardoned-specific = This ban has already been pardoned by {$admin} in {$time}.
-cmd-pardon-success = Pardoned ban with id {$id}.
+cmd-pardon-already-pardoned = Este veto ya fue indultado.
+cmd-pardon-already-pardoned-specific = Este veto ya fue indultado por {$admin} en {$time}.
+cmd-pardon-success = Se indultó el veto con ID {$id}.

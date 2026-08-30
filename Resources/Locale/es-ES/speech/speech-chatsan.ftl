@@ -10,7 +10,7 @@ chatsan-replacement-3 = lo juro por dios
 chatsan-word-4 = wtf
 chatsan-replacement-4 = qué carajo
 
-chatsan-word-5 = wth
+chatsan-word-5 = ffs
 chatsan-replacement-5 = qué demonios
 
 chatsan-word-6 = tf
@@ -31,13 +31,13 @@ chatsan-replacement-10 = no me importa
 chatsan-word-12 = tbh
 chatsan-replacement-12 = para ser honesto
 
-chatsan-word-13 = lmk
+chatsan-word-13 = u
 chatsan-replacement-13 = avísame
 
 chatsan-word-14 = ur
 chatsan-replacement-14 = tu
 
-chatsan-word-15 = ffs
+chatsan-word-15 = mk
 chatsan-replacement-15 = por el amor de dios
 
 chatsan-word-16 = iirc
@@ -109,10 +109,10 @@ chatsan-word-39 = etc
 chatsan-word-40 = etc.
 chatsan-replacement-etcetera = etcétera
 
-chatsan-word-41 = wyd
+chatsan-word-41 = fyi
 chatsan-replacement-41 = qué estás haciendo
 
-chatsan-word-42 = ofc
+chatsan-word-42 = wyd
 chatsan-replacement-42 = por supuesto
 
 chatsan-word-43 = ig

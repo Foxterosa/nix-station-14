@@ -38,7 +38,7 @@ rcd-component-cannot-build-identical-entity = ¡Eso ya existe ahi!
 
 rcd-component-walls-and-flooring = Paredes y suelos
 rcd-component-windows-and-grilles = Ventanas y rejillas
-rcd-component-airlocks = Airlocks
+rcd-component-airlocks = Puertas de entrada
 rcd-component-electrical = Electrico
 rcd-component-lighting = Iluminacion
 

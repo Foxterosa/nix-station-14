@@ -1,14 +1,12 @@
-stat-values-desc = Dumps all stats for a particular category into a table.
-stat-values-server = Can't be run on the server!
-stat-values-args = Invalid number of args, need 1
-stat-values-invalid = {$arg} is not a valid stat!
-
+stat-values-desc = Sube todas las estadísticas de una categoría específica a una tabla.
+stat-values-server = ¡No se puede ejecutar en el servidor!
+stat-values-args = Número inválido de argumentos, se necesita 1
+stat-values-invalid = { $arg } no es una característica válida.
 # Cargo
-stat-cargo-values = Cargo sell prices
+stat-cargo-values = Precio de venta de carga
 stat-cargo-id = ID
-stat-cargo-price = Price
-
-# Melee
+stat-cargo-price = Precio
+# Lathe
 stat-melee-values = Melee weapon damage
 stat-melee-id = ID
 stat-melee-base-damage = Base damage
@@ -19,17 +17,15 @@ stat-melee-structural-damage = Structure damage
 stat-melee-structural-wield-damage = Wielded structure damage
 
 # Lathe
-stat-lathe-values = Lathe sell prices
+stat-lathe-values = Coste de impresión en lats
 stat-lathe-id = ID
-stat-lathe-cost = Cost
-stat-lathe-sell = Sell price
-
+stat-lathe-cost = Coste
+stat-lathe-sell = Precio de venta
 # Item Sizes
-stat-item-values = Item sizes
+stat-item-values = Tamaños de los artículos
 stat-item-id = ID
-stat-item-price = Size
-
+stat-item-price = Tamaño
 # Draw Rate
-stat-drawrate-values = APC draw rate
+stat-drawrate-values = Nivel de consumo de pintura
 stat-drawrate-id = ID
-stat-drawrate-rate = Draw Rate (W)
+stat-drawrate-rate = Nivel de consumo (W)

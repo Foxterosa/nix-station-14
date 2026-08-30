@@ -4,7 +4,7 @@ reagent-desc-thermite = Una mezcla que se vuelve extremadamente caliente al ence
 reagent-name-napalm = napalm
 reagent-desc-napalm = Solo es un poquito inflamable.
 
-reagent-name-phlogiston = phlogiston
+reagent-name-phlogiston = Flogisto
 reagent-desc-phlogiston = Te prende fuego y hace que te incendies.
 
 reagent-name-chlorine-trifluoride = trifluoruro de cloro

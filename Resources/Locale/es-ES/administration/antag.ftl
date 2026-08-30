@@ -27,4 +27,4 @@ admin-verb-text-make-changeling-wip = Hacer Changeling (upstream, en desarrollo)
 admin-verb-text-make-wizard = Hacer Mago
 admin-verb-text-make-space-ninja = Hacer Ninja
 
-admin-overlay-antag-classic = ANTAG
+admin-overlay-antag-classic = Antagonista

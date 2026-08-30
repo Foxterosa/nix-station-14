@@ -20,7 +20,7 @@ cryo-pod-window-status-cooling = Enfriando al paciente...
 cryo-pod-window-checklist-pressure = Presurizada
 cryo-pod-window-checklist-chemicals = Químicos disponibles
 cryo-pod-window-checklist-temperature = Temperatura criogénica
-cryo-pod-window-checklist-fail = {$item} — NO
+cryo-pod-window-checklist-fail = {$item} – NO
 
 cryo-pod-window-warning-header = ADVERTENCIA
 cryo-pod-window-low-pressure-warning = Presión peligrosamente baja. La presión del gas debe ser de aproximadamente 100 kPa para operar de forma segura.

@@ -12,6 +12,7 @@ using Content.Server.Station.Systems;
 using Content.Server._Nix.AI.Services;
 using Content.Shared.Atmos;
 using Content.Shared.Chat;
+using Content.Shared.CCVar;
 using Content.Shared.Containers.ItemSlots;
 using Content.Shared.Examine;
 using Content.Shared.Humanoid;
@@ -23,6 +24,7 @@ using Content.Shared._Nix.AI;
 using Content.Shared._Nix.AI.Components;
 using Robust.Server.GameObjects;
 using Robust.Server.Player;
+using Robust.Shared.Configuration;
 using Robust.Shared.Containers;
 using Robust.Shared.Log;
 using Robust.Shared.Player;
@@ -43,6 +45,7 @@ public sealed class AIBrainSystem : EntitySystem
     [Dependency] private readonly MetaDataSystem _metaData = default!;
     [Dependency] private readonly IGameTiming _timing = default!;
     [Dependency] private readonly ILogManager _logManager = default!;
+    [Dependency] private readonly IConfigurationManager _config = default!;
     [Dependency] private readonly AILoreSystem _loreSystem = default!;
     [Dependency] private readonly QuickDialogSystem _quickDialog = default!;
     [Dependency] private readonly IChatManager _chatManager = default!;
@@ -54,18 +57,38 @@ public sealed class AIBrainSystem : EntitySystem
     private ISawmill _sawmill = default!;
     private OllamaAIService _ollamaService = default!;
     private readonly ConcurrentQueue<Action> _mainThreadQueue = new();
+    private bool _aiEnabled;
+    private string _aiEndpoint = string.Empty;
+    private string _aiFallbackEndpoint = string.Empty;
+    private string _aiModel = string.Empty;
+    private string _aiSystemPrompt = string.Empty;
 
     public override void Initialize()
     {
         base.Initialize();
         _sawmill = _logManager.GetSawmill("ai_brain");
         _ollamaService = new OllamaAIService(_sawmill);
+        _config.OnValueChanged(CCVars.NixAiEnabled, UpdateAiEnabled, true);
+        _config.OnValueChanged(CCVars.NixAiEndpoint, UpdateAiEndpoint, true);
+        _config.OnValueChanged(CCVars.NixAiFallbackEndpoint, UpdateAiFallbackEndpoint, true);
+        _config.OnValueChanged(CCVars.NixAiModel, UpdateAiModel, true);
+        _config.OnValueChanged(CCVars.NixAiSystemPrompt, UpdateAiSystemPrompt, true);
 
         SubscribeLocalEvent<EntitySpokeEvent>(OnEntitySpoke);
         SubscribeLocalEvent<AIBrainComponent, UseInHandEvent>(OnUseInHand);
         SubscribeLocalEvent<AIBrainComponent, ExaminedEvent>(OnExamined);
         SubscribeLocalEvent<AIBrainComponent, AIBrainTogglePrivateModeEvent>(OnTogglePrivateMode);
         SubscribeLocalEvent<AIBrainComponent, AIBrainWipeMemoryEvent>(OnWipeMemory);
+    }
+
+    public override void Shutdown()
+    {
+        base.Shutdown();
+        _config.UnsubValueChanged(CCVars.NixAiEnabled, UpdateAiEnabled);
+        _config.UnsubValueChanged(CCVars.NixAiEndpoint, UpdateAiEndpoint);
+        _config.UnsubValueChanged(CCVars.NixAiFallbackEndpoint, UpdateAiFallbackEndpoint);
+        _config.UnsubValueChanged(CCVars.NixAiModel, UpdateAiModel);
+        _config.UnsubValueChanged(CCVars.NixAiSystemPrompt, UpdateAiSystemPrompt);
     }
 
     public override void Update(float frameTime)
@@ -113,14 +136,18 @@ public sealed class AIBrainSystem : EntitySystem
                         comp.AiName = name;
                         comp.MasterUid = args.User;
                         comp.MasterName = Name(args.User);
+                        comp.LastActiveTime = _timing.CurTime;
 
                         if (TryComp<HumanoidAppearanceComponent>(args.User, out var humanoid))
                             comp.MasterSpecies = humanoid.Species;
 
                         _metaData.SetEntityName(uid, $"{comp.AiName} ({comp.MasterName})");
-                        _popupSystem.PopupEntity($"¡{comp.AiName} inicializado con éxito!", uid, args.User, PopupType.Medium);
-                        _chatSystem.TrySendInGameICMessage(uid, $"Enlace cuántico establecido. A sus órdenes, {comp.MasterName}. Puedes hablarme diciendo '{comp.AiName}, ...'", InGameICChatType.Speak, hideChat: false, ignoreActionBlocker: true);
+                        _popupSystem.PopupEntity($"[INICIALIZANDO MATRIZ CUÁNTICA PARA {comp.AiName.ToUpperInvariant()}...]", uid, args.User, PopupType.Medium);
+                        _chatSystem.TrySendInGameICMessage(uid, $"[INICIALIZANDO MATRIZ CUÁNTICA PARA {comp.AiName.ToUpperInvariant()}... POR FAVOR ESPERE]", InGameICChatType.Speak, hideChat: false, ignoreActionBlocker: true);
                         Dirty(uid, comp);
+
+                        // Calentar el modelo con TTL de 5m y generar el saludo inicial
+                        ProcessAiQueryAsync(uid, comp, "Hola, preséntate brevemente a tu nuevo dueño.", comp.MasterName, true, true);
                     }
                 );
             }
@@ -128,13 +155,16 @@ public sealed class AIBrainSystem : EntitySystem
             {
                 comp.MasterUid = args.User;
                 comp.MasterName = Name(args.User);
+                comp.LastActiveTime = _timing.CurTime;
 
                 if (TryComp<HumanoidAppearanceComponent>(args.User, out var humanoid))
                     comp.MasterSpecies = humanoid.Species;
 
                 _metaData.SetEntityName(uid, $"{comp.AiName} ({comp.MasterName})");
-                _chatSystem.TrySendInGameICMessage(uid, $"Enlace cuántico establecido. A sus órdenes, {comp.MasterName}.", InGameICChatType.Speak, hideChat: false, ignoreActionBlocker: true);
+                _chatSystem.TrySendInGameICMessage(uid, $"[INICIALIZANDO MATRIZ CUÁNTICA PARA {comp.AiName.ToUpperInvariant()}... POR FAVOR ESPERE]", InGameICChatType.Speak, hideChat: false, ignoreActionBlocker: true);
                 Dirty(uid, comp);
+
+                ProcessAiQueryAsync(uid, comp, "Hola, preséntate brevemente a tu nuevo dueño.", comp.MasterName, true, true);
             }
             return;
         }
@@ -157,7 +187,7 @@ public sealed class AIBrainSystem : EntitySystem
     {
         using (args.PushGroup(nameof(AIBrainComponent)))
         {
-            args.PushMarkup($"[color=cyan]IA Activa:[/] {comp.AiName} (Modelo: {comp.Model})");
+            args.PushMarkup($"[color=cyan]IA Activa:[/] {comp.AiName}");
             args.PushMarkup($"[color=yellow]Dueño Registrado:[/] {comp.MasterName}");
             args.PushMarkup($"[color=gray]Modo de Audio:[/] {(comp.PrivateMode ? "Auricular Privado" : "Altavoz Público")}");
 
@@ -233,8 +263,8 @@ public sealed class AIBrainSystem : EntitySystem
         var clean = message.ToLowerInvariant();
         var nameLower = (aiName ?? "sparky").ToLowerInvariant();
 
-        // 1. Coincidencia directa
-        if (clean.Contains(nameLower))
+        // A short AI name (such as "d") must not match ordinary words.
+        if (nameLower.Length >= 3 && ContainsStandaloneTerm(clean, nameLower))
             return true;
 
         // 2. Normalización de acentos de especie (Vulpkanin 'rr', Reptilianos 'ss', tartamudeos 'j-j-')
@@ -245,14 +275,22 @@ public sealed class AIBrainSystem : EntitySystem
         var nameDeAccented = Regex.Replace(nameLower, @"[-~]", "");
         nameDeAccented = Regex.Replace(nameDeAccented, @"(.)\1+", "$1");
 
-        if (cleanDeAccented.Contains(nameDeAccented))
+        if (nameDeAccented.Length >= 3 && ContainsStandaloneTerm(cleanDeAccented, nameDeAccented))
             return true;
 
         // 3. Si usa iniciadores universales como "pai" o "ia " (ej: "pai, donde está el capitan?", "ia, qué es el sindicato?")
-        if (clean.Contains("pai") || clean.StartsWith("ia ") || clean.Contains(" ia ") || clean.EndsWith(" ia") || clean == "ia")
+        if (ContainsStandaloneTerm(clean, "pai") || ContainsStandaloneTerm(clean, "ia"))
             return true;
 
         return false;
+    }
+
+    private static bool ContainsStandaloneTerm(string text, string term)
+    {
+        return Regex.IsMatch(
+            text,
+            $@"(?<![\p{{L}}\p{{N}}]){Regex.Escape(term)}(?![\p{{L}}\p{{N}}])",
+            RegexOptions.CultureInvariant);
     }
 
     private bool IsSpeakerInRange(EntityUid speaker, EntityUid brain, float radius)
@@ -315,8 +353,13 @@ public sealed class AIBrainSystem : EntitySystem
         comp.ConversationHistory ??= new();
         comp.KeyMemories ??= new();
         comp.AiName ??= "Sparky";
-        comp.SystemPrompt ??= "Eres Sparky, una IA de bolsillo inteligente para Space Station 14.";
-        comp.Model ??= "qwen2.5:7b";
+
+        if (!TryGetRuntimeConfig(out var runtimeConfig))
+        {
+            comp.IsThinking = false;
+            return;
+        }
+
         // Limpiar el nombre de la invocación para el prompt
         var cleanMessageWithoutWake = Regex.Replace(userMessage, $@"(?i)\b({Regex.Escape(comp.AiName)}|pai|ia)\b[:,]?", "").Trim();
         if (string.IsNullOrWhiteSpace(cleanMessageWithoutWake))
@@ -325,8 +368,26 @@ public sealed class AIBrainSystem : EntitySystem
         // Extraer hechos y actualizar rol del amo dinámicamente (Mem0 / Letta memory stream)
         ExtractRoleAndEventFacts(comp, cleanMessageWithoutWake, senderName, isMaster);
 
-        // Si requiere búsqueda profunda en RAG, emitir acuse de recibo inmediato (sin emojis)
-        if (_loreSystem != null && _loreSystem.RequiresDeepSearch(cleanMessageWithoutWake))
+        // Detección de Cold Start (arranque en frío tras más de 5 minutos de inactividad)
+        var isColdStart = comp.LastActiveTime == TimeSpan.Zero || (curTime - comp.LastActiveTime) >= TimeSpan.FromMinutes(5);
+        comp.LastActiveTime = curTime;
+
+        if (isColdStart)
+        {
+            if (comp.PrivateMode && comp.MasterUid.HasValue)
+            {
+                if (_playerManager.TryGetSessionByEntity(comp.MasterUid.Value, out var masterSession))
+                {
+                    var wakeWrap = $"[color=#38bdf8][bold][{comp.AiName} (Auricular Privado)]:[/] [REANUDANDO MATRIZ NEURONAL Y SINTONIZANDO ANTENAS...][/color]";
+                    _chatManager.ChatMessageToOne(ChatChannel.Whisper, "[REANUDANDO MATRIZ NEURONAL Y SINTONIZANDO ANTENAS...]", wakeWrap, brainUid, hideChat: false, masterSession.Channel);
+                }
+            }
+            else
+            {
+                _chatSystem.TrySendInGameICMessage(brainUid, $"[{comp.AiName}]: [REANUDANDO MATRIZ NEURONAL Y SINTONIZANDO ANTENAS...]", InGameICChatType.Speak, hideChat: false, ignoreActionBlocker: true);
+            }
+        }
+        else if (_loreSystem != null && _loreSystem.RequiresDeepSearch(cleanMessageWithoutWake))
         {
             if (comp.PrivateMode && comp.MasterUid.HasValue)
             {
@@ -397,17 +458,17 @@ public sealed class AIBrainSystem : EntitySystem
         var historySnapshot = new List<AIBrainMessage>(comp.ConversationHistory);
         var factsSnapshot = new List<string>(comp.RoundFactStream);
 
-        _sawmill.Info($"[AIBrain] Enviando consulta a Ollama ({comp.Endpoint} / {comp.Model}): '{cleanMessageWithoutWake}' (Dueño: {comp.MasterName}, Rol: {comp.MasterRole}, Emisor: {senderName})");
+        _sawmill.Info($"[AIBrain] Enviando consulta privada para {comp.AiName}: '{cleanMessageWithoutWake}' (Dueño: {comp.MasterName}, Rol: {comp.MasterRole}, Emisor: {senderName})");
 
         Task.Run(async () =>
         {
             try
             {
                 var response = await _ollamaService.GenerateResponseAsync(
-                    comp.Endpoint,
-                    comp.FallbackEndpoint,
-                    comp.Model,
-                    comp.SystemPrompt,
+                    runtimeConfig.Endpoint,
+                    runtimeConfig.FallbackEndpoint,
+                    runtimeConfig.Model,
+                    runtimeConfig.SystemPrompt,
                     historySnapshot,
                     cleanMessageWithoutWake,
                     senderName,
@@ -579,4 +640,57 @@ public sealed class AIBrainSystem : EntitySystem
         if (comp.RoundFactStream.Count > 35)
             comp.RoundFactStream.RemoveAt(0);
     }
+
+    private void UpdateAiEnabled(bool enabled)
+    {
+        _aiEnabled = enabled;
+    }
+
+    private void UpdateAiEndpoint(string endpoint)
+    {
+        _aiEndpoint = endpoint.Trim();
+    }
+
+    private void UpdateAiFallbackEndpoint(string endpoint)
+    {
+        _aiFallbackEndpoint = endpoint.Trim();
+    }
+
+    private void UpdateAiModel(string model)
+    {
+        _aiModel = model.Trim();
+    }
+
+    private void UpdateAiSystemPrompt(string prompt)
+    {
+        _aiSystemPrompt = prompt.Trim();
+    }
+
+    private bool TryGetRuntimeConfig(out AIBrainRuntimeConfig config)
+    {
+        var endpoint = _aiEndpoint;
+        var fallbackEndpoint = string.IsNullOrWhiteSpace(_aiFallbackEndpoint) ? endpoint : _aiFallbackEndpoint;
+
+        if (!_aiEnabled ||
+            string.IsNullOrWhiteSpace(endpoint) ||
+            string.IsNullOrWhiteSpace(_aiModel) ||
+            string.IsNullOrWhiteSpace(_aiSystemPrompt))
+        {
+            config = default;
+            return false;
+        }
+
+        config = new AIBrainRuntimeConfig(
+            endpoint,
+            fallbackEndpoint,
+            _aiModel,
+            _aiSystemPrompt);
+        return true;
+    }
+
+    private readonly record struct AIBrainRuntimeConfig(
+        string Endpoint,
+        string FallbackEndpoint,
+        string Model,
+        string SystemPrompt);
 }

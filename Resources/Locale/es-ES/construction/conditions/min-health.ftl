@@ -1,2 +1,2 @@
-construction-examine-condition-low-health = First, repair it.
-construction-step-condition-low-health = It must be repaired.
+construction-examine-condition-low-health = Arréglalo primero.
+construction-step-condition-low-health = Necesita ser reparado.

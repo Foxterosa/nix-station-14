@@ -1,13 +1,11 @@
-custom-vote-webhook-name = Custom Vote Held
-custom-vote-webhook-footer = server: { $serverName }, round: { $roundId } { $runLevel }
-custom-vote-webhook-cancelled = **Vote cancelled**
-custom-vote-webhook-option-pending = TBD
-custom-vote-webhook-option-cancelled = N/A
-
-votekick-webhook-name = Votekick Held
-votekick-webhook-description = Initiator: { $initiator }; Target: { $target }
-votekick-webhook-cancelled-admin-online = **Vote cancelled due to admins online**
-votekick-webhook-cancelled-admin-target = **Vote cancelled due to target being admin**
-votekick-webhook-cancelled-antag-target = **Vote cancelled due to target being antag**
-
-votekick-ban-reason = "Votekick: {$reason}"
+custom-vote-webhook-name = Se ha realizado la votación de los usuarios
+custom-vote-webhook-footer = Saquero: { $serverName }, ronda: { $roundId } { $runLevel }
+custom-vote-webhook-cancelled = **Voto cancelado**
+custom-vote-webhook-option-pending = Por determinar
+custom-vote-webhook-option-cancelled = No aplicable
+votekick-webhook-name = Se celebró una votación para el expulso
+votekick-webhook-description = Iniciador: { $initiator }; Objetivo: { $target }
+votekick-webhook-cancelled-admin-online = **Votación cancelada debido a los administradores online**
+votekick-webhook-cancelled-admin-target = **Votación cancelada porque objetivo es un administrador**
+votekick-webhook-cancelled-antag-target = **Voto cancelado porque el objetivo es antagonista**
+votekick-ban-reason = "Votación para la expulsión: { $reason }"

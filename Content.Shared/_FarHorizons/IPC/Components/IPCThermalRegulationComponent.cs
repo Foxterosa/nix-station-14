@@ -99,5 +99,5 @@ public sealed partial class IPCThermalRegulationComponent : Component
     [AutoNetworkedField, ViewVariables]
     public float CurrentTemp = 0;
 
-    public List<FanMode> OrderedFanModes => [.. FanModes.OrderByDescending(p => p.MinTemp)];
+    public List<FanMode> OrderedFanModes => FanModes.OrderByDescending(p => p.MinTemp).ToList();
 }

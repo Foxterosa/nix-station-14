@@ -8,10 +8,10 @@ blockgame-menu-label-points = Puntos: {$points}
 blockgame-menu-label-level = Nivel: {$level}
 
 # Game over information of your round
-blockgame-menu-gameover-info = Global: {$global}
-    Local: {$local}
-    Puntos: {$points}
-
+blockgame-menu-gameover-info =
+    Cuenta global: { $global }
+    Cuenta local: { $local }
+    Puntos: { $points }
 blockgame-menu-title = Juego de Bloques NanoTrasen
 blockgame-menu-button-new-game = Partida nueva
 blockgame-menu-button-scoreboard = Marcador
@@ -23,4 +23,4 @@ blockgame-menu-button-back = Volver
 blockgame-menu-label-next = Siguiente
 blockgame-menu-label-hold = Reserva
 blockgame-menu-text-station = Estación
-blockgame-menu-text-nanotrasen = NanoTrasen
+blockgame-menu-text-nanotrasen = Fundación

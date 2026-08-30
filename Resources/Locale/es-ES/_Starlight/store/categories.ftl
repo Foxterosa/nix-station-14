@@ -15,10 +15,9 @@ store-category-security-main = Security
 store-category-secret = Secret
 
 # Changeling
-store-ling-category-combat = Combat
-store-ling-category-sting = Stings
-store-ling-category-utility = Utility
-
+store-ling-category-combat = Combate
+store-ling-category-sting = Bocados
+store-ling-category-utility = Herramientas
 store-category-cantrips-standard = Standard Cantrips
 
 # Uplinks

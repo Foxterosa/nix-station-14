@@ -9,5 +9,5 @@ admin-shuttle-state-idle = Emergency shuttle is waiting at Central Command.
 admin-shuttle-state-called = Emergency shuttle called. ETA: { $seconds } seconds.
 admin-shuttle-action-success = Shuttle action completed.
 admin-shuttle-action-failed = The shuttle action was rejected or is no longer available.
-nix-admin-shuttle-selected-announcement = Central Command assigned the { $shuttle } emergency shuttle design.
+nix-admin-shuttle-selected-announcement = Central Command assigned the { $shuttle } evacuation shuttle.
 shipyard-console-purchases-locked = Central Command has temporarily suspended shipyard purchases.

@@ -26,8 +26,7 @@ job-name-abductor = Abductor
 job-title-borgi = Borgi
 
 job-title-tsf-Phantom = Phantom Marine
-job-title-tsf-MARSOC = MARSOC Marine
-
+job-title-tsf-MARSOC = Marine MARSOC TCF
 job-name-blackstar = Blackstar Mercenary
 
 job-name-medtak-dispatcher = MedTak Dispatcher

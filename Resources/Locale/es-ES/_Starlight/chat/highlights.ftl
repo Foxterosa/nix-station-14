@@ -24,8 +24,8 @@ highlights-surgeon = Surgeon, Surgery, Medical, MedBay, "Med"
 highlights-roboticist = Roboticist, Science, Robo, "Sci", Robotics
 
 # Civilian
-highlights-boxer = Boxer
-highlights-zookeeper = Zookeeper, Zoo
+highlights-boxer = Boxer, Ring
+highlights-zookeeper = Cuidador, Zoo
 highlights-performer = Performer
 highlights-assistant = Assistant
 

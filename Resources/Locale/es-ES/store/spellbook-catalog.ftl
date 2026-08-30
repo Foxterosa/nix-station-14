@@ -62,7 +62,7 @@ spellbook-wand-polymorph-carp-description = Para cuando necesitas un filete de c
 spellbook-wand-locker-name = Varita del casillero
 spellbook-wand-locker-description = ¡Dispara casilleros malditos a tus enemigos y déjalos encerrados!
 
-spellbook-hammer-mjollnir-name = Mjollnir
+spellbook-hammer-mjollnir-name = Mjolnir
 spellbook-hammer-mjollnir-description = Empuña el poder del TRUENO en tus manos. ¡Haz volar a tus enemigos con un poderoso golpe o lanzándoselo directamente!
 
 spellbook-hammer-singularity-name = Martillo de singularidad

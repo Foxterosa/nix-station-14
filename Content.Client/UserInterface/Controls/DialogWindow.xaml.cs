@@ -58,8 +58,10 @@ public sealed partial class DialogWindow : FancyWindow
         {
             var entry = entries[i];
 
-            var box = new BoxContainer();
-            box.AddChild(new Label() { Text = entry.Prompt, HorizontalExpand = true, SizeFlagsStretchRatio = 0.5f });
+            // A vertical entry keeps the label, full-width input, and action buttons legible
+            // in first-use dialogs such as the quantum pAI initialization.
+            var box = new BoxContainer { Orientation = BoxContainer.LayoutOrientation.Vertical };
+            box.AddChild(new Label { Text = entry.Prompt, HorizontalExpand = true });
 
             var edit = new LineEdit() { HorizontalExpand = true };
 
@@ -102,7 +104,7 @@ public sealed partial class DialogWindow : FancyWindow
                 OnCancelled?.Invoke();
         };
 
-        MinWidth *= 2; // Just double it.
+        MinWidth = Math.Max(MinWidth * 2, 420);
 
         OpenCentered();
     }

@@ -1,4 +1,4 @@
-﻿guidebook-reagent-effect-description =
+guidebook-reagent-effect-description =
     {$quantity ->
         [0] {""}
         *[other] Si hay al menos {$quantity}u de {$reagent},{" "}
@@ -10,12 +10,12 @@
         *[other] {" "}cuando { $conditions }.
     }
 
-guidebook-reagent-name = [bold][color={$color}]{CAPITALIZE($name)}[/color][/bold]
+guidebook-reagent-name = [bold][color={ $color }]{ CAPITALIZE($name) }[/color][/bold]
 guidebook-reagent-recipes-header = Receta
-guidebook-reagent-recipes-reagent-display = [bold]{$reagent}[/bold] \[{$ratio}\]
+guidebook-reagent-recipes-reagent-display = [bold]{ $reagent }[/bold] \[{ $ratio }\]
 guidebook-reagent-sources-header = Fuentes
-guidebook-reagent-sources-ent-wrapper = [bold]{$name}[/bold] \[1\]
-guidebook-reagent-sources-gas-wrapper = [bold]{$name} (gas)[/bold] \[1\]
+guidebook-reagent-sources-ent-wrapper = [bold]{ $name }[/bold] \[1\]
+guidebook-reagent-sources-gas-wrapper = [bold]{ $name } (gas)[/bold] \[1\]
 guidebook-reagent-effects-header = Efectos
 guidebook-reagent-effects-metabolism-stage-rate = [bold]{$stage}[/bold] [color=gray]({$rate} unidades por segundo)[/color]
 guidebook-reagent-effects-metabolite-item = {$reagent} a una tasa de { NATURALPERCENT($rate, 2) }

@@ -1,2 +1,2 @@
-﻿cmd-showemergencyshuttle-desc = Shows the expected position of the emergency shuttle.
-cmd-showemergencyshuttle-status = Set emergency shuttle debug to {$status}.
+cmd-showemergencyshuttle-desc = Muestra la ubicación estimada del transbordador de emergencia.
+cmd-showemergencyshuttle-status = El modo de depuración del transbordador de emergencia está configurado en { $status }.

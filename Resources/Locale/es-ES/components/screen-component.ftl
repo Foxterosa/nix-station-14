@@ -1,2 +1,2 @@
-screen-text = screenText
-screen-color = screenColor
+screen-text = Texto en pantalla
+screen-color = Color de pantalla

@@ -40,6 +40,7 @@ using Content.Shared.Damage.Components;
 using Content.Shared.Power.EntitySystems;
 using Content.Shared.Temperature.Components;
 using Content.Server._Starlight.Kitchen.Components;
+using Content.Server._Nix.WebBridge;
 
 // ReSharper disable once CheckNamespace
 namespace Content.Server.Kitchen.EntitySystems
@@ -68,6 +69,7 @@ namespace Content.Server.Kitchen.EntitySystems
         [Dependency] private IAdminLogManager _adminLogger = default!;
         [Dependency] private SharedSuicideSystem _suicide = default!;
         [Dependency] private SharedPowerStateSystem _powerState = default!;
+        [Dependency] private NixWebBridgeSystem _nixWebBridge = default!;
 
         private static readonly EntProtoId MalfunctionSpark = "Spark";
 
@@ -666,6 +668,7 @@ namespace Content.Server.Kitchen.EntitySystems
             // Starlight-start
             component.StartedCookTime = _gameTiming.CurTime;
             var activeComp = AddComp<ActiveCookingDeviceComponent>(uid); //microwave is now cooking
+            activeComp.CookingUser = user;
             // Starlight-end
 
             activeComp.CookTimeRemaining = component.CurrentCookTimerTime * component.CookTimeMultiplier;
@@ -807,7 +810,10 @@ namespace Content.Server.Kitchen.EntitySystems
                         for (var i = 0; i < availableAmount; i++) // Starlight-edit
                         {
                             if (SubtractContents(cookingDevice, recipe))
-                                Spawn(recipe.Result, coords);
+                            {
+                                var food = Spawn(recipe.Result, coords);
+                                _nixWebBridge.TrackCookedFood(active.CookingUser, food, recipe.ID);
+                            }
                             else
                                 continue;
                         }
@@ -862,7 +868,10 @@ namespace Content.Server.Kitchen.EntitySystems
                     for (var i = 0; i < availableAmount; i++)
                     {
                         if (SubtractContents(cookingDevice, recipe))
-                            Spawn(recipe.Result, coords);
+                        {
+                            var food = Spawn(recipe.Result, coords);
+                            _nixWebBridge.TrackCookedFood(active.CookingUser, food, recipe.ID);
+                        }
                         else
                             continue;
                     }
