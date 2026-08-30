@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Content.Shared.Preferences;
 using Microsoft.EntityFrameworkCore;
 
 namespace Content.Server.Database;
@@ -32,7 +33,7 @@ public abstract partial class ServerDbBase
             AwardedAt = now,
             RoundId = roundId,
             CharacterNameSnapshot = identity.CharacterName,
-            AppearanceSnapshotJson = identity.AppearanceJson,
+            AppearanceSnapshotJson = character.AppearanceJson,
         });
 
         await db.DbContext.SaveChangesAsync();
@@ -62,6 +63,16 @@ public abstract partial class ServerDbBase
             RoundId = roundId,
             Metadata = metadata,
         });
+
+        await db.DbContext.SaveChangesAsync();
+    }
+
+    public async Task UpsertNixWebAppearanceAsync(NixWebCharacterIdentity identity)
+    {
+        await using var db = await GetDb();
+        var character = await GetOrUpdateNixWebCharacterAsync(db.DbContext, identity);
+        if (character == null)
+            return;
 
         await db.DbContext.SaveChangesAsync();
     }
@@ -197,6 +208,32 @@ public abstract partial class ServerDbBase
         return new NixWebMetricRankingPage(totalCount, entries);
     }
 
+    public async Task<Dictionary<int, HumanoidCharacterProfile>> GetNixWebProfilesAsync(IEnumerable<int> profileIds)
+    {
+        var ids = profileIds.Distinct().ToArray();
+        if (ids.Length == 0)
+            return new Dictionary<int, HumanoidCharacterProfile>();
+
+        await using var db = await GetDb();
+        var profiles = await db.DbContext.Profile
+            .AsNoTracking()
+            .Where(profile => ids.Contains(profile.Id))
+            .Include(profile => profile.Jobs)
+            .Include(profile => profile.Antags)
+            .Include(profile => profile.Traits)
+            .Include(profile => profile.StarLightProfile)
+            .Include(profile => profile.CharacterInfo)
+            .Include(profile => profile.Loadouts)
+                .ThenInclude(loadout => loadout.Groups)
+                .ThenInclude(group => group.Loadouts)
+            .Include(profile => profile.CDProfile)
+                .ThenInclude(cdProfile => cdProfile!.CharacterRecordEntries)
+            .AsSplitQuery()
+            .ToListAsync();
+
+        return profiles.ToDictionary(profile => profile.Id, ConvertProfiles);
+    }
+
     private static async Task<NixWebCharacter?> GetOrUpdateNixWebCharacterAsync(
         ServerDbContext db,
         NixWebCharacterIdentity identity)
@@ -228,7 +265,7 @@ public abstract partial class ServerDbBase
 
         character.CharacterName = identity.CharacterName;
         character.Species = identity.Species;
-        character.AppearanceJson = identity.AppearanceJson;
+        character.AppearanceJson = NixWebBridgeAppearanceJson.SelectPreferred(character.AppearanceJson, identity.AppearanceJson);
         character.LastSeenAt = now;
         return character;
     }

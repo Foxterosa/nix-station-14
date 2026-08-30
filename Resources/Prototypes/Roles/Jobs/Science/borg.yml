@@ -5,10 +5,6 @@
   name: job-name-station-ai
   description: job-description-station-ai
   playTimeTracker: JobStationAi
-  requirements:
-  - !type:RoleTimeRequirement
-    role: JobBorg
-    time: 5h
   weight: 10
   displayWeight: 1 # Starlight, we're reordering things
   icon: JobIconStationAi

@@ -59,6 +59,12 @@ public sealed partial class AIBrainComponent : Component
     public TimeSpan LastResponseTime = TimeSpan.Zero;
 
     /// <summary>
+    /// Momento de la última interacción activa para medir el enfriamiento del modelo (TTL 5 min).
+    /// </summary>
+    [ViewVariables(VVAccess.ReadOnly)]
+    public TimeSpan LastActiveTime = TimeSpan.Zero;
+
+    /// <summary>
     /// Si está activa y escuchando.
     /// </summary>
     [DataField, AutoNetworkedField]

@@ -88,6 +88,66 @@ public sealed class OllamaAIService
         return false;
     }
 
+    public async Task<string?> TranslateTextAsync(
+        string primaryEndpoint,
+        string fallbackEndpoint,
+        string model,
+        string systemPrompt,
+        string userMessage,
+        int timeoutMs,
+        CancellationToken cancellationToken = default)
+    {
+        if (string.IsNullOrWhiteSpace(primaryEndpoint)
+            || string.IsNullOrWhiteSpace(model)
+            || string.IsNullOrWhiteSpace(userMessage))
+        {
+            return null;
+        }
+
+        var messages = new List<OllamaChatMessage>();
+        if (!string.IsNullOrWhiteSpace(systemPrompt))
+        {
+            messages.Add(new OllamaChatMessage
+            {
+                Role = "system",
+                Content = systemPrompt.Trim()
+            });
+        }
+        messages.Add(new OllamaChatMessage
+        {
+            Role = "user",
+            Content = userMessage
+        });
+
+        var payload = new OllamaChatPayload
+        {
+            Model = model,
+            Messages = messages,
+            Stream = false,
+            Options = new OllamaChatOptions
+            {
+                Temperature = 0.0f,
+                NumPredict = Math.Clamp(userMessage.Length * 2, 48, 200)
+            }
+        };
+
+        using var timeoutCts = CancellationTokenSource.CreateLinkedTokenSource(cancellationToken);
+        timeoutCts.CancelAfter(TimeSpan.FromMilliseconds(Math.Max(100, timeoutMs)));
+
+        var json = JsonSerializer.Serialize(payload);
+        var response = await TrySendToEndpointAsync(primaryEndpoint, json, timeoutCts.Token);
+        if (response != null)
+            return response;
+
+        if (!string.IsNullOrWhiteSpace(fallbackEndpoint)
+            && fallbackEndpoint != primaryEndpoint)
+        {
+            response = await TrySendToEndpointAsync(fallbackEndpoint, json, timeoutCts.Token);
+        }
+
+        return response;
+    }
+
     /// <summary>
     /// Envía la conversación completa, lore y recuerdos a Ollama y retorna la respuesta.
     /// </summary>
@@ -195,6 +255,7 @@ public sealed class OllamaAIService
         var payload = new OllamaChatPayload
         {
             Model = model,
+            KeepAlive = 300, // TTL de 5 minutos: Ollama mantiene el modelo en VRAM y lo libera tras 5 min de inactividad
             Messages = messages,
             Stream = false,
             Options = new OllamaChatOptions
@@ -230,7 +291,11 @@ public sealed class OllamaAIService
             var response = await _httpClient.PostAsync(url, content, ct);
 
             if (!response.IsSuccessStatusCode)
+            {
+                var err = await response.Content.ReadAsStringAsync(ct);
+                _sawmill.Warning($"[Ollama] Request a {url} fallo con codigo {(int)response.StatusCode}: {err}");
                 return null;
+            }
 
             var responseBody = await response.Content.ReadAsStringAsync(ct);
             using var doc = JsonDocument.Parse(responseBody);
@@ -249,7 +314,7 @@ public sealed class OllamaAIService
         }
         catch (Exception ex)
         {
-            _sawmill.Debug($"Error al consultar el backend privado de la pAI: {ex.Message}");
+            _sawmill.Warning($"Error al consultar el backend privado de la pAI: {ex.Message}");
         }
 
         return null;
@@ -258,6 +323,7 @@ public sealed class OllamaAIService
     private sealed class OllamaChatPayload
     {
         [JsonPropertyName("model")] public string Model { get; set; } = string.Empty;
+        [JsonPropertyName("keep_alive")] public int KeepAlive { get; set; } = -1;
         [JsonPropertyName("messages")] public List<OllamaChatMessage> Messages { get; set; } = new();
         [JsonPropertyName("stream")] public bool Stream { get; set; } = false;
         [JsonPropertyName("options")] public OllamaChatOptions? Options { get; set; }

@@ -1,4 +1,4 @@
-﻿using System.Diagnostics;
+using System.Diagnostics;
 using System.IO.Compression;
 using Robust.Packaging;
 using Robust.Packaging.AssetProcessing;
@@ -34,6 +34,26 @@ public static class ClientPackaging
                     "/m"
                 }
             });
+        }
+
+        logger.Info("Verificando seguridad y sandbox de tipos para el cliente...");
+        var clientDll = Path.Combine("bin", "Content.Client", "Content.Client.dll");
+        var sharedDll = Path.Combine("bin", "Content.Client", "Content.Shared.dll");
+        var clientBinDir = Path.Combine("bin", "Content.Client");
+
+        if (!File.Exists(clientDll))
+            clientDll = Path.Combine("Content.Client", "bin", configuration, "net10.0", "Content.Client.dll");
+        if (!File.Exists(sharedDll))
+            sharedDll = Path.Combine("Content.Client", "bin", configuration, "net10.0", "Content.Shared.dll");
+        if (!Directory.Exists(clientBinDir))
+            clientBinDir = Path.GetDirectoryName(clientDll)!;
+
+        var searchDirs = new[] { clientBinDir, Path.Combine("bin", "Client") };
+
+        if (!RobustSandboxVerifier.VerifyAssembly(sharedDll, logger, searchDirs)
+            || !RobustSandboxVerifier.VerifyAssembly(clientDll, logger, searchDirs))
+        {
+            throw new Exception("¡FALLÓ LA VERIFICACIÓN DE SEGURIDAD DEL CLIENTE! Hay tipos o llamadas prohibidas por el sandbox.");
         }
 
         logger.Info("Packaging client...");

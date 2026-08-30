@@ -52,6 +52,7 @@ using Content.Shared._Starlight.Radio;
 using Content.Server.Radio.EntitySystems;
 using Content.Server._Starlight.TextToSpeech;
 // Starlight End
+using Content.Server._Nix.AI.Systems; // Nix
 
 namespace Content.Server.Chat.Systems;
 
@@ -79,6 +80,7 @@ public sealed partial class ChatSystem : SharedChatSystem
     [Dependency] private ExamineSystemShared _examineSystem = default!;
     [Dependency] private LanguageSystem _language = default!; // Starlight
     [Dependency] private SharedPopupSystem _popups = default!; // Starlight
+    [Dependency] private readonly ChatTranslationSystem _chatTranslation = default!; // Nix
 
     public const float DefaultObfuscationFactor = 0.2f; // Percentage of symbols in a whispered message that can be seen even by "far" listeners - Starlight
     public readonly Color DefaultSpeakColor = Color.LightGray; // Starlight
@@ -629,6 +631,11 @@ public sealed partial class ChatSystem : SharedChatSystem
         (!CultureInfo.CurrentCulture.IsNeutralCulture && CultureInfo.CurrentCulture.Parent.Name == "en")
         || (CultureInfo.CurrentCulture.IsNeutralCulture && CultureInfo.CurrentCulture.Name == "en")); // Starlight
 
+        // Nix - Translation start
+        var whisperVariants = _chatTranslation.TranslateMessage(message.Text);
+        var deferredWhisperRecipients = new List<(ICommonSession Session, Func<string, string> WrapperFactory)>();
+        // Nix - Translation end
+
         foreach (var (session, data) in GetRecipients(source, WhisperMuffledRange, true)) // Starlight-edit
         {
             if (session.AttachedEntity is not { Valid: true } listener) // Starlight-edit: Languages
@@ -660,24 +667,43 @@ public sealed partial class ChatSystem : SharedChatSystem
             if (data.Range <= whisperClearRange || data.Observer)
             {
                 // Scenario 1: the listener can clearly understand the message
-                result = perceivedMessage;
-                wrappedMessage = WrapWhisperMessage(source, "chat-manager-entity-whisper-wrap-message", name, result, language, obfuscated);
+                if (canUnderstandLanguage && whisperVariants.IsTranslated)
+                {
+                    result = _chatTranslation.SelectTextForSession(session, whisperVariants);
+                    wrappedMessage = WrapWhisperMessage(source, "chat-manager-entity-whisper-wrap-message", name, result, language, obfuscated);
+                    _chatManager.ChatMessageToOne(ChatChannel.Whisper, result, wrappedMessage, source, rangeCheck == MessageRangeCheckResult.HideChat, session.Channel);
+                }
+                else if (canUnderstandLanguage && _chatTranslation.IsTranslationEnabled && _chatTranslation.NeedsTranslation(session, _chatTranslation.DetectDirection(message.Text)))
+                {
+                    deferredWhisperRecipients.Add((session, (Func<string, string>)(text => WrapWhisperMessage(source, "chat-manager-entity-whisper-wrap-message", name, text, language, obfuscated))));
+                }
+                else
+                {
+                    result = perceivedMessage;
+                    wrappedMessage = WrapWhisperMessage(source, "chat-manager-entity-whisper-wrap-message", name, result, language, obfuscated);
+                    _chatManager.ChatMessageToOne(ChatChannel.Whisper, result, wrappedMessage, source, rangeCheck == MessageRangeCheckResult.HideChat, session.Channel);
+                }
             }
             else if (_examineSystem.InRangeUnOccluded(source, listener, whisperMuffledRange))
             {
                 // Scenario 2: if the listener is too far, they only hear fragments of the message
                 result = ObfuscateMessageReadability(perceivedMessage);
                 wrappedMessage = WrapWhisperMessage(source, "chat-manager-entity-whisper-wrap-message", nameIdentity, result, language, obfuscated);
+                _chatManager.ChatMessageToOne(ChatChannel.Whisper, result, wrappedMessage, source, rangeCheck == MessageRangeCheckResult.HideChat, session.Channel);
             }
             else
             {
                 // Scenario 3: If listener is too far and has no line of sight, they can't identify the whisperer's identity
                 result = ObfuscateMessageReadability(perceivedMessage);
                 wrappedMessage = WrapWhisperMessage(source, "chat-manager-entity-whisper-unknown-wrap-message", string.Empty, result, language, obfuscated);
+                _chatManager.ChatMessageToOne(ChatChannel.Whisper, result, wrappedMessage, source, rangeCheck == MessageRangeCheckResult.HideChat, session.Channel);
             }
-
-            _chatManager.ChatMessageToOne(ChatChannel.Whisper, result, wrappedMessage, source, rangeCheck == MessageRangeCheckResult.HideChat, session.Channel); // Moffstation - Radio Host, hide chat messages from station radio
             // Starlight - End
+        }
+
+        if (deferredWhisperRecipients.Count > 0)
+        {
+            _chatTranslation.QueueBackgroundTranslation(ChatChannel.Whisper, message.Text, source, null, deferredWhisperRecipients);
         }
 
         var replayWrap = WrapWhisperMessage(source, "chat-manager-entity-whisper-wrap-message", name, message.Text, language); // Starlight-edit: Languages
@@ -871,6 +897,23 @@ public sealed partial class ChatSystem : SharedChatSystem
             return;
         }
         // Starlight - End
+
+        // Nix - Translation start
+        var variants = _chatTranslation.TranslateMessage(message);
+        string? wrappedEs = null;
+        string? wrappedEn = null;
+        string? wrappedBilingual = null;
+
+        if (variants.IsTranslated)
+        {
+            wrappedEs = WrapPublicMessage(source, name, variants.Spanish, language: language);
+            wrappedEn = WrapPublicMessage(source, name, variants.English, language: language);
+            wrappedBilingual = WrapPublicMessage(source, name, variants.Bilingual, language: language);
+        }
+
+        var deferredRecipients = new List<(ICommonSession Session, Func<string, string> WrapperFactory)>();
+        // Nix - Translation end
+
         foreach (var (session, data) in GetRecipients(source, VoiceRange))
         {
             var entRange = MessageRangeCheck(session, data, range);
@@ -884,10 +927,39 @@ public sealed partial class ChatSystem : SharedChatSystem
 
             // If the channel does not support languages, or the entity can understand the message, send the original message, otherwise send the obfuscated version
             if (ignoreLanguage || _language.CanUnderstand(listener, language.ID))
-                _chatManager.ChatMessageToOne(channel, message, wrappedMessage, source, entHideChat, session.Channel, author: author);
+            {
+                if (variants.IsTranslated && wrappedEs != null && wrappedEn != null && wrappedBilingual != null)
+                {
+                    var (msgToSend, wrappedToSend) = _chatTranslation.SelectMessageForSession(
+                        session,
+                        variants,
+                        wrappedMessage,
+                        wrappedEs,
+                        wrappedEn,
+                        wrappedBilingual);
+                    _chatManager.ChatMessageToOne(channel, msgToSend, wrappedToSend, source, entHideChat, session.Channel, author: author);
+                }
+                else
+                {
+                    var direction = _chatTranslation.DetectDirection(message);
+                    if (_chatTranslation.IsTranslationEnabled && _chatTranslation.NeedsTranslation(session, direction))
+                    {
+                        deferredRecipients.Add((session, (Func<string, string>)(translatedText => WrapPublicMessage(source, name, translatedText, language: language))));
+                    }
+                    else
+                    {
+                        _chatManager.ChatMessageToOne(channel, message, wrappedMessage, source, entHideChat, session.Channel, author: author);
+                    }
+                }
+            }
             else
                 _chatManager.ChatMessageToOne(channel, obfuscated, obfuscatedWrappedMessage, source, entHideChat, session.Channel, author: author);
             // Starlight - end
+        }
+
+        if (deferredRecipients.Count > 0)
+        {
+            _chatTranslation.QueueBackgroundTranslation(channel, message, source, author, deferredRecipients);
         }
 
         _replay.RecordServerMessage(new ChatMessage(channel, message, wrappedMessage, GetNetEntity(source), null, MessageRangeHideChatForReplay(range)));

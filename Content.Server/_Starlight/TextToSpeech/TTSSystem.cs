@@ -1,5 +1,7 @@
+using System.Linq;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using Content.Server._Nix.AI.Systems;
 using Content.Server._Starlight.Language;
 using Content.Server._Starlight.Radio.Systems;
 using Content.Shared._Starlight.Speech;
@@ -9,6 +11,7 @@ using Content.Shared._Starlight.CCVar;
 using Content.Shared._Starlight.TextToSpeech;
 using Robust.Shared.Audio;
 using Robust.Shared.Configuration;
+using Robust.Shared.Enums;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
@@ -24,6 +27,7 @@ public sealed partial class TTSSystem : EntitySystem
     [Dependency] private ITTSClient _client = default!;
     [Dependency] private IRobustRandom _rng = default!;
     [Dependency] private LanguageSystem _language = default!;
+    [Dependency] private Content.Server._Nix.AI.Systems.ChatTranslationSystem _chatTranslation = default!;
 
     private readonly List<string> _sampleText =
     [
@@ -32,10 +36,20 @@ public sealed partial class TTSSystem : EntitySystem
         "The singularity has reached the arrivals area!",
     ];
 
+    private readonly List<string> _sampleTextSpanish =
+    [
+        "¿Alguien puede traerme unos guantes aislantes, por favor?",
+        "¡Seguridad, el payaso le robó la tarjeta al capitán!",
+        "¡La singularidad llegó al área de arribos de la estación!",
+        "Che, ¿dónde quedó la caja de herramientas de ingeniería?",
+        "¡Cierren la esclusa que se nos mete el vacío!",
+        "Atención a toda la tripulación, mantengan la calma en sus puestos.",
+    ];
+
     private const int DefaultAnnounceVoice = 2001;
     private const int DefaultVoice = 0;
-    private const int MaxChars = 200;
-    private const float WhisperVoiceVolumeModifier = 0.6f;
+    private const int MaxChars = 1000;
+    private const float WhisperVoiceVolumeModifier = 0.15f;
     private readonly ISawmill _sawmill = Logger.GetSawmill(nameof(TTSSystem));
     private readonly List<ICommonSession> _ignoredRecipients = [];
 
@@ -63,7 +77,9 @@ public sealed partial class TTSSystem : EntitySystem
             if (!_prototypeManager.TryIndex<VoicePrototype>(ev.VoiceId, out var protoVoice))
                 return;
 
-            var previewText = _rng.Pick(_sampleText);
+            var pref = _chatTranslation.GetPlayerPreference(args.SenderSession);
+            var isEnglishOnly = pref == "en";
+            var previewText = isEnglishOnly ? _rng.Pick(_sampleText) : _rng.Pick(_sampleTextSpanish);
             var filter = Filter.SinglePlayer(args.SenderSession);
 
             await GenerateAndStream(TTSType.System, protoVoice.Voice, previewText, filter);
@@ -101,7 +117,106 @@ public sealed partial class TTSSystem : EntitySystem
             var type = languageradio ? TTSType.Mind : TTSType.Radio;
             var effect = languageradio ? TTSEffect.Underwater : TTSEffect.Walkie;
 
-            await GenerateAndStream(type, voice, text, filter, effect, chime, null, channel);
+            if (_chatTranslation.IsTranslationEnabled)
+            {
+                var direction = _chatTranslation.DetectDirection(text);
+                var enRecipients = new List<ICommonSession>();
+                var esRecipients = new List<ICommonSession>();
+                var offRecipients = new List<ICommonSession>();
+
+                foreach (var session in filter.Recipients)
+                {
+                    var pref = _chatTranslation.GetPlayerPreference(session);
+                    if (pref == "off")
+                        offRecipients.Add(session);
+                    else if (pref == "en")
+                        enRecipients.Add(session);
+                    else
+                        esRecipients.Add(session);
+                }
+
+                // Los jugadores con traducción desactivada ("off") escuchan el audio original de inmediato en tick 0
+                if (offRecipients.Count > 0)
+                {
+                    var offFilter = Filter.Empty().AddPlayers(offRecipients);
+                    await GenerateAndStream(type, voice, text, offFilter, effect, chime, null, channel);
+                }
+
+                if (direction == TranslationDirection.SpanishToEnglish)
+                {
+                    // Mensaje original en Español: Los oyentes en español escuchan de inmediato en tick 0
+                    if (esRecipients.Count > 0)
+                    {
+                        var esFilter = Filter.Empty().AddPlayers(esRecipients);
+                        await GenerateAndStream(type, voice, text, esFilter, effect, chime, null, channel);
+                    }
+
+                    // Los oyentes en inglés escuchan traducido al llegar la traducción
+                    if (enRecipients.Count > 0)
+                    {
+                        var variants = _chatTranslation.TranslateMessage(text);
+                        if (variants.IsTranslated)
+                        {
+                            var enFilter = Filter.Empty().AddPlayers(enRecipients);
+                            var enText = CleanText(variants.English);
+                            _ = GenerateAndStream(type, voice, enText, enFilter, effect, chime, null, channel);
+                        }
+                        else
+                        {
+                            var originalMessageText = args.Message.Text;
+                            _chatTranslation.QueuePostTranslationAction(originalMessageText, (translatedVariants) =>
+                            {
+                                var activeRecipients = enRecipients.Where(s => s.Status == SessionStatus.InGame || s.Status == SessionStatus.Connected).ToList();
+                                if (activeRecipients.Count == 0)
+                                    return;
+
+                                var enFilter = Filter.Empty().AddPlayers(activeRecipients);
+                                var enText = CleanText(translatedVariants.English);
+                                _ = GenerateAndStream(type, voice, enText, enFilter, effect, chime, null, channel);
+                            });
+                        }
+                    }
+                }
+                else
+                {
+                    // Mensaje original en Inglés: Los oyentes en inglés escuchan de inmediato en tick 0
+                    if (enRecipients.Count > 0)
+                    {
+                        var enFilter = Filter.Empty().AddPlayers(enRecipients);
+                        await GenerateAndStream(type, voice, text, enFilter, effect, chime, null, channel);
+                    }
+
+                    // Los oyentes en español escuchan traducido al llegar la traducción
+                    if (esRecipients.Count > 0)
+                    {
+                        var variants = _chatTranslation.TranslateMessage(text);
+                        if (variants.IsTranslated)
+                        {
+                            var esFilter = Filter.Empty().AddPlayers(esRecipients);
+                            var esText = CleanText(variants.Spanish);
+                            _ = GenerateAndStream(type, voice, esText, esFilter, effect, chime, null, channel);
+                        }
+                        else
+                        {
+                            var originalMessageText = args.Message.Text;
+                            _chatTranslation.QueuePostTranslationAction(originalMessageText, (translatedVariants) =>
+                            {
+                                var activeRecipients = esRecipients.Where(s => s.Status == SessionStatus.InGame || s.Status == SessionStatus.Connected).ToList();
+                                if (activeRecipients.Count == 0)
+                                    return;
+
+                                var esFilter = Filter.Empty().AddPlayers(activeRecipients);
+                                var esText = CleanText(translatedVariants.Spanish);
+                                _ = GenerateAndStream(type, voice, esText, esFilter, effect, chime, null, channel);
+                            });
+                        }
+                    }
+                }
+            }
+            else
+            {
+                await GenerateAndStream(type, voice, text, filter, effect, chime, null, channel);
+            }
         }
         catch (TaskCanceledException ex)
         {
@@ -162,7 +277,107 @@ public sealed partial class TTSSystem : EntitySystem
             };
 
             var volume = args.IsWhisper ? WhisperVoiceVolumeModifier : (HasComp<Content.Shared._Nix.Traits.SoftSpoken.SoftSpokenComponent>(uid) ? 0.45f : 1f);
-            await GenerateAndStream(TTSType.IG, voice, text, filter, effect, null, uid, volume: volume);
+
+            if (_chatTranslation.IsTranslationEnabled)
+            {
+                var direction = _chatTranslation.DetectDirection(text);
+                var enRecipients = new List<ICommonSession>();
+                var esRecipients = new List<ICommonSession>();
+                var offRecipients = new List<ICommonSession>();
+
+                foreach (var session in filter.Recipients)
+                {
+                    var pref = _chatTranslation.GetPlayerPreference(session);
+                    if (pref == "off")
+                        offRecipients.Add(session);
+                    else if (pref == "en")
+                        enRecipients.Add(session);
+                    else
+                        esRecipients.Add(session);
+                }
+
+                // Los jugadores con traducción desactivada ("off") escuchan el audio original de inmediato en tick 0
+                if (offRecipients.Count > 0)
+                {
+                    var offFilter = Filter.Empty().AddPlayers(offRecipients);
+                    await GenerateAndStream(TTSType.IG, voice, text, offFilter, effect, null, uid, volume: volume);
+                }
+
+                if (direction == TranslationDirection.SpanishToEnglish)
+                {
+                    // Mensaje original en Español: Los oyentes en español escuchan de inmediato en tick 0
+                    if (esRecipients.Count > 0)
+                    {
+                        var esFilter = Filter.Empty().AddPlayers(esRecipients);
+                        await GenerateAndStream(TTSType.IG, voice, text, esFilter, effect, null, uid, volume: volume);
+                    }
+
+                    // Los oyentes en inglés escuchan traducido al llegar la traducción
+                    if (enRecipients.Count > 0)
+                    {
+                        var variants = _chatTranslation.TranslateMessage(text);
+                        if (variants.IsTranslated)
+                        {
+                            var enFilter = Filter.Empty().AddPlayers(enRecipients);
+                            var enText = CleanText(variants.English);
+                            _ = GenerateAndStream(TTSType.IG, voice, enText, enFilter, effect, null, uid, volume: volume);
+                        }
+                        else
+                        {
+                            var originalMessageText = args.Message.Text;
+                            _chatTranslation.QueuePostTranslationAction(originalMessageText, (translatedVariants) =>
+                            {
+                                var activeRecipients = enRecipients.Where(s => s.Status == SessionStatus.InGame || s.Status == SessionStatus.Connected).ToList();
+                                if (activeRecipients.Count == 0)
+                                    return;
+
+                                var enFilter = Filter.Empty().AddPlayers(activeRecipients);
+                                var enText = CleanText(translatedVariants.English);
+                                _ = GenerateAndStream(TTSType.IG, voice, enText, enFilter, effect, null, uid, volume: volume);
+                            });
+                        }
+                    }
+                }
+                else
+                {
+                    // Mensaje original en Inglés: Los oyentes en inglés escuchan de inmediato en tick 0
+                    if (enRecipients.Count > 0)
+                    {
+                        var enFilter = Filter.Empty().AddPlayers(enRecipients);
+                        await GenerateAndStream(TTSType.IG, voice, text, enFilter, effect, null, uid, volume: volume);
+                    }
+
+                    // Los oyentes en español escuchan traducido al llegar la traducción
+                    if (esRecipients.Count > 0)
+                    {
+                        var variants = _chatTranslation.TranslateMessage(text);
+                        if (variants.IsTranslated)
+                        {
+                            var esFilter = Filter.Empty().AddPlayers(esRecipients);
+                            var esText = CleanText(variants.Spanish);
+                            _ = GenerateAndStream(TTSType.IG, voice, esText, esFilter, effect, null, uid, volume: volume);
+                        }
+                        else
+                        {
+                            var originalMessageText = args.Message.Text;
+                            _chatTranslation.QueuePostTranslationAction(originalMessageText, (translatedVariants) =>
+                            {
+                                var activeRecipients = esRecipients.Where(s => s.Status == SessionStatus.InGame || s.Status == SessionStatus.Connected).ToList();
+                                if (activeRecipients.Count == 0)
+                                    return;
+
+                                var esFilter = Filter.Empty().AddPlayers(activeRecipients);
+                                var esText = CleanText(translatedVariants.Spanish);
+                                _ = GenerateAndStream(TTSType.IG, voice, esText, esFilter, effect, null, uid, volume: volume);
+                            });
+                        }
+                    }
+                }
+            }
+            else
+            {
+                await GenerateAndStream(TTSType.IG, voice, text, filter, effect, null, uid, volume: volume);
+            }
         }
         catch (TaskCanceledException ex)
         {

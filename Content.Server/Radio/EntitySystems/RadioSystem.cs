@@ -39,6 +39,7 @@ using Content.Shared._Starlight.Language.Components;
 using Content.Shared.Ghost;
 using Content.Server._Starlight.TextToSpeech;
 using Content.Shared._Starlight.Clothing;
+using Content.Server._Nix.AI.Systems; // Nix
 
 namespace Content.Server.Radio.EntitySystems;
 
@@ -57,6 +58,7 @@ public sealed partial class RadioSystem : EntitySystem
     [Dependency] private AccessReaderSystem _accessReader = default!;
     [Dependency] private RadioChimeSystem _chime = default!; //🌟Starlight🌟
     [Dependency] private LanguageSystem _language = default!; // Starlight
+    [Dependency] private readonly ChatTranslationSystem _chatTranslation = default!; // Nix
 
     // set used to prevent radio feedback loops.
     private readonly HashSet<string> _messages = new();
@@ -96,12 +98,50 @@ public sealed partial class RadioSystem : EntitySystem
 
         if (TryComp(uid, out ActorComponent? actor))
         {
-            var msg = args.OriginalChatMsg;
+            ChatMessage msg;
 
             if (!_language.CanUnderstand(uid, args.Language.ID) && args.Language.Speech.RadioChannel is null)
+            {
                 msg = args.LanguageObfuscatedChatMsg;
-            else if (args.MessageSource != uid)
-                args.Receivers.Add(uid);
+            }
+            else
+            {
+                if (args.MessageSource != uid)
+                    args.Receivers.Add(uid);
+
+                if (args.IsTranslated && args.SpanishChatMsg != null && args.EnglishChatMsg != null && args.BilingualChatMsg != null)
+                {
+                    var pref = _chatTranslation.GetPlayerPreference(actor.PlayerSession);
+                    msg = pref switch
+                    {
+                        "es" => args.SpanishChatMsg,
+                        "en" => args.EnglishChatMsg,
+                        "bilingual" => args.BilingualChatMsg,
+                        "off" => args.OriginalChatMsg,
+                        "auto" or _ => args.SpanishChatMsg,
+                    };
+                }
+                else
+                {
+                    var origMsg = args.OriginalChatMsg.Message;
+                    var direction = _chatTranslation.DetectDirection(origMsg);
+                    if (_chatTranslation.IsTranslationEnabled && _chatTranslation.NeedsTranslation(actor.PlayerSession, direction))
+                    {
+                        var wrappedMsg = args.OriginalChatMsg.WrappedMessage;
+                        _chatTranslation.QueueBackgroundTranslation(
+                            ChatChannel.Radio,
+                            origMsg,
+                            args.MessageSource,
+                            null,
+                            new List<(ICommonSession Session, Func<string, string> WrapperFactory)>
+                            {
+                                (actor.PlayerSession, (Func<string, string>)(text => wrappedMsg.Replace(origMsg, text)))
+                            });
+                        return;
+                    }
+                    msg = args.OriginalChatMsg;
+                }
+            }
 
             _netMan.ServerSendMessage(new MsgChatMessage { Message = msg }, actor.PlayerSession.Channel);
             // Starlight - End
@@ -194,11 +234,41 @@ public sealed partial class RadioSystem : EntitySystem
         var obfuscated = _language.ObfuscateSpeech(content, language);
         var obfuscatedWrapped = WrapRadioMessage(messageSource, channel, selectedName, obfuscated, language, true, loudComp);
         var notUdsMsg = new ChatMessage(ChatChannel.Radio, obfuscated, obfuscatedWrapped, NetEntity.Invalid, null) { Chime = chime, };
-        var ev = new RadioReceiveEvent(messageSource, channel, msg, notUdsMsg, language, radioSource, []);
+
+        // Nix - Translation start
+        var variants = _chatTranslation.TranslateMessage(content);
+        ChatMessage? esMsg = null;
+        ChatMessage? enMsg = null;
+        ChatMessage? bilingualMsg = null;
+        ChatMessage? ghostEsMsg = null;
+        ChatMessage? ghostEnMsg = null;
+        ChatMessage? ghostBilingualMsg = null;
+
+        if (variants.IsTranslated)
+        {
+            var wrappedEs = WrapRadioMessage(messageSource, channel, selectedName, variants.Spanish, language, false, loudComp);
+            var wrappedEn = WrapRadioMessage(messageSource, channel, selectedName, variants.English, language, false, loudComp);
+            var wrappedBilingual = WrapRadioMessage(messageSource, channel, selectedName, variants.Bilingual, language, false, loudComp);
+
+            esMsg = new ChatMessage(ChatChannel.Radio, variants.Spanish, wrappedEs, NetEntity.Invalid, null) { Chime = chime };
+            enMsg = new ChatMessage(ChatChannel.Radio, variants.English, wrappedEn, NetEntity.Invalid, null) { Chime = chime };
+            bilingualMsg = new ChatMessage(ChatChannel.Radio, variants.Bilingual, wrappedBilingual, NetEntity.Invalid, null) { Chime = chime };
+
+            var ghostWrappedEs = WrapRadioMessage(messageSource, channel, name, variants.Spanish, language, false, loudComp);
+            var ghostWrappedEn = WrapRadioMessage(messageSource, channel, name, variants.English, language, false, loudComp);
+            var ghostWrappedBilingual = WrapRadioMessage(messageSource, channel, name, variants.Bilingual, language, false, loudComp);
+
+            ghostEsMsg = new ChatMessage(ChatChannel.Radio, variants.Spanish, ghostWrappedEs, NetEntity.Invalid, null);
+            ghostEnMsg = new ChatMessage(ChatChannel.Radio, variants.English, ghostWrappedEn, NetEntity.Invalid, null);
+            ghostBilingualMsg = new ChatMessage(ChatChannel.Radio, variants.Bilingual, ghostWrappedBilingual, NetEntity.Invalid, null);
+        }
+        // Nix - Translation end
+
+        var ev = new RadioReceiveEvent(messageSource, channel, msg, notUdsMsg, language, radioSource, [], esMsg, enMsg, bilingualMsg, variants.IsTranslated);
 
         var ghostwrappedMessage = WrapRadioMessage(messageSource, channel, name, content, language, false, loudComp);
         var ghostmsg = new ChatMessage(ChatChannel.Radio, content, ghostwrappedMessage, NetEntity.Invalid, null);
-        var ghostev = new RadioReceiveEvent(messageSource, channel, ghostmsg, notUdsMsg, language, radioSource, []);
+        var ghostev = new RadioReceiveEvent(messageSource, channel, ghostmsg, notUdsMsg, language, radioSource, [], ghostEsMsg, ghostEnMsg, ghostBilingualMsg, variants.IsTranslated);
         // Starlight - End
 
         var sendAttemptEv = new RadioSendAttemptEvent(channel, radioSource);
@@ -346,7 +416,26 @@ public sealed partial class RadioSystem : EntitySystem
         var obfuscated = _language.ObfuscateSpeech(content, language);
         var obfuscatedWrapped = WrapCustomRadioMessage(messageSource, channel, name, obfuscated, language, true, loudComp);
         var notUdsMsg = new ChatMessage(ChatChannel.Radio, obfuscated, obfuscatedWrapped, NetEntity.Invalid, null) { Chime = chime, };
-        var ev = new RadioReceiveEvent(messageSource, null, msg, notUdsMsg, language, radioSource, []);
+
+        // Nix - Translation start
+        var variants = _chatTranslation.TranslateMessage(content);
+        ChatMessage? esMsg = null;
+        ChatMessage? enMsg = null;
+        ChatMessage? bilingualMsg = null;
+
+        if (variants.IsTranslated)
+        {
+            var wrappedEs = WrapCustomRadioMessage(messageSource, channel, name, variants.Spanish, language, false, loudComp);
+            var wrappedEn = WrapCustomRadioMessage(messageSource, channel, name, variants.English, language, false, loudComp);
+            var wrappedBilingual = WrapCustomRadioMessage(messageSource, channel, name, variants.Bilingual, language, false, loudComp);
+
+            esMsg = new ChatMessage(ChatChannel.Radio, variants.Spanish, wrappedEs, NetEntity.Invalid, null) { Chime = chime };
+            enMsg = new ChatMessage(ChatChannel.Radio, variants.English, wrappedEn, NetEntity.Invalid, null) { Chime = chime };
+            bilingualMsg = new ChatMessage(ChatChannel.Radio, variants.Bilingual, wrappedBilingual, NetEntity.Invalid, null) { Chime = chime };
+        }
+        // Nix - Translation end
+
+        var ev = new RadioReceiveEvent(messageSource, null, msg, notUdsMsg, language, radioSource, [], esMsg, enMsg, bilingualMsg, variants.IsTranslated);
 
         var sendAttemptEv = new CustomRadioSendAttemptEvent(channel, radioSource);
         RaiseLocalEvent(ref sendAttemptEv);

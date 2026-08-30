@@ -17,7 +17,11 @@ public readonly record struct RadioReceiveEvent(
     ChatMessage LanguageObfuscatedChatMsg,
     LanguagePrototype Language,
     EntityUid RadioSource,
-    List<EntityUid> Receivers
+    List<EntityUid> Receivers,
+    ChatMessage? SpanishChatMsg = null, // Nix
+    ChatMessage? EnglishChatMsg = null, // Nix
+    ChatMessage? BilingualChatMsg = null, // Nix
+    bool IsTranslated = false // Nix
     ); // Starlight
 
 /// <summary>

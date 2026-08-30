@@ -15,6 +15,7 @@ using Robust.Shared.Containers;
 using Robust.Shared.Physics.Components;
 using Robust.Shared.Physics.Systems;
 using Content.Shared.Destructible;
+using Content.Server._Nix.WebBridge;
 
 // ReSharper disable once CheckNamespace
 namespace Content.Server.Nutrition.EntitySystems;
@@ -113,6 +114,7 @@ public sealed partial class SliceableFoodSystem : EntitySystem
             return EntityUid.Invalid;
 
         var sliceUid = Spawn(entity.Comp2.Slice, _transform.GetMapCoordinates((entity, entity.Comp1)));
+        CopyPreparedFoodAttribution(entity.Owner, sliceUid);
 
         // try putting the slice into the container if the food being sliced is in a container!
         // this lets you do things like slice a pizza up inside of a hot food cart without making a food-everywhere mess
@@ -127,6 +129,21 @@ public sealed partial class SliceableFoodSystem : EntitySystem
         }
 
         return sliceUid;
+    }
+
+    private void CopyPreparedFoodAttribution(EntityUid source, EntityUid target)
+    {
+        if (!TryComp(source, out NixWebPreparedFoodComponent? prepared))
+            return;
+
+        var slicePrepared = EnsureComp<NixWebPreparedFoodComponent>(target);
+        slicePrepared.OwnerUserId = prepared.OwnerUserId;
+        slicePrepared.ProfileSlot = prepared.ProfileSlot;
+        slicePrepared.CharacterName = prepared.CharacterName;
+        slicePrepared.Species = prepared.Species;
+        slicePrepared.AppearanceJson = prepared.AppearanceJson;
+        slicePrepared.RecipeId = prepared.RecipeId;
+        slicePrepared.ServiceRecorded = prepared.ServiceRecorded;
     }
 
     private void DeleteFood(EntityUid uid, EntityUid user)
@@ -168,4 +185,3 @@ public sealed partial class SliceableFoodSystem : EntitySystem
         _solutionContainer.EnsureSolution(entity.Owner, foodComp.Solution, out _);
     }
 }
-

@@ -14,6 +14,7 @@ using Robust.Client.UserInterface.Controls;
 using Robust.Client.UserInterface.XAML;
 using Robust.Shared.ContentPack;
 using Robust.Shared.Prototypes;
+using Robust.Shared.Utility;
 
 namespace Content.Client.Guidebook.Controls;
 
@@ -124,11 +125,24 @@ public sealed partial class GuidebookWindow : PopOutFancyWindow, ILinkClickHandl
         EntryContainer.Visible = true;
         SearchBar.Text = "";
         EntryContainer.RemoveAllChildren();
-        using var file = _resourceManager.ContentFileReadText(entry.Text);
-
         SearchContainer.Visible = entry.FilterEnabled;
 
-        if (!_parsingMan.TryAddMarkup(EntryContainer, file.ReadToEnd()))
+        string contents;
+        try
+        {
+            using var file = _resourceManager.ContentFileReadText(entry.Text);
+            contents = file.ReadToEnd();
+        }
+        catch (Exception e)
+        {
+            var error = $"No se pudo abrir el documento del guidebook: {entry.Text}";
+            EntryContainer.AddChild(new GuidebookError(error, e.ToStringBetter()));
+            _sawmill.Error($"Failed to load guide document {entry.Id} at path {entry.Text}: {e}");
+            LastEntry = entry.Id;
+            return;
+        }
+
+        if (!_parsingMan.TryAddMarkup(EntryContainer, contents))
         {
             // The guidebook will automatically display the in-guidebook error if it fails
 

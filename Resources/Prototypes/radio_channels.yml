@@ -4,6 +4,7 @@
   keycode: ";"
   frequency: 1459
   color: "#2cdb2c"
+  autoTranslate: GalacticCommon
   icon: # Starlight
     sprite: _Starlight/Interface/Radial/Radio/channel_icons.rsi
     state: common
@@ -15,6 +16,7 @@
   frequency: 1337
   color: "#86d420" # Starlight
   longRange: true
+  autoTranslate: GalacticCommon
   icon: # Starlight
     sprite: _Starlight/Interface/Radial/Radio/channel_icons.rsi
     state: cc
@@ -25,6 +27,7 @@
   keycode: 'c'
   frequency: 1353
   color: "#fcdf03"
+  autoTranslate: GalacticCommon
   icon: # Starlight
     sprite: _Starlight/Interface/Radial/Radio/channel_icons.rsi
     state: command
@@ -35,6 +38,7 @@
   keycode: 'e'
   frequency: 1357
   color: "#ff733c"
+  autoTranslate: GalacticCommon
   icon: # Starlight
     sprite: _Starlight/Interface/Radial/Radio/channel_icons.rsi
     state: engineering
@@ -45,6 +49,7 @@
   keycode: 'm'
   frequency: 1355
   color: "#57b8f0"
+  autoTranslate: GalacticCommon
   icon: # Starlight
     sprite: _Starlight/Interface/Radial/Radio/channel_icons.rsi
     state: medical
@@ -55,6 +60,7 @@
   keycode: 'n'
   frequency: 1351
   color: "#cd7ccd"
+  autoTranslate: GalacticCommon
   icon: # Starlight
     sprite: _Starlight/Interface/Radial/Radio/channel_icons.rsi
     state: science
@@ -65,6 +71,7 @@
   keycode: 's'
   frequency: 1359
   color: "#ff4242"
+  autoTranslate: GalacticCommon
   icon: # Starlight
     sprite: _Starlight/Interface/Radial/Radio/channel_icons.rsi
     state: security
@@ -75,6 +82,7 @@
   keycode: 'v'
   frequency: 1349
   color: "#539c00"
+  autoTranslate: GalacticCommon
   icon: # Starlight
     sprite: _Starlight/Interface/Radial/Radio/channel_icons.rsi
     state: service
@@ -85,6 +93,7 @@
   keycode: 'u'
   frequency: 1347
   color: "#b48b57"
+  autoTranslate: GalacticCommon
   icon: # Starlight
     sprite: _Starlight/Interface/Radial/Radio/channel_icons.rsi
     state: cargo
@@ -106,6 +115,7 @@
   name: chat-radio-handheld
   frequency: 1330
   color: "#967101"
+  autoTranslate: GalacticCommon
   # long range since otherwise it'd defeat the point of a handheld radio independent of telecomms
   longRange: true
 

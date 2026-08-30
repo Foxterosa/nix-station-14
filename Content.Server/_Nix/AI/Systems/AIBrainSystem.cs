@@ -136,14 +136,18 @@ public sealed class AIBrainSystem : EntitySystem
                         comp.AiName = name;
                         comp.MasterUid = args.User;
                         comp.MasterName = Name(args.User);
+                        comp.LastActiveTime = _timing.CurTime;
 
                         if (TryComp<HumanoidAppearanceComponent>(args.User, out var humanoid))
                             comp.MasterSpecies = humanoid.Species;
 
                         _metaData.SetEntityName(uid, $"{comp.AiName} ({comp.MasterName})");
-                        _popupSystem.PopupEntity($"¡{comp.AiName} inicializado con éxito!", uid, args.User, PopupType.Medium);
-                        _chatSystem.TrySendInGameICMessage(uid, $"Enlace cuántico establecido. A sus órdenes, {comp.MasterName}. Puedes hablarme diciendo '{comp.AiName}, ...'", InGameICChatType.Speak, hideChat: false, ignoreActionBlocker: true);
+                        _popupSystem.PopupEntity($"[INICIALIZANDO MATRIZ CUÁNTICA PARA {comp.AiName.ToUpperInvariant()}...]", uid, args.User, PopupType.Medium);
+                        _chatSystem.TrySendInGameICMessage(uid, $"[INICIALIZANDO MATRIZ CUÁNTICA PARA {comp.AiName.ToUpperInvariant()}... POR FAVOR ESPERE]", InGameICChatType.Speak, hideChat: false, ignoreActionBlocker: true);
                         Dirty(uid, comp);
+
+                        // Calentar el modelo con TTL de 5m y generar el saludo inicial
+                        ProcessAiQueryAsync(uid, comp, "Hola, preséntate brevemente a tu nuevo dueño.", comp.MasterName, true, true);
                     }
                 );
             }
@@ -151,13 +155,16 @@ public sealed class AIBrainSystem : EntitySystem
             {
                 comp.MasterUid = args.User;
                 comp.MasterName = Name(args.User);
+                comp.LastActiveTime = _timing.CurTime;
 
                 if (TryComp<HumanoidAppearanceComponent>(args.User, out var humanoid))
                     comp.MasterSpecies = humanoid.Species;
 
                 _metaData.SetEntityName(uid, $"{comp.AiName} ({comp.MasterName})");
-                _chatSystem.TrySendInGameICMessage(uid, $"Enlace cuántico establecido. A sus órdenes, {comp.MasterName}.", InGameICChatType.Speak, hideChat: false, ignoreActionBlocker: true);
+                _chatSystem.TrySendInGameICMessage(uid, $"[INICIALIZANDO MATRIZ CUÁNTICA PARA {comp.AiName.ToUpperInvariant()}... POR FAVOR ESPERE]", InGameICChatType.Speak, hideChat: false, ignoreActionBlocker: true);
                 Dirty(uid, comp);
+
+                ProcessAiQueryAsync(uid, comp, "Hola, preséntate brevemente a tu nuevo dueño.", comp.MasterName, true, true);
             }
             return;
         }
@@ -361,8 +368,26 @@ public sealed class AIBrainSystem : EntitySystem
         // Extraer hechos y actualizar rol del amo dinámicamente (Mem0 / Letta memory stream)
         ExtractRoleAndEventFacts(comp, cleanMessageWithoutWake, senderName, isMaster);
 
-        // Si requiere búsqueda profunda en RAG, emitir acuse de recibo inmediato (sin emojis)
-        if (_loreSystem != null && _loreSystem.RequiresDeepSearch(cleanMessageWithoutWake))
+        // Detección de Cold Start (arranque en frío tras más de 5 minutos de inactividad)
+        var isColdStart = comp.LastActiveTime == TimeSpan.Zero || (curTime - comp.LastActiveTime) >= TimeSpan.FromMinutes(5);
+        comp.LastActiveTime = curTime;
+
+        if (isColdStart)
+        {
+            if (comp.PrivateMode && comp.MasterUid.HasValue)
+            {
+                if (_playerManager.TryGetSessionByEntity(comp.MasterUid.Value, out var masterSession))
+                {
+                    var wakeWrap = $"[color=#38bdf8][bold][{comp.AiName} (Auricular Privado)]:[/] [REANUDANDO MATRIZ NEURONAL Y SINTONIZANDO ANTENAS...][/color]";
+                    _chatManager.ChatMessageToOne(ChatChannel.Whisper, "[REANUDANDO MATRIZ NEURONAL Y SINTONIZANDO ANTENAS...]", wakeWrap, brainUid, hideChat: false, masterSession.Channel);
+                }
+            }
+            else
+            {
+                _chatSystem.TrySendInGameICMessage(brainUid, $"[{comp.AiName}]: [REANUDANDO MATRIZ NEURONAL Y SINTONIZANDO ANTENAS...]", InGameICChatType.Speak, hideChat: false, ignoreActionBlocker: true);
+            }
+        }
+        else if (_loreSystem != null && _loreSystem.RequiresDeepSearch(cleanMessageWithoutWake))
         {
             if (comp.PrivateMode && comp.MasterUid.HasValue)
             {

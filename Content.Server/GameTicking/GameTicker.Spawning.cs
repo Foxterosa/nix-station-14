@@ -384,7 +384,8 @@ namespace Content.Server.GameTicking
             }
             //starlight end
 
-            _newLifeSystem.SaveCharacterToUsed(player.UserId, playerPreferences.IndexOfCharacter(character));     //🌟Starlight🌟
+            var characterSlot = playerPreferences.IndexOfCharacter(character);
+            _newLifeSystem.SaveCharacterToUsed(player.UserId, characterSlot);     //🌟Starlight🌟
 
             DoSpawn(player, character, station, jobId, silent, out var mob, out var jobPrototype, out var jobName);
 
@@ -456,7 +457,8 @@ namespace Content.Server.GameTicking
                 silent,
                 PlayersJoinedRoundNormally,
                 station,
-                character);
+                character,
+                characterSlot);
             RaiseLocalEvent(mob, aev, true);
         }
 

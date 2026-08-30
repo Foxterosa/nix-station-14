@@ -4,14 +4,12 @@
   name: tts-voice-name-3001
   sex: Male
   silicon: false
-  copyright: "https://commonvoice.mozilla.org/es/datasets"
-  license: CC0-1.0
+  copyright: "Kokoro-82M"
+  license: Apache-2.0
   pitch: Medium
   tags:
   - spanish
-  - european
   - clear
-  - serious
 
 - type: voice
   id: nixEsSharvard
@@ -19,14 +17,13 @@
   name: tts-voice-name-3002
   sex: Female
   silicon: false
-  copyright: "https://commonvoice.mozilla.org/es/datasets"
-  license: CC0-1.0
+  copyright: "Kokoro-82M"
+  license: Apache-2.0
   pitch: Medium
   tags:
   - spanish
   - clear
   - smooth
-  - soft
 
 - type: voice
   id: nixEsAld
@@ -34,14 +31,260 @@
   name: tts-voice-name-3003
   sex: Male
   silicon: false
-  copyright: "https://commonvoice.mozilla.org/es/datasets"
-  license: CC0-1.0
+  copyright: "Kokoro-82M"
+  license: Apache-2.0
   pitch: Low
   tags:
   - spanish
   - latam
-  - serious
   - deep
+
+- type: voice
+  id: nixEsCamila
+  voice: 3004
+  name: tts-voice-name-3004
+  sex: Female
+  silicon: false
+  copyright: "Kokoro-82M"
+  license: Apache-2.0
+  pitch: Medium
+  tags:
+  - spanish
+  - soft
+
+- type: voice
+  id: nixEsLucas
+  voice: 3006
+  name: tts-voice-name-3006
+  sex: Male
+  silicon: false
+  copyright: "Kokoro-82M"
+  license: Apache-2.0
+  pitch: High
+  tags:
+  - spanish
+  - energetic
+
+- type: voice
+  id: nixEsValenzuela
+  voice: 3007
+  name: tts-voice-name-3007
+  sex: Male
+  silicon: false
+  copyright: "Kokoro-82M"
+  license: Apache-2.0
+  pitch: Low
+  tags:
+  - spanish
+  - serious
+
+- type: voice
+  id: nixEsRamos
+  voice: 3008
+  name: tts-voice-name-3008
+  sex: Male
+  silicon: false
+  copyright: "Kokoro-82M"
+  license: Apache-2.0
+  pitch: Medium
+  tags:
+  - spanish
+  - calm
+
+- type: voice
+  id: nixEsBruno
+  voice: 3009
+  name: tts-voice-name-3009
+  sex: Male
+  silicon: false
+  copyright: "Kokoro-82M"
+  license: Apache-2.0
+  pitch: Low
+  tags:
+  - spanish
+  - raspy
+
+- type: voice
+  id: nixEsEsteban
+  voice: 3010
+  name: tts-voice-name-3010
+  sex: Male
+  silicon: false
+  copyright: "Kokoro-82M"
+  license: Apache-2.0
+  pitch: Medium
+  tags:
+  - spanish
+  - clear
+
+- type: voice
+  id: nixEsGabriel
+  voice: 3011
+  name: tts-voice-name-3011
+  sex: Male
+  silicon: false
+  copyright: "Kokoro-82M"
+  license: Apache-2.0
+  pitch: Medium
+  tags:
+  - spanish
+  - soft
+
+- type: voice
+  id: nixEsRodrigo
+  voice: 3012
+  name: tts-voice-name-3012
+  sex: Male
+  silicon: false
+  copyright: "Kokoro-82M"
+  license: Apache-2.0
+  pitch: Low
+  tags:
+  - spanish
+  - serious
+
+- type: voice
+  id: nixEsSamuel
+  voice: 3013
+  name: tts-voice-name-3013
+  sex: Male
+  silicon: false
+  copyright: "Kokoro-82M"
+  license: Apache-2.0
+  pitch: Low
+  tags:
+  - spanish
+  - deep
+
+- type: voice
+  id: nixEsHector
+  voice: 3014
+  name: tts-voice-name-3014
+  sex: Male
+  silicon: false
+  copyright: "Kokoro-82M"
+  license: Apache-2.0
+  pitch: Low
+  tags:
+  - spanish
+  - mature
+
+- type: voice
+  id: nixEsNico
+  voice: 3015
+  name: tts-voice-name-3015
+  sex: Male
+  silicon: false
+  copyright: "Kokoro-82M"
+  license: Apache-2.0
+  pitch: High
+  tags:
+  - spanish
+  - fast
+
+- type: voice
+  id: nixEsMorales
+  voice: 3016
+  name: tts-voice-name-3016
+  sex: Female
+  silicon: false
+  copyright: "Kokoro-82M"
+  license: Apache-2.0
+  pitch: Medium
+  tags:
+  - spanish
+  - calm
+
+- type: voice
+  id: nixEsValentina
+  voice: 3017
+  name: tts-voice-name-3017
+  sex: Female
+  silicon: false
+  copyright: "Kokoro-82M"
+  license: Apache-2.0
+  pitch: High
+  tags:
+  - spanish
+  - energetic
+
+- type: voice
+  id: nixEsElena
+  voice: 3018
+  name: tts-voice-name-3018
+  sex: Female
+  silicon: false
+  copyright: "Kokoro-82M"
+  license: Apache-2.0
+  pitch: Medium
+  tags:
+  - spanish
+  - serious
+
+- type: voice
+  id: nixEsLucia
+  voice: 3019
+  name: tts-voice-name-3019
+  sex: Female
+  silicon: false
+  copyright: "Kokoro-82M"
+  license: Apache-2.0
+  pitch: High
+  tags:
+  - spanish
+  - clear
+
+- type: voice
+  id: nixEsMartina
+  voice: 3020
+  name: tts-voice-name-3020
+  sex: Female
+  silicon: false
+  copyright: "Kokoro-82M"
+  license: Apache-2.0
+  pitch: Medium
+  tags:
+  - spanish
+  - energetic
+
+- type: voice
+  id: nixEsJulieta
+  voice: 3021
+  name: tts-voice-name-3021
+  sex: Female
+  silicon: false
+  copyright: "Kokoro-82M"
+  license: Apache-2.0
+  pitch: Medium
+  tags:
+  - spanish
+  - smooth
+
+- type: voice
+  id: nixEsClara
+  voice: 3022
+  name: tts-voice-name-3022
+  sex: Female
+  silicon: false
+  copyright: "Kokoro-82M"
+  license: Apache-2.0
+  pitch: High
+  tags:
+  - spanish
+  - soft
+
+- type: voice
+  id: nixEsValeria
+  voice: 3023
+  name: tts-voice-name-3023
+  sex: Female
+  silicon: false
+  copyright: "Kokoro-82M"
+  license: Apache-2.0
+  pitch: Medium
+  tags:
+  - spanish
+  - serious
 
 - type: voice
   id: nixEsSilicon
@@ -49,10 +292,335 @@
   name: tts-voice-name-3005
   sex: Unsexed
   silicon: true
-  copyright: "https://commonvoice.mozilla.org/es/datasets"
-  license: CC0-1.0
+  copyright: "Piper-VITS"
+  license: Apache-2.0
+  pitch: Medium
+  tags:
+  - spanish
+  - robotic
+
+- type: voice
+  id: nixEsSiliconFem
+  voice: 3024
+  name: tts-voice-name-3024
+  sex: Unsexed
+  silicon: true
+  copyright: "Piper-VITS"
+  license: Apache-2.0
+  pitch: High
+  tags:
+  - spanish
+  - robotic
+
+- type: voice
+  id: nixEsSiliconTitan
+  voice: 3025
+  name: tts-voice-name-3025
+  sex: Unsexed
+  silicon: true
+  copyright: "Piper-VITS"
+  license: Apache-2.0
+  pitch: Low
+  tags:
+  - spanish
+  - robotic
+  - deep
+
+- type: voice
+  id: nixEsSiliconVita
+  voice: 3026
+  name: tts-voice-name-3026
+  sex: Unsexed
+  silicon: true
+  copyright: "Piper-VITS"
+  license: Apache-2.0
+  pitch: Medium
+  tags:
+  - spanish
+  - robotic
+  - calm
+
+- type: voice
+  id: nixEsSiliconVulcano
+  voice: 3027
+  name: tts-voice-name-3027
+  sex: Unsexed
+  silicon: true
+  copyright: "Piper-VITS"
+  license: Apache-2.0
+  pitch: Low
+  tags:
+  - spanish
+  - robotic
+  - raspy
+
+- type: voice
+  id: nixEsSiliconNano
+  voice: 3028
+  name: tts-voice-name-3028
+  sex: Unsexed
+  silicon: true
+  copyright: "Piper-VITS"
+  license: Apache-2.0
+  pitch: High
+  tags:
+  - spanish
+  - robotic
+  - energetic
+
+- type: voice
+  id: nixEsSiliconCentinela
+  voice: 3029
+  name: tts-voice-name-3029
+  sex: Unsexed
+  silicon: true
+  copyright: "Piper-VITS"
+  license: Apache-2.0
   pitch: Medium
   tags:
   - spanish
   - robotic
   - serious
+
+- type: voice
+  id: nixEsSiliconIris
+  voice: 3030
+  name: tts-voice-name-3030
+  sex: Unsexed
+  silicon: true
+  copyright: "Piper-VITS"
+  license: Apache-2.0
+  pitch: High
+  tags:
+  - spanish
+  - robotic
+  - soft
+
+- type: voice
+  id: nixEsSiliconValkiria
+  voice: 3031
+  name: tts-voice-name-3031
+  sex: Unsexed
+  silicon: true
+  copyright: "Piper-VITS"
+  license: Apache-2.0
+  pitch: Medium
+  tags:
+  - spanish
+  - robotic
+  - serious
+
+- type: voice
+  id: nixEsSiliconVector
+  voice: 3032
+  name: tts-voice-name-3032
+  sex: Unsexed
+  silicon: true
+  copyright: "Piper-VITS"
+  license: Apache-2.0
+  pitch: High
+  tags:
+  - spanish
+  - robotic
+  - fast
+
+- type: voice
+  id: nixEsSiliconProto
+  voice: 3033
+  name: tts-voice-name-3033
+  sex: Unsexed
+  silicon: true
+  copyright: "Piper-VITS"
+  license: Apache-2.0
+  pitch: Low
+  tags:
+  - spanish
+  - robotic
+
+- type: voice
+  id: nixEsSiliconNexus
+  voice: 3034
+  name: tts-voice-name-3034
+  sex: Unsexed
+  silicon: true
+  copyright: "Piper-VITS"
+  license: Apache-2.0
+  pitch: Medium
+  tags:
+  - spanish
+  - robotic
+  - calm
+
+# Voces de Especies / Roedores / Reptilianos
+- type: voice
+  id: nixEsRatonaPippa
+  voice: 3035
+  name: tts-voice-name-3035
+  sex: Female
+  silicon: false
+  copyright: "Piper-VITS"
+  license: Apache-2.0
+  pitch: High
+  tags:
+  - spanish
+  - high
+  - energetic
+
+- type: voice
+  id: nixEsRatonMiki
+  voice: 3036
+  name: tts-voice-name-3036
+  sex: Male
+  silicon: false
+  copyright: "Piper-VITS"
+  license: Apache-2.0
+  pitch: High
+  tags:
+  - spanish
+  - high
+  - energetic
+
+- type: voice
+  id: nixEsRatitaChippy
+  voice: 3037
+  name: tts-voice-name-3037
+  sex: Female
+  silicon: false
+  copyright: "Piper-VITS"
+  license: Apache-2.0
+  pitch: High
+  tags:
+  - spanish
+  - high
+  - soft
+
+- type: voice
+  id: nixEsRatonPips
+  voice: 3038
+  name: tts-voice-name-3038
+  sex: Male
+  silicon: false
+  copyright: "Piper-VITS"
+  license: Apache-2.0
+  pitch: High
+  tags:
+  - spanish
+  - high
+  - fast
+
+- type: voice
+  id: nixEsReptilGor
+  voice: 3039
+  name: tts-voice-name-3039
+  sex: Male
+  silicon: false
+  copyright: "Piper-VITS"
+  license: Apache-2.0
+  pitch: Low
+  tags:
+  - spanish
+  - low
+  - deep
+
+- type: voice
+  id: nixEsReptilKira
+  voice: 3040
+  name: tts-voice-name-3040
+  sex: Female
+  silicon: false
+  copyright: "Piper-VITS"
+  license: Apache-2.0
+  pitch: Low
+  tags:
+  - spanish
+  - low
+  - serious
+
+# Voces Femeninas Tiernas, Melódicas y Seductoras
+- type: voice
+  id: nixEsMia
+  voice: 3041
+  name: tts-voice-name-3041
+  sex: Female
+  silicon: false
+  copyright: "Piper-VITS"
+  license: Apache-2.0
+  pitch: High
+  tags:
+  - spanish
+  - soft
+  - cute
+
+- type: voice
+  id: nixEsLuna
+  voice: 3042
+  name: tts-voice-name-3042
+  sex: Female
+  silicon: false
+  copyright: "Piper-VITS"
+  license: Apache-2.0
+  pitch: Medium
+  tags:
+  - spanish
+  - smooth
+  - melodic
+
+- type: voice
+  id: nixEsScarlett
+  voice: 3043
+  name: tts-voice-name-3043
+  sex: Female
+  silicon: false
+  copyright: "Piper-VITS"
+  license: Apache-2.0
+  pitch: Low
+  tags:
+  - spanish
+  - low
+  - seductive
+
+- type: voice
+  id: nixEsAmbar
+  voice: 3044
+  name: tts-voice-name-3044
+  sex: Female
+  silicon: false
+  copyright: "Piper-VITS"
+  license: Apache-2.0
+  pitch: Low
+  tags:
+  - spanish
+  - low
+  - sensual
+
+- type: voice
+  id: nixEsEva
+  voice: 3045
+  name: tts-voice-name-3045
+  sex: Female
+  silicon: false
+  copyright: "Piper-VITS"
+  license: Apache-2.0
+  pitch: Medium
+  tags:
+  - spanish
+  - calm
+  - mysterious
+
+# Sintético Especial Alejandro Espacial (Elegible para Cyborgs)
+- type: voice
+  id: nixEsSiliconAlejandro
+  voice: 3046
+  name: tts-voice-name-3046
+  sex: Unsexed
+  silicon: true
+  copyright: "Piper-VITS"
+  license: Apache-2.0
+  pitch: Low
+  tags:
+  - spanish
+  - robotic
+  - deep
+
+
+

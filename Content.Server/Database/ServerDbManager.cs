@@ -51,8 +51,10 @@ namespace Content.Server.Database
         #region Nix Web Bridge
         Task RecordNixWebAchievementAsync(NixWebCharacterIdentity identity, string achievementId, int roundId);
         Task RecordNixWebStatisticAsync(NixWebCharacterIdentity identity, string metricId, int amount, int roundId, string? metadata = null);
+        Task UpsertNixWebAppearanceAsync(NixWebCharacterIdentity identity);
         Task<NixWebRankingPage> GetNixWebRankingAsync(int offset, int limit);
         Task<NixWebMetricRankingPage> GetNixWebMetricRankingAsync(string metricId, int offset, int limit);
+        Task<Dictionary<int, HumanoidCharacterProfile>> GetNixWebProfilesAsync(IEnumerable<int> profileIds);
         #endregion
 
         #region User Ids
@@ -523,6 +525,12 @@ namespace Content.Server.Database
             return RunDbCommand(() => _db.RecordNixWebStatisticAsync(identity, metricId, amount, roundId, metadata));
         }
 
+        public Task UpsertNixWebAppearanceAsync(NixWebCharacterIdentity identity)
+        {
+            DbWriteOpsMetric.Inc();
+            return RunDbCommand(() => _db.UpsertNixWebAppearanceAsync(identity));
+        }
+
         public Task<NixWebRankingPage> GetNixWebRankingAsync(int offset, int limit)
         {
             DbReadOpsMetric.Inc();
@@ -533,6 +541,12 @@ namespace Content.Server.Database
         {
             DbReadOpsMetric.Inc();
             return RunDbCommand(() => _db.GetNixWebMetricRankingAsync(metricId, offset, limit));
+        }
+
+        public Task<Dictionary<int, HumanoidCharacterProfile>> GetNixWebProfilesAsync(IEnumerable<int> profileIds)
+        {
+            DbReadOpsMetric.Inc();
+            return RunDbCommand(() => _db.GetNixWebProfilesAsync(profileIds));
         }
 
         public Task AssignUserIdAsync(string name, NetUserId userId)

@@ -576,7 +576,7 @@ namespace Content.Client.Lobby.UI
             };
 
             _voiceSelectorWindow.OnPreviewRequested += () =>
-                _entManager.System<TextToSpeechSystem>().RequestPreviewTts(Profile?.Voice ?? "");
+                _entManager.System<TextToSpeechSystem>().RequestPreviewTts(_voiceSelectorWindow.CurrentVoice?.ID ?? Profile?.Voice ?? "");
 
             VoiceButton.OnPressed += _ => _voiceSelectorWindow.OpenCentered();
 
@@ -593,7 +593,7 @@ namespace Content.Client.Lobby.UI
             };
 
             _voiceSiliconSelectorWindow.OnPreviewRequested
-                += () => _entManager.System<TextToSpeechSystem>().RequestPreviewTts(Profile?.SiliconVoice ?? "");
+                += () => _entManager.System<TextToSpeechSystem>().RequestPreviewTts(_voiceSiliconSelectorWindow.CurrentVoice?.ID ?? Profile?.SiliconVoice ?? "");
 
             SiliconVoiceButton.OnPressed += _ => _voiceSiliconSelectorWindow.OpenCentered();
 

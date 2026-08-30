@@ -1,4 +1,4 @@
-﻿using System.Linq;
+using System.Linq;
 using Content.Client.UserInterface.Screens;
 using Content.Shared.CCVar;
 using Content.Shared.HUD;
@@ -51,6 +51,15 @@ public sealed partial class MiscTab : Control
         Control.AddOptionCheckBox(CCVars.OpaqueStorageWindow, OpaqueStorageWindowCheckBox);
         Control.AddOptionCheckBox(CCVars.ChatEnableFancyBubbles, FancySpeechBubblesCheckBox);
         Control.AddOptionCheckBox(CCVars.ChatFancyNameBackground, FancyNameBackgroundsCheckBox);
+        var chatTranslateEntries = new List<OptionDropDownCVar<string>.ValueOption>
+        {
+            new("auto", Loc.GetString("ui-options-chat-translate-auto")),
+            new("es", Loc.GetString("ui-options-chat-translate-es")),
+            new("en", Loc.GetString("ui-options-chat-translate-en")),
+            new("bilingual", Loc.GetString("ui-options-chat-translate-bilingual")),
+            new("off", Loc.GetString("ui-options-chat-translate-off")),
+        };
+        Control.AddOptionDropDown(CCVars.NixChatTranslateTarget, DropDownChatTranslate, chatTranslateEntries); // Nix
         Control.AddOptionCheckBox(CCVars.StaticStorageUI, StaticStorageUI);
         //starlight
         Control.AddOptionSlider(StarlightCCVars.ChatSeparatedMinWidth, SeparatedChatWidthSlider, 300, 580);
