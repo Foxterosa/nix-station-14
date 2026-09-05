@@ -21,6 +21,7 @@ public static class RobustSandboxVerifier
         }
 
         var logManager = new LogManager();
+        logManager.RootSawmill.AddHandler(new ConsoleLogHandler());
         var sawmill = logManager.GetSawmill("res.typecheck");
 
         var checkerType = typeof(IResourceManager).Assembly.GetType("Robust.Shared.ContentPack.AssemblyTypeChecker");
@@ -37,9 +38,18 @@ public static class RobustSandboxVerifier
             return false;
         }
 
+        var searchDirsList = new List<string>();
+        var dir = Path.GetDirectoryName(Path.GetFullPath(assemblyPath));
+        if (!string.IsNullOrEmpty(dir))
+            searchDirsList.Add(dir);
+        if (extraSearchDirs != null)
+            searchDirsList.AddRange(extraSearchDirs);
+        var allDirs = searchDirsList.Distinct().ToArray();
+
         checkerType.GetProperty("VerifyIL")?.SetValue(checker, true);
         checkerType.GetProperty("DisableTypeCheck")?.SetValue(checker, false);
-        checkerType.GetProperty("EngineModuleDirectories")?.SetValue(checker, extraSearchDirs);
+        checkerType.GetField("EngineModuleDirectories")?.SetValue(checker, allDirs);
+        checkerType.GetProperty("EngineModuleDirectories")?.SetValue(checker, allDirs);
 
         var checkMethod = checkerType.GetMethod("CheckAssembly", new[] { typeof(Stream) });
         if (checkMethod == null)
@@ -63,7 +73,8 @@ public static class RobustSandboxVerifier
         }
         catch (Exception ex)
         {
-            logger.Error($"[SANDBOX ERROR] Excepción al verificar {Path.GetFileName(assemblyPath)}: {ex.Message}");
+            var realEx = ex is TargetInvocationException tie && tie.InnerException != null ? tie.InnerException : ex;
+            logger.Error($"[SANDBOX ERROR] Excepción al verificar {Path.GetFileName(assemblyPath)}: {realEx.GetType().FullName}: {realEx.Message}\n{realEx.StackTrace}");
             return false;
         }
     }
@@ -84,3 +95,4 @@ public static class RobustSandboxVerifier
         public IEnumerable<ResPath> GetContentRoots() => Array.Empty<ResPath>();
     }
 }
+
