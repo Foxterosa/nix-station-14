@@ -513,7 +513,7 @@ public sealed partial class NixAdminControlSystem : EntitySystem
         if (_roundEnd.IsRoundEndRequested() || seconds is < 1f or > 86400f)
             return false;
 
-        _roundEnd.RequestRoundEnd(TimeSpan.FromSeconds(seconds), session.AttachedEntity, false);
+        _roundEnd.RequestRoundEnd(TimeSpan.FromSeconds(seconds), session.AttachedEntity, checkCooldown: false);
         return _roundEnd.IsRoundEndRequested();
     }
 

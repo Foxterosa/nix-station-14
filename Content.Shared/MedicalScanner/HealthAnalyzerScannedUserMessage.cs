@@ -1,20 +1,12 @@
-using Content.Shared.FixedPoint; // Starlight
 using Robust.Shared.Serialization;
+using Content.Shared.FixedPoint;
 
 namespace Content.Shared.MedicalScanner;
 
-/// <summary>
-/// On interacting with an entity retrieves the entity UID for use with getting the current damage of the mob.
-/// </summary>
 [Serializable, NetSerializable]
-public sealed class HealthAnalyzerScannedUserMessage : BoundUserInterfaceMessage
+public sealed class HealthAnalyzerScannedUserMessage(HealthAnalyzerUiState state) : BoundUserInterfaceMessage
 {
-    public HealthAnalyzerUiState State;
-
-    public HealthAnalyzerScannedUserMessage(HealthAnalyzerUiState state)
-    {
-        State = state;
-    }
+    public readonly HealthAnalyzerUiState State = state;
 }
 
 // Starlight-start: Printable health reports.
@@ -24,20 +16,17 @@ public sealed class HealthAnalyzerPrintReportMessage : BoundUserInterfaceMessage
 }
 // Starlight-end
 
-/// <summary>
-/// Contains the current state of a health analyzer control. Used for the health analyzer and cryo pod.
-/// </summary>
 [Serializable, NetSerializable]
 public struct HealthAnalyzerUiState
 {
-    public readonly NetEntity? TargetEntity;
+    public NetEntity? TargetEntity;
     public float Temperature;
     public float BloodLevel;
-    public bool? CanPrint; // Starlight-edit: Printable health reports.
+    public bool? CanPrint;
     public bool? ScanMode;
     public bool? Bleeding;
     public bool? Unrevivable;
-    public List<(string ReagentId, FixedPoint2 Quantity)>? MetabolizingReagents; // Starlight - list of metabolizing reagents inside scanned user
+    public List<(string ReagentId, FixedPoint2 Quantity, FixedPoint2 StomachQuantity)>? Chemicals; // Starlight - merged bloodstream and stomach reagents
     public List<(string TraitName, string TraitDesc, string ColorHex)>? DiagnosedConditions;
 
     public HealthAnalyzerUiState() {}
@@ -50,17 +39,17 @@ public struct HealthAnalyzerUiState
         bool? scanMode,
         bool? bleeding,
         bool? unrevivable,
-        List<(string ReagentId, FixedPoint2 Quantity)>? metabolizingReagents = null,
+        List<(string ReagentId, FixedPoint2 Quantity, FixedPoint2 StomachQuantity)>? chemicals = null,
         List<(string TraitName, string TraitDesc, string ColorHex)>? diagnosedConditions = null)
     {
         TargetEntity = targetEntity;
         Temperature = temperature;
         BloodLevel = bloodLevel;
-        CanPrint = canPrint; // Starlight-edit: Printable health reports.
+        CanPrint = canPrint;
         ScanMode = scanMode;
         Bleeding = bleeding;
         Unrevivable = unrevivable;
-        MetabolizingReagents = metabolizingReagents; // Starlight
+        Chemicals = chemicals; // Starlight
         DiagnosedConditions = diagnosedConditions;
     }
 }

@@ -112,7 +112,7 @@ public sealed class BrainTumorSystem : EntitySystem
 
     private bool HasMedicinePresent(EntityUid uid, BrainTumorComponent comp)
     {
-        if (TryComp<Content.Shared.Chemistry.Components.SolutionManager.SolutionContainerManagerComponent>(uid, out var solManager))
+        if (TryComp<Content.Shared.Chemistry.Components.SolutionManager.SolutionManagerComponent>(uid, out var solManager))
         {
             foreach (var (_, solEntity) in _solution.EnumerateSolutions((uid, solManager)))
             {

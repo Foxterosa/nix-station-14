@@ -1,3 +1,4 @@
+using Content.Shared.Tools.Systems;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -182,6 +183,7 @@ public sealed partial class NixWebBridgeSystem : EntitySystem
         SubscribeLocalEvent<PlayerDetachedEvent>(OnPlayerDetached);
         SubscribeLocalEvent<RoundRestartCleanupEvent>(OnRoundRestartCleanup);
         SubscribeLocalEvent<NixWebPreparedFoodComponent, IngestedEvent>(OnPreparedFoodIngested);
+        SubscribeLocalEvent<NixWebPreparedFoodComponent, ToolRefinedEvent>(OnPreparedFoodRefined);
         SubscribeLocalEvent<NixWebPreparedDrinkComponent, IngestedEvent>(OnPreparedDrinkIngested);
         SubscribeLocalEvent<SolutionTransferredEvent>(OnPreparedDrinkTransferred);
         SubscribeLocalEvent<KillReportedEvent>(OnKillReported);
@@ -419,6 +421,21 @@ public sealed partial class NixWebBridgeSystem : EntitySystem
         _activeCharacters.Clear();
         _activeJobs.Clear();
         _pendingAppearanceSnapshots.Clear();
+    }
+
+    private void OnPreparedFoodRefined(Entity<NixWebPreparedFoodComponent> food, ref ToolRefinedEvent args)
+    {
+        foreach (var target in args.SpawnedEntities)
+        {
+            var slicePrepared = EnsureComp<NixWebPreparedFoodComponent>(target);
+            slicePrepared.OwnerUserId = food.Comp.OwnerUserId;
+            slicePrepared.ProfileSlot = food.Comp.ProfileSlot;
+            slicePrepared.CharacterName = food.Comp.CharacterName;
+            slicePrepared.Species = food.Comp.Species;
+            slicePrepared.AppearanceJson = food.Comp.AppearanceJson;
+            slicePrepared.RecipeId = food.Comp.RecipeId;
+            slicePrepared.ServiceRecorded = food.Comp.ServiceRecorded;
+        }
     }
 
     private void OnPreparedFoodIngested(Entity<NixWebPreparedFoodComponent> food, ref IngestedEvent args)
