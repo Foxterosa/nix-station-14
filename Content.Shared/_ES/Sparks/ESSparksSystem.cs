@@ -21,7 +21,7 @@ public sealed partial class ESSparksSystem : EntitySystem
     [Dependency] private IRobustRandom _random = default!;
     [Dependency] private SharedPowerReceiverSystem _powerReceiver = default!;
     [Dependency] private ESPreventCollideSystem _preventCollide = default!;
-    // [Dependency] private readonly ESSharedTileFireSystem _tileFire = default!; // DeltaV - we don't have tilefires
+    // [Dependency] private ESSharedTileFireSystem _tileFire = default!; // DeltaV - we don't have tilefires
     [Dependency] private ThrowingSystem _throwing = default!;
     [Dependency] private SharedTransformSystem _transform = default!;
 

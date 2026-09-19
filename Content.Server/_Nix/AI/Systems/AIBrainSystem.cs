@@ -36,23 +36,27 @@ namespace Content.Server._Nix.AI.Systems;
 /// <summary>
 /// Sistema que gestiona la percepción auditiva, la memoria de ronda y las respuestas de las entidades con AIBrainComponent.
 /// </summary>
-public sealed class AIBrainSystem : EntitySystem
+public sealed partial class AIBrainSystem : EntitySystem
 {
-    [Dependency] private readonly ChatSystem _chatSystem = default!;
-    [Dependency] private readonly TransformSystem _transformSystem = default!;
-    [Dependency] private readonly SharedContainerSystem _containerSystem = default!;
-    [Dependency] private readonly SharedPopupSystem _popupSystem = default!;
-    [Dependency] private readonly MetaDataSystem _metaData = default!;
-    [Dependency] private readonly IGameTiming _timing = default!;
-    [Dependency] private readonly ILogManager _logManager = default!;
-    [Dependency] private readonly IConfigurationManager _config = default!;
-    [Dependency] private readonly AILoreSystem _loreSystem = default!;
-    [Dependency] private readonly QuickDialogSystem _quickDialog = default!;
-    [Dependency] private readonly IChatManager _chatManager = default!;
-    [Dependency] private readonly IPlayerManager _playerManager = default!;
-    [Dependency] private readonly AlertLevelSystem _alertLevelSystem = default!;
-    [Dependency] private readonly StationSystem _stationSystem = default!;
-    [Dependency] private readonly AtmosphereSystem _atmosSystem = default!;
+    private static readonly Regex PaiStandaloneRegex = new(@"(?<![\p{L}\p{N}])pai(?![\p{L}\p{N}])", RegexOptions.Compiled | RegexOptions.CultureInvariant);
+    private static readonly Regex IaStandaloneRegex = new(@"(?<![\p{L}\p{N}])ia(?![\p{L}\p{N}])", RegexOptions.Compiled | RegexOptions.CultureInvariant);
+    private static readonly Regex RepeatedCharRegex = new(@"(.)\1+", RegexOptions.Compiled);
+    private static readonly Regex HyphenTildeRegex = new(@"[-~]", RegexOptions.Compiled);
+    [Dependency] private ChatSystem _chatSystem = default!;
+    [Dependency] private TransformSystem _transformSystem = default!;
+    [Dependency] private SharedContainerSystem _containerSystem = default!;
+    [Dependency] private SharedPopupSystem _popupSystem = default!;
+    [Dependency] private MetaDataSystem _metaData = default!;
+    [Dependency] private IGameTiming _timing = default!;
+    [Dependency] private ILogManager _logManager = default!;
+    [Dependency] private IConfigurationManager _config = default!;
+    [Dependency] private AILoreSystem _loreSystem = default!;
+    [Dependency] private QuickDialogSystem _quickDialog = default!;
+    [Dependency] private IChatManager _chatManager = default!;
+    [Dependency] private IPlayerManager _playerManager = default!;
+    [Dependency] private AlertLevelSystem _alertLevelSystem = default!;
+    [Dependency] private StationSystem _stationSystem = default!;
+    [Dependency] private AtmosphereSystem _atmosSystem = default!;
 
     private ISawmill _sawmill = default!;
     private OllamaAIService _ollamaService = default!;
@@ -126,7 +130,7 @@ public sealed class AIBrainSystem : EntitySystem
                     "Ingresa el nombre para tu asistente de bolsillo (ej: Sparky, Jarvis, EDI, Cortana):",
                     (customName) =>
                     {
-                        if (Deleted(uid) || !EntityManager.EntityExists(uid))
+                        if (Deleted(uid) || !Exists(uid))
                             return;
 
                         var name = string.IsNullOrWhiteSpace(customName) ? "Sparky" : customName.Trim();
@@ -269,28 +273,36 @@ public sealed class AIBrainSystem : EntitySystem
 
         // 2. Normalización de acentos de especie (Vulpkanin 'rr', Reptilianos 'ss', tartamudeos 'j-j-')
         // Colapsa letras repetidas consecutivas: "jarrrvis" -> "jarvis", "s-sparky" -> "sparky"
-        var cleanDeAccented = Regex.Replace(clean, @"[-~]", "");
-        cleanDeAccented = Regex.Replace(cleanDeAccented, @"(.)\1+", "$1");
+        var cleanDeAccented = HyphenTildeRegex.Replace(clean, "");
+        cleanDeAccented = RepeatedCharRegex.Replace(cleanDeAccented, "$1");
 
-        var nameDeAccented = Regex.Replace(nameLower, @"[-~]", "");
-        nameDeAccented = Regex.Replace(nameDeAccented, @"(.)\1+", "$1");
+        var nameDeAccented = HyphenTildeRegex.Replace(nameLower, "");
+        nameDeAccented = RepeatedCharRegex.Replace(nameDeAccented, "$1");
 
         if (nameDeAccented.Length >= 3 && ContainsStandaloneTerm(cleanDeAccented, nameDeAccented))
             return true;
 
         // 3. Si usa iniciadores universales como "pai" o "ia " (ej: "pai, donde está el capitan?", "ia, qué es el sindicato?")
-        if (ContainsStandaloneTerm(clean, "pai") || ContainsStandaloneTerm(clean, "ia"))
+        if (PaiStandaloneRegex.IsMatch(clean) || IaStandaloneRegex.IsMatch(clean))
             return true;
 
         return false;
     }
 
+    
     private static bool ContainsStandaloneTerm(string text, string term)
     {
-        return Regex.IsMatch(
-            text,
-            $@"(?<![\p{{L}}\p{{N}}]){Regex.Escape(term)}(?![\p{{L}}\p{{N}}])",
-            RegexOptions.CultureInvariant);
+        var idx = 0;
+        while ((idx = text.IndexOf(term, idx, StringComparison.OrdinalIgnoreCase)) != -1)
+        {
+            var startOk = idx == 0 || !char.IsLetterOrDigit(text[idx - 1]);
+            var endIdx = idx + term.Length;
+            var endOk = endIdx == text.Length || !char.IsLetterOrDigit(text[endIdx]);
+            if (startOk && endOk)
+                return true;
+            idx += term.Length;
+        }
+        return false;
     }
 
     private bool IsSpeakerInRange(EntityUid speaker, EntityUid brain, float radius)
@@ -361,7 +373,8 @@ public sealed class AIBrainSystem : EntitySystem
         }
 
         // Limpiar el nombre de la invocación para el prompt
-        var cleanMessageWithoutWake = Regex.Replace(userMessage, $@"(?i)\b({Regex.Escape(comp.AiName)}|pai|ia)\b[:,]?", "").Trim();
+        var wakeRegex = new Regex($@"(?i)\b({Regex.Escape(comp.AiName)}|pai|ia)\b[:,]?");
+        var cleanMessageWithoutWake = wakeRegex.Replace(userMessage, "").Trim();
         if (string.IsNullOrWhiteSpace(cleanMessageWithoutWake))
             cleanMessageWithoutWake = userMessage;
 
@@ -410,7 +423,7 @@ public sealed class AIBrainSystem : EntitySystem
             loreBuilder.AppendLine(lore);
 
         // Telemetría médica y espacial diegética
-        if (comp.MasterUid.HasValue && EntityManager.EntityExists(comp.MasterUid.Value))
+        if (comp.MasterUid.HasValue && Exists(comp.MasterUid.Value))
         {
             if (TryComp<MobStateComponent>(comp.MasterUid.Value, out var mobState))
             {
@@ -487,7 +500,7 @@ public sealed class AIBrainSystem : EntitySystem
                 // Encolar de forma segura para ejecutar en el hilo principal del servidor
                 _mainThreadQueue.Enqueue(() =>
                 {
-                    if (Deleted(brainUid) || !EntityManager.EntityExists(brainUid))
+                    if (Deleted(brainUid) || !Exists(brainUid))
                         return;
 
                     DeliverAiResponse(brainUid, comp, cleanMessageWithoutWake, response, senderName, isMaster, curTime);

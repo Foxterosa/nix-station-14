@@ -11,12 +11,12 @@ namespace Content.Shared._Nix.Traits.BigHands;
 /// System handling the Big Hands (Chunky Fingers) trait.
 /// Causes occasional item drops / fumbles when using tools or complex items.
 /// </summary>
-public sealed class BigHandsSystem : EntitySystem
+public sealed partial class BigHandsSystem : EntitySystem
 {
-    [Dependency] private readonly IGameTiming _timing = default!;
-    [Dependency] private readonly IRobustRandom _random = default!;
-    [Dependency] private readonly SharedHandsSystem _hands = default!;
-    [Dependency] private readonly SharedPopupSystem _popup = default!;
+    [Dependency] private IGameTiming _timing = default!;
+    [Dependency] private IRobustRandom _random = default!;
+    [Dependency] private SharedHandsSystem _hands = default!;
+    [Dependency] private SharedPopupSystem _popup = default!;
 
     public override void Initialize()
     {

@@ -13,13 +13,13 @@ namespace Content.Server._Nix.Traits.BloodDeficiency;
 /// Server system managing Blood Deficiency trait.
 /// Periodically reduces blood volume to simulate poor hematopoiesis.
 /// </summary>
-public sealed class BloodDeficiencySystem : EntitySystem
+public sealed partial class BloodDeficiencySystem : EntitySystem
 {
-    [Dependency] private readonly IGameTiming _timing = default!;
-    [Dependency] private readonly IRobustRandom _random = default!;
-    [Dependency] private readonly SharedBloodstreamSystem _bloodstream = default!;
-    [Dependency] private readonly SharedPopupSystem _popup = default!;
-    [Dependency] private readonly MobStateSystem _mobState = default!;
+    [Dependency] private IGameTiming _timing = default!;
+    [Dependency] private IRobustRandom _random = default!;
+    [Dependency] private SharedBloodstreamSystem _bloodstream = default!;
+    [Dependency] private SharedPopupSystem _popup = default!;
+    [Dependency] private MobStateSystem _mobState = default!;
 
     public override void Initialize()
     {

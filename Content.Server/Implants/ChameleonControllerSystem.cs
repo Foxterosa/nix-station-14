@@ -1,5 +1,4 @@
 ﻿using Content.Server.Clothing.Systems;
-using Content.Server.Preferences.Managers;
 using Content.Shared.Clothing;
 using Content.Shared.Clothing.Components;
 using Content.Shared.Humanoid;
@@ -20,7 +19,7 @@ public sealed partial class ChameleonControllerSystem : SharedChameleonControlle
     [Dependency] private InventorySystem _inventory = default!;
     [Dependency] private SharedStationSpawningSystem _stationSpawningSystem = default!;
     [Dependency] private ChameleonClothingSystem _chameleonClothingSystem = default!;
-    //[Dependency] private readonly IServerPreferencesManager _preferences = default!; // Starlight-removed - we dropped the only upstream reference to this
+    //[Dependency] private IServerPreferencesManager _preferences = default!; // Starlight-removed - we dropped the only upstream reference to this
     [Dependency] private UseDelaySystem _delay = default!;
     [Dependency] private SharedHumanoidAppearanceSystem _humanoidAppearanceSystem = default!;
 

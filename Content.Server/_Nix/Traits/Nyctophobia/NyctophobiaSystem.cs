@@ -25,19 +25,19 @@ namespace Content.Server._Nix.Traits.Nyctophobia;
 /// Evaluates point lights, flashlights, and room illumination. In true darkness:
 /// slows down movement, triggers periodic panic sensations, jitters, and blocks/penalizes sprinting in the dark.
 /// </summary>
-public sealed class NyctophobiaSystem : EntitySystem
+public sealed partial class NyctophobiaSystem : EntitySystem
 {
-    [Dependency] private readonly IGameTiming _timing = default!;
-    [Dependency] private readonly IRobustRandom _random = default!;
-    [Dependency] private readonly IChatManager _chatManager = default!;
-    [Dependency] private readonly SharedPopupSystem _popup = default!;
-    [Dependency] private readonly SharedJitteringSystem _jitter = default!;
-    [Dependency] private readonly MobStateSystem _mobState = default!;
-    [Dependency] private readonly SharedHandsSystem _hands = default!;
-    [Dependency] private readonly EntityLookupSystem _lookup = default!;
-    [Dependency] private readonly StaminaSystem _stamina = default!;
-    [Dependency] private readonly SharedStunSystem _stun = default!;
-    [Dependency] private readonly MovementSpeedModifierSystem _speedModifier = default!;
+    [Dependency] private IGameTiming _timing = default!;
+    [Dependency] private IRobustRandom _random = default!;
+    [Dependency] private IChatManager _chatManager = default!;
+    [Dependency] private SharedPopupSystem _popup = default!;
+    [Dependency] private SharedJitteringSystem _jitter = default!;
+    [Dependency] private MobStateSystem _mobState = default!;
+    [Dependency] private SharedHandsSystem _hands = default!;
+    [Dependency] private EntityLookupSystem _lookup = default!;
+    [Dependency] private StaminaSystem _stamina = default!;
+    [Dependency] private SharedStunSystem _stun = default!;
+    [Dependency] private MovementSpeedModifierSystem _speedModifier = default!;
 
     private static readonly string[] DarknessSensations =
     [

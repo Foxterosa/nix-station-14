@@ -68,7 +68,7 @@ public sealed partial class VampireSystem : EntitySystem
     [Dependency] private SharedMapSystem _map = default!;
     [Dependency] private StatusEffectsSystem _statusEffects = default!;
     [Dependency] private ILogManager _log = default!;
-    //[Dependency] private readonly DamageableSystem _damageableSystem = default!;
+    //[Dependency] private DamageableSystem _damageableSystem = default!;
     [Dependency] private FlammableSystem _flammable = default!;
     [Dependency] private MobThresholdSystem _mobThreshold = default!;
     [Dependency] private MovementSpeedModifierSystem _movementSpeed = default!;
@@ -782,7 +782,7 @@ public sealed partial class VampireSystem : EntitySystem
 
         var reg = _componentFactory.GetRegistration(classProto.ClassComponent, ignoreCase: true);
         var classComp = _componentFactory.GetComponent(reg.Type);
-        EntityManager.AddComponent(uid, classComp);
+        AddComp(uid, classComp);
 
         EnsureComp<NightVisionComponent>(uid);
 

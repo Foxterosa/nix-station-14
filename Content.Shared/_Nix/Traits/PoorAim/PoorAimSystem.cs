@@ -12,11 +12,11 @@ namespace Content.Shared._Nix.Traits.PoorAim;
 /// Handles Stormtrooper aim deviation for entities with the Poor Aim trait.
 /// Affects both ballistic projectile weapons and energy / laser hitscan weapons.
 /// </summary>
-public sealed class PoorAimSystem : EntitySystem
+public sealed partial class PoorAimSystem : EntitySystem
 {
-    [Dependency] private readonly IRobustRandom _random = default!;
-    [Dependency] private readonly SharedPhysicsSystem _physics = default!;
-    [Dependency] private readonly SharedTransformSystem _transform = default!;
+    [Dependency] private IRobustRandom _random = default!;
+    [Dependency] private SharedPhysicsSystem _physics = default!;
+    [Dependency] private SharedTransformSystem _transform = default!;
 
     public override void Initialize()
     {

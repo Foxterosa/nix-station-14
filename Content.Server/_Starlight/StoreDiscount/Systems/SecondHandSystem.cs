@@ -23,7 +23,7 @@ public sealed partial class SecondHandSystem : EntitySystem
 
     [Dependency] private IRobustRandom _random = default!;
     [Dependency] private IPrototypeManager _prototypeManager = default!;
-    //[Dependency] private readonly ServerFeedbackManager _feedbackManager = default!; // Starlight
+    //[Dependency] private ServerFeedbackManager _feedbackManager = default!; // Starlight
 
     public override void Initialize()
     {

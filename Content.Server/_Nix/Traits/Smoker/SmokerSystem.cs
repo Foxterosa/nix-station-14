@@ -19,15 +19,15 @@ namespace Content.Server._Nix.Traits.Smoker;
 /// Server system managing the Smoker trait with SS13 parity.
 /// Periodically requires smoking/nicotine; triggers coughing, shaking, popup and chat notification when in withdrawal.
 /// </summary>
-public sealed class SmokerSystem : EntitySystem
+public sealed partial class SmokerSystem : EntitySystem
 {
-    [Dependency] private readonly IGameTiming _timing = default!;
-    [Dependency] private readonly IRobustRandom _random = default!;
-    [Dependency] private readonly IChatManager _chatManager = default!;
-    [Dependency] private readonly SharedPopupSystem _popup = default!;
-    [Dependency] private readonly SharedJitteringSystem _jitter = default!;
-    [Dependency] private readonly SharedSolutionContainerSystem _solution = default!;
-    [Dependency] private readonly MobStateSystem _mobState = default!;
+    [Dependency] private IGameTiming _timing = default!;
+    [Dependency] private IRobustRandom _random = default!;
+    [Dependency] private IChatManager _chatManager = default!;
+    [Dependency] private SharedPopupSystem _popup = default!;
+    [Dependency] private SharedJitteringSystem _jitter = default!;
+    [Dependency] private SharedSolutionContainerSystem _solution = default!;
+    [Dependency] private MobStateSystem _mobState = default!;
 
     public override void Initialize()
     {

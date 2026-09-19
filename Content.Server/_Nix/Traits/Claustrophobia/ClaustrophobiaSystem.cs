@@ -21,15 +21,15 @@ namespace Content.Server._Nix.Traits.Claustrophobia;
 /// Triggers panic, asphyxiation damage, visible popups, and persistent chat alerts while inside
 /// enclosed lockers, crates, bodybags, disposals, or machinery.
 /// </summary>
-public sealed class ClaustrophobiaSystem : EntitySystem
+public sealed partial class ClaustrophobiaSystem : EntitySystem
 {
-    [Dependency] private readonly IGameTiming _timing = default!;
-    [Dependency] private readonly IChatManager _chatManager = default!;
-    [Dependency] private readonly SharedPopupSystem _popup = default!;
-    [Dependency] private readonly SharedContainerSystem _container = default!;
-    [Dependency] private readonly DamageableSystem _damageable = default!;
-    [Dependency] private readonly SharedJitteringSystem _jitter = default!;
-    [Dependency] private readonly MobStateSystem _mobState = default!;
+    [Dependency] private IGameTiming _timing = default!;
+    [Dependency] private IChatManager _chatManager = default!;
+    [Dependency] private SharedPopupSystem _popup = default!;
+    [Dependency] private SharedContainerSystem _container = default!;
+    [Dependency] private DamageableSystem _damageable = default!;
+    [Dependency] private SharedJitteringSystem _jitter = default!;
+    [Dependency] private MobStateSystem _mobState = default!;
 
     public override void Initialize()
     {

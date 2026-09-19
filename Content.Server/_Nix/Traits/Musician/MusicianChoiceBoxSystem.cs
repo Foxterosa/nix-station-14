@@ -15,13 +15,13 @@ namespace Content.Server._Nix.Traits.Musician;
 /// Server system managing the Musician Choice Box.
 /// Opens interactive UI dialog on use so the player can select their preferred instrument and confirm.
 /// </summary>
-public sealed class MusicianChoiceBoxSystem : EntitySystem
+public sealed partial class MusicianChoiceBoxSystem : EntitySystem
 {
-    [Dependency] private readonly UserInterfaceSystem _ui = default!;
-    [Dependency] private readonly SharedPopupSystem _popup = default!;
-    [Dependency] private readonly SharedHandsSystem _hands = default!;
-    [Dependency] private readonly SharedAudioSystem _audio = default!;
-    [Dependency] private readonly TransformSystem _xform = default!;
+    [Dependency] private UserInterfaceSystem _ui = default!;
+    [Dependency] private SharedPopupSystem _popup = default!;
+    [Dependency] private SharedHandsSystem _hands = default!;
+    [Dependency] private SharedAudioSystem _audio = default!;
+    [Dependency] private TransformSystem _xform = default!;
 
     public override void Initialize()
     {

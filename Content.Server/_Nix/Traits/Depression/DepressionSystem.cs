@@ -17,15 +17,15 @@ namespace Content.Server._Nix.Traits.Depression;
 /// Server system managing Depression trait with SS13 parity.
 /// Periodically sighs heavily with local room emote, popup, notification chat, and stamina drain.
 /// </summary>
-public sealed class DepressionSystem : EntitySystem
+public sealed partial class DepressionSystem : EntitySystem
 {
-    [Dependency] private readonly IGameTiming _timing = default!;
-    [Dependency] private readonly IRobustRandom _random = default!;
-    [Dependency] private readonly IChatManager _chatManager = default!;
-    [Dependency] private readonly ChatSystem _chat = default!;
-    [Dependency] private readonly SharedPopupSystem _popup = default!;
-    [Dependency] private readonly StaminaSystem _stamina = default!;
-    [Dependency] private readonly MobStateSystem _mobState = default!;
+    [Dependency] private IGameTiming _timing = default!;
+    [Dependency] private IRobustRandom _random = default!;
+    [Dependency] private IChatManager _chatManager = default!;
+    [Dependency] private ChatSystem _chat = default!;
+    [Dependency] private SharedPopupSystem _popup = default!;
+    [Dependency] private StaminaSystem _stamina = default!;
+    [Dependency] private MobStateSystem _mobState = default!;
 
     public override void Initialize()
     {

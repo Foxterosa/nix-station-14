@@ -13,13 +13,13 @@ namespace Content.Shared._Nix.Traits.BadBack;
 /// System managing Bad Back trait.
 /// Slows down the player and triggers occasional back pain popups when a storage item is worn on the back slot.
 /// </summary>
-public sealed class BadBackSystem : EntitySystem
+public sealed partial class BadBackSystem : EntitySystem
 {
-    [Dependency] private readonly IGameTiming _timing = default!;
-    [Dependency] private readonly IRobustRandom _random = default!;
-    [Dependency] private readonly InventorySystem _inventory = default!;
-    [Dependency] private readonly MovementSpeedModifierSystem _speedMod = default!;
-    [Dependency] private readonly SharedPopupSystem _popup = default!;
+    [Dependency] private IGameTiming _timing = default!;
+    [Dependency] private IRobustRandom _random = default!;
+    [Dependency] private InventorySystem _inventory = default!;
+    [Dependency] private MovementSpeedModifierSystem _speedMod = default!;
+    [Dependency] private SharedPopupSystem _popup = default!;
 
     public override void Initialize()
     {

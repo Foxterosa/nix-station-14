@@ -13,10 +13,12 @@ namespace Content.Server._Nix.AI.Systems;
 /// Sistema RAG de alta precisión para inyectar Lore canónico, guías del Guidebook y vademécum de química de SS14.
 /// Carga 1,287 registros oficiales directamente en memoria RAM para búsqueda instantánea.
 /// </summary>
-public sealed class AILoreSystem : EntitySystem
+public sealed partial class AILoreSystem : EntitySystem
 {
-    [Dependency] private readonly IResourceManager _resourceManager = default!;
-    [Dependency] private readonly ILogManager _logManager = default!;
+    private static readonly Regex RepeatedCharRegex = new(@"(.)\1+", RegexOptions.Compiled);
+    private static readonly Regex SpanishWordRegex = new(@"\b[a-záéíóúñ]{3,}\b", RegexOptions.Compiled);
+    [Dependency] private IResourceManager _resourceManager = default!;
+    [Dependency] private ILogManager _logManager = default!;
 
     private ISawmill _sawmill = default!;
     private readonly List<KnowledgeEntry> _knowledgeIndex = new();
@@ -72,9 +74,9 @@ public sealed class AILoreSystem : EntitySystem
 
         var qLower = query.ToLowerInvariant();
         // Normalización de acentos de especie (Vulpkanin rr, ss, etc.)
-        var qNorm = Regex.Replace(qLower, @"(.)\1+", "$1");
+        var qNorm = RepeatedCharRegex.Replace(qLower, "$1");
         
-        var words = Regex.Matches(qNorm, @"\b[a-záéíóúñ]{3,}\b")
+        var words = SpanishWordRegex.Matches(qNorm)
             .Select(m => m.Value)
             .Where(w => !Stopwords.Contains(w))
             .ToList();
@@ -141,7 +143,7 @@ public sealed class AILoreSystem : EntitySystem
     /// </summary>
     public bool RequiresDeepSearch(string query)
     {
-        var qNorm = Regex.Replace(query.ToLowerInvariant(), @"(.)\1+", "$1");
+        var qNorm = RepeatedCharRegex.Replace(query.ToLowerInvariant(), "$1");
         return qNorm.Contains("ley") || qNorm.Contains("supermat") ||
                qNorm.Contains("sindicat") || qNorm.Contains("protocolo") ||
                qNorm.Contains("quimic") || qNorm.Contains("tarea") ||

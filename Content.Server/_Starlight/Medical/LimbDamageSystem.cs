@@ -4,10 +4,10 @@ using Content.Shared.Body.Components;
 namespace Content.Server._Starlight.Medical;
 public sealed partial class LimbDamageSystem : EntitySystem
 {
-    //[Dependency] private readonly IRobustRandom _rand = default!;
-    //[Dependency] private readonly BodySystem _body = default!;
-    //[Dependency] private readonly ContainerSystem _containers = default!;
-    //[Dependency] private readonly HandsSystem _hands = default!;
+    //[Dependency] private IRobustRandom _rand = default!;
+    //[Dependency] private BodySystem _body = default!;
+    //[Dependency] private ContainerSystem _containers = default!;
+    //[Dependency] private HandsSystem _hands = default!;
 
     public override void Initialize()
         => SubscribeLocalEvent<BodyComponent, DamageBeforeApplyEvent>(OnDamage);

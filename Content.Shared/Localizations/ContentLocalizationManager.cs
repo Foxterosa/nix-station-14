@@ -54,7 +54,6 @@ namespace Content.Shared.Localizations
             _loc.AddFunction(cultureEs, "MANY", FormatMany);
 
             _loc.SetDefaultCulture();
-            _loc.SetFallbackCluture(baseCulture);
         }
 
         private void EnsureCultureLoaded(CultureInfo culture)

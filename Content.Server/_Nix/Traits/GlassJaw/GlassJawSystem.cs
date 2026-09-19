@@ -12,12 +12,12 @@ namespace Content.Server._Nix.Traits.GlassJaw;
 /// Handles Glass Jaw trait logic.
 /// Entities with a glass jaw have a chance to be knocked down / stunned when taking heavy physical damage.
 /// </summary>
-public sealed class GlassJawSystem : EntitySystem
+public sealed partial class GlassJawSystem : EntitySystem
 {
-    [Dependency] private readonly IRobustRandom _random = default!;
-    [Dependency] private readonly MobStateSystem _mobState = default!;
-    [Dependency] private readonly SharedStunSystem _stun = default!;
-    [Dependency] private readonly SharedPopupSystem _popup = default!;
+    [Dependency] private IRobustRandom _random = default!;
+    [Dependency] private MobStateSystem _mobState = default!;
+    [Dependency] private SharedStunSystem _stun = default!;
+    [Dependency] private SharedPopupSystem _popup = default!;
 
     public override void Initialize()
     {

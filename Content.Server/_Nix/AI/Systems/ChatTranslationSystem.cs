@@ -19,7 +19,7 @@ namespace Content.Server._Nix.AI.Systems;
 /// Server-side bilingual chat translation for player speech with per-recipient distribution.
 /// Keeps text clean for native speakers and translates only for listeners who need/request it.
 /// </summary>
-public sealed class ChatTranslationSystem : EntitySystem
+public sealed partial class ChatTranslationSystem : EntitySystem
 {
     private const int CacheCapacity = 1024;
 
@@ -81,10 +81,10 @@ public sealed class ChatTranslationSystem : EntitySystem
         "jump", "sleep", "run", "fast", "crash", "went", "going", "you", "your", "they", "them", "their", "we", "us", "our"
     };
 
-    [Dependency] private readonly IConfigurationManager _config = default!;
-    [Dependency] private readonly ILogManager _logManager = default!;
-    [Dependency] private readonly Robust.Server.Player.IPlayerManager _playerManager = default!;
-    [Dependency] private readonly Content.Server.Chat.Managers.IChatManager _chatManager = default!;
+    [Dependency] private IConfigurationManager _config = default!;
+    [Dependency] private ILogManager _logManager = default!;
+    [Dependency] private Robust.Server.Player.IPlayerManager _playerManager = default!;
+    [Dependency] private Content.Server.Chat.Managers.IChatManager _chatManager = default!;
 
     private readonly ConcurrentDictionary<string, string> _cache = new(StringComparer.Ordinal);
     private readonly ConcurrentQueue<string> _cacheOrder = new();

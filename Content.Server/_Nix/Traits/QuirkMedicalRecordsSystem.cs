@@ -15,9 +15,9 @@ namespace Content.Server._Nix.Traits;
 /// Server system that automatically attaches authentic medical record entries to the
 /// station records database when a character spawns with medical or psychological traits.
 /// </summary>
-public sealed class QuirkMedicalRecordsSystem : EntitySystem
+public sealed partial class QuirkMedicalRecordsSystem : EntitySystem
 {
-    [Dependency] private readonly CharacterRecordsSystem _characterRecords = default!;
+    [Dependency] private CharacterRecordsSystem _characterRecords = default!;
 
     public override void Initialize()
     {

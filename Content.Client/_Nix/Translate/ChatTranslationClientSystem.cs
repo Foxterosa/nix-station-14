@@ -9,10 +9,10 @@ namespace Content.Client._Nix.Translate;
 /// <summary>
 /// Client-side system that syncs player chat translation preferences to the server.
 /// </summary>
-public sealed class ChatTranslationClientSystem : EntitySystem
+public sealed partial class ChatTranslationClientSystem : EntitySystem
 {
-    [Dependency] private readonly IConfigurationManager _config = default!;
-    [Dependency] private readonly IPlayerManager _playerManager = default!;
+    [Dependency] private IConfigurationManager _config = default!;
+    [Dependency] private IPlayerManager _playerManager = default!;
 
     public override void Initialize()
     {

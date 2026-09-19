@@ -7,7 +7,6 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using Content.Server.Administration.Managers;
 using Content.Server.Afk;
-using Content.Server.Database;
 using Content.Server.Discord;
 using Content.Server.GameTicking;
 using Content.Server.Players.RateLimiting;
@@ -43,7 +42,7 @@ namespace Content.Server.Administration.Systems
         [Dependency] private GameTicker _gameTicker = default!;
         [Dependency] private SharedMindSystem _minds = default!;
         [Dependency] private IAfkManager _afkManager = default!;
-        //[Dependency] private readonly IServerDbManager _dbManager = default!; NullLink-edit: move to general method at BanManager
+        //[Dependency] private IServerDbManager _dbManager = default!; NullLink-edit: move to general method at BanManager
         [Dependency] private PlayerRateLimitManager _rateLimit = default!;
 
         [GeneratedRegex(@"^https://discord\.com/api/webhooks/(\d+)/((?!.*/).*)$")]

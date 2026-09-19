@@ -4,7 +4,6 @@ using Content.Server.GameTicking;
 using Content.Server.Station.Components;
 using Content.Shared._Starlight.NewLife;
 using Content.Shared.CCVar;
-using Content.Shared.FixedPoint;
 using Content.Shared.GameTicking;
 using Content.Shared.Preferences;
 using Content.Shared.Roles;
@@ -27,7 +26,7 @@ public sealed partial class StationJobsSystem : EntitySystem
     [Dependency] private IConfigurationManager _configurationManager = default!;
     [Dependency] private IPlayerManager _player = default!;
     [Dependency] private IRobustRandom _random = default!;
-    //[Dependency] private readonly GameTicker _gameTicker = default!; // Starlight-removed - we dropped the one use of this
+    //[Dependency] private GameTicker _gameTicker = default!; // Starlight-removed - we dropped the one use of this
 
     /// <inheritdoc/>
     public override void Initialize()

@@ -1,6 +1,5 @@
 ﻿using System.Threading.Tasks;
 using Content.Server.Administration.Managers;
-using Content.Server.Database;
 using Content.Shared.Administration;
 using Robust.Shared.Console;
 
@@ -9,7 +8,7 @@ namespace Content.Server.Administration.Commands
     [AdminCommand(AdminFlags.Ban)]
     public sealed partial class PardonCommand : LocalizedCommands
     {
-        //[Dependency] private readonly IServerDbManager _dbManager = default!; NullLink-edit: move to general method at Manager
+        //[Dependency] private IServerDbManager _dbManager = default!; NullLink-edit: move to general method at Manager
         [Dependency] private IBanManager _banManager = default!;
         [Dependency] private ILogManager _logManager = default!; // NullLink-edit
 

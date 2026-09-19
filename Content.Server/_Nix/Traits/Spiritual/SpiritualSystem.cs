@@ -10,13 +10,13 @@ namespace Content.Server._Nix.Traits.Spiritual;
 /// <summary>
 /// Server system managing Spiritual trait.
 /// </summary>
-public sealed class SpiritualSystem : EntitySystem
+public sealed partial class SpiritualSystem : EntitySystem
 {
-    [Dependency] private readonly IGameTiming _timing = default!;
-    [Dependency] private readonly IRobustRandom _random = default!;
-    [Dependency] private readonly SharedPopupSystem _popup = default!;
-    [Dependency] private readonly SharedHandsSystem _hands = default!;
-    [Dependency] private readonly StaminaSystem _stamina = default!;
+    [Dependency] private IGameTiming _timing = default!;
+    [Dependency] private IRobustRandom _random = default!;
+    [Dependency] private SharedPopupSystem _popup = default!;
+    [Dependency] private SharedHandsSystem _hands = default!;
+    [Dependency] private StaminaSystem _stamina = default!;
 
     public override void Initialize()
     {

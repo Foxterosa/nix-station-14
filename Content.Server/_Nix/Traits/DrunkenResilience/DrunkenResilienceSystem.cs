@@ -14,14 +14,14 @@ namespace Content.Server._Nix.Traits.DrunkenResilience;
 /// Server system managing Drunken Resilience trait.
 /// Passively heals injuries while the entity is under the influence of alcohol.
 /// </summary>
-public sealed class DrunkenResilienceSystem : EntitySystem
+public sealed partial class DrunkenResilienceSystem : EntitySystem
 {
-    [Dependency] private readonly IGameTiming _timing = default!;
-    [Dependency] private readonly IRobustRandom _random = default!;
-    [Dependency] private readonly StatusEffectsSystem _status = default!;
-    [Dependency] private readonly DamageableSystem _damageable = default!;
-    [Dependency] private readonly SharedPopupSystem _popup = default!;
-    [Dependency] private readonly MobStateSystem _mobState = default!;
+    [Dependency] private IGameTiming _timing = default!;
+    [Dependency] private IRobustRandom _random = default!;
+    [Dependency] private StatusEffectsSystem _status = default!;
+    [Dependency] private DamageableSystem _damageable = default!;
+    [Dependency] private SharedPopupSystem _popup = default!;
+    [Dependency] private MobStateSystem _mobState = default!;
 
     public override void Initialize()
     {

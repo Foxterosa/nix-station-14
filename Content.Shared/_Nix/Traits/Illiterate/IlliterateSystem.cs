@@ -9,9 +9,9 @@ namespace Content.Shared._Nix.Traits.Illiterate;
 /// Handles Illiterate trait with full SS13 parity:
 /// Blocks writing on papers, reading papers/books, and using computer/records consoles.
 /// </summary>
-public sealed class IlliterateSystem : EntitySystem
+public sealed partial class IlliterateSystem : EntitySystem
 {
-    [Dependency] private readonly SharedPopupSystem _popup = default!;
+    [Dependency] private SharedPopupSystem _popup = default!;
 
     public override void Initialize()
     {

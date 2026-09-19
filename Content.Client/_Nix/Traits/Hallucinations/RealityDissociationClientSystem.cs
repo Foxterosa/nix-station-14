@@ -12,12 +12,12 @@ namespace Content.Client._Nix.Traits.Hallucinations;
 /// Client system receiving Reality Dissociation incidents from the server.
 /// Spawns client-exclusive phantom monsters and items, and renders spatial Paracusia battle audio sequences.
 /// </summary>
-public sealed class RealityDissociationClientSystem : EntitySystem
+public sealed partial class RealityDissociationClientSystem : EntitySystem
 {
-    [Dependency] private readonly IPlayerManager _playerManager = default!;
-    [Dependency] private readonly SharedAudioSystem _audio = default!;
-    [Dependency] private readonly IRobustRandom _random = default!;
-    [Dependency] private readonly IPrototypeManager _proto = default!;
+    [Dependency] private IPlayerManager _playerManager = default!;
+    [Dependency] private SharedAudioSystem _audio = default!;
+    [Dependency] private IRobustRandom _random = default!;
+    [Dependency] private IPrototypeManager _proto = default!;
 
     public override void Initialize()
     {

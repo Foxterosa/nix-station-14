@@ -17,14 +17,14 @@ namespace Content.Server._Nix.Traits.Cursed;
 /// Server system managing Cursed (Bad Luck) trait with SS13 parity.
 /// Randomly triggers comical clumsy mishaps, tripping, or item drops with popup and notification chat.
 /// </summary>
-public sealed class CursedSystem : EntitySystem
+public sealed partial class CursedSystem : EntitySystem
 {
-    [Dependency] private readonly IGameTiming _timing = default!;
-    [Dependency] private readonly IRobustRandom _random = default!;
-    [Dependency] private readonly IChatManager _chatManager = default!;
-    [Dependency] private readonly SharedPopupSystem _popup = default!;
-    [Dependency] private readonly SharedHandsSystem _hands = default!;
-    [Dependency] private readonly SharedStunSystem _stun = default!;
+    [Dependency] private IGameTiming _timing = default!;
+    [Dependency] private IRobustRandom _random = default!;
+    [Dependency] private IChatManager _chatManager = default!;
+    [Dependency] private SharedPopupSystem _popup = default!;
+    [Dependency] private SharedHandsSystem _hands = default!;
+    [Dependency] private SharedStunSystem _stun = default!;
 
     public override void Initialize()
     {

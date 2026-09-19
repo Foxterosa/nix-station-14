@@ -1,3 +1,4 @@
+using Robust.Shared.Prototypes;
 using Content.Server.Chat.Managers;
 using Content.Shared._Nix.Traits.Diet;
 using Content.Shared.Chat;
@@ -20,15 +21,16 @@ namespace Content.Server._Nix.Traits.Diet;
 /// Subscribes to IngestingEvent directly on the character component when consuming food.
 /// Violating dietary traits causes disgust, jittering, stamina drain, gagging, and eventual vomiting (SS13 parity).
 /// </summary>
-public sealed class DietTraitsSystem : EntitySystem
+public sealed partial class DietTraitsSystem : EntitySystem
 {
-    [Dependency] private readonly IChatManager _chatManager = default!;
-    [Dependency] private readonly SharedPopupSystem _popup = default!;
-    [Dependency] private readonly SharedJitteringSystem _jitter = default!;
-    [Dependency] private readonly SharedStaminaSystem _stamina = default!;
-    [Dependency] private readonly VomitSystem _vomit = default!;
-    [Dependency] private readonly TagSystem _tag = default!;
-    [Dependency] private readonly IGameTiming _timing = default!;
+    private static readonly ProtoId<TagPrototype> MeatTag = "Meat";
+    [Dependency] private IChatManager _chatManager = default!;
+    [Dependency] private SharedPopupSystem _popup = default!;
+    [Dependency] private SharedJitteringSystem _jitter = default!;
+    [Dependency] private SharedStaminaSystem _stamina = default!;
+    [Dependency] private VomitSystem _vomit = default!;
+    [Dependency] private TagSystem _tag = default!;
+    [Dependency] private IGameTiming _timing = default!;
 
     public override void Initialize()
     {
@@ -171,7 +173,7 @@ public sealed class DietTraitsSystem : EntitySystem
 
     private bool IsMeatFood(EntityUid food, Content.Shared.Chemistry.Components.Solution split)
     {
-        if (_tag.HasTag(food, "Meat"))
+        if (_tag.HasTag(food, MeatTag))
             return true;
 
         if (TryComp<FlavorProfileComponent>(food, out var flavorProfile))

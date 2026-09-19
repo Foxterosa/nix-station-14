@@ -16,6 +16,8 @@ namespace Content.Server._Nix.AI.Services;
 /// </summary>
 public sealed class OllamaAIService
 {
+    private static readonly Regex RepeatedCharRegex = new(@"(.)\1+", RegexOptions.Compiled);
+    private static readonly Regex CjkRegex = new(@"[\u4e00-\u9fff\u3040-\u30ff\uff00-\uffef]+", RegexOptions.Compiled);
     private readonly HttpClient _httpClient;
     private readonly ISawmill _sawmill;
 
@@ -79,7 +81,7 @@ public sealed class OllamaAIService
     public bool IsPromptInjectionAttempt(string message)
     {
         var lower = message.ToLowerInvariant();
-        var normalized = Regex.Replace(lower, @"(.)\1+", "$1");
+        var normalized = RepeatedCharRegex.Replace(lower, "$1");
         foreach (var pattern in JailbreakPatterns)
         {
             if (lower.Contains(pattern) || normalized.Contains(pattern))
@@ -306,7 +308,7 @@ public sealed class OllamaAIService
                 if (!string.IsNullOrWhiteSpace(text))
                 {
                     // Limpieza de caracteres CJK y formateo markdown redundante (** **)
-                    text = Regex.Replace(text, @"[\u4e00-\u9fff\u3040-\u30ff\uff00-\uffef]+", "");
+                    text = CjkRegex.Replace(text, "");
                     text = text.Replace("**", "").Replace("__", "").Trim();
                 }
                 return text;

@@ -11,10 +11,10 @@ namespace Content.Server._Nix.Traits.Skittish;
 /// <summary>
 /// Server system managing Skittish trait: enables quick hiding in lockers/crates when sprinting.
 /// </summary>
-public sealed class SkittishSystem : EntitySystem
+public sealed partial class SkittishSystem : EntitySystem
 {
-    [Dependency] private readonly EntityStorageSystem _entityStorage = default!;
-    [Dependency] private readonly SharedPopupSystem _popup = default!;
+    [Dependency] private EntityStorageSystem _entityStorage = default!;
+    [Dependency] private SharedPopupSystem _popup = default!;
 
     public override void Initialize()
     {

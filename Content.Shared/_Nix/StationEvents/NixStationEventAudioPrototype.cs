@@ -3,7 +3,7 @@ using Robust.Shared.Prototypes;
 
 namespace Content.Shared._Nix.StationEvents;
 
-[Prototype("nixStationEventAudio")]
+[Prototype]
 public sealed partial class NixStationEventAudioPrototype : IPrototype
 {
     [IdDataField]

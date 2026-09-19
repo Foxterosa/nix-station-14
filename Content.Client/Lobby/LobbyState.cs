@@ -17,7 +17,7 @@ using Robust.Shared.Timing;
 using Range = Robust.Client.UserInterface.Controls.Range;
 
 #region Starlight
-using Content.Shared.GameTicking.Prototypes;
+
 using Robust.Client.UserInterface.CustomControls;
 using Content.Client._Starlight.Lobby.UI;
 #endregion Starlight

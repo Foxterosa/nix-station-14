@@ -19,13 +19,13 @@ namespace Content.Client._Nix.Blindness;
 /// in the darkness whenever nearby entities sprint or move normally.
 /// Entities walking with Shift (slow/stealth) or with Light Step trait produce NO indicators.
 /// </summary>
-public sealed class BlindSensorySystem : EntitySystem
+public sealed partial class BlindSensorySystem : EntitySystem
 {
-    [Dependency] private readonly IPlayerManager _player = default!;
-    [Dependency] private readonly IGameTiming _timing = default!;
-    [Dependency] private readonly IRobustRandom _random = default!;
-    [Dependency] private readonly SharedPopupSystem _popup = default!;
-    [Dependency] private readonly MobStateSystem _mobState = default!;
+    [Dependency] private IPlayerManager _player = default!;
+    [Dependency] private IGameTiming _timing = default!;
+    [Dependency] private IRobustRandom _random = default!;
+    [Dependency] private SharedPopupSystem _popup = default!;
+    [Dependency] private MobStateSystem _mobState = default!;
 
     private static readonly string[] StepSounds = ["*tap*", "*clack*", "*paso*"];
 

@@ -6,7 +6,6 @@ using Content.Shared.Radio.EntitySystems;
 using Content.Shared._Starlight.TextToSpeech;
 using Robust.Shared.Network;
 using Robust.Shared.Player;
-using Content.Server.Speech;
 using Content.Server._Starlight.Language;
 using Content.Shared._Starlight.Clothing;
 
@@ -19,7 +18,7 @@ public sealed partial class HeadsetSystem : SharedHeadsetSystem
     [Dependency] private INetManager _netMan = default!;
     [Dependency] private RadioSystem _radio = default!;
     [Dependency] private LanguageSystem _language = default!; // Starlight
-    [Dependency] private readonly ChatTranslationSystem _chatTranslation = default!; // Nix
+    [Dependency] private ChatTranslationSystem _chatTranslation = default!; // Nix
 
     public override void Initialize()
     {

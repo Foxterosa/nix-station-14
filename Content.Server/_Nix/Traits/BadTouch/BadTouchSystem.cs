@@ -17,13 +17,13 @@ namespace Content.Server._Nix.Traits.BadTouch;
 /// Server system managing the Bad Touch (Haphephobia) trait.
 /// Triggers shuddering recoil, visible disgust emote, and distinct private feedback for both parties when touched.
 /// </summary>
-public sealed class BadTouchSystem : EntitySystem
+public sealed partial class BadTouchSystem : EntitySystem
 {
-    [Dependency] private readonly IGameTiming _timing = default!;
-    [Dependency] private readonly IChatManager _chatManager = default!;
-    [Dependency] private readonly SharedPopupSystem _popup = default!;
-    [Dependency] private readonly ChatSystem _chat = default!;
-    [Dependency] private readonly SharedJitteringSystem _jitter = default!;
+    [Dependency] private IGameTiming _timing = default!;
+    [Dependency] private IChatManager _chatManager = default!;
+    [Dependency] private SharedPopupSystem _popup = default!;
+    [Dependency] private ChatSystem _chat = default!;
+    [Dependency] private SharedJitteringSystem _jitter = default!;
 
     public override void Initialize()
     {

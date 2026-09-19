@@ -23,16 +23,16 @@ namespace Content.Server._Nix.Traits.SocialAnxiety;
 /// Causes nervous speech modifications when surrounded by people,
 /// and stress panics upon being examined or making direct eye contact.
 /// </summary>
-public sealed class SocialAnxietySystem : EntitySystem
+public sealed partial class SocialAnxietySystem : EntitySystem
 {
-    [Dependency] private readonly IGameTiming _timing = default!;
-    [Dependency] private readonly IRobustRandom _random = default!;
-    [Dependency] private readonly IChatManager _chatManager = default!;
-    [Dependency] private readonly SharedJitteringSystem _jitter = default!;
-    [Dependency] private readonly SharedStunSystem _stun = default!;
-    [Dependency] private readonly EntityLookupSystem _lookup = default!;
-    [Dependency] private readonly SharedPopupSystem _popup = default!;
-    [Dependency] private readonly MobStateSystem _mobState = default!;
+    [Dependency] private IGameTiming _timing = default!;
+    [Dependency] private IRobustRandom _random = default!;
+    [Dependency] private IChatManager _chatManager = default!;
+    [Dependency] private SharedJitteringSystem _jitter = default!;
+    [Dependency] private SharedStunSystem _stun = default!;
+    [Dependency] private EntityLookupSystem _lookup = default!;
+    [Dependency] private SharedPopupSystem _popup = default!;
+    [Dependency] private MobStateSystem _mobState = default!;
 
     private static readonly string[] Fillers = ["eh...", "este...", "um...", "uh..."];
 

@@ -1,12 +1,11 @@
 ﻿using Content.Server.Humanoid;
 using Content.Shared.Cloning.Events;
-using Content.Shared.Actions;
 using Content.Shared.Humanoid;
 using Content.Shared.Humanoid.Markings;
 using Content.Shared.Mobs;
 using Content.Shared.Toggleable;
 using Content.Shared.Wagging;
-using Robust.Shared.Prototypes;
+
 #region Starlight
 using Content.Server.Actions;
 using Content.Shared._Starlight.Humanoid.Markings;
@@ -21,7 +20,7 @@ public sealed partial class WaggingSystem : EntitySystem
 {
     [Dependency] private ActionsSystem _actions = default!;
     [Dependency] private HumanoidAppearanceSystem _humanoidAppearance = default!;
-    //[Dependency] private readonly IPrototypeManager _prototype = default!; // Starlight-removed - we dropped the last use of this from upstream
+    //[Dependency] private IPrototypeManager _prototype = default!; // Starlight-removed - we dropped the last use of this from upstream
 
     [Dependency] private StarlightMarkingSystem _starlightMarking = default!; //starlight edit
 

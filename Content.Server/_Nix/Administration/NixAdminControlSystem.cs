@@ -1,3 +1,5 @@
+using System.Reflection;
+using Robust.Shared.Upload;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
@@ -47,6 +49,7 @@ public sealed partial class NixAdminControlSystem : EntitySystem
     [Dependency] private ServerGlobalSoundSystem _globalSound = default!;
     [Dependency] private AlertLevelSystem _alertLevel = default!;
     [Dependency] private NetworkResourceManager _networkResources = default!;
+    [Dependency] private IServerNetManager _serverNetManager = default!;
     [Dependency] private StationSystem _station = default!;
     [Dependency] private SecureCommandTerminalSystem _secureTerminal = default!;
     [Dependency] private RoundEndSystem _roundEnd = default!;
@@ -220,9 +223,28 @@ public sealed partial class NixAdminControlSystem : EntitySystem
             var source = sourceRelative.ToString();
             var convertedRelative = new ResPath($"{source[..^4]}.ogg");
             var convertedFullPath = $"/Uploaded/{convertedRelative.ToString().TrimStart('/')}";
-            _networkResources.DistributeResources([(convertedRelative, converted)]);
+            DistributeNetworkResource(convertedRelative, converted);
             SchedulePreparedAudio(session, convertedFullPath, converted.Length);
         });
+    }
+
+    private static readonly MethodInfo? StoreFileMethod =
+        typeof(SharedNetworkResourceManager).GetMethod("StoreFile", BindingFlags.Instance | BindingFlags.NonPublic | BindingFlags.Public);
+
+    private static readonly MethodInfo? SendToPlayerMethod =
+        typeof(NetworkResourceManager).GetMethod("SendToPlayer", BindingFlags.Instance | BindingFlags.NonPublic | BindingFlags.Public);
+
+    private void DistributeNetworkResource(ResPath path, byte[] data)
+    {
+        StoreFileMethod?.Invoke(_networkResources, [path, data]);
+        var list = new List<(ResPath Relative, byte[] Data)> { (path, data) };
+        if (SendToPlayerMethod != null)
+        {
+            foreach (var channel in _serverNetManager.Channels)
+            {
+                SendToPlayerMethod.Invoke(_networkResources, [channel, list, 0]);
+            }
+        }
     }
 
     private static async Task<byte[]?> ConvertMp3ToOgg(byte[] data)

@@ -22,16 +22,16 @@ namespace Content.Server._Nix.Traits.BrainTumor;
 /// Periodically inflicts progressive brain damage and headache symptoms unless patient is medicated with suppressants.
 /// Ingesting Mannitol or neurological medicine suppresses all pain and damage for 5 minutes (300 seconds).
 /// </summary>
-public sealed class BrainTumorSystem : EntitySystem
+public sealed partial class BrainTumorSystem : EntitySystem
 {
-    [Dependency] private readonly IGameTiming _timing = default!;
-    [Dependency] private readonly IRobustRandom _random = default!;
-    [Dependency] private readonly IChatManager _chatManager = default!;
-    [Dependency] private readonly SharedPopupSystem _popup = default!;
-    [Dependency] private readonly DamageableSystem _damageable = default!;
-    [Dependency] private readonly SharedSolutionContainerSystem _solution = default!;
-    [Dependency] private readonly MobStateSystem _mobState = default!;
-    [Dependency] private readonly SharedJitteringSystem _jitter = default!;
+    [Dependency] private IGameTiming _timing = default!;
+    [Dependency] private IRobustRandom _random = default!;
+    [Dependency] private IChatManager _chatManager = default!;
+    [Dependency] private SharedPopupSystem _popup = default!;
+    [Dependency] private DamageableSystem _damageable = default!;
+    [Dependency] private SharedSolutionContainerSystem _solution = default!;
+    [Dependency] private MobStateSystem _mobState = default!;
+    [Dependency] private SharedJitteringSystem _jitter = default!;
 
     public override void Initialize()
     {

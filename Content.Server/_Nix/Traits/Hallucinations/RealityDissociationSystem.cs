@@ -21,15 +21,15 @@ namespace Content.Server._Nix.Traits.Hallucinations;
 /// fake local chat from nearby crew or pets, fake radio broadcasts from real players,
 /// and client-side visual/audio illusions.
 /// </summary>
-public sealed class RealityDissociationSystem : EntitySystem
+public sealed partial class RealityDissociationSystem : EntitySystem
 {
-    [Dependency] private readonly IGameTiming _timing = default!;
-    [Dependency] private readonly IRobustRandom _random = default!;
-    [Dependency] private readonly IPlayerManager _playerManager = default!;
-    [Dependency] private readonly IChatManager _chatManager = default!;
-    [Dependency] private readonly ChatSystem _chatSystem = default!;
-    [Dependency] private readonly EntityLookupSystem _lookup = default!;
-    [Dependency] private readonly MobStateSystem _mobState = default!;
+    [Dependency] private IGameTiming _timing = default!;
+    [Dependency] private IRobustRandom _random = default!;
+    [Dependency] private IPlayerManager _playerManager = default!;
+    [Dependency] private IChatManager _chatManager = default!;
+    [Dependency] private ChatSystem _chatSystem = default!;
+    [Dependency] private EntityLookupSystem _lookup = default!;
+    [Dependency] private MobStateSystem _mobState = default!;
 
     private static readonly string[] ChatterKeys =
     [

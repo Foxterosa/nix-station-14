@@ -14,9 +14,9 @@ namespace Content.Client._Nix.WebBridge;
 /// Captures the local player's fully resolved humanoid sprite so the server can persist
 /// the same visible outfit the client is already drawing for web portraits.
 /// </summary>
-public sealed class NixWebAppearanceSnapshotClientSystem : EntitySystem
+public sealed partial class NixWebAppearanceSnapshotClientSystem : EntitySystem
 {
-    [Dependency] private readonly IPlayerManager _playerManager = default!;
+    [Dependency] private IPlayerManager _playerManager = default!;
 
     public override void Initialize()
     {

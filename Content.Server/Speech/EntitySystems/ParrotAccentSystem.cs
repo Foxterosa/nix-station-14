@@ -13,7 +13,7 @@
 //{
 //    private static readonly Regex WordCleanupRegex = new Regex("[^A-Za-z0-9 -]");
 
-//    [Dependency] private readonly IRobustRandom _random = default!;
+//    [Dependency] private IRobustRandom _random = default!;
 
 //    public override void Initialize()
 //    {

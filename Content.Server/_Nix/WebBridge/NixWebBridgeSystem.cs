@@ -67,6 +67,8 @@ namespace Content.Server._Nix.WebBridge;
 /// </remarks>
 public sealed partial class NixWebBridgeSystem : EntitySystem
 {
+    private static readonly ProtoId<TagPrototype> DrinkBottleTag = "DrinkBottle";
+    private static readonly ProtoId<TagPrototype> HideCustomHeadsTag = "HideCustomHeads";
     private const string BearerScheme = "Bearer";
     private const string ManifestPath = "/nix/web/v1/manifest";
     private const string RankingPath = "/nix/web/v1/ranking";
@@ -487,7 +489,7 @@ public sealed partial class NixWebBridgeSystem : EntitySystem
         {
             // Bartenders commonly build drinks by pouring purchased bottles into a glass.
             // Those bottles have no bridge component yet, so establish attribution at the first pour.
-            if (_tag.HasTag(args.From, "DrinkBottle"))
+            if (_tag.HasTag(args.From, DrinkBottleTag))
             {
                 var sourceId = MetaData(args.From).EntityPrototype?.ID ?? "bottled-drink";
                 TrackDrinkPrepared(args.User, args.To, sourceId);

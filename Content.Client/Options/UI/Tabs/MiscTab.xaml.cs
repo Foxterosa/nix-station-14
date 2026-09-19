@@ -61,10 +61,11 @@ public sealed partial class MiscTab : Control
         };
         Control.AddOptionDropDown(CCVars.NixChatTranslateTarget, DropDownChatTranslate, chatTranslateEntries); // Nix
         Control.AddOptionCheckBox(CCVars.StaticStorageUI, StaticStorageUI);
-        //starlight
+        // Starlight-start
+        Control.AddOptionCheckBox(StarlightCCVars.AutoPunctuate, AutoPunctuate);
         Control.AddOptionSlider(StarlightCCVars.ChatSeparatedMinWidth, SeparatedChatWidthSlider, 300, 580);
         Control.AddOptionCheckBox(StarlightCCVars.ForceTestersTab, ForceTestersTab);
-        //starlight end
+        // Starlight-end
 
         Control.Initialize();
     }

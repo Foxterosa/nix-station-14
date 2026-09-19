@@ -9,11 +9,11 @@ namespace Content.Client._Nix.Traits.Hallucinations;
 /// <summary>
 /// Client system controlling the animation, movement, and lifespan of client-only phantom hallucinations.
 /// </summary>
-public sealed class PhantomHallucinationSystem : EntitySystem
+public sealed partial class PhantomHallucinationSystem : EntitySystem
 {
-    [Dependency] private readonly IGameTiming _timing = default!;
-    [Dependency] private readonly IPlayerManager _playerManager = default!;
-    [Dependency] private readonly SharedAudioSystem _audio = default!;
+    [Dependency] private IGameTiming _timing = default!;
+    [Dependency] private IPlayerManager _playerManager = default!;
+    [Dependency] private SharedAudioSystem _audio = default!;
 
     public override void Initialize()
     {

@@ -8,9 +8,9 @@ namespace Content.Shared._Nix.Traits.Pushover;
 /// System handling the Pushover trait.
 /// Makes the entity significantly easier to push to the ground when shoved in combat mode.
 /// </summary>
-public sealed class PushoverSystem : EntitySystem
+public sealed partial class PushoverSystem : EntitySystem
 {
-    [Dependency] private readonly IRobustRandom _random = default!;
+    [Dependency] private IRobustRandom _random = default!;
 
     public override void Initialize()
     {

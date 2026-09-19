@@ -7,7 +7,7 @@
 
 //namespace Content.Server.Speech.EntitySystems;
 
-//public sealed class SouthernAccentSystem : EntitySystem
+//public sealed partial class SouthernAccentSystem : EntitySystem
 //{
 //    private static readonly Regex RegexLowerIng = new(@"ing\b");
 //    private static readonly Regex RegexUpperIng = new(@"ING\b");
@@ -16,7 +16,7 @@
 //    private static readonly Regex RegexLowerDve = new(@"d've\b");
 //    private static readonly Regex RegexUpperDve = new(@"D'VE\b");
 
-//    [Dependency] private readonly ReplacementAccentSystem _replacement = default!;
+//    [Dependency] private ReplacementAccentSystem _replacement = default!;
 
 //    public override void Initialize()
 //    {
