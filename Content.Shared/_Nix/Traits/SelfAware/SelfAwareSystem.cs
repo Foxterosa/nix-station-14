@@ -5,13 +5,17 @@ using Content.Shared.Damage.Components;
 using Content.Shared.Examine;
 using Robust.Shared.Utility;
 
+using Content.Shared.Damage.Systems;
+
 namespace Content.Shared._Nix.Traits.SelfAware;
 
 /// <summary>
 /// Handles self-awareness: shows detailed personal damage status when self-examining.
 /// </summary>
-public sealed class SelfAwareSystem : EntitySystem
+public sealed partial class SelfAwareSystem : EntitySystem
 {
+    [Dependency] private DamageableSystem _damageable = default!;
+
     public override void Initialize()
     {
         base.Initialize();
@@ -26,13 +30,13 @@ public sealed class SelfAwareSystem : EntitySystem
         if (!TryComp<DamageableComponent>(uid, out var damageable))
             return;
 
-        var totalDamage = damageable.TotalDamage;
+        var totalDamage = _damageable.GetTotalDamage((uid, damageable));
         var status = FormattedMessage.EscapeText(Loc.GetString("self-aware-total-damage", ("damage", totalDamage)));
         args.PushMarkup($"[color=#3498db][bold]{status}[/bold][/color]");
 
         if (totalDamage > 0)
         {
-            foreach (var (group, amount) in damageable.DamagePerGroup)
+            foreach (var (group, amount) in _damageable.GetDamagePerGroup((uid, damageable)))
             {
                 if (amount > 0)
                 {

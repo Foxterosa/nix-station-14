@@ -1,6 +1,7 @@
 using Content.Shared._Nix.Traits.Frail;
 using Content.Shared.Damage;
 using Content.Shared.Damage.Systems;
+using System.Linq;
 
 namespace Content.Shared._Nix.Traits.Frail;
 
@@ -17,10 +18,10 @@ public sealed class FrailSystem : EntitySystem
 
     private void OnDamageModify(EntityUid uid, FrailComponent comp, DamageModifyEvent args)
     {
-        var keys = new List<string>(args.Damage.DamageDict.Keys);
+        var keys = args.Damage.DamageDict.Keys.ToList();
         foreach (var key in keys)
         {
-            if (key is "Blunt" or "Slash" or "Piercing")
+            if (key.Id is "Blunt" or "Slash" or "Piercing")
             {
                 args.Damage.DamageDict[key] *= comp.DamageMultiplier;
             }

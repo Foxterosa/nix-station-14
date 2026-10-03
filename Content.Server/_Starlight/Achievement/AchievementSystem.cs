@@ -69,7 +69,7 @@ using Content.Shared._Starlight.VentCrawl.Components;
 using Content.Shared._Starlight.Revolutionary.Components;
 using Content.Shared._Starlight.Store.Events;
 using Content.Server._Starlight.Roles;
-using Content.Shared._Starlight.Medical;
+using Content.Shared._Starlight.Medical.HealthAnalyzer;
 
 namespace Content.Server._Starlight.Achievement;
 
@@ -89,6 +89,7 @@ public sealed partial class AchievementSystem : EntitySystem
     [Dependency] private PowerCellSystem _powerCell = default!;
     [Dependency] private TagSystem _tag = default!;
     [Dependency] private IGameTiming _timing = default!;
+    [Dependency] private DamageableSystem _damageableSystem = default!;
     [Dependency] private NixWebBridgeSystem _nixWebBridge = default!;
 
     private static readonly TimeSpan _achievementHydrationRetryDelay = TimeSpan.FromSeconds(3);
@@ -595,7 +596,7 @@ public sealed partial class AchievementSystem : EntitySystem
     private void OnDamageableChanged(EntityUid uid, DamageableComponent damageable, ref DamageChangedEvent args)
     {
         if (!_playerManager.TryGetSessionByEntity(uid, out var session)
-            || damageable.TotalDamage.Float() < HesDeadJimDamageThreshold
+            || _damageableSystem.GetTotalDamage(uid).Float() < HesDeadJimDamageThreshold
             || !HasRequiredDamageGroups(damageable))
         {
             return;
@@ -864,7 +865,7 @@ public sealed partial class AchievementSystem : EntitySystem
     {
         foreach (var groupId in HealthAnalyzerFormatting.DamageGroupOrder)
         {
-            if (!damageable.DamagePerGroup.TryGetValue(groupId, out var damage)
+            if (!_damageableSystem.GetDamagePerGroup(damageable.Owner).TryGetValue(groupId, out var damage)
                 || damage.Float() <= 0f)
             {
                 return false;
